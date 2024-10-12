@@ -13,12 +13,12 @@ const DropdownMenu = ({ open, setOpen }: Props) => {
         nameClass = "bg-beige dark:bg-black origin-top\
                 flex flex-col self-end transition-transform\
                 rounded-3xl w-32 h-40 pr-7 pl-7 pt-4 pb-4\
-                justify-around scale-100"
+                justify-around scale-100 absolute -bottom-40"
     } else {
         nameClass = "bg-beige dark:bg-black origin-top\
                 flex flex-col self-end transition-transform\
                 rounded-3xl w-32 h-40 pr-7 pl-7 pt-4 pb-4\
-                justify-around scale-0"
+                justify-around scale-0 absolute -bottom-40"
     }
 
 
