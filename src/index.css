@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply scroll-smooth
+    }
+
+    #root {
+        @apply bg-beige text-black dark:text-white dark:bg-black h-full w-full min-h-svh p-5 m-0 box-border; 
+    }
+    
+    a {
+        @apply text-black dark:text-gray-50 hover:dark:text-gray-400 hover:text-gray-600 transition-colors;
+    }
+  }
