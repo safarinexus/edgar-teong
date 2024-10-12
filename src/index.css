@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+    :root {
+        @apply bg-beige dark:bg-black
+    }
+
     html {
-        @apply scroll-smooth bg-beige dark:bg-black
+        @apply scroll-smooth 
     }
 
     #root {
