@@ -4,7 +4,7 @@
 
 @layer base {
     html {
-        @apply scroll-smooth
+        @apply scroll-smooth bg-beige dark:bg-black
     }
 
     #root {

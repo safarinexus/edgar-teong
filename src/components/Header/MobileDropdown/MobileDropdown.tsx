@@ -12,11 +12,7 @@ const MobileDropdown = () => {
     return (
         <>
             <DropdownButton open={open} toggleDropdown={toggleDropdown} />
-            {
-                open ? 
-                    <DropdownMenu setOpen={setOpen}/> : 
-                    ("")
-            }         
+            <DropdownMenu setOpen={setOpen} open={open}/>
         </>
     )
 }
