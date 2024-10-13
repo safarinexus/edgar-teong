@@ -9,6 +9,10 @@ export default {
       colors: {
         beige: "rgb(240, 240, 232)"
       },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        domine: ['Domine', 'serif'],
+      },
       animation: {
         breathing: 'breathing 3s ease-in-out infinite',
       },

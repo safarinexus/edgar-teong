@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Inter';
+    src: url('/public/fonts/inter/Inter-Italic.woff2') format('woff2'),
+        url('/public/fonts/inter/Inter-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/public/fonts/inter/Inter-Regular.woff2') format('woff2'),
+        url('/public/fonts/inter/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Domine';
+    src: url('/public/fonts/domine/Domine-Regular.woff2') format('woff2'),
+        url('/public/fonts/domine/Domine-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 @layer base {
     html {
         @apply scroll-smooth 
