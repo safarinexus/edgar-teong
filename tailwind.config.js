@@ -9,6 +9,15 @@ export default {
       colors: {
         beige: "rgb(240, 240, 232)"
       },
+      animation: {
+        breathing: 'breathing 3s ease-in-out infinite',
+      },
+      keyframes: {
+        breathing: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+        },
+      },
     },
   },
   plugins: [],
