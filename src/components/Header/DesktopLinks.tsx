@@ -4,12 +4,10 @@ import { Link } from "react-router-dom"
 const DesktopLinks = () => {
     return (
         <>
-            <HashLink 
-                to="/#work"
-            >Work</HashLink>
-            <HashLink to="/#projects">Projects</HashLink>
-            <HashLink to='/#contact'>Contact</HashLink>
-            <Link to='/thoughts'>Thoughts</Link>
+            <HashLink to="/#work" className="md:text-lg">Work</HashLink>
+            <HashLink to="/#projects" className="md:text-lg">Projects</HashLink>
+            <HashLink to='/#contact' className="md:text-lg">Contact</HashLink>
+            <Link to='/thoughts' className="md:text-lg">Thoughts</Link>
         </>
     )
 }

@@ -28,7 +28,7 @@ const Header = ({ width }: Props) => {
                         className="min-w-20 md:w-32 lg:w-36 dark:invert select-none"
                     />
                 </HashLink>
-                <div id="nav-cluster" className="h-full w-[300px] justify-self-end flex items-center justify-between">
+                <div id="nav-cluster" className="h-full w-[350px] justify-self-end flex items-center justify-between">
                     { width > 640 ? 
                         //you can eventually add active highlighting for links
                         <DesktopLinks /> :
