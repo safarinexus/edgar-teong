@@ -16,8 +16,8 @@ const Header = ({ width }: Props) => {
             <div 
             id="header" 
             className="
-                w-full max-w-[1200px] h-fit p-5 rounded-3xl bg-neutral-800 dark:bg-neutral-600 bg-opacity-30 
-                dark:bg-opacity-40 grid grid-rows-1 grid-cols-[20%_80%] items-center z-10 backdrop-blur-sm
+                w-full max-w-[1200px] h-fit p-4 rounded-3xl bg-neutral-800 dark:bg-neutral-600 bg-opacity-30 
+                dark:bg-opacity-40 grid grid-rows-1 grid-cols-[20%_80%] items-center z-10 backdrop-blur-sm 
             "
             >
                 <HashLink to="/#top" id="logo-link" className="inline-block">
@@ -30,6 +30,7 @@ const Header = ({ width }: Props) => {
                 </HashLink>
                 <div id="nav-cluster" className="h-full w-[300px] justify-self-end flex items-center justify-between">
                     { width > 640 ? 
+                        //you can eventually add active highlighting for links
                         <DesktopLinks /> :
                         <MobileDropdown />
                     }

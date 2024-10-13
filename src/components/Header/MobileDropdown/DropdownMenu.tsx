@@ -9,20 +9,20 @@ interface Props {
 const DropdownMenu = ({ open, setOpen }: Props) => {
     let nameClass = ""; 
     if (open) { 
-        nameClass = "bg-beige dark:bg-black origin-top\
+        nameClass = "bg-neutral-400 dark:bg-neutral-800 origin-top\
                 flex flex-col transition-transform right-0\
-                rounded-3xl w-32 h-40 pr-7 pl-7 pt-4 pb-4\
-                justify-around scale-100 absolute -bottom-40"
+                rounded-tr-3xl rounded-bl-3xl w-32 h-40 pr-7 pl-7 pt-4 pb-4\
+                justify-around scale-100 absolute -bottom-[165px]"
     } else {
-        nameClass = "bg-beige dark:bg-black origin-top\
+        nameClass = "bg-neutral-400 dark:bg-neutral-800 origin-top\
                 flex flex-col transition-transform right-0\
-                rounded-3xl w-32 h-40 pr-7 pl-7 pt-4 pb-4\
-                justify-around scale-0 absolute -bottom-40"
+                rounded-tr-3xl rounded-bl-3xl w-32 h-40 pr-7 pl-7 pt-4 pb-4\
+                justify-around scale-0 absolute -bottom-[165px]"
     }
 
 
     return (
-        <div
+            <div
             id="dropdown-menu"
             className={nameClass}
         >
