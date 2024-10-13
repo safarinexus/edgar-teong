@@ -9,7 +9,7 @@ const DesktopLinks = () => {
             >Work</HashLink>
             <HashLink to="/#projects">Projects</HashLink>
             <HashLink to='/#contact'>Contact</HashLink>
-            <Link to='/blog'>Blog</Link>
+            <Link to='/thoughts'>Thoughts</Link>
         </>
     )
 }

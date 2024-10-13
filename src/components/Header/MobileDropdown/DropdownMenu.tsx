@@ -29,7 +29,7 @@ const DropdownMenu = ({ open, setOpen }: Props) => {
             <HashLink to="/#work" onClick={() => setOpen(false)}>Work</HashLink>
             <HashLink to="/#projects" onClick={() => setOpen(false)}>Projects</HashLink>
             <HashLink to='/#contact' onClick={() => setOpen(false)}>Contact</HashLink>
-            <Link to='/blog' onClick={() => setOpen(false)}>Blog</Link>
+            <Link to='/thoughts' onClick={() => setOpen(false)}>Thoughts</Link>
         </div>
     )
 }
