@@ -9,15 +9,17 @@ interface Props {
 const DropdownMenu = ({ open, setOpen }: Props) => {
     let nameClass = ""; 
     if (open) { 
-        nameClass = "bg-neutral-400 dark:bg-neutral-800 origin-top\
+        nameClass = "bg-gradient-to-br from-neutral-400 to-beige\
+                dark:bg-gradient-to-br dark:from-neutral-800 dark:to-black\
                 flex flex-col transition-transform right-0\
                 rounded-tr-3xl rounded-bl-3xl w-44 h-64 pr-7 pl-7 pt-4 pb-4\
-                justify-around scale-100 absolute -bottom-[260px]"
+                justify-around scale-100 absolute -bottom-[260px] origin-top"
     } else {
-        nameClass = "bg-neutral-400 dark:bg-neutral-800 origin-top\
+        nameClass = "bg-gradient-to-br from-neutral-400 to-beige\
+                dark:bg-gradient-to-br dark:from-neutral-800 dark:to-black\
                 flex flex-col transition-transform right-0\
                 rounded-tr-3xl rounded-bl-3xl w-44 h-64 pr-7 pl-7 pt-4 pb-4\
-                justify-around scale-0 absolute -bottom-[260px]"
+                justify-around scale-0 absolute -bottom-[260px] origin-top"
     }
 
 
