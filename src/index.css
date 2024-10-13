@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-        @apply bg-beige dark:bg-black
-    }
-
     html {
         @apply scroll-smooth 
     }
 
+    body {
+        @apply bg-beige dark:bg-black
+    }
+
     #root {
-        @apply bg-beige text-black dark:text-white dark:bg-black h-full w-full min-h-svh p-5 m-0 box-border; 
+        @apply text-black dark:text-white h-full w-full min-h-svh m-0 box-border; 
     }
     
     a {
