@@ -1,12 +1,15 @@
-import { NavLink } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
+import { Link } from "react-router-dom"
 
 const DesktopLinks = () => {
     return (
         <>
-            <NavLink to="#work">Work</NavLink>
-            <NavLink to="#projects">Projects</NavLink>
-            <NavLink to='#contact'>Contact</NavLink>
-            <NavLink to='/blog'>Blog</NavLink>
+            <HashLink 
+                to="/#work"
+            >Work</HashLink>
+            <HashLink to="/#projects">Projects</HashLink>
+            <HashLink to='/#contact'>Contact</HashLink>
+            <Link to='/blog'>Blog</Link>
         </>
     )
 }

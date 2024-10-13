@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { HashLink } from "react-router-hash-link";
 
 import logo from "../../assets/logo.png"
 
@@ -21,14 +21,14 @@ const Header = ({ width }: Props) => {
             "
             //add frosted glass effect here later
             >
-                <Link to="/" id="logo-link" className="inline-block">
+                <HashLink to="/#top" id="logo-link" className="inline-block">
                     <img 
                         src={logo} 
                         alt="logo" 
                         draggable="false" 
                         className="min-w-20 md:w-32 lg:w-36 dark:invert hover:opacity-40 transition-opacity"
                     />
-                </Link>
+                </HashLink>
                 <div id="nav-cluster" className="h-full w-[300px] justify-self-end flex items-center justify-between">
                     { width > 640 ? 
                         <DesktopLinks /> :

@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link"
 import { Link } from "react-router-dom"
 
 interface Props {
@@ -25,9 +26,9 @@ const DropdownMenu = ({ open, setOpen }: Props) => {
             id="dropdown-menu"
             className={nameClass}
         >
-            <Link to="#work" onClick={() => setOpen(false)}>Work</Link>
-            <Link to="#projects" onClick={() => setOpen(false)}>Projects</Link>
-            <Link to='#contact' onClick={() => setOpen(false)}>Contact</Link>
+            <HashLink to="/#work" onClick={() => setOpen(false)}>Work</HashLink>
+            <HashLink to="/#projects" onClick={() => setOpen(false)}>Projects</HashLink>
+            <HashLink to='/#contact' onClick={() => setOpen(false)}>Contact</HashLink>
             <Link to='/blog' onClick={() => setOpen(false)}>Blog</Link>
         </div>
     )
