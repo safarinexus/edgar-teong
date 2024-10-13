@@ -5,10 +5,10 @@ import { MdLightMode } from "react-icons/md";
 export default function DarkMode() {
 
     const [darkMode, setDarkMode] = useState<string>(() => {
-        if (localStorage.getItem("darkMode") == null || localStorage.getItem("darkMode") === "false") { 
-            return "false";
+        if (localStorage.getItem("darkMode") == null || localStorage.getItem("darkMode") === "true") { 
+            return "true";
         } else {
-            return "true"; 
+            return "false"; 
         }
       });
       
@@ -31,7 +31,7 @@ export default function DarkMode() {
 
     return (
         <button
-            className="size-fit hover:opacity-60 transition-opacity"
+            className="size-fit hover:opacity-40 duration-500 transition-opacity"
             onClick={handleClick}
         >
             {darkMode === "true" ? (<MdLightMode className="size-7"/>) : (<MdDarkMode className="size-7"/>)}

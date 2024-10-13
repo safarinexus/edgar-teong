@@ -25,7 +25,7 @@ const Header = ({ width }: Props) => {
                         src={logo} 
                         alt="logo" 
                         draggable="false" 
-                        className="min-w-20 md:w-32 lg:w-36 dark:invert hover:opacity-40 transition-opacity select-none"
+                        className="min-w-20 md:w-32 lg:w-36 dark:invert select-none"
                     />
                 </HashLink>
                 <div id="nav-cluster" className="h-full w-[300px] justify-self-end flex items-center justify-between">

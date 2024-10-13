@@ -16,6 +16,6 @@
     }
     
     a {
-        @apply text-black dark:text-gray-50 hover:dark:text-gray-400 hover:text-gray-600 transition-colors;
+        @apply text-black dark:text-gray-50 hover:opacity-30 duration-500 transition-opacity;
     }
   }
