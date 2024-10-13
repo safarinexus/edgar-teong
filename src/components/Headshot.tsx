@@ -11,7 +11,8 @@ const Headshot = () => {
           <img
             src={HeadshotPhoto} 
             alt="Headshot Photo"
-            className="w-full h-full"
+            className="w-full h-full select-none"
+            draggable="false"
           />
         </div>
       </div>
