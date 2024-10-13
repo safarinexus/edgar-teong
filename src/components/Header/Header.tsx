@@ -19,14 +19,13 @@ const Header = ({ width }: Props) => {
                 w-full max-w-[1200px] h-fit p-5 rounded-3xl bg-neutral-800 dark:bg-neutral-600 bg-opacity-30 
                 dark:bg-opacity-40 grid grid-rows-1 grid-cols-[20%_80%] items-center z-10 backdrop-blur-sm
             "
-            //add frosted glass effect here later
             >
                 <HashLink to="/#top" id="logo-link" className="inline-block">
                     <img 
                         src={logo} 
                         alt="logo" 
                         draggable="false" 
-                        className="min-w-20 md:w-32 lg:w-36 dark:invert hover:opacity-40 transition-opacity"
+                        className="min-w-20 md:w-32 lg:w-36 dark:invert hover:opacity-40 transition-opacity select-none"
                     />
                 </HashLink>
                 <div id="nav-cluster" className="h-full w-[300px] justify-self-end flex items-center justify-between">
