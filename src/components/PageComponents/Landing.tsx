@@ -1,21 +1,7 @@
 import Headshot from "../Headshot"
 
-interface Props {
-    width: number
-}
-
-const Landing = ({ width }: Props) => {
+const Landing = () => {
     //fix layout before adding content
-    /*
-    let nameClass = ""
-    if (width > 640) { 
-        //tablet and desktop layout
-        nameClass = "h-svh p-[15%] pb-[40%] flex flex justify-around"
-    } else {
-        //mobile layout
-        nameClass = "h-svh pt-[20%] pb-[40%] flex flex-col"
-    }
-    */
 
     return (
     <div id="landing" className="h-[1000px] pt-20 flex flex-col items-center">
