@@ -12,7 +12,7 @@ interface Props {
 
 const Header = ({ width }: Props) => {
     return (
-        <div id="header-container" className="sticky w-full flex flex-col items-center top-5 pl-5 pr-5 h-min z-10">
+        <div id="header-container" className="fixed w-full flex flex-col items-center top-5 pl-5 pr-5 h-min z-10">
             <div 
             id="header" 
             className="
