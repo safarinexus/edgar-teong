@@ -5,19 +5,19 @@ const Landing = () => {
     //fix layout before adding content
 
     return (
-        <div id="landing" className="w-full h-svh min-h-max pt-[110px] xs:pt-[120px] sm:pt-[140px] grid grid-cols-1 gap-5 items-center pr-5 pl-5">
+        <div id="landing" className="w-full h-svh min-h-max pt-[110px] xs:pt-[120px] sm:pt-[140px] grid grid-cols-1 gap-1 items-center pr-5 pl-5">
             <Headshot />
             
-            <h1 id="hey-there"className="text-center font-thin text-[7vw] xs:text-[5vw] sm:text-2xl">
+            <h1 id="hey-there"className="text-center font-thin text-[5vw] xs:text-[5vw] sm:text-2xl">
                 <span className="animate-wave inline-block">👋</span> 
                 &nbsp;Hey there!
             </h1>
-            <h3 id="my-name-is" className="font-domine text-[10vw] xs:text-[8vw] sm:text-5xl leading-none text-center">
+            <h3 id="my-name-is" className="font-domine text-[9vw] xs:text-[8vw] sm:text-5xl leading-none text-center">
                 My name is&nbsp;
                 <span className="bg-gradient-to-r from-amber-600 via-green-500 to-sky-400 inline-block text-transparent bg-clip-text">Edgar Teong</span>
                 .
             </h3>
-            <p className="tracking-wide text-center font-thin text-[3.8vw] xs:text-[3vw] sm:text-2xl">
+            <p className="tracking-wide text-center font-thin text-[3.5vw] xs:text-[3vw] sm:text-2xl">
                 I&#39;m a passionate and dedicated <span className="font-bold">full-stack developer</span> who discovered my love for programming while pursuing accountancy at&nbsp;
                 <span className="font-bold">Singapore Management University</span> &#40;SMU&#41;. 
                 <br /><br />
