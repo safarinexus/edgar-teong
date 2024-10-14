@@ -17,6 +17,7 @@ export default {
         breathing: 'breathing 3s ease-in-out infinite',
         wave: '1s wave 0.8s ease-in-out 1',
         updown: '1s updown 1.5s ease-out infinite',
+        fadeIn: '1s fadeIn 0.4s ease-in forwards',
       },
       keyframes: {
         breathing: {
@@ -34,6 +35,10 @@ export default {
           '0%': { transform: 'translateY(0)' },
           '25%': { transform: 'translateY(4px)' },
           '75%': { transform: 'translateY(-4px)'},
+        },
+        fadeIn: {
+          '0%': { opacity: '0' }, 
+          '100%': { opacity: '1' },
         },
       },
     },
