@@ -10,12 +10,11 @@ export default {
         beige: "rgb(240, 240, 232)"
       },
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
         domine: ['Domine', 'serif'],
       },
       animation: {
         breathing: 'breathing 3s ease-in-out infinite',
-        wave: '1s wave 0.8s ease-in-out 1',
+        wave: '1s wave 1.5s ease-in-out 1',
         updown: '1s updown 1.5s ease-out infinite',
         fadeIn: '0.5s fadeIn 1s ease-in forwards',
       },

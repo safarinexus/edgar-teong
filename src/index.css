@@ -3,23 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Inter';
-    src: url('/fonts/inter/Inter-Italic.woff2') format('woff2'),
-        url('/fonts/inter/Inter-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/fonts/inter/Inter-Regular.woff2') format('woff2'),
-        url('/fonts/inter/Inter-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Domine';
     src: url('/fonts/domine/Domine-Regular.woff2') format('woff2'),
         url('/fonts/domine/Domine-Regular.woff') format('woff');
@@ -30,7 +13,7 @@
 
 @layer base {
     html {
-        @apply scroll-smooth font-inter
+        @apply scroll-smooth font-sans
     }
 
     body {
@@ -38,7 +21,7 @@
     }
 
     #root {
-        @apply text-black dark:text-white h-full w-full min-h-svh m-0 box-border; 
+        @apply text-black dark:text-white h-full w-full min-h-max m-0 box-border; 
     }
     
     a {
