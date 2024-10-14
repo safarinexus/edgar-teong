@@ -22,7 +22,7 @@ const ScrollIndicator = () => {
   }, []);
 
   return (
-    <div id="scroll-indicator-container" className="flex flex-col items-center space-y-2" style={{ opacity }}>
+    <div id="scroll-indicator-container" className="flex flex-col items-center space-y-2 mb-2" style={{ opacity }}>
       <p id="scroll-text" className="text-xs">Scroll to Discover</p>
 
       <HashLink to="/#work" id="scroll-indicator" className="relative flex items-center justify-center w-7 h-7 rounded-full bg-amber-400 dark:bg-amber-700">

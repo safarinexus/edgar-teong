@@ -13,16 +13,11 @@ export default {
         domine: ['Domine', 'serif'],
       },
       animation: {
-        breathing: 'breathing 3s ease-in-out infinite',
         wave: '1s wave 1.5s ease-in-out 1',
         updown: '1s updown 1.5s ease-out infinite',
         fadeIn: '0.5s fadeIn 1s ease-in forwards',
       },
       keyframes: {
-        breathing: {
-          '0%, 100%': { transform: 'scale(1)' },
-          '50%': { transform: 'scale(1.05)' },
-        },
         wave: {
           '0%, 100%': { transform: 'rotate(0deg)' },   
           '20%': { transform: 'rotate(-25deg) translateX(-20px)' },  
@@ -40,6 +35,22 @@ export default {
           '100%': { opacity: '1' },
         },
       },
+    },
+    screens: {
+      'xs': '450px',
+      // => @media (min-width: 450px) { ... }
+
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
     },
   },
   plugins: [],

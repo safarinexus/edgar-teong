@@ -21,11 +21,11 @@
     }
 
     #root {
-        @apply text-black dark:text-white h-full w-full min-h-max m-0 box-border; 
+        @apply text-black dark:text-white h-full w-full min-h-max m-0 box-border antialiased leading-relaxed; 
     }
     
     a {
         /* you can eventually edit the hover effect on links (like adding underline and whatnot) */
         @apply text-black dark:text-gray-50 hover:opacity-30 duration-500 transition-opacity;
     }
-  }
+}
