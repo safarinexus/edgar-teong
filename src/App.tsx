@@ -18,9 +18,9 @@ const App = () => {
       <ScrollProgressBar />
       <Header width={width}/>
       <Landing />
-      <div id="work" className="h-screen">I'm working late, cuz I'm a singer</div>
-      <div id="projects" className="h-screen">projects here</div>
-      <div id="contact" className="h-screen">Contact Me</div>
+      <div id="work" className="h-svh">I'm working late, cuz I'm a singer</div>
+      <div id="projects" className="h-svh">projects here</div>
+      <div id="contact" className="h-svh">Contact Me</div>
     </>
   )
 }
