@@ -7,7 +7,7 @@ const Landing = () => {
     return (
         <div 
             id="landing" 
-            className="w-full max-w-[1200px] h-[85svh] sm:h-svh min-h-max pt-[110px] xs:pt-[120px] sm:pt-[140px] pr-5 pl-5
+            className="w-full max-w-[1200px] h-[85svh] sm:h-svh min-h-max pt-[95px] xs:pt-[120px] sm:pt-[140px] pr-5 pl-5
                 grid grid-cols-1 gap-5 items-center sm:grid-cols-[60%_40%] sm:grid-rows-[10%_auto_20%_52px]
                 ml-auto mr-auto sm:p-24 sm:pb-1
             "
