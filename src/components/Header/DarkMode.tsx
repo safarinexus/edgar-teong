@@ -31,7 +31,7 @@ export default function DarkMode() {
 
     return (
         <button
-            className="size-fit hover:opacity-40 duration-500 transition-opacity"
+            className="size-fit hover:opacity-40 duration-500 transition-opacity text-black dark:text-white"
             onClick={handleClick}
         >
             {darkMode === "true" ? (<MdLightMode className="size-7"/>) : (<MdDarkMode className="size-7"/>)}

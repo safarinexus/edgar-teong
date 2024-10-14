@@ -21,7 +21,7 @@
     }
 
     #root {
-        @apply text-black dark:text-white h-full w-full min-h-max m-0 box-border antialiased leading-relaxed; 
+        @apply text-purpley dark:text-white h-full w-full min-h-max m-0 box-border antialiased leading-relaxed; 
     }
     
     a {
