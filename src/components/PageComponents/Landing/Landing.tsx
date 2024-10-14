@@ -24,12 +24,13 @@ const Landing = () => {
                 .
             </h3>
             <p className="tracking-wide text-center sm:text-left font-extralight text-[3.5vw] xs:text-[3vw] sm:text-sm md:text-xl sm:row-start-2">
-                I&#39;m a passionate and dedicated <span className="font-bold">full-stack developer</span> who discovered my love for programming while pursuing accountancy at&nbsp;
+                I&#39;m a passionate and dedicated <span className="font-bold">full-stack developer</span> who discovered my love for programming <span className="font-bold">on my own</span> while pursuing accountancy at&nbsp;
                 <span className="font-bold">Singapore Management University</span> &#40;SMU&#41;. 
                 <br /><br />
-                With a drive to <span className="font-bold">continually learn and grow</span>, I&#39;m committed to becoming an expert in the field, all through&nbsp;
+                With a drive to <span className="font-bold">continually learn and grow</span>, I&#39;m committed to becoming an expert software engineer, all through&nbsp;
                 <span className="font-bold">my own hard work & self-directed learning</span>. 
-                Whether it&#39;s front-end or back-end development, I bring <span className="font-bold">enthusiasm</span>, <span className="font-bold">creativity</span>,
+                <br /><br />
+                I bring <span className="font-bold">enthusiasm</span>, <span className="font-bold">creativity</span>,
                 and a <span className="font-bold">strong work ethic</span> to every project.
                 I&#39;m excited to share my journey and expertise with the world!
             </p>
