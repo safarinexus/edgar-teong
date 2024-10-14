@@ -17,7 +17,7 @@ export default {
         breathing: 'breathing 3s ease-in-out infinite',
         wave: '1s wave 0.8s ease-in-out 1',
         updown: '1s updown 1.5s ease-out infinite',
-        fadeIn: '1s fadeIn 0.4s ease-in forwards',
+        fadeIn: '0.5s fadeIn 1s ease-in forwards',
       },
       keyframes: {
         breathing: {

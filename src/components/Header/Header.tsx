@@ -1,6 +1,6 @@
 import { HashLink } from "react-router-hash-link";
 
-import logo from "../../assets/logo.png"
+import logo from "/logo.png"
 
 import DarkMode from "./DarkMode"
 import DesktopLinks from "./DesktopLinks"
