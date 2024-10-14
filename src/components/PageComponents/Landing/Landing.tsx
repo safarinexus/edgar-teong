@@ -7,7 +7,7 @@ const Landing = () => {
     return (
         <div 
             id="landing" 
-            className="w-full max-w-[1200px] h-svh min-h-max pt-[110px] xs:pt-[120px] sm:pt-[140px] pr-5 pl-5
+            className="w-full max-w-[1200px] h-dvh min-h-max pt-[110px] xs:pt-[120px] sm:pt-[140px] pr-5 pl-5
                 grid grid-cols-1 gap-5 items-center sm:grid-cols-[60%_40%] sm:grid-rows-[10%_auto_20%_52px]
                 ml-auto mr-auto sm:p-24 sm:pb-1
             "
@@ -23,7 +23,7 @@ const Landing = () => {
                 <span className="bg-gradient-to-r from-amber-600 via-green-500 to-sky-400 inline-block text-transparent bg-clip-text">Edgar Teong</span>
                 .
             </h3>
-            <p className="tracking-wide text-center sm:text-left font-extralight text-[3.5vw] xs:text-[3vw] sm:text-[2vw] lg:text-2xl sm:row-start-2">
+            <p className="tracking-wide text-center leading-[18px] sm:text-left font-extralight text-[3.5vw] xs:text-[3vw] sm:text-[2vw] lg:text-2xl sm:row-start-2">
                 I&#39;m a passionate and dedicated <span className="font-bold">full-stack developer</span> who discovered my love for programming <span className="font-bold">on my own</span> while pursuing accountancy at&nbsp;
                 <span className="font-bold">Singapore Management University</span> &#40;SMU&#41;. 
                 <br /><br />
