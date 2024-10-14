@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 
 import Header from "./components/Header/Header"
 import ScrollProgressBar from "./components/ScrollProgressBar"
-import Landing from "./components/PageComponents/Landing"
+import Landing from "./components/PageComponents/Landing/Landing"
 
 const App = () => {
   const [width, setWidth] = useState<number>(window.innerWidth);

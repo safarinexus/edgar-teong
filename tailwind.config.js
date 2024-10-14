@@ -16,6 +16,7 @@ export default {
       animation: {
         breathing: 'breathing 3s ease-in-out infinite',
         wave: '1s wave 0.8s ease-in-out 1',
+        updown: '1s updown 1.5s ease-out infinite',
       },
       keyframes: {
         breathing: {
@@ -29,10 +30,14 @@ export default {
           '60%': { transform: 'rotate(-15deg) translateX(-20px)' },    
           '80%': { transform: 'rotate(15deg)' }, 
         },
+        updown: {
+          '0%': { transform: 'translateY(0)' },
+          '25%': { transform: 'translateY(4px)' },
+          '75%': { transform: 'translateY(-4px)'},
+        },
       },
     },
   },
   plugins: [],
   darkMode: "selector",
 }
-
