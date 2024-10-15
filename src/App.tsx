@@ -51,19 +51,19 @@ const App = () => {
       </div>
       <div
         id="work-container"
-        className="w-full max-w-[1200px] h-svh min-h-max ml-auto mr-auto pr-5 pl-5"
+        className="w-full max-w-[1200px] h-svh min-h-[700px] ml-auto mr-auto pr-5 pl-5"
       >
         <Work />
       </div>
       <div
         id="projects-container"
-        className="w-full max-w-[1200px] h-svh min-h-max ml-auto mr-auto pr-5 pl-5"
+        className="w-full max-w-[1200px] h-svh min-h-[700px] ml-auto mr-auto pr-5 pl-5"
       >
         <Projects />
       </div>
       <div
         id="contact-container"
-        className="w-full max-w-[1200px] h-svh min-h-max ml-auto mr-auto pr-5 pl-5"
+        className="w-full max-w-[1200px] h-svh min-h-[700px] ml-auto mr-auto pr-5 pl-5"
       >
         <Contact />
       </div>
