@@ -11,7 +11,7 @@ interface Props {
     width: number
 }
 
-const sections = ['#landing-container', '#work-container', '#projects-container', '#contact-container'];
+const sections = ['#landing', '#work', '#projects', '#contact'];
 
 const Header = ({ width }: Props) => {
     const [activeSection, setActiveSection] = useState<string | null>(null);
