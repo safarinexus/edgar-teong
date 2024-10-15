@@ -50,9 +50,8 @@ const Header = ({ width }: Props) => {
             <div 
             id="header" 
             className="
-                w-full max-w-[1200px] h-fit p-4 rounded-3xl bg-neutral-800 dark:bg-neutral-600 bg-opacity-30 
-                dark:bg-opacity-40 grid grid-rows-1 grid-cols-[20%_80%] items-center z-10 relative before:content-['']
-                before:absolute before:w-full before:h-full before:rounded-3xl
+                w-full max-w-[1200px] h-fit p-4 rounded-full bg-neutral-800 dark:bg-neutral-600 bg-opacity-30 
+                dark:bg-opacity-40 grid grid-rows-1 grid-cols-[20%_80%] items-center z-10 relative backdrop-blur-sm
             "
             >
                 <NavHashLink to="/#top" end id="logo-link" className="inline-block relative w-fit">

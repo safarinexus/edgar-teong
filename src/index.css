@@ -30,11 +30,6 @@
     }
 }
 
-::before {
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-}
-
 
 ::-webkit-scrollbar {
     display: none;
