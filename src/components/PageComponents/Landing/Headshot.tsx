@@ -1,4 +1,4 @@
-import HeadshotPhoto from "../assets/headshot.jpeg"
+import HeadshotPhoto from "../../../assets/headshot.jpeg"
 
 const Headshot = () => {
   return (
