@@ -66,14 +66,14 @@ const Header = ({ width }: Props) => {
                     { width <= 640 ? 
                         <MobileDropdown /> :
                         <>
-                            <div className={`w-fit h-fit transition-shadow duration-75 ${activeSection === '#work-container' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
-                                <NavHashLink to="/#work-container" end className="md:text-lg">Work</NavHashLink>
+                            <div className={`w-fit h-fit transition-shadow duration-75 ${activeSection === '#work' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
+                                <NavHashLink to="/#work" end className="md:text-lg">Work</NavHashLink>
                             </div>
-                            <div className={`w-fit h-fit transition-shadow duration-75 ${activeSection === '#projects-container' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
-                                <NavHashLink to="/#projects-container" end className="md:text-lg">Projects</NavHashLink>
+                            <div className={`w-fit h-fit transition-shadow duration-75 ${activeSection === '#projects' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
+                                <NavHashLink to="/#projects" end className="md:text-lg">Projects</NavHashLink>
                             </div>
-                            <div className={`w-fit h-fit transition-shadow duration-75 ${activeSection === '#contact-container' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
-                                <NavHashLink to='/#contact-container' end className="md:text-lg">Contact</NavHashLink>
+                            <div className={`w-fit h-fit transition-shadow duration-75 ${activeSection === '#contact' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
+                                <NavHashLink to='/#contact' end className="md:text-lg">Contact</NavHashLink>
                             </div>
                             <Link to='/thoughts' className="md:text-lg">Thoughts</Link>
                         </>
