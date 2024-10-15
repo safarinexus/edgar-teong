@@ -1,4 +1,4 @@
-import Headshot from "../../Headshot"
+import Headshot from "./Headshot"
 
 const Landing = () => {
     return (
