@@ -26,7 +26,7 @@ const Landing = ({ height }: Props) => {
                 <span className="bg-gradient-to-r from-amber-600 via-green-500 to-sky-400 inline-block text-transparent bg-clip-text">Edgar Teong</span>
                 .
             </h3>
-            <p className="tracking-wide leading-[19px] font-light text-[3.5vw] xs:text-[3vw] sm:text-[2vw] lg:text-xl sm:row-start-2 animate-textFadeIn">
+            <p className="tracking-wide sm:leading-5 font-light text-[3.5vw] xs:text-[3vw] sm:text-[2vw] lg:text-xl sm:row-start-2 animate-textFadeIn">
                 I&#39;m a passionate and dedicated <span className="font-bold">full-stack developer</span> who discovered my love for programming <span className="font-bold">on my own</span> while pursuing accountancy at&nbsp;
                 <span className="font-bold">Singapore Management University</span> &#40;SMU&#41;. 
                 <br /><br />
