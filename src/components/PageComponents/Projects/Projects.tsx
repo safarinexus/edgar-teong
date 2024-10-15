@@ -1,9 +1,9 @@
-const Project = () => {
+const Projects = () => {
     return (
-        <>
-        I'm Projecting late, cuz I'm a singer
-        </>
+        <div className="w-full h-full flex justify-center items-center">
+            <h1>I'm Projectsing late, cuz I'm a singer</h1>
+        </div>
     )
 }
 
-export default Project
+export default Projects

@@ -1,8 +1,8 @@
 const Work = () => {
     return (
-        <>
-        I'm working late, cuz I'm a singer
-        </>
+        <div className="w-full h-full flex justify-center items-center">
+            <h1>I'm Working late, cuz I'm a singer</h1>
+        </div>
     )
 }
 
