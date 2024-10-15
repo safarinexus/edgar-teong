@@ -32,10 +32,6 @@ const App = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  useEffect(() => {
-    console.log(dimensions.height);
-  }, [dimensions])
-
   return (
     <>
       <ScrollProgressBar />

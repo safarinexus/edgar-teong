@@ -15,7 +15,7 @@ export default {
       },
       animation: {
         wave: '1s wave 1.5s ease-in-out 1',
-        updown: '1s updown 1.5s ease-out infinite',
+        indicateScroll: '1s indicateScroll 1.5s ease-out infinite',
         fadeIn: '0.5s fadeIn 1s ease-in forwards',
         textFadeIn: 'textFadeIn 1s ease-out forwards', 
       },
@@ -27,7 +27,7 @@ export default {
           '60%': { transform: 'rotate(-15deg) translateX(-20px)' },    
           '80%': { transform: 'rotate(15deg)' }, 
         },
-        updown: {
+        indicateScroll: {
           '0%': { transform: 'translateY(0)' },
           '25%': { transform: 'translateY(4px)' },
           '75%': { transform: 'translateY(-4px)'},

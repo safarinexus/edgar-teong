@@ -26,7 +26,7 @@ const ScrollIndicator = () => {
       <p id="scroll-text" className="text-xs opacity-0 animate-fadeIn">Scroll to Discover</p>
 
       <HashLink to="/#work" id="scroll-indicator" className="relative flex items-center justify-center w-7 h-7 rounded-full bg-amber-400 dark:bg-amber-700">
-        <FaArrowDown className="animate-updown"/>
+        <FaArrowDown className="animate-indicateScroll"/>
       </HashLink>
     </div>
   );
