@@ -4,7 +4,7 @@ const Landing = () => {
     return (
         <div 
             id="landing" 
-            className=" w-full h-full min-h-max flex flex-col
+            className=" w-full h-full flex flex-col
                 sm:grid sm:gap-4 sm:items-center sm:grid-cols-[60%_40%] sm:grid-rows-[10%_auto_20%]
             "
         >
