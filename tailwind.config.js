@@ -41,6 +41,10 @@ export default {
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
       },
+      boxShadow: {
+        'underline': '0 2px 0 0 black;',
+        'underline-dark': '0 2px 0 0 white;',
+      }
     },
     screens: {
       'xs': '450px',

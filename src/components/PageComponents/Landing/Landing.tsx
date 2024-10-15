@@ -10,8 +10,8 @@ const Landing = ({ height }: Props) => {
         <div 
             id="landing" 
             style={{ height }}
-            className="w-full max-w-[1200px] min-h-max pt-[95px] xs:pt-[120px] sm:pt-[140px] pr-5 pl-5
-                grid grid-cols-1 gap-5 items-center sm:grid-cols-[60%_40%] sm:grid-rows-[10%_auto_20%_52px]
+            className="w-full max-w-[1200px] min-h-[700px] pt-[95px] xs:pt-[120px] sm:pt-[140px] pr-5 pl-5
+                grid grid-cols-1 xs:gap-5 items-center sm:grid-cols-[60%_40%] sm:grid-rows-[10%_auto_20%_52px]
                 ml-auto mr-auto sm:p-24 sm:pb-1
             "
         >
@@ -26,7 +26,7 @@ const Landing = ({ height }: Props) => {
                 <span className="bg-gradient-to-r from-amber-600 via-green-500 to-sky-400 inline-block text-transparent bg-clip-text">Edgar Teong</span>
                 .
             </h3>
-            <p className="tracking-wide leading-[19px] sm:text-left font-light text-[3.5vw] xs:text-[3vw] sm:text-[2vw] lg:text-xl sm:row-start-2 animate-textFadeIn">
+            <p className="tracking-wide leading-[19px] sm:text-left font-light text-[3vw] xs:text-[3vw] sm:text-[2vw] lg:text-xl sm:row-start-2 animate-textFadeIn">
                 I&#39;m a passionate and dedicated <span className="font-bold">full-stack developer</span> who discovered my love for programming <span className="font-bold">on my own</span> while pursuing accountancy at&nbsp;
                 <span className="font-bold">Singapore Management University</span> &#40;SMU&#41;. 
                 <br /><br />

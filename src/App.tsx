@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import Header from "./components/Header/Header"
 import ScrollProgressBar from "./components/ScrollProgressBar"
 import Landing from "./components/PageComponents/Landing/Landing"
+//PLS do an error page thks
 
 interface Dimension {
   height: number; 

@@ -9,9 +9,13 @@ const ScrollIndicator = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const maxScroll = 300;
+      const maxScroll = 500;
       const newOpacity = Math.max(1 - scrollTop / maxScroll, 0);
-      setOpacity(newOpacity);
+      if (newOpacity <= 0.45) {
+        setOpacity(newOpacity);
+      } else { 
+        setOpacity(1);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
