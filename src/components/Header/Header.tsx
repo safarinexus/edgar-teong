@@ -20,7 +20,7 @@ const Header = ({ width }: Props) => {
                 dark:bg-opacity-40 grid grid-rows-1 grid-cols-[20%_80%] items-center z-10 backdrop-blur-sm 
             "
             >
-                <HashLink to="/#top" id="logo-link" className="inline-block">
+                <HashLink to="/#top" id="logo-link" className="inline-block w-fit">
                     <img 
                         src={logo} 
                         alt="logo" 
