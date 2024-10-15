@@ -17,7 +17,7 @@ const Landing = ({ height }: Props) => {
         >
             <Headshot />
             
-            <h1 id="hey-there"className="font-light text-[5vw] xs:text-[5vw] sm:text-2xl sm:col-start-1 sm:row-start-1 sm:self-end">
+            <h1 id="hey-there"className="textfont-light text-[5vw] xs:text-[5vw] sm:text-2xl sm:col-start-1 sm:row-start-1 sm:self-end">
                 <span className="animate-wave inline-block">👋</span> 
                 &nbsp;Hey there!
             </h1>
@@ -26,7 +26,7 @@ const Landing = ({ height }: Props) => {
                 <span className="bg-gradient-to-r from-amber-600 via-green-500 to-sky-400 inline-block text-transparent bg-clip-text">Edgar Teong</span>
                 .
             </h3>
-            <p className="tracking-wide sm:leading-5 font-light text-[3.5vw] xs:text-[3vw] sm:text-[2vw] lg:text-xl sm:row-start-2 animate-textFadeIn">
+            <p className="tracking-wide leading-[19px] sm:text-left font-light text-[3.5vw] xs:text-[3vw] sm:text-[2vw] lg:text-xl sm:row-start-2 animate-textFadeIn">
                 I&#39;m a passionate and dedicated <span className="font-bold">full-stack developer</span> who discovered my love for programming <span className="font-bold">on my own</span> while pursuing accountancy at&nbsp;
                 <span className="font-bold">Singapore Management University</span> &#40;SMU&#41;. 
                 <br /><br />
