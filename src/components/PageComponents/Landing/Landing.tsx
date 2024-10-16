@@ -16,9 +16,9 @@ const Landing = () => {
                 &nbsp;Hey there!
             </h1>
 
-            <h3 id="my-name-is" className="font-domine h-max text-[22px] xs:text-3xl leading-none sm:col-start-1 sm:row-start-3 mt-4 sm:mt-0">
+            <h3 id="my-name-is" className="h-max font-light text-[22px] xs:text-3xl leading-none sm:col-start-1 sm:row-start-3 mt-4 sm:mt-0">
                 My name is&nbsp;
-                <span className="relative h-6 xs:h-9 bg-gradient-to-r from-brown via-green-500 to-sky-400 inline-block text-transparent bg-clip-text">
+                <span className="relative h-6 font-extrabold xs:h-9 bg-gradient-to-r from-brown via-green-600 to-sky-500 inline-block text-transparent bg-clip-text">
                     Edgar Teong
                     <svg className="absolute -bottom-2 xs:-bottom-3 w-full scale-0 origin-left transition-transfor ease-out animate-highlight left-0 h-auto -z-10 transform translate-y-1/3 saturate-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 20">
                         <path d="M0,5 C50,7 150,7 200,5" stroke="#F2CD02" fill="none" stroke-width="9" stroke-linecap="round"/>
