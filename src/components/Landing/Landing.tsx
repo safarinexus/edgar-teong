@@ -17,7 +17,7 @@ const Landing = () => {
 
             <p id="my-name-is" className="h-max text-lg font-semibold leading-none sm:col-start-1 sm:row-start-3 sm:col-span-2 mt-4 sm:mt-0">
                 My name is<br/>
-                <span className="inline-block relative h-[60px] text-5xl bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300% animate-gradient">
+                <span className="inline-block relative h-[60px] text-5xl bg-gradient-to-br from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300% animate-gradient">
                     Edgar Teong
                     <svg className="absolute -bottom-2 w-full scale-0 origin-left transition-transfor ease-out animate-highlight left-0 h-auto -z-10 transform translate-y-1/3 saturate-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 20">
                         <path d="M0,5 C50,7 150,7 200,5" stroke="#F2CD02" fill="none" stroke-width="9" stroke-linecap="round"/>
