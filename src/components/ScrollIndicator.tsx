@@ -26,7 +26,7 @@ const ScrollIndicator = ({ height }: Props) => {
   }, []);
 
   return (
-    <div id="scroll-indicator-container" className="fixed w-full flex z-10 flex-col items-center space-y-2 bottom-2 will-change-scroll" style={{ opacity }}>
+    <div id="scroll-indicator-container" className="fixed w-full flex z-10 flex-col items-center space-y-1 bottom-5 will-change-scroll" style={{ opacity }}>
       
         { height < 725 ? ("") : 
           <HashLink to="/#work" id="scroll-text" className="opacity-0 animate-fadeIn bg-beige dark:bg-black p-1 rounded-md">

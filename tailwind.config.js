@@ -18,6 +18,7 @@ export default {
         indicateScroll: '1s indicateScroll 1.5s ease-out infinite',
         fadeIn: '0.5s fadeIn 1s ease-in forwards',
         textFadeIn: 'textFadeIn 1s ease-out forwards', 
+        highlight: '0.5s highlight 1s ease-out forwards'
       },
       keyframes: {
         wave: {
@@ -40,6 +41,10 @@ export default {
           '0%': { transform: 'translateY(-20px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
+        highlight: {
+          '0%': { transform: 'scale(0)' },
+          '100%': { transform: 'scale(1)' },
+        }
       },
       boxShadow: {
         'underline': '0 2px 0 0 black;',
