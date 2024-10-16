@@ -5,7 +5,7 @@ const Landing = () => {
         <div 
             id="landing" 
             className=" w-full h-full flex flex-col font-light text-base
-                sm:grid sm:gap-4 sm:items-center sm:grid-cols-[60%_40%] sm:grid-rows-[10%_auto_20%]
+                sm:grid sm:gap-4 sm:items-center sm:grid-cols-[60%_40%] sm:grid-rows-[10%_auto_20%] md:grid-rows-[5%_auto_30%]
             "
         >
             <Headshot />
