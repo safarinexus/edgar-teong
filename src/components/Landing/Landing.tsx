@@ -10,7 +10,7 @@ const Landing = () => {
         >
             <Headshot />
             
-            <h1 id="hey-there"className="mt-4 sm:mt-0 sm:col-start-1 sm:row-start-1 sm:self-end">
+            <h1 id="hey-there"className="mt-4 sm:mt-0 sm:col-start-1 sm:row-start-1 sm:self-end sm:text-xl">
                 <span className="animate-wave inline-block">👋</span> 
                 &nbsp;Hey there!
             </h1>
