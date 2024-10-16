@@ -6,7 +6,6 @@ import ScrollIndicator from "./components/ScrollIndicator"
 import Landing from "./components/PageComponents/Landing/Landing"
 import Work from "./components/PageComponents/Work/Work"
 import Projects from "./components/PageComponents/Projects/Projects"
-import Contact from "./components/PageComponents/Contact/Contact"
 
 //PLS do an error page thks
 
@@ -60,12 +59,6 @@ const App = () => {
         className="w-full max-w-[1200px] h-svh min-h-[700px] ml-auto mr-auto pr-5 pl-5"
       >
         <Projects />
-      </div>
-      <div
-        id="contact"
-        className="w-full max-w-[1200px] h-svh min-h-[700px] ml-auto mr-auto pr-5 pl-5"
-      >
-        <Contact />
       </div>
     </>
   )
