@@ -75,6 +75,8 @@ const App = () => {
         {/*have a scrolling ticker tape of skills*/}
         {/*have link to page with table of full list of projects at end*/}
       </div>
+      {/*need your footer at the end*/}
+      {/**/}
     </>
   )
 }
