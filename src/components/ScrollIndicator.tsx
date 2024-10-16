@@ -34,7 +34,7 @@ const ScrollIndicator = ({ height }: Props) => {
           </HashLink>
         }
       
-      <HashLink to="/#work" id="scroll-indicator" className="relative flex items-center justify-center w-7 h-7 rounded-full bg-amber-400 dark:bg-amber-700 opacity-100">
+      <HashLink to="/#work" id="scroll-indicator" className="relative flex items-center justify-center w-7 h-7 rounded-full bg-amber-400">
         <FaArrowDown className="animate-indicateScroll"/>
       </HashLink>
     </div>
