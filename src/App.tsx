@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import Header from "./components/Header/Header"
 import ScrollProgressBar from "./components/ScrollProgressBar"
 import ScrollIndicator from "./components/ScrollIndicator"
+import About from './components/PageComponents/About/About'
 import Landing from "./components/PageComponents/Landing/Landing"
 import Work from "./components/PageComponents/Work/Work"
 import Projects from "./components/PageComponents/Projects/Projects"
@@ -47,6 +48,12 @@ const App = () => {
         className="w-full max-w-[1200px] h-svh min-h-[720px] ml-auto mr-auto pt-[75px] sm:pt-[140px] pr-5 pl-5 sm:p-24 pb-8 "
       >
         <Landing />
+      </div>
+      <div 
+        id="about" 
+        className="w-full max-w-[1200px] h-svh min-h-[720px] ml-auto mr-auto pt-[75px] sm:pt-[140px] pr-5 pl-5 sm:p-24 pb-8 "
+      >
+        <About />
       </div>
       <div
         id="work"

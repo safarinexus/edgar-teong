@@ -12,14 +12,14 @@ const DropdownMenu = ({ open, setOpen }: Props) => {
         nameClass = "bg-gradient-to-br from-neutral-400 to-beige\
                 dark:bg-gradient-to-br dark:from-neutral-800 dark:to-black\
                 flex flex-col transition-transform right-0\
-                rounded-tr-3xl rounded-bl-3xl w-44 h-48 pr-7 pl-7 pt-3 pb-3\
-                justify-around scale-100 absolute -bottom-[195px] origin-top"
+                rounded-tr-3xl rounded-bl-3xl w-44 h-64 pr-7 pl-7 pt-4 pb-4\
+                justify-around scale-100 absolute -bottom-[260px] origin-top"
     } else {
         nameClass = "bg-gradient-to-br from-neutral-400 to-beige\
                 dark:bg-gradient-to-br dark:from-neutral-800 dark:to-black\
                 flex flex-col transition-transform right-0\
-                rounded-tr-3xl rounded-bl-3xl w-44 h-48 pr-7 pl-7 pt-3 pb-3\
-                justify-around scale-0 absolute -bottom-[195px] origin-top"
+                rounded-tr-3xl rounded-bl-3xl w-44 h-64 pr-7 pl-7 pt-4 pb-4\
+                justify-around scale-0 absolute -bottom-[260px] origin-top"
     }
 
 
@@ -28,6 +28,7 @@ const DropdownMenu = ({ open, setOpen }: Props) => {
             id="dropdown-menu"
             className={nameClass}
         >
+            <HashLink to="/#about" className="text-xl" onClick={() => setOpen(false)}>About</HashLink>
             <HashLink to="/#work" className="text-xl" onClick={() => setOpen(false)}>Work</HashLink>
             <HashLink to="/#projects" className="text-xl" onClick={() => setOpen(false)}>Projects</HashLink>
             <Link to="/thoughts" className="text-xl"  onClick={() => setOpen(false)}>Thoughts</Link>
