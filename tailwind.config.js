@@ -11,9 +11,6 @@ export default {
         purpley: "rgb(40, 23, 83)",
         brown: "#964B00",
       },
-      fontFamily: {
-        domine: ['Domine', 'serif'],
-      },
       animation: {
         wave: '1s wave 1.5s ease-in-out 1',
         indicateScroll: '1s indicateScroll 1.5s ease-out infinite',
