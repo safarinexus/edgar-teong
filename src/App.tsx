@@ -43,6 +43,7 @@ const App = () => {
       {/**/}
       <ScrollProgressBar />
       <Header width={dimensions.width}/>
+      {/*have sticky section headers on mobile*/}
       <ScrollIndicator height={dimensions.height}/> 
       <div 
         id="landing" 
@@ -64,6 +65,7 @@ const App = () => {
       >
         <Work />
         {/*just have multiple cards that appear on intersectionobserver*/}
+        {/*have link to resume at end*/}
       </div>
       <div
         id="projects"
@@ -71,6 +73,7 @@ const App = () => {
       >
         <Projects />
         {/*have a scrolling ticker tape of skills*/}
+        {/*have link to page with table of full list of projects at end*/}
       </div>
     </>
   )
