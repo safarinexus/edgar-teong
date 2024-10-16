@@ -11,6 +11,27 @@ export default {
         purpley: "rgb(40, 23, 83)",
         brown: "#964B00",
       },
+      backgroundSize: {
+        '300%': '300%',
+      },
+      boxShadow: {
+        'underline': '0 2px 0 0 black;',
+        'underline-dark': '0 2px 0 0 white;',
+      },
+      fontFamily: {
+        'articulat': ['"Articulat CF"', 'sans-serif'],
+      },
+      fontWeight: {
+        'thin': 100,
+        'extralight': 200,
+        'light': 300,
+        'normal': 400,
+        'medium': 500,
+        'semibold': 600,
+        'bold': 700,
+        'extrabold': 800,
+        'heavy': 900,
+      },
       animation: {
         wave: '1s wave 1.5s ease-in-out 1',
         indicateScroll: '1s indicateScroll 1.5s ease-out infinite',
@@ -50,13 +71,6 @@ export default {
           '100%': { backgroundPosition: '0% 50%' },
         },
       },
-      backgroundSize: {
-        '300%': '300%',
-      },
-      boxShadow: {
-        'underline': '0 2px 0 0 black;',
-        'underline-dark': '0 2px 0 0 white;',
-      }
     },
     screens: {
       'xs': '450px',

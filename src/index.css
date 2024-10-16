@@ -2,10 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF/ArticulatCF-Regular.woff2') format('woff2'),
+        url('/fonts/ArticulatCF/ArticulatCF-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF Normal';
+    src: url('/fonts/ArticulatCF/ArticulatCF-Normal.woff2') format('woff2'),
+        url('/fonts/ArticulatCF/ArticulatCF-Normal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF/ArticulatCF-Medium.woff2') format('woff2'),
+        url('/fonts/ArticulatCF/ArticulatCF-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF/ArticulatCF-Thin.woff2') format('woff2'),
+        url('/fonts/ArticulatCF/ArticulatCF-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF Demi';
+    src: url('/fonts/ArticulatCF/ArticulatCF-DemiBold.woff2') format('woff2'),
+        url('/fonts/ArticulatCF/ArticulatCF-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF Extra';
+    src: url('/fonts/ArticulatCF/ArticulatCF-ExtraBold.woff2') format('woff2'),
+        url('/fonts/ArticulatCF/ArticulatCF-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF/ArticulatCF-Heavy.woff2') format('woff2'),
+        url('/fonts/ArticulatCF/ArticulatCF-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF/ArticulatCF-Light.woff2') format('woff2'),
+        url('/fonts/ArticulatCF/ArticulatCF-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF Extra';
+    src: url('/fonts/ArticulatCF/ArticulatCF-ExtraLight.woff2') format('woff2'),
+        url('/fonts/ArticulatCF/ArticulatCF-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF/ArticulatCF-Bold.woff2') format('woff2'),
+        url('/fonts/ArticulatCF/ArticulatCF-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 @layer base {
     html {
-        @apply scroll-smooth font-sans
+        @apply scroll-smooth font-articulat
     }
 
     body {
