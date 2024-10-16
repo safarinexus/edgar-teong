@@ -11,7 +11,7 @@ interface Props {
     width: number
 }
 
-const sections = ['#landing', '#work', '#projects', '#contact'];
+const sections = ['#landing', '#work', '#projects'];
 
 const Header = ({ width }: Props) => {
     const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -62,7 +62,7 @@ const Header = ({ width }: Props) => {
                         className="w-16 md:w-32 lg:w-36 dark:invert select-none"
                     />
                 </NavHashLink>
-                <div id="nav-cluster" className="h-full sm:w-[350px] justify-self-end flex items-center justify-between z-10">
+                <div id="nav-cluster" className="h-full sm:w-[280px] justify-self-end flex items-center justify-between z-10">
                     { width <= 640 ? 
                         <MobileDropdown /> :
                         <>
@@ -71,9 +71,6 @@ const Header = ({ width }: Props) => {
                             </div>
                             <div className={`w-fit h-fit transition-shadow duration-75 ${activeSection === '#projects' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
                                 <NavHashLink to="/#projects" end className="md:text-lg">Projects</NavHashLink>
-                            </div>
-                            <div className={`w-fit h-fit transition-shadow duration-75 ${activeSection === '#contact' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
-                                <NavHashLink to='/#contact' end className="md:text-lg">Contact</NavHashLink>
                             </div>
                             <Link to='/thoughts' className="md:text-lg">Thoughts</Link>
                         </>
