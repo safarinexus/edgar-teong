@@ -51,7 +51,7 @@ const Header = ({ width }: Props) => {
             id="header" 
             className="
                 w-full max-w-[1200px] h-fit sm:p-4 sm:pr-6 sm:pl-6 rounded-full bg-transparent sm:bg-neutral-800 sm:dark:bg-neutral-600 sm:bg-opacity-30 
-                sm:dark:bg-opacity-40 grid grid-rows-1 grid-cols-2 sm:grid-cols-[20%_80%] items-center z-10 relative
+                sm:dark:bg-opacity-40 grid grid-rows-1 grid-cols-2 items-center z-10 relative
             "
             >
                 <NavHashLink to="/#top" end id="logo-link" className="inline-block w-fit">
@@ -59,14 +59,14 @@ const Header = ({ width }: Props) => {
                         src={logo} 
                         alt="logo" 
                         draggable="false" 
-                        className="w-16 md:w-32 lg:w-36 dark:invert select-none"
+                        className="w-16 dark:invert select-none"
                     />
                 </NavHashLink>
                 <div id="nav-cluster" className="h-full sm:w-[350px] justify-self-end flex items-center justify-between z-10">
                     { width <= 640 ? 
                         <MobileDropdown /> :
                         <>
-                            <div className={`w-fit h-fit transition-shadow duration-75 ${activeSection === '#about' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
+                            <div className={`w-fit h-fit transition-shadow duration -75 ${activeSection === '#about' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
                                 <NavHashLink to="/#about" end className="md:text-lg">About</NavHashLink>
                             </div>
                             <div className={`w-fit h-fit transition-shadow duration-75 ${activeSection === '#work' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
