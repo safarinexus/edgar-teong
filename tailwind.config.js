@@ -18,7 +18,7 @@ export default {
         indicateScroll: '1s indicateScroll 1.5s ease-out infinite',
         fadeIn: '0.5s fadeIn 1s ease-in forwards',
         textFadeIn: 'textFadeIn 1s ease-out forwards', 
-        highlight: '0.5s highlight 1s ease-out forwards'
+        highlight: '0.2s highlight 1s ease-out forwards'
       },
       keyframes: {
         wave: {
