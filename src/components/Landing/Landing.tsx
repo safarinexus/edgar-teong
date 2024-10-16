@@ -8,7 +8,6 @@ const Landing = () => {
                 sm:grid sm:gap-4 sm:items-center sm:grid-cols-[60%_40%] sm:grid-rows-[10%_auto_20%]
             "
         >
-            {/*consider adding a hover effect to your headshot and text that pops out from behind that for the homepage contact link*/}
             <Headshot />
             
             <h1 id="hey-there"className="font-light text-[5vw] xs:text-2xl sm:text-2xl mt-4 sm:mt-0 sm:col-start-1 sm:row-start-1 sm:self-end">
