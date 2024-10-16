@@ -46,12 +46,12 @@ const Header = ({ width }: Props) => {
     }, []);
 
     return (
-        <div id="header-container" className="fixed w-full flex flex-col items-center top-5 pl-5 pr-5 h-min z-10">
+        <div id="header-container" className="fixed w-full flex flex-col items-center backdrop-blur-sm pt-5 pb-3 sm:pt-0 sm:pb-0 sm:top-5 pl-5 pr-5 h-min z-10">
             <div 
             id="header" 
             className="
-                w-full max-w-[1200px] h-fit p-3 pl-4 pr-4 sm:p-4 sm:pr-6 sm:pl-6 rounded-full bg-neutral-800 dark:bg-neutral-600 bg-opacity-30 
-                dark:bg-opacity-40 grid grid-rows-1 grid-cols-2 sm:grid-cols-[20%_80%] items-center z-10 relative backdrop-blur-sm
+                w-full max-w-[1200px] h-fit sm:p-4 sm:pr-6 sm:pl-6 rounded-full bg-transparent sm:bg-neutral-800 sm:dark:bg-neutral-600 sm:bg-opacity-30 
+                sm:dark:bg-opacity-40 grid grid-rows-1 grid-cols-2 sm:grid-cols-[20%_80%] items-center z-10 relative
             "
             >
                 <NavHashLink to="/#top" end id="logo-link" className="inline-block w-fit">
