@@ -45,7 +45,7 @@ const App = () => {
       <ScrollIndicator height={dimensions.height}/> 
       <div 
         id="landing" 
-        className="w-full max-w-[1200px] h-svh min-h-[720px] ml-auto mr-auto pt-[65px] sm:pt-[140px] pr-5 pl-5 sm:p-24 pb-8 "
+        className="w-full max-w-[1200px] h-svh min-h-[720px] ml-auto mr-auto pt-[75px] sm:pt-[140px] pr-5 pl-5 sm:p-24 pb-8 "
       >
         <Landing />
       </div>
