@@ -10,23 +10,23 @@ const Landing = () => {
         >
             <Headshot />
             
-            <h1 id="hey-there"className="font-light text-[5vw] xs:text-2xl sm:text-2xl mt-4 sm:mt-0 sm:col-start-1 sm:row-start-1 sm:self-end">
+            <h1 id="hey-there"className="font-light text-base mt-4 sm:mt-0 sm:col-start-1 sm:row-start-1 sm:self-end">
                 <span className="animate-wave inline-block">👋</span> 
                 &nbsp;Hey there!
             </h1>
 
-            <h3 id="my-name-is" className="h-max font-light text-[22px] xs:text-3xl leading-none sm:col-start-1 sm:row-start-3 mt-4 sm:mt-0">
+            <h3 id="my-name-is" className="h-max font-light text-[22px] leading-none sm:col-start-1 sm:row-start-3 sm:col-span-2 mt-4 sm:mt-0">
                 My name is&nbsp;
-                <span className="relative h-6 font-extrabold xs:h-9 bg-gradient-to-r from-brown via-green-600 to-sky-500 inline-block text-transparent bg-clip-text">
+                <span className="relative h-[60px] text-5xl bg-gradient-to-r from-brown via-green-600 to-sky-500 inline-block text-transparent bg-clip-text">
                     Edgar Teong
-                    <svg className="absolute -bottom-2 xs:-bottom-3 w-full scale-0 origin-left transition-transfor ease-out animate-highlight left-0 h-auto -z-10 transform translate-y-1/3 saturate-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 20">
+                    <svg className="absolute -bottom-2 w-full scale-0 origin-left transition-transfor ease-out animate-highlight left-0 h-auto -z-10 transform translate-y-1/3 saturate-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 20">
                         <path d="M0,5 C50,7 150,7 200,5" stroke="#F2CD02" fill="none" stroke-width="9" stroke-linecap="round"/>
                     </svg>
                 </span>
                 .
             </h3>
 
-            <p className="tracking-wide leading-[19px] sm:text-left font-light text-[4vw] xs:text-base sm:text-[2vw] md:text-base lg:text-xl sm:row-start-2 animate-textFadeIn mt-8 sm:mt-0">
+            <p className="tracking-wide leading-[19px] sm:text-left font-light text-sm xs:text-base md:text-base lg:text-xl sm:row-start-2 animate-textFadeIn mt-6 sm:mt-0">
                 I&#39;m a passionate & dedicated <span className="font-bold">Full Stack Developer</span> who discovered my love for programming <span className="font-bold">on my own</span> while pursuing accountancy at&nbsp;
                 <span className="font-bold">Singapore Management University</span> &#40;SMU&#41;. 
                 <br /><br />
