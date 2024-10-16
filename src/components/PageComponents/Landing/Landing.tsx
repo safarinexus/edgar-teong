@@ -27,7 +27,7 @@ const Landing = () => {
                 .
             </h3>
 
-            <p className="tracking-wide leading-[19px] sm:text-left font-light text-[4vw] xs:text-base sm:text-[2vw] md:text-base lg:text-xl sm:row-start-2 animate-textFadeIn mt-4 sm:mt-0">
+            <p className="tracking-wide leading-[19px] sm:text-left font-light text-[4vw] xs:text-base sm:text-[2vw] md:text-base lg:text-xl sm:row-start-2 animate-textFadeIn mt-8 sm:mt-0">
                 I&#39;m a passionate & dedicated <span className="font-bold">Full Stack Developer</span> who discovered my love for programming <span className="font-bold">on my own</span> while pursuing accountancy at&nbsp;
                 <span className="font-bold">Singapore Management University</span> &#40;SMU&#41;. 
                 <br /><br />
