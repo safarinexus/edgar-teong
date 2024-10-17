@@ -47,7 +47,7 @@ const App = () => {
       <ScrollIndicator height={dimensions.height}/> 
       <div 
         id="landing" 
-        className="w-full max-w-[1200px] h-svh min-h-[720px] ml-auto mr-auto pt-[45px] sm:pt-[140px] pr-5 pl-5 sm:p-24 pb-8 "
+        className="w-full max-w-[1200px] h-svh min-h-[720px] ml-auto mr-auto pt-[45px] sm:pt-24 md:pt-[140px] pr-5 pl-5 sm:pr-20 sm:pl-20 pb-8 "
       >
         <Landing />
         {/*Need to find a way to include a contact cluster*/}
@@ -57,7 +57,8 @@ const App = () => {
         className="w-full max-w-[1200px] h-svh min-h-[720px] ml-auto mr-auto pt-[75px] sm:pt-[140px] pr-5 pl-5 sm:p-24 pb-8 "
       >
         <About />
-        {/*parallax scrolling of images that scrolls in from the top while text scrolls in from below*/}
+        {/*Intersection observer for elements on page*/}
+        {/*Left side photos (enter from top, parallax scroll when scrolling down, Right side text (enter from bottom)*/}
       </div>
       <div
         id="work"
@@ -65,6 +66,7 @@ const App = () => {
       >
         <Work />
         {/*just have multiple cards that appear on intersectionobserver*/}
+        {/*setup cards with grid that have different layouts on mobile and desktop*/}
         {/*have link to resume at end*/}
       </div>
       <div
