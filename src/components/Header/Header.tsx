@@ -50,7 +50,7 @@ const Header = ({ width }: Props) => {
             <div 
             id="header" 
             className="
-                w-full max-w-[1200px] h-fit sm:p-4 sm:pr-6 sm:pl-6 rounded-full bg-transparent sm:bg-neutral-800 sm:dark:bg-neutral-600 sm:bg-opacity-30 
+                w-full max-w-[1440px] h-fit sm:p-4 sm:pr-6 sm:pl-6 rounded-full bg-transparent sm:bg-neutral-800 sm:dark:bg-neutral-600 sm:bg-opacity-30 
                 sm:dark:bg-opacity-40 grid grid-rows-1 grid-cols-2 items-center z-10 relative
             "
             >
