@@ -5,12 +5,12 @@ import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
-import image1 from "/image1.webp"
-import image2 from "/image2.webp"
-import image3 from "/image3.webp"
-import image4 from "/image4.webp"
-import image5 from "/image5.webp"
-import image6 from "/image6.webp"
+import image1 from "../../assets/image1.webp"
+import image2 from "../../assets/image2.webp"
+import image3 from "../../assets/image3.webp"
+import image4 from "../../assets/image4.webp"
+import image5 from "../../assets/image5.webp"
+import image6 from "../../assets/image6.webp"
 
 const About = () => {
     useGSAP(() => {
