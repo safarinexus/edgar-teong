@@ -76,7 +76,7 @@ const About = () => {
                         id="image1" 
                         loading="lazy" 
                         alt="image 1"
-                        className="select-none rounded-lg"
+                        className="select-none rounded-xl brightness-90"
                         draggable="false"
                     />
                 </div>
@@ -86,7 +86,7 @@ const About = () => {
                         id="image2" 
                         loading="lazy" 
                         alt="image 2"
-                        className="select-none rounded-lg "
+                        className="select-none rounded-xl brightness-90"
                         draggable="false"
                     />
                 </div>
@@ -97,7 +97,7 @@ const About = () => {
                         loading="lazy" 
                         alt="image 3"
                         draggable="false"
-                        className="select-none rounded-lg"
+                        className="select-none rounded-xl brightness-90"
                     />
                 </div>
                 <div id="image4-container" className="relative z-20 hidden sm:block w-[110%] rotate-12 left-[5%] bottom-[32%]">
@@ -106,7 +106,7 @@ const About = () => {
                         id="image4" 
                         loading="lazy" 
                         alt="image 4"
-                        className="select-none rounded-lg"
+                        className="select-none rounded-xl brightness-90"
                         draggable="false"
                     />
                 </div>
@@ -116,7 +116,7 @@ const About = () => {
                         id="image5" 
                         loading="lazy" 
                         alt="image 1"
-                        className="select-none rounded-lg"
+                        className="select-none rounded-xl brightness-90"
                         draggable="false"
                     />
                 </div>
