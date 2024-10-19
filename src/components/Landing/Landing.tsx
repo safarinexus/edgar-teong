@@ -1,6 +1,37 @@
+import { gsap } from "gsap"; 
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from '@gsap/react';
+
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
+
 import Headshot from "./Headshot"
 
 const Landing = () => {
+    useGSAP (() => {
+        gsap.from("#landing-text", {
+            duration: 1, 
+            y: -20, 
+            opacity: 0,
+            ease: "none"
+        })
+
+        gsap.to("#myname", {
+            duration: 5,
+            backgroundPositionX: "100%",
+            ease: "sine.inOut",
+            repeat: -1,  
+            yoyo: true,  
+        });
+
+        gsap.from("#highlight-container", {
+            scale: 0, 
+            duration: 0.3, 
+            delay: 1,
+        });
+    });
+
+
     return (
         <div 
             id="landing" 
@@ -11,7 +42,7 @@ const Landing = () => {
             <Headshot />
             
             <p id="hey-there"className="mt-4 sm:mt-0 sm:col-start-1 sm:row-start-1 sm:self-end sm:text-xl">
-                <span className="animate-wave inline-block">👋</span> 
+                <span id="hand" className="inline-block animate-wave">👋</span> 
                 &nbsp;Hey there!
             </p>
 
@@ -25,7 +56,7 @@ const Landing = () => {
                 </span>
             </p>
 
-            <p className="tracking-wide leading-[19px] sm:text-left font-light text-sm xs:text-base sm:text-sm md:text-base lg:text-xl xl:text-[1.6rem] sm:row-start-2 animate-textFadeIn mt-6 sm:mt-0">
+            <p id="landing-text" className="tracking-wide leading-[19px] sm:text-left font-light text-sm xs:text-base sm:text-sm md:text-base lg:text-xl xl:text-[1.6rem] sm:row-start-2 mt-6 sm:mt-0">
                 I&#39;m a passionate & dedicated <span className="font-bold">Full Stack Developer</span> who discovered my love for programming <span className="font-bold">on my own</span> while pursuing accountancy at&nbsp;
                 <span className="font-bold">Singapore Management University</span> &#40;SMU&#41;. 
                 <br /><br />
