@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { gsap } from "gsap"; 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
@@ -13,6 +14,22 @@ interface Props {
 }
 
 const ScrollIndicator = ({ height }: Props) => {
+  const [opacity, setOpacity] = useState<number>(1);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const maxScroll = 300;
+      const newOpacity = Math.max(1 - scrollTop / maxScroll, 0);
+      setOpacity(newOpacity);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useGSAP (() => {
     gsap.from('#scroll-indicator-container', { 
@@ -22,17 +39,6 @@ const ScrollIndicator = ({ height }: Props) => {
         y: "-20%", 
         opacity: 0,
         onComplete: () => {
-          gsap.to("#scroll-indicator-container", {
-              y: -150,
-              opacity: 0, 
-              scrollTrigger: {
-                trigger: "#landing",
-                start: "bottom bottom",
-                end: "+=50%", 
-                scrub: true, 
-              }
-          })
-
           gsap.to("#scroll-arrow", {
             y: 3, 
             duration: 0.25, 
@@ -40,7 +46,7 @@ const ScrollIndicator = ({ height }: Props) => {
             onComplete: () => {
               gsap.fromTo('#scroll-arrow', {
                 y: 3, 
-                duration: 0.5,
+                duration: 0.25,
               }, {
                 y: -3, 
                 duration: 0.5, 
@@ -55,7 +61,7 @@ const ScrollIndicator = ({ height }: Props) => {
   });
 
   return (
-    <div id="scroll-indicator-container" className="fixed w-full flex z-10 flex-col items-center space-y-1 bottom-5 will-change-scroll">
+    <div id="scroll-indicator-container" className="fixed w-full flex z-10 flex-col items-center space-y-1 bottom-5 will-change-scroll" style={{ opacity }}>
       
         { height < 725 ? ("") : 
           <HashLink to="/#about" id="scroll-text" className="bg-beige dark:bg-black p-1 rounded-md">
