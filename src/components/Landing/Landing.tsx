@@ -10,7 +10,7 @@ import Headshot from "./Headshot"
 const Landing = () => {
     useGSAP (() => {
         gsap.from("#landing-text", {
-            duration: 1, 
+            duration: 0.6, 
             y: -20, 
             opacity: 0,
             ease: "none"
