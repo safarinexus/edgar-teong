@@ -45,7 +45,7 @@ const App = () => {
 
   useGSAP(() => {
 
-  });
+  }); 
 
   return (
     <>
@@ -56,7 +56,7 @@ const App = () => {
       <ScrollIndicator height={dimensions.height}/> 
       <div 
         id="landing" 
-        className="w-full max-w-[1440px] h-svh min-h-[720px] ml-auto mr-auto pt-[45px] sm:pt-24 md:pt-[140px] px-5 sm:px-20 pb-8"
+        className="w-full max-w-[1440px] h-svh min-h-[720px] mx-auto pt-[45px] sm:pt-24 md:pt-[140px] px-5 sm:px-20"
       >
         <Landing />
         {/*Need to find a way to include a contact cluster*/}
@@ -64,11 +64,9 @@ const App = () => {
       </div>
       <div 
         id="about" 
-        className="w-full max-w-[1440px] h-svh min-h-[720px] ml-auto mr-auto pt-[45px] sm:pt-24 md:pt-[140px] px-5 sm:px-20 pb-8"
+        className="w-full max-w-[1440px] h-fit min-h-[1000px] pt-[10svh] px-5 sm:px-20 mx-auto"
       >
         <About />
-        {/*Intersection observer for elements on page*/}
-        {/*Left side photos (enter from top, parallax scroll when scrolling down, Right side text (enter from bottom)*/}
       </div>
       <div
         id="work"
