@@ -1,4 +1,10 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
+import { gsap } from "gsap"; 
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from '@gsap/react';
+
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 
 import Header from "./components/Header/Header"
 import ScrollProgressBar from "./components/ScrollProgressBar"
@@ -7,7 +13,6 @@ import About from './components/About/About'
 import Landing from "./components/Landing/Landing"
 import Work from "./components/Work/Work"
 import Projects from "./components/Projects/Projects"
-
 //PLS do an error page thks
 
 interface Dimension {
@@ -38,6 +43,10 @@ const App = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  useGSAP(() => {
+
+  });
+
   return (
     <>
       {/**/}
@@ -51,6 +60,7 @@ const App = () => {
       >
         <Landing />
         {/*Need to find a way to include a contact cluster*/}
+        {/*linkedin, github, goodreads*/}
       </div>
       <div 
         id="about" 
