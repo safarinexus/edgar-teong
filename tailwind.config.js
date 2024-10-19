@@ -17,7 +17,7 @@ export default {
         fadeIn: '0.5s fadeIn 1s ease-in forwards',
         textFadeIn: 'textFadeIn 1s ease-out forwards', 
         highlight: '0.2s highlight 1s ease-out forwards',
-        gradient: 'gradient 6s ease infinite alternate',
+        gradient: 'gradient 5s ease infinite alternate',
       },
       keyframes: {
         wave: {

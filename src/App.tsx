@@ -47,14 +47,14 @@ const App = () => {
       <ScrollIndicator height={dimensions.height}/> 
       <div 
         id="landing" 
-        className="w-full max-w-[1440px] h-svh min-h-[720px] ml-auto mr-auto pt-[45px] sm:pt-24 md:pt-[140px] pr-5 pl-5 sm:pr-20 sm:pl-20 pb-8 "
+        className="w-full max-w-[1440px] h-svh min-h-[720px] ml-auto mr-auto pt-[45px] sm:pt-24 md:pt-[140px] px-5 sm:px-20 pb-8"
       >
         <Landing />
         {/*Need to find a way to include a contact cluster*/}
       </div>
       <div 
         id="about" 
-        className="w-full max-w-[1440px] h-svh min-h-[720px] ml-auto mr-auto pt-[75px] sm:pt-[140px] pr-5 pl-5 sm:p-24 pb-8 "
+        className="w-full max-w-[1440px] h-svh min-h-[720px] ml-auto mr-auto pt-[45px] sm:pt-24 md:pt-[140px] px-5 sm:px-20 pb-8"
       >
         <About />
         {/*Intersection observer for elements on page*/}
@@ -62,7 +62,7 @@ const App = () => {
       </div>
       <div
         id="work"
-        className="w-full max-w-[1440px] h-svh min-h-[700px] ml-auto mr-auto pr-5 pl-5"
+        className="w-full max-w-[1440px] h-svh min-h-[720px] ml-auto mr-auto pt-[45px] sm:pt-24 md:pt-[140px] px-5 sm:px-20 pb-8"
       >
         <Work />
         {/*just have multiple cards that appear on intersectionobserver*/}
@@ -71,7 +71,7 @@ const App = () => {
       </div>
       <div
         id="projects"
-        className="w-full max-w-[1440px] h-svh min-h-[700px] ml-auto mr-auto pr-5 pl-5"
+        className="w-full max-w-[1440px] h-svh min-h-[720px] ml-auto mr-auto pt-[45px] sm:pt-24 md:pt-[140px] px-5 sm:px-20 pb-8"
       >
         <Projects />
         {/*have a scrolling ticker tape of skills*/}
