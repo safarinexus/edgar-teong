@@ -64,7 +64,7 @@ const App = () => {
       </div>
       <div 
         id="about" 
-        className="w-full max-w-[1440px] h-fit min-h-[1000px] pt-[10svh] px-5 sm:px-24 mx-auto"
+        className="w-full max-w-[1440px] h-fit min-h-[1000px] pt-[10svh] mx-auto"
       >
         <About />
       </div>
