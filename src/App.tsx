@@ -59,8 +59,6 @@ const App = () => {
         className="w-full max-w-[1440px] h-screen min-h-[720px] mx-auto pt-[45px] sm:pt-24 md:pt-[140px] px-5 sm:px-24"
       >
         <Landing />
-        {/*Need to find a way to include a contact cluster*/}
-        {/*linkedin, github, goodreads*/}
       </div>
       <div 
         id="about" 
