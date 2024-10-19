@@ -13,11 +13,6 @@ export default {
       },
       animation: {
         wave: '1s wave 1.5s ease-in-out 1',
-        indicateScroll: '1s indicateScroll 1.5s ease-out infinite',
-        fadeIn: '0.5s fadeIn 1s ease-in forwards',
-        textFadeIn: 'textFadeIn 1s ease-out forwards', 
-        highlight: '0.2s highlight 1s ease-out forwards',
-        gradient: 'gradient 5s ease infinite alternate',
       },
       keyframes: {
         wave: {
@@ -26,28 +21,6 @@ export default {
           '40%': { transform: 'rotate(25deg)' },   
           '60%': { transform: 'rotate(-15deg) translateX(-20px)' },    
           '80%': { transform: 'rotate(15deg)' }, 
-        },
-        indicateScroll: {
-          '0%': { transform: 'translateY(0)' },
-          '25%': { transform: 'translateY(4px)' },
-          '75%': { transform: 'translateY(-4px)'},
-        },
-        fadeIn: {
-          '0%': { opacity: '0' }, 
-          '100%': { opacity: '1' },
-        },
-        textFadeIn: {
-          '0%': { transform: 'translateY(-20px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
-        },
-        highlight: {
-          '0%': { transform: 'scale(0)' },
-          '100%': { transform: 'scale(1)' },
-        }, 
-        gradient: {
-          '0%': { backgroundPosition: '0% 50%' },
-          '50%': { backgroundPosition: '100% 50%' },
-          '100%': { backgroundPosition: '0% 50%' },
         },
       },
       backgroundSize: {
