@@ -66,7 +66,7 @@ const Header = ({ width }: Props) => {
                     { width <= 640 ? 
                         <MobileDropdown /> :
                         <>
-                            <div className={`w-fit h-fit transition-shadow duration -75 ${activeSection === '#about' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
+                            <div className={`w-fit h-fit transition-shadow duration-75 ${activeSection === '#about' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
                                 <NavHashLink to="/#about" end className="md:text-lg">About</NavHashLink>
                             </div>
                             <div className={`w-fit h-fit transition-shadow duration-75 ${activeSection === '#work' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
