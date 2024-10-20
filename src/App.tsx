@@ -13,14 +13,18 @@ import About from './components/About/About'
 import Landing from "./components/Landing/Landing"
 import Work from "./components/Work/Work"
 import Projects from "./components/Projects/Projects"
-//PLS do an error page thks
+import Error from "./components/Error"
 
 interface Dimension {
   height: number; 
   width: number;
 }
 
-const App = () => {
+interface Props {
+  error: boolean,
+}
+
+const App = ({ error }: Props) => {
   const [dimensions, setDimensions] = useState<Dimension>({
     height: window.innerHeight, 
     width: window.innerWidth, 
@@ -50,41 +54,48 @@ const App = () => {
   return (
     <>
       {/**/}
-      <ScrollProgressBar />
       <Header width={dimensions.width}/>
       {/*have sticky section headers on mobile*/}
-      <ScrollIndicator height={dimensions.height}/> 
-      <div 
-        id="landing" 
-        className="w-full max-w-[1440px] h-screen min-h-[720px] mx-auto pt-[45px] sm:pt-24 md:pt-[140px] px-5 sm:px-24"
-      >
-        <Landing />
-      </div>
-      <div 
-        id="about" 
-        className="w-full max-w-[1440px] h-fit min-h-[1000px] mx-auto"
-      >
-        <About />
-      </div>
-      <div
-        id="work"
-        className="w-full max-w-[1440px] h-svh min-h-[720px] ml-auto mr-auto pt-[45px] sm:pt-24 md:pt-[140px] px-5 sm:px-20 pb-8"
-      >
-        <Work />
-        {/*just have multiple cards that appear on intersectionobserver*/}
-        {/*setup cards with grid that have different layouts on mobile and desktop*/}
-        {/*have link to resume at end*/}
-      </div>
-      <div
-        id="projects"
-        className="w-full max-w-[1440px] h-svh min-h-[720px] ml-auto mr-auto pt-[45px] sm:pt-24 md:pt-[140px] px-5 sm:px-20 pb-8"
-      >
-        <Projects />
-        {/*have a scrolling ticker tape of skills*/}
-        {/*have link to page with table of full list of projects at end*/}
-      </div>
-      {/*need your footer at the end*/}
-      {/**/}
+      { error ? 
+        <Error /> : 
+        (
+          <>
+            <ScrollProgressBar />
+            <ScrollIndicator height={dimensions.height}/> 
+            <div 
+              id="landing" 
+              className="w-full max-w-[1440px] h-screen min-h-[720px] mx-auto pt-[45px] sm:pt-24 md:pt-[140px] px-5 sm:px-24"
+            >
+              <Landing />
+            </div>
+            <div 
+              id="about" 
+              className="w-full max-w-[1440px] h-fit min-h-[1000px] mx-auto"
+            >
+              <About />
+            </div>
+            <div
+              id="work"
+              className="w-full max-w-[1440px] h-svh min-h-[720px] ml-auto mr-auto pt-[45px] sm:pt-24 md:pt-[140px] px-5 sm:px-20 pb-8"
+            >
+              <Work />
+              {/*just have multiple cards that appear on intersectionobserver*/}
+              {/*setup cards with grid that have different layouts on mobile and desktop*/}
+              {/*have link to resume at end*/}
+            </div>
+            <div
+              id="projects"
+              className="w-full max-w-[1440px] h-svh min-h-[720px] ml-auto mr-auto pt-[45px] sm:pt-24 md:pt-[140px] px-5 sm:px-20 pb-8"
+            >
+              <Projects />
+              {/*have a scrolling ticker tape of skills*/}
+              {/*have link to page with table of full list of projects at end*/}
+            </div>
+            {/*need your footer at the end*/}
+            {/**/}
+          </>
+        )
+      }
     </>
   )
 }
