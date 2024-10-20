@@ -21,7 +21,9 @@ const WorkProjects = () => {
 
     return (
         <>
-            <div id="work" className="w-full min-h-svh flex pt-20">
+        
+            <div id="work" className="w-full h-[1000px] flex pt-20">
+                {/*
                 <h1 id="work-text" className="font-bold text-4xl w-[50svw] h-[250px] pl-24">My Work<br />Experience</h1>
                 <div className="w-[50svw] max-w-[770px] pr-24">
                     <div className="h-[250px] w-full grid gap-1 grid-cols-[30%_70%] grid-rows-[10%_70%_20%] border-white border-2">
@@ -31,9 +33,11 @@ const WorkProjects = () => {
                         <div></div>
                     </div>
                 </div>
+                */}
             </div>
-            <div id="projects" className="h-[1000px] w-full border-white border-2">
+            <div id="projects" className="h-[1000px] w-full">
             </div>
+        
         </>
     )
 }
