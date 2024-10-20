@@ -11,8 +11,7 @@ import ScrollProgressBar from "./components/ScrollProgressBar"
 import ScrollIndicator from "./components/ScrollIndicator"
 import About from './components/About/About'
 import Landing from "./components/Landing/Landing"
-import Work from "./components/Work/Work"
-import Projects from "./components/Projects/Projects"
+import WorkProjects from "./components/Work&Projects/Work&Projects"
 import Error from "./components/Error"
 
 interface Dimension {
@@ -75,22 +74,16 @@ const App = ({ error }: Props) => {
               <About />
             </div>
             <div
-              id="work"
-              className="w-full max-w-[1440px] h-svh min-h-[720px] ml-auto mr-auto pt-[45px] sm:pt-24 md:pt-[140px] px-5 sm:px-20 pb-8"
+              id="workprojects"
+              className="w-full max-w-[1440px] h-svh min-h-[480px] mx-auto "
             >
-              <Work />
+              <WorkProjects />
               {/*just have multiple cards that appear on intersectionobserver*/}
               {/*setup cards with grid that have different layouts on mobile and desktop*/}
               {/*have link to resume at end*/}
             </div>
-            <div
-              id="projects"
-              className="w-full max-w-[1440px] h-svh min-h-[720px] ml-auto mr-auto pt-[45px] sm:pt-24 md:pt-[140px] px-5 sm:px-20 pb-8"
-            >
-              <Projects />
-              {/*have a scrolling ticker tape of skills*/}
-              {/*have link to page with table of full list of projects at end*/}
-            </div>
+            {/*have a scrolling ticker tape of skills*/}
+            {/*have link to page with table of full list of projects at end*/}
             {/*need your footer at the end*/}
             {/**/}
           </>
