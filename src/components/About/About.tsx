@@ -24,7 +24,7 @@ const About = () => {
                     start: "top 45%",
                     end: "+=200px",
                     toggleActions: "play none none reverse",
-                    scrub: true,
+                    scrub: 1,
                 },
                 opacity: 0,
                 rotate: -45,
@@ -40,7 +40,7 @@ const About = () => {
                     start: "top 45%",
                     end: "+=200px",
                     toggleActions: "play none none reverse",
-                    scrub: true,
+                    scrub: 1,
                 },
                 opacity: 0,
                 rotate: 45,
@@ -55,7 +55,7 @@ const About = () => {
                     start: "top 45%",
                     end: "+=200px",
                     toggleActions: "play none none reverse",
-                    scrub: true,
+                    scrub: 1,
                 },
                 opacity: 0,
                 rotate: 45,
@@ -70,7 +70,7 @@ const About = () => {
                     start: "top 45%",
                     end: "+=200px",
                     toggleActions: "play none none reverse",
-                    scrub: true,
+                    scrub: 1,
                 },
                 opacity: 0,
                 rotate: -45,
@@ -85,13 +85,13 @@ const About = () => {
                     start: "top 45%",
                     end: "+=200px",
                     toggleActions: "play none none reverse",
-                    scrub: true,
+                    scrub: 1,
                 },
                 opacity: 0,
                 rotate: 45,
                 duration: 0.5,
-                x: "-100%",
-                y: "100%",
+                x: "100%",
+                y: "-100%",
             });
 
             gsap.from("#image6-container", {
@@ -100,7 +100,7 @@ const About = () => {
                     start: "top 45%",
                     end: "+=200px",
                     toggleActions: "play none none reverse",
-                    scrub: true,
+                    scrub: 1,
                 },
                 opacity: 0,
                 rotate: -45,
@@ -132,7 +132,7 @@ const About = () => {
                         draggable="false"
                     />
                 </div>
-                <div id="image3-container" className="relative z-10 w-[105%] rotate-12 bottom-[15%] left-[-5%] sm:w-[95%] sm:left-[10%] sm:bottom-0 will-change-transform">
+                <div id="image3-container" className="relative z-10 w-[105%] rotate-12 bottom-[15%] left-[-5%] sm:left-[5%] sm:bottom-[32%] sm:col-start-1 sm:row-start-2 will-change-transform">
                     <img 
                         src={image3}
                         id="image3"  
@@ -141,7 +141,7 @@ const About = () => {
                         className="select-none rounded-xl brightness-90"
                     />
                 </div>
-                <div id="image4-container" className="relative z-20 hidden sm:block w-[110%] rotate-12 left-[5%] bottom-[32%] will-change-transform">
+                <div id="image4-container" className="relative z-20 hidden sm:block rotate-12 w-[95%] left-[10%] bottom-0  will-change-transform">
                     <img 
                         src={image4}
                         id="image4"  
