@@ -7,16 +7,19 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ScrollProgressBar = () => {
     useGSAP(() => {
-      gsap.to("#scroll-progress-bar", {
-        width: "100%", 
-        scrollTrigger: {
-          trigger: document.body,
-          start: "top top", 
-          end: "bottom bottom",
-          scrub: true, 
-        },
-        ease: "none",
-      })
+      const mm = gsap.matchMedia();
+      mm.add("(prefers-reduced-motion: no-preference)", () => {
+        gsap.to("#scroll-progress-bar", {
+          width: "100%", 
+          scrollTrigger: {
+            trigger: document.body,
+            start: "top top", 
+            end: "bottom bottom",
+            scrub: true, 
+          },
+          ease: "none",
+        })
+      });
     });
   
     return (

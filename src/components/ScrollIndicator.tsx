@@ -32,32 +32,35 @@ const ScrollIndicator = ({ height }: Props) => {
   }, []);
 
   useGSAP (() => {
-    gsap.from('#scroll-indicator-container', { 
-        duration: 1.2,
-        delay: 1, 
-        ease: "power3.out",
-        y: "-20%", 
-        opacity: 0,
-        onComplete: () => {
-          gsap.to("#scroll-arrow", {
-            y: 3, 
-            duration: 0.25, 
-            ease: "power1.inOut",
-            onComplete: () => {
-              gsap.fromTo('#scroll-arrow', {
-                y: 3, 
-                duration: 0.25,
-              }, {
-                y: -3, 
-                duration: 0.5, 
-                repeat: -1, 
-                yoyo: true,
-                ease: "power1.inOut",
+    const mm = gsap.matchMedia();
+    mm.add("(prefers-reduced-motion: no-preference)", () => {
+      gsap.from('#scroll-indicator-container', { 
+          duration: 1.2,
+          delay: 1, 
+          ease: "power3.out",
+          y: "-20%", 
+          opacity: 0,
+          onComplete: () => {
+            gsap.to("#scroll-arrow", {
+              y: 3, 
+              duration: 0.25, 
+              ease: "power1.inOut",
+              onComplete: () => {
+                gsap.fromTo('#scroll-arrow', {
+                  y: 3, 
+                  duration: 0.25,
+                }, {
+                  y: -3, 
+                  duration: 0.5, 
+                  repeat: -1, 
+                  yoyo: true,
+                  ease: "power1.inOut",
+              })
+              }
             })
-            }
-          })
-        }
-      });
+          }
+        });
+    });
   });
 
   return (
