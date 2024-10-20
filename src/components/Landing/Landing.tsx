@@ -9,25 +9,28 @@ import Headshot from "./Headshot"
 
 const Landing = () => {
     useGSAP (() => {
-        gsap.from("#landing-text", {
-            duration: 0.6, 
-            y: -20, 
-            opacity: 0,
-            ease: "none"
-        })
+        const mm = gsap.matchMedia();
+        mm.add("(prefers-reduced-motion: no-preference)", () => {
+            gsap.from("#landing-text", {
+                duration: 0.6, 
+                y: -20, 
+                opacity: 0,
+                ease: "none"
+            })
 
-        gsap.to("#myname", {
-            duration: 5,
-            backgroundPositionX: "100%",
-            ease: "sine.inOut",
-            repeat: -1,  
-            yoyo: true,  
-        });
+            gsap.to("#myname", {
+                duration: 5,
+                backgroundPositionX: "100%",
+                ease: "sine.inOut",
+                repeat: -1,  
+                yoyo: true,  
+            });
 
-        gsap.from("#highlight-container", {
-            scale: 0, 
-            duration: 0.3, 
-            delay: 1,
+            gsap.from("#highlight-container", {
+                scale: 0, 
+                duration: 0.3, 
+                delay: 1,
+            });
         });
     });
 
@@ -41,8 +44,8 @@ const Landing = () => {
         >
             <Headshot />
             
-            <p id="hey-there"className="mt-4 sm:mt-0 sm:col-start-1 sm:row-start-1 sm:self-end sm:text-xl">
-                <span id="hand" className="inline-block animate-wave">👋</span> 
+            <p id="hey-there"className="mt-4 sm:mt-0 sm:col-start-1 sm:row-start-1 sm:self-end sm:text-xl lg:text-3xl">
+                <span id="hand" className="inline-block animate-wave motion-reduce:animate-none">👋</span> 
                 &nbsp;Hey there!
             </p>
 
