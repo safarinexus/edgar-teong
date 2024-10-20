@@ -10,12 +10,15 @@ import HeadshotPhoto from "../../assets/headshot.jpeg"
 const Headshot = () => {
 
   useGSAP(() => {
-    gsap.from("#headshot", {
-      opacity: 0,
-      duration: 1.2,
-      delay: 1, 
-      ease: "power3.out"
-    })
+    const mm = gsap.matchMedia();
+    mm.add("(prefers-reduced-motion: no-preference)", () => {
+      gsap.from("#headshot", {
+        opacity: 0,
+        duration: 1.2,
+        delay: 1, 
+        ease: "power3.out"
+      })
+    });
   });
 
 
