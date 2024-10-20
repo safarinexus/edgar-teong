@@ -15,65 +15,73 @@ import image6 from "../../assets/image6.webp"
 const About = () => {
     useGSAP(() => {
         const mm = gsap.matchMedia();
-        mm.add("(prefers-reduced-motion: no-preference)", () => {
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                  trigger: "#images-container",
-                  start: "top center",
-                  toggleActions: "play none none reverse",
-    
-                }
-              });
+        mm.add({
+            isNotMobile: "(min-width: 640px)",
+            notReduceMotion: "(prefers-reduced-motion: no-preference)",
+          }, (context) => {
+            // context.conditions has a boolean property for each condition defined above indicating if it's matched or not.
+            let { isNotMobile, notReduceMotion } = context.conditions;
         
-              tl.from("#image1-container", {
-                opacity: 0,
-                rotate: -45,
-                duration: 0.5,
-                x: "-100%",
-                y: "-100%",
-              })
-              .from("#image2-container", {
-                opacity: 0,
-                rotate: 45,
-                duration: 0.5,
-                x: "100%",
-                y: "-100%",
-              }, "-=0.3")
-              .from("#image3-container", {
-                opacity: 0,
-                rotate: 45,
-                duration: 0.5,
-                x: "-100%",
-                y: "100%",
-              }, "-=0.4")
-              .from("#image5-container", {
-                opacity: 0,
-                rotate: -45,
-                duration: 0.5,
-                x: "100%",
-                y: "100%",
-              }, "-=0.5")
-              .from("#image4-container", {
-                opacity: 0,
-                rotate: 45,
-                duration: 0.5,
-                x: "-100%",
-                y: "100%",
-              }, "-=0.5")
-              .from("#image6-container", {
-                opacity: 0,
-                rotate: -45,
-                duration: 0.5,
-                x: "100%",
-                y: "100%",
-              }, "-=0.5");
+            if (isNotMobile && notReduceMotion) {
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                    trigger: "#images-container",
+                    start: "top center",
+                    toggleActions: "play none none reverse",
+        
+                    }
+                });
+            
+                tl.from("#image1-container", {
+                    opacity: 0,
+                    rotate: -45,
+                    duration: 0.5,
+                    x: "-100%",
+                    y: "-100%",
+                })
+                .from("#image2-container", {
+                    opacity: 0,
+                    rotate: 45,
+                    duration: 0.5,
+                    x: "100%",
+                    y: "-100%",
+                }, "-=0.3")
+                .from("#image3-container", {
+                    opacity: 0,
+                    rotate: 45,
+                    duration: 0.5,
+                    x: "-100%",
+                    y: "100%",
+                }, "-=0.4")
+                .from("#image5-container", {
+                    opacity: 0,
+                    rotate: -45,
+                    duration: 0.5,
+                    x: "100%",
+                    y: "100%",
+                }, "-=0.5")
+                .from("#image4-container", {
+                    opacity: 0,
+                    rotate: 45,
+                    duration: 0.5,
+                    x: "-100%",
+                    y: "100%",
+                }, "-=0.5")
+                .from("#image6-container", {
+                    opacity: 0,
+                    rotate: -45,
+                    duration: 0.5,
+                    x: "100%",
+                    y: "100%",
+                }, "-=0.5");
+            }
         });
     });
 
     return (
         <div className="w-full h-full flex flex-col">
             <div id="images-container" className="max-w-[1000px] grid grid-rows-2 grid-cols-2 sm:grid-cols-3 justify-items-center items-center mx-auto">
-                <div id="image1-container" className="relative z-30 w-[130%] -rotate-12 bottom-[-15%] left-[5%] sm:bottom-0">
+                <div id="image1-container" className="relative z-30 w-[130%] -rotate-12 bottom-[-15%] left-[5%] sm:bottom-0 will-change-transform">
                     <img 
                         src={image1}
                         id="image1"  
@@ -82,7 +90,7 @@ const About = () => {
                         draggable="false"
                     />
                 </div>
-                <div id="image2-container" className="relative z-20 rotate-6 -bottom-[6%] right-[-6%] sm:bottom-0 sm:right-[-15%]">
+                <div id="image2-container" className="relative z-20 rotate-6 -bottom-[6%] right-[-6%] sm:bottom-0 sm:right-[-15%] will-change-transform">
                     <img 
                         src={image2}
                         id="image2"  
@@ -91,7 +99,7 @@ const About = () => {
                         draggable="false"
                     />
                 </div>
-                <div id="image3-container" className="relative z-10 w-[105%] rotate-12 bottom-[15%] left-[-5%] sm:w-[95%] sm:left-[10%] sm:bottom-0">
+                <div id="image3-container" className="relative z-10 w-[105%] rotate-12 bottom-[15%] left-[-5%] sm:w-[95%] sm:left-[10%] sm:bottom-0 will-change-transform">
                     <img 
                         src={image3}
                         id="image3"  
@@ -100,7 +108,7 @@ const About = () => {
                         className="select-none rounded-xl brightness-90"
                     />
                 </div>
-                <div id="image4-container" className="relative z-20 hidden sm:block w-[110%] rotate-12 left-[5%] bottom-[32%]">
+                <div id="image4-container" className="relative z-20 hidden sm:block w-[110%] rotate-12 left-[5%] bottom-[32%] will-change-transform">
                     <img 
                         src={image4}
                         id="image4"  
@@ -109,7 +117,7 @@ const About = () => {
                         draggable="false"
                     />
                 </div>
-                <div id="image5-container" className="relative -rotate-6 w-[130%] top-[-18%] sm:w-[140%] sm:top-[-25%]">
+                <div id="image5-container" className="relative -rotate-6 w-[130%] top-[-18%] sm:w-[140%] sm:top-[-25%] will-change-transform">
                     <img 
                         src={image5}
                         id="image5"  
@@ -118,7 +126,7 @@ const About = () => {
                         draggable="false"
                     />
                 </div>
-                <div id="image6-container" className="relative -z-10 hidden sm:block w-[95%] -rotate-12 left-[10%] top-[-26%]">
+                <div id="image6-container" className="relative -z-10 hidden sm:block w-[95%] -rotate-12 left-[10%] top-[-26%] will-change-transform">
                     <img 
                         src={image6}
                         id="image6"  
