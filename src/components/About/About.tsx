@@ -17,57 +17,97 @@ const About = () => {
         const mm = gsap.matchMedia();
         mm.add("(prefers-reduced-motion: no-preference)",
           () => {
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                trigger: "#images-container",
-                start: "top center",
-                toggleActions: "play none none reverse",
     
-                }
-            });
-        
-            tl.from("#image1-container", {
+            gsap.from("#image1-container", {
+                scrollTrigger: {
+                    trigger: "#images-container",
+                    start: "top 45%",
+                    end: "+=200px",
+                    toggleActions: "play none none reverse",
+                    scrub: true,
+                },
                 opacity: 0,
                 rotate: -45,
                 duration: 0.5,
                 x: "-100%",
                 y: "-100%",
             })
-            .from("#image2-container", {
+
+            
+            gsap.from("#image2-container", {
+                scrollTrigger: {
+                    trigger: "#images-container",
+                    start: "top 45%",
+                    end: "+=200px",
+                    toggleActions: "play none none reverse",
+                    scrub: true,
+                },
                 opacity: 0,
                 rotate: 45,
                 duration: 0.5,
                 x: "100%",
                 y: "-100%",
-            }, "-=0.3")
-            .from("#image3-container", {
+            }); 
+
+            gsap.from("#image3-container", {
+                scrollTrigger: {
+                    trigger: "#images-container",
+                    start: "top 45%",
+                    end: "+=200px",
+                    toggleActions: "play none none reverse",
+                    scrub: true,
+                },
                 opacity: 0,
                 rotate: 45,
                 duration: 0.5,
                 x: "-100%",
                 y: "100%",
-            }, "-=0.4")
-            .from("#image5-container", {
+            }); 
+
+            gsap.from("#image5-container", {
+                scrollTrigger: {
+                    trigger: "#images-container",
+                    start: "top 45%",
+                    end: "+=200px",
+                    toggleActions: "play none none reverse",
+                    scrub: true,
+                },
                 opacity: 0,
                 rotate: -45,
                 duration: 0.5,
                 x: "100%",
                 y: "100%",
-            }, "-=0.5")
-            .from("#image4-container", {
+            });
+
+            gsap.from("#image4-container", {
+                scrollTrigger: {
+                    trigger: "#images-container",
+                    start: "top 45%",
+                    end: "+=200px",
+                    toggleActions: "play none none reverse",
+                    scrub: true,
+                },
                 opacity: 0,
                 rotate: 45,
                 duration: 0.5,
                 x: "-100%",
                 y: "100%",
-            }, "-=0.5")
-            .from("#image6-container", {
+            });
+
+            gsap.from("#image6-container", {
+                scrollTrigger: {
+                    trigger: "#images-container",
+                    start: "top 45%",
+                    end: "+=200px",
+                    toggleActions: "play none none reverse",
+                    scrub: true,
+                },
                 opacity: 0,
                 rotate: -45,
                 duration: 0.5,
                 x: "100%",
                 y: "100%",
-            }, "-=0.5");
+            });
         });
     });
 
