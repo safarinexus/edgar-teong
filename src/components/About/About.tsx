@@ -130,7 +130,7 @@ const About = () => {
             </div>
             <div id="about-text-container" className="w-full px-5 sm:px-24 font-light text-base">
                 <h1 className="font-bold text-lg">About Me</h1>
-                <p className="tracking-wide leading-[19px] font-light text-sm xs:text-base sm:text-sm md:text-base lg:text-xl xl:text-[1.6rem]">Lorem ipsum odor amet, consectetuer adipiscing elit. Adipiscing massa eu proin ut integer fermentum. Maecenas luctus class est ultricies adipiscing lacinia.
+                <p id="about-body" className="tracking-wide leading-[19px] font-light text-sm xs:text-base sm:text-sm md:text-base lg:text-xl xl:text-[1.6rem]">Lorem ipsum odor amet, consectetuer adipiscing elit. Adipiscing massa eu proin ut integer fermentum. Maecenas luctus class est ultricies adipiscing lacinia.
                 <br /><br />
                 Lorem ipsum odor amet, consectetuer adipiscing elit. Adipiscing massa eu proin ut integer fermentum. Maecenas luctus class est ultricies adipiscing lacinia.
                 <br /><br />
