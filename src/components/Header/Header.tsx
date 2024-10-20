@@ -46,7 +46,7 @@ const Header = ({ width }: Props) => {
     }, []);
 
     return (
-        <div id="header-container" className="fixed w-full min-w-[320px] flex flex-col items-center backdrop-blur-sm pt-4 pb-3 sm:pt-0 sm:pb-0 sm:top-5 pl-5 pr-5 h-min z-40">
+        <div id="header-container" className="fixed w-full min-w-[320px] flex flex-col items-center backdrop-blur-sm pt-4 pb-3 sm:pt-0 sm:pb-0 sm:top-5 px-5 h-min z-40">
             <div 
             id="header" 
             className="
