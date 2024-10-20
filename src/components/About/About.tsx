@@ -15,66 +15,59 @@ import image6 from "../../assets/image6.webp"
 const About = () => {
     useGSAP(() => {
         const mm = gsap.matchMedia();
-        mm.add({
-            isNotMobile: "(min-width: 640px)",
-            notReduceMotion: "(prefers-reduced-motion: no-preference)",
-          }, (context) => {
-            // context.conditions has a boolean property for each condition defined above indicating if it's matched or not.
-            let { isNotMobile, notReduceMotion } = context.conditions;
+        mm.add("(prefers-reduced-motion: no-preference)",
+          () => {
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                trigger: "#images-container",
+                start: "top center",
+                toggleActions: "play none none reverse",
+    
+                }
+            });
         
-            if (isNotMobile && notReduceMotion) {
-                const tl = gsap.timeline({
-                    scrollTrigger: {
-                    trigger: "#images-container",
-                    start: "top center",
-                    toggleActions: "play none none reverse",
-        
-                    }
-                });
-            
-                tl.from("#image1-container", {
-                    opacity: 0,
-                    rotate: -45,
-                    duration: 0.5,
-                    x: "-100%",
-                    y: "-100%",
-                })
-                .from("#image2-container", {
-                    opacity: 0,
-                    rotate: 45,
-                    duration: 0.5,
-                    x: "100%",
-                    y: "-100%",
-                }, "-=0.3")
-                .from("#image3-container", {
-                    opacity: 0,
-                    rotate: 45,
-                    duration: 0.5,
-                    x: "-100%",
-                    y: "100%",
-                }, "-=0.4")
-                .from("#image5-container", {
-                    opacity: 0,
-                    rotate: -45,
-                    duration: 0.5,
-                    x: "100%",
-                    y: "100%",
-                }, "-=0.5")
-                .from("#image4-container", {
-                    opacity: 0,
-                    rotate: 45,
-                    duration: 0.5,
-                    x: "-100%",
-                    y: "100%",
-                }, "-=0.5")
-                .from("#image6-container", {
-                    opacity: 0,
-                    rotate: -45,
-                    duration: 0.5,
-                    x: "100%",
-                    y: "100%",
-                }, "-=0.5");
-            }
+            tl.from("#image1-container", {
+                opacity: 0,
+                rotate: -45,
+                duration: 0.5,
+                x: "-100%",
+                y: "-100%",
+            })
+            .from("#image2-container", {
+                opacity: 0,
+                rotate: 45,
+                duration: 0.5,
+                x: "100%",
+                y: "-100%",
+            }, "-=0.3")
+            .from("#image3-container", {
+                opacity: 0,
+                rotate: 45,
+                duration: 0.5,
+                x: "-100%",
+                y: "100%",
+            }, "-=0.4")
+            .from("#image5-container", {
+                opacity: 0,
+                rotate: -45,
+                duration: 0.5,
+                x: "100%",
+                y: "100%",
+            }, "-=0.5")
+            .from("#image4-container", {
+                opacity: 0,
+                rotate: 45,
+                duration: 0.5,
+                x: "-100%",
+                y: "100%",
+            }, "-=0.5")
+            .from("#image6-container", {
+                opacity: 0,
+                rotate: -45,
+                duration: 0.5,
+                x: "100%",
+                y: "100%",
+            }, "-=0.5");
         });
     });
 
