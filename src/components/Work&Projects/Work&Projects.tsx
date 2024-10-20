@@ -5,8 +5,6 @@ import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
-import works from "../../data/works"
-
 const WorkProjects = () => {
     useGSAP(() => {
         const mm = gsap.matchMedia();
