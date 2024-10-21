@@ -13,7 +13,6 @@ import About from './components/About'
 import Landing from "./components/Landing"
 import Work from "./components/Work"
 import Projects from "./components/Projects"
-import Footer from "./components/Footer"
 import Error from "./components/Error"
 
 interface Dimension {
@@ -87,7 +86,6 @@ const App = ({ error }: Props) => {
             >
               <Projects />
             </div>
-            <Footer />
           </>
         )
       }
