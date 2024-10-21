@@ -9,9 +9,9 @@ gsap.registerPlugin(ScrollTrigger);
 import Header from "./components/Header/Header"
 import ScrollProgressBar from "./components/ScrollProgressBar"
 import ScrollIndicator from "./components/ScrollIndicator"
-import About from './components/About/About'
-import Landing from "./components/Landing/Landing"
-import WorkProjects from "./components/Work&Projects/Work&Projects"
+import About from './components/About'
+import Landing from "./components/Landing"
+import WorkProjects from "./components/Work&Projects"
 import Error from "./components/Error"
 
 interface Dimension {
