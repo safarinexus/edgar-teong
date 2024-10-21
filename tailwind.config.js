@@ -7,7 +7,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        beige: "rgb(240, 240, 232)", 
         purpley: "rgb(40, 23, 83)",
         brown: "#964B00",
       },
@@ -17,6 +16,8 @@ export default {
       boxShadow: {
         'underline': '0 2px 0 0 black;',
         'underline-dark': '0 2px 0 0 white;',
+        'custom': 'inset 0 -3px #0000000d, inset 0 0 0 2px #fff, inset 0 4px 2px #0000000f, inset 0 0 24px 4px #0000000a ,0 1px 3px #0000001f',
+        'custom-dark': 'inset 0 -3px #ffffff1a, inset 0 0 0 2px #000, inset 0 4px 2px #ffffff2f, inset 0 0 24px 4px #ffffff1a, 0 1px 3px #ffffff3f'
       },
       fontFamily: {
         'articulat': ['"Articulat CF"', 'sans-serif'],

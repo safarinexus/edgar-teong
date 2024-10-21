@@ -63,19 +63,19 @@ const App = ({ error }: Props) => {
             <ScrollIndicator height={dimensions.height}/> 
             <div 
               id="landing" 
-              className="w-full max-w-[1440px] h-[720px] sm:h-screen mx-auto px-5 sm:px-24"
+              className="w-full max-w-[1208px] h-fit sm:h-screen mx-auto px-2 py-2"
             >
               <Landing />
             </div>
             <div 
               id="about" 
-              className="w-full max-w-[1440px] h-fit mx-auto"
+              className="w-full max-w-[1208px] h-fit mx-auto"
             >
               <About />
             </div>
             <div
               id="workprojects"
-              className="w-full max-w-[1440px] h-svh min-h-[480px] mx-auto "
+              className="w-full max-w-[1208px] h-svh min-h-[480px] mx-auto "
             >
               <WorkProjects />
               {/*just have multiple cards that appear on intersectionobserver*/}
