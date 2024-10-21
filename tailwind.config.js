@@ -7,7 +7,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        beige: "rgb(240, 240, 232)", 
         purpley: "rgb(40, 23, 83)",
         brown: "#964B00",
       },
