@@ -14,6 +14,39 @@ const Work = () => {
     useGSAP(() => {
         const mm = gsap.matchMedia();
         mm.add("(prefers-reduced-motion: no-preference)", () => {
+            gsap.from("#work1", {
+                scrollTrigger: {
+                    trigger: "#work1", 
+                    start: "center bottom", 
+                    end: "+=100",
+                    toggleActions: "play none none reverse",
+                },
+                opacity: 0, 
+                scale: 0.9,
+                y: 100,
+            })
+            gsap.from("#work2", {
+                scrollTrigger: {
+                    trigger: "#work2", 
+                    start: "center bottom", 
+                    end: "+=100",
+                    toggleActions: "play none none reverse",
+                },
+                opacity: 0, 
+                scale: 0.9,
+                y: 100,
+            })
+            gsap.from("#work3", {
+                scrollTrigger: {
+                    trigger: "#work3", 
+                    start: "center bottom", 
+                    end: "+=100",
+                    toggleActions: "play none none reverse",
+                },
+                opacity: 0, 
+                scale: 0.9,
+                y: 100,
+            })
         })
     });
 
