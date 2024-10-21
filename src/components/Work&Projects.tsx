@@ -18,7 +18,7 @@ const WorkProjects = () => {
                 gsap.from(`#exp${String(i)}`, {
                     scrollTrigger: {
                         trigger: `#exp${String(i)}`, 
-                        start: "bottom bottom", 
+                        start: "60%gi 95%", 
                         toggleActions: "play none none reverse",
                     },
                     opacity: 0, 
@@ -37,7 +37,7 @@ const WorkProjects = () => {
                     <div key={index} id={"exp"+(index+1)} className="my-9 font-medium">
                         <p className="text-sm">{work.dates}</p>
                         <a href={work.link} className="text-lg font-bold tracking-tighter my-1">{work.position} • {work.company}</a>
-                        <p className="mb-3">{work.description}</p>
+                        <p className="mb-3 font-light">{work.description}</p>
                         {work.technologies.map((tech, techIndex) => (
                                 <span 
                                     key={techIndex} 
