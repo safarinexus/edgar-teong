@@ -33,7 +33,7 @@ const Landing = () => {
                 animation: tl, 
                 trigger: "#im-also",
                 start: "center center", 
-                end: "+=35%", 
+                end: "+=30%", 
                 scrub: 1,
             })
 
