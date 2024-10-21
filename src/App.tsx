@@ -11,7 +11,8 @@ import ScrollProgressBar from "./components/ScrollProgressBar"
 import ScrollIndicator from "./components/ScrollIndicator"
 import About from './components/About'
 import Landing from "./components/Landing"
-import WorkProjects from "./components/Work&Projects"
+import Work from "./components/Work"
+import Projects from "./components/Projects"
 import Error from "./components/Error"
 
 interface Dimension {
@@ -74,10 +75,16 @@ const App = ({ error }: Props) => {
               <About />
             </div>
             <div
-              id="workprojects"
-              className="w-full max-w-[1208px] h-svh min-h-[480px] mx-auto "
+              id="work"
+              className="w-full max-w-[1208px] h-fit min-h-[480px] mx-auto px-5 pt-20 sm:px-24"
             >
-              <WorkProjects />
+              <Work />
+            </div>
+            <div
+              id="projects"
+              className="w-full max-w-[1208px] h-fit min-h-[480px] mx-auto px-5 pt-20 sm:px-24"
+            >
+              <Projects />
             </div>
           </>
         )
