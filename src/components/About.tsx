@@ -113,7 +113,7 @@ const About = () => {
     return (
         <div className="w-full h-full flex flex-col">
             <div id="images-container" className="max-w-[1000px] grid grid-rows-2 grid-cols-2 sm:grid-cols-3 justify-items-center items-center mx-auto">
-                <div id="image1-container" className="relative z-30 w-[130%] -rotate-12 bottom-[-15%] left-[5%] will-change-transform">
+                <div id="image1-container" className="relative z-20 w-[130%] -rotate-12 bottom-[-15%] left-[5%] will-change-transform">
                     <img 
                         src={image1}
                         id="image1"  
@@ -169,7 +169,7 @@ const About = () => {
                 </div>
             </div>
             <div id="about-text-container" className="w-full px-5 sm:px-24 font-light text-base">
-                <h1 id="about-title" className="font-bold text-lg">About Me</h1>
+                <h1 className="font-bold text-lg">About Me</h1>
                 <p id="about-body" className="tracking-wide leading-relaxed font-light text-base xs:text-base sm:text-sm md:text-base lg:text-xl xl:text-[1.6rem]">
                 In 2022, I discovered my love for programming shortly after discovering my love for mechanical keyboards. I knew that I  had always been a computer geek, so changing careers from accounting to software engineering felt like a natural click.
                 <br /><br />
