@@ -8,7 +8,7 @@ import DarkMode from "./DarkMode"
 import MobileDropdown from "./MobileDropdown/MobileDropdown"
 
 interface Props {
-    width: number
+    width: number,
 }
 
 const sections = ['#landing', '#about', '#work', '#projects'];
@@ -46,12 +46,12 @@ const Header = ({ width }: Props) => {
     }, []);
 
     return (
-        <div id="header-container" className="fixed w-full min-w-[320px] flex flex-col items-center pt-4 pb-3 sm:pt-0 sm:pb-0 sm:top-4 px-4 h-min z-40">
+        <div id="header-container" className="fixed w-full min-w-[320px] flex flex-col items-center pt-4 pb-3 sm:pt-0 sm:pb-0 sm:top-5 px-5 h-min z-40 backdrop-blur-3xl">
             <div 
             id="header" 
             className="
-                w-full max-w-[1176px] h-fit p-3 rounded-[32px] bg-white dark:bg-neutral-800 bg-opacity-30
-                dark:bg-opacity-40 grid grid-rows-1 grid-cols-2 items-center z-40 relative backdrop-blur-3xl border-[1px] border-neutral-200 dark:border-neutral-800
+                w-full max-w-[1440px] h-fit sm:p-4 sm:pr-6 sm:pl-6 rounded-full bg-transparent sm:bg-neutral-800 sm:dark:bg-neutral-600 sm:bg-opacity-30 
+                sm:dark:bg-opacity-40 grid grid-rows-1 grid-cols-2 items-center z-40 relative
             "
             >
                 <NavHashLink to="/#top" end id="logo-link" className="inline-flex w-fit z-40">
@@ -59,7 +59,7 @@ const Header = ({ width }: Props) => {
                         src={logo} 
                         alt="logo" 
                         draggable="false" 
-                        className="w-[60px] dark:invert select-none z-40"
+                        className="w-16 dark:invert select-none z-40"
                     />
                 </NavHashLink>
                 <div id="nav-cluster" className="h-full sm:w-[350px] justify-self-end flex items-center justify-between z-40">
