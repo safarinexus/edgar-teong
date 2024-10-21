@@ -14,7 +14,10 @@ const WorkProjects = () => {
 
     return (
         <div className="w-full">
-            <div>
+            <div id="work" className="w-full h-[1000px]">
+                <h1></h1>
+            </div>
+            <div id="projects" className="w-full h-[1000px]">
                 <h1></h1>
             </div>
         </div>
