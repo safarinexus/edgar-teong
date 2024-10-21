@@ -51,7 +51,7 @@ const Landing = () => {
     return (
         <div 
             id="container-bg"
-            className="w-full h-fit font-light text-base pt-[60px] sm:pt-[80px] md:pt-[140px] p-4 sm:px-16 lg:pb-16 rounded-[32px] bg-white 
+            className="w-full h-full min-h-[450px] lg:min-h-[620px] font-light text-base pt-[60px] sm:pt-[80px] md:pt-[140px] p-4 sm:px-16 lg:pb-16 rounded-[32px] bg-white 
                 border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark dark:bg-black
                 flex flex-col sm:justify-end
             "
@@ -70,7 +70,7 @@ const Landing = () => {
                 I'm a passionate & self-started software engineer, I make products that are performant and beautiful. 
             </p>
 
-            <div id="im-also" className="relative mt-4 h-fit motion-safe:h-[150px] font-medium text-4xl sm:h-[80px] lg:h-fit sm:motion-reduce:h-[320px] lg:motion-reduce:h-[480px] lg:text-6xl">
+            <div id="im-also" className="relative mt-4 h-fit motion-safe:h-[150px] font-medium text-4xl sm:h-[80px] lg:h-[100px] sm:motion-reduce:h-[320px] lg:motion-reduce:h-[480px] lg:text-6xl">
                 I'm also a&nbsp;
                 <div id="scroll-text" className="w-fit h-[144px] inline">
                     <span id="fullstack" className="block motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
@@ -93,7 +93,7 @@ const Landing = () => {
                     </span>
                 </div>
             </div>
-            <div className="h-10 w-56 mt-5 mx-auto sm:m-0 flex justify-between items-center"> 
+            <div className="h-10 w-56 mt-5 lg:mt-8  mx-auto sm:m-0 flex justify-between items-center"> 
                 <a href="">
                     <FaGithub className="size-7 sm:size-6"/>
                 </a>
