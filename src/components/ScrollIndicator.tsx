@@ -35,8 +35,8 @@ const ScrollIndicator = ({ height }: Props) => {
     const mm = gsap.matchMedia();
     mm.add("(prefers-reduced-motion: no-preference)", () => {
       gsap.from('#scroll-indicator-container', { 
-          duration: 1.2,
-          delay: 1, 
+          duration: 0.5,
+          delay: 0.5, 
           ease: "power3.out",
           y: "-20%", 
           opacity: 0,
