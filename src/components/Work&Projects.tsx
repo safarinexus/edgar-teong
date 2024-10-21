@@ -18,7 +18,7 @@ const WorkProjects = () => {
                 gsap.from(`#exp${String(i)}`, {
                     scrollTrigger: {
                         trigger: `#exp${String(i)}`, 
-                        start: "60%gi 95%", 
+                        start: "center bottom", 
                         toggleActions: "play none none reverse",
                     },
                     opacity: 0, 
