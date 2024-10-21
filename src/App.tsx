@@ -63,7 +63,7 @@ const App = ({ error }: Props) => {
             <ScrollIndicator height={dimensions.height}/> 
             <div 
               id="landing" 
-              className="w-full max-w-[1208px] h-fit sm:h-screen mx-auto px-2 py-2"
+              className="w-full max-w-[1208px] h-fit sm:h-screen sm:min-h-fit mx-auto px-2 py-2"
             >
               <Landing />
             </div>
