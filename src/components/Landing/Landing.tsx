@@ -37,7 +37,7 @@ const Landing = () => {
 
     return (
         <div 
-            className="w-full h-full flex flex-col font-light text-base
+            className="w-full h-full flex flex-col font-light text-base pt-[45px] sm:pt-24 md:pt-[140px]
                 sm:grid sm:gap-4 sm:items-center sm:grid-cols-[60%_40%] sm:grid-rows-[10%_auto_20%] md:grid-rows-[5%_auto_30%]
             "
         >
