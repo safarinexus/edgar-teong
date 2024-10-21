@@ -13,7 +13,7 @@
     }
 
     #root {
-        @apply text-purpley dark:text-white min-h-max m-0 box-border antialiased leading-relaxed; 
+        @apply text-black dark:text-white min-h-max m-0 box-border antialiased leading-relaxed; 
     }
     
     a {
