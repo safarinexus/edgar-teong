@@ -113,7 +113,7 @@ const About = () => {
     return (
         <div className="w-full h-full flex flex-col">
             <div id="images-container" className="max-w-[1000px] grid grid-rows-2 grid-cols-2 sm:grid-cols-3 justify-items-center items-center mx-auto">
-                <div id="image1-container" className="relative z-30 w-[130%] -rotate-12 bottom-[-15%] left-[5%] sm:bottom-0 will-change-transform">
+                <div id="image1-container" className="relative z-30 w-[130%] -rotate-12 bottom-[-15%] left-[5%] will-change-transform">
                     <img 
                         src={image1}
                         id="image1"  
@@ -122,7 +122,7 @@ const About = () => {
                         draggable="false"
                     />
                 </div>
-                <div id="image2-container" className="relative z-20 rotate-6 -bottom-[6%] right-[-6%] sm:bottom-0 sm:right-[-15%] will-change-transform">
+                <div id="image2-container" className="relative z-20 rotate-6 -bottom-[6%] right-[-6%] sm:right-[-15%] will-change-transform">
                     <img 
                         src={image2}
                         id="image2"  
@@ -131,7 +131,7 @@ const About = () => {
                         draggable="false"
                     />
                 </div>
-                <div id="image3-container" className="relative z-10 w-[105%] rotate-12 bottom-[15%] left-[-5%] sm:left-[5%] sm:bottom-[32%] sm:col-start-1 sm:row-start-2 will-change-transform">
+                <div id="image3-container" className="relative z-10 w-[105%] rotate-12 bottom-[15%] left-[-5%] sm:left-[5%] sm:col-start-1 sm:row-start-2 will-change-transform">
                     <img 
                         src={image3}
                         id="image3"  
@@ -149,7 +149,7 @@ const About = () => {
                         draggable="false"
                     />
                 </div>
-                <div id="image5-container" className="relative -rotate-6 w-[130%] top-[-18%] sm:w-[140%] sm:top-[-25%] will-change-transform">
+                <div id="image5-container" className="relative -rotate-6 w-[130%] top-[-18%] sm:w-[140%]  will-change-transform">
                     <img 
                         src={image5}
                         id="image5"  
