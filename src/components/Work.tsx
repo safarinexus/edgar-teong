@@ -19,6 +19,7 @@ const Work = () => {
                     scrollTrigger: {
                         trigger: `#work${i}`, 
                         start: "bottom bottom", 
+                        end: "+=20%",
                         toggleActions: "play none none reverse",
                     },
                     opacity: 0, 
