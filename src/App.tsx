@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
 import { gsap } from "gsap"; 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
@@ -15,8 +14,6 @@ import Landing from "./components/Landing/Landing"
 import WorkProjects from "./components/Work&Projects/Work&Projects"
 import Error from "./components/Error"
 
-import Thoughts from "./components/Thoughts"
-
 interface Dimension {
   height: number; 
   width: number;
@@ -27,12 +24,6 @@ interface Props {
 }
 
 const App = ({ error }: Props) => {
-  const { thoughts } = useParams();
-
-  useEffect(() => {
-    console.log(thoughts);
-  }, [thoughts])
-
   const [dimensions, setDimensions] = useState<Dimension>({
     height: window.innerHeight, 
     width: window.innerWidth, 
@@ -66,8 +57,6 @@ const App = ({ error }: Props) => {
       {/*have sticky section headers on mobile*/}
       { error ? 
         <Error /> : 
-        thoughts === "thoughts" ?  
-        <Thoughts /> :
         (
           <>
             <ScrollProgressBar />

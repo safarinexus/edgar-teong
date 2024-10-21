@@ -2,7 +2,7 @@ import App from './App'
 
 const routes = [
     {
-        path: "/thoughts?", 
+        path: "/", 
         element: <App error={false}/>,
         errorElement: <App error={true}/>,
     }, 
