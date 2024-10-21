@@ -9,7 +9,7 @@
     }
 
     body {
-        @apply bg-beige dark:bg-black min-w-[320px] overflow-x-clip
+        @apply bg-white dark:bg-black min-w-[320px] overflow-x-clip
     }
 
     #root {

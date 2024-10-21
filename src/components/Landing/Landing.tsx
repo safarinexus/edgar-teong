@@ -2,15 +2,41 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
 
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaCodepen } from "react-icons/fa";
+import { FaGoodreads } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
+
+
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
-import Headshot from "./Headshot"
-
 const Landing = () => {
     useGSAP (() => {
+
         const mm = gsap.matchMedia();
         mm.add("(prefers-reduced-motion: no-preference)", () => {
+            const tl = gsap.timeline();
+            tl.to("#fullstack", { opacity: 0, duration: 0.25})
+                .to("#coffee", { opacity: 1 })
+                .to("#coffee", { opacity: 0 })          
+                .to("#reader", { opacity: 1 })
+                .to("#reader", { opacity: 0 })     
+                .to("#music", { opacity: 1 })
+                .to("#music", { opacity: 0 })   
+                .to("#film", { opacity: 1 })  
+                .to("#film", { opacity: 0 })       
+                .to("#com", { opacity: 1 })             
+                
+            ScrollTrigger.create({
+                animation: tl, 
+                trigger: "#im-also",
+                start: "top center", 
+                end: "+=300px", 
+                scrub: 1,
+            })
+
             gsap.from("#landing-text", {
                 duration: 0.6, 
                 y: -20, 
@@ -18,7 +44,7 @@ const Landing = () => {
                 ease: "none"
             })
 
-            gsap.to("#myname", {
+            gsap.to("#myname, #fullstack, #coffee, #reader, #music, #film, #com", {
                 duration: 5,
                 backgroundPositionX: "100%",
                 ease: "sine.inOut",
@@ -37,43 +63,74 @@ const Landing = () => {
 
     return (
         <div 
-            className="w-full h-full flex flex-col font-light text-base pt-[45px] sm:pt-24 md:pt-[140px]
-                sm:grid sm:gap-4 sm:items-center sm:grid-cols-[60%_40%] sm:grid-rows-[10%_auto_20%] md:grid-rows-[5%_auto_30%]
+            id="container-bg"
+            className="w-full h-full font-light text-base pt-[60px] sm:pt-[80px] md:pt-[140px] p-4 sm:px-16 lg:pb-16 rounded-[32px] bg-white 
+                 border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark dark:bg-black
+                flex flex-col sm:justify-end
             "
         >
-            <Headshot />
             
-            <p id="hey-there"className="mt-4 sm:mt-0 sm:col-start-1 sm:row-start-1 sm:self-end sm:text-xl lg:text-3xl">
+            <p id="hey-there"className="mt-4 xs:mt-20 sm:mt-0 text-xl lg:text-3xl">
                 <span id="hand" className="inline-block animate-wave motion-reduce:animate-none">👋</span> 
-                &nbsp;Hey there!
-            </p>
-
-            <p id="my-name-is" className="h-max text-lg font-semibold leading-none sm:col-start-1 sm:row-start-3 sm:col-span-2 mt-4 sm:mt-0">
-                My name is<br/>
-                <span className="inline-block relative h-[60px] text-5xl bg-gradient-to-br from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300% animate-gradient">
+                &nbsp;Hey there! I'm&nbsp;
+                <span id="myname" className="inline-block bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                     Edgar Teong
-                    <svg className="absolute -bottom-2 w-full scale-0 origin-left transition-transfor ease-out animate-highlight left-0 h-auto -z-10 transform translate-y-1/3 saturate-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 20">
-                        <path d="M0,5 C50,7 150,7 200,5" stroke="#F2CD02" fill="none" stroke-width="9" stroke-linecap="round"/>
-                    </svg>
                 </span>
+                .
             </p>
 
-            <p id="landing-text" className="tracking-wide leading-[19px] sm:text-left font-light text-sm xs:text-base sm:text-sm md:text-base lg:text-xl xl:text-[1.6rem] sm:row-start-2 mt-6 sm:mt-0">
-                I&#39;m a passionate & dedicated <span className="font-bold">Full Stack Developer</span> who discovered my love for programming <span className="font-bold">on my own</span> while pursuing accountancy at&nbsp;
-                <span className="font-bold">Singapore Management University</span> &#40;SMU&#41;. 
-                <br /><br />
-                With a drive to <span className="font-bold">continually learn and grow</span>, I&#39;m committed to becoming an expert software engineer, all through&nbsp;
-                <span className="font-bold">my own hard work & self-directed learning</span>. 
-                <br /><br />
-                I bring <span className="font-bold">enthusiasm</span>, <span className="font-bold">creativity</span>,
-                and a <span className="font-bold">strong work ethic</span> to every project.
-                I&#39;m excited to share my journey and expertise with the world!
+            <p id="im-a" className="mt-4 font-medium text-4xl lg:text-6xl lg:tracking-tight">
+                I'm a passionate & self-started software engineer, I make products that are performant and beautiful. 
             </p>
 
+            <div id="im-also" className="relative mt-4 h-[120px] font-medium text-4xl sm:h-[80px] lg:text-6xl lg:tracking-tight">
+                I'm also a&nbsp;
+                <div id="scroll-text" className="w-fit h-fit sm:h-[144px] inline">
+                    <span id="fullstack" className="block motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                        Full Stack Developer
+                    </span>
+                    <span id="coffee" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                        Coffee Lover
+                    </span>
+                    <span id="reader" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                        Avid Reader
+                    </span>
+                    <span id="music" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                        Music Enjoyer
+                    </span>
+                    <span id="film" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                        Film Nerd
+                    </span>
+                    <span id="com" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                        Computer Nerd
+                    </span>
+                </div>
+            </div>
+            <div className="h-10 w-56 mt-5 mx-auto sm:m-0 flex justify-between items-center"> 
+                <a href="">
+                    <FaGithub className="size-7 sm:size-6"/>
+                </a>
+                <a href="">
+                    <FaCodepen className="size-7 sm:size-6"/>
+                </a>
+                <a href="">
+                    <FaLinkedin className="size-8 sm:size-6"/>
+                </a>
+                <a href="">
+                    <BsInstagram className="size-7 sm:size-6"/>
+                </a>
+                <a href="">
+                    <FaGoodreads className="size-8 sm:size-6"/>
+                </a>
+            </div>
         </div>
     )
 }
 
 export default Landing;
 
-/**/ 
+/*
+<svg id="highlight-container" className="absolute -bottom-0 w-full origin-left left-0 h-full -z-10 translate-y-1/3 saturate-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 20">
+                        <path d="M0,5 C50,7 150,7 200,5" stroke="#F2CD02" fill="none" strokeWidth="9" strokeLinecap="round"/>
+                    </svg>
+*/ 
