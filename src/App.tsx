@@ -78,14 +78,7 @@ const App = ({ error }: Props) => {
               className="w-full max-w-[1208px] h-svh min-h-[480px] mx-auto "
             >
               <WorkProjects />
-              {/*just have multiple cards that appear on intersectionobserver*/}
-              {/*setup cards with grid that have different layouts on mobile and desktop*/}
-              {/*have link to resume at end*/}
             </div>
-            {/*have a scrolling ticker tape of skills*/}
-            {/*have link to page with table of full list of projects at end*/}
-            {/*need your footer at the end*/}
-            {/**/}
           </>
         )
       }
