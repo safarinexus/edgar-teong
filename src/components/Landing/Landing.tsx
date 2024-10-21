@@ -32,16 +32,9 @@ const Landing = () => {
             ScrollTrigger.create({
                 animation: tl, 
                 trigger: "#im-also",
-                start: "top center", 
-                end: "+=300px", 
+                start: "center center", 
+                end: "+=35%", 
                 scrub: 1,
-            })
-
-            gsap.from("#landing-text", {
-                duration: 0.6, 
-                y: -20, 
-                opacity: 0,
-                ease: "none"
             })
 
             gsap.to("#myname, #fullstack, #coffee, #reader, #music, #film, #com", {
@@ -50,12 +43,6 @@ const Landing = () => {
                 ease: "sine.inOut",
                 repeat: -1,  
                 yoyo: true,  
-            });
-
-            gsap.from("#highlight-container", {
-                scale: 0, 
-                duration: 0.3, 
-                delay: 1,
             });
         });
     });
@@ -83,9 +70,9 @@ const Landing = () => {
                 I'm a passionate & self-started software engineer, I make products that are performant and beautiful. 
             </p>
 
-            <div id="im-also" className="relative mt-4 h-[120px] font-medium text-4xl sm:h-[80px] lg:text-6xl lg:tracking-tight">
+            <div id="im-also" className="relative mt-4 h-fit motion-safe:h-[150px] font-medium text-4xl sm:h-[80px] lg:text-6xl">
                 I'm also a&nbsp;
-                <div id="scroll-text" className="w-fit h-fit sm:h-[144px] inline">
+                <div id="scroll-text" className="w-fit h-[144px] inline">
                     <span id="fullstack" className="block motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         Full Stack Developer
                     </span>
@@ -95,14 +82,14 @@ const Landing = () => {
                     <span id="reader" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         Avid Reader
                     </span>
-                    <span id="music" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
-                        Music Enjoyer
+                    <span id="music" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline leading-[1.05]  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                        Mechanical Keyboard Hobbyist
                     </span>
                     <span id="film" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         Film Nerd
                     </span>
-                    <span id="com" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
-                        Computer Nerd
+                    <span id="com" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  leading-[1.2] bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                        Psychology Enthusiast
                     </span>
                 </div>
             </div>
@@ -130,7 +117,12 @@ const Landing = () => {
 export default Landing;
 
 /*
+gsap.from("#highlight-container", {
+    scale: 0, 
+    duration: 0.3, 
+    delay: 1,
+});
 <svg id="highlight-container" className="absolute -bottom-0 w-full origin-left left-0 h-full -z-10 translate-y-1/3 saturate-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 20">
-                        <path d="M0,5 C50,7 150,7 200,5" stroke="#F2CD02" fill="none" strokeWidth="9" strokeLinecap="round"/>
-                    </svg>
+    <path d="M0,5 C50,7 150,7 200,5" stroke="#F2CD02" fill="none" strokeWidth="9" strokeLinecap="round"/>
+</svg>
 */ 
