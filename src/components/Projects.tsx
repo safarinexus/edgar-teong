@@ -19,6 +19,11 @@ const Projects = () => {
     return (
         <div className="w-full h-fit pt-20">
             <h1 className="font-bold text-lg">My Projects</h1>
+            {projects.map((project, index) => (
+                <div key={index} id={"project"+index} className="my-9 font-medium">
+                    {project.title}
+                </div>
+            ))}
             <a href="https://github.com/safarinexus?tab=repositories" className="font-bold text-lg">
                 My GitHub Repositories
                 <FiExternalLink id="link-arrow" className="inline ml-2 relative bottom-[2px]"/>
