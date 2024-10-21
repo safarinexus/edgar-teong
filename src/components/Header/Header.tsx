@@ -62,16 +62,18 @@ const Header = ({ width }: Props) => {
                         className="w-[60px] dark:invert select-none z-40"
                     />
                 </NavHashLink>
-                {
-                    width <= 640 ? 
-                    (<div className="ml-3 font-bold text-xl text-black dark:text-white">
-                         { activeSection === "#landing" ? ("Edgar Teong") : ("")}
-                        { activeSection === "#about" ? ("About") : ("")}
-                        { activeSection === "#work" ? ("Experience") : ("")}
-                        { activeSection === "#projects" ? ("Projects") : ("")}
-                    </div>) : 
-                    ("")
+                <div className="ml-3 font-bold text-xl text-black dark:text-white">
+                { width <= 640 ? 
+                    (<h1>
+                    { activeSection === "#landing" ? ("Edgar Teong") : ("") }
+                    { activeSection === "#about" ? ("About") : ("") }
+                    { activeSection === "#work" ? ("Experience") : ("") }
+                    { activeSection === "#projects" ? ("Projects") : ("") }
+                    </h1>)
+                    : 
+                    ("Edgar Teong")
                 }
+                </div>
                 <div id="nav-cluster" className="h-full sm:w-[350px] justify-self-end flex items-center justify-between z-40 col-start-3">
                     { width <= 640 ?  
                         <MobileDropdown /> :
