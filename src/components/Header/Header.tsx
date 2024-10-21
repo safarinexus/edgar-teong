@@ -51,7 +51,7 @@ const Header = ({ width }: Props) => {
             id="header" 
             className="
                 w-full max-w-[1176px] h-14 p-3 rounded-[32px] bg-white dark:bg-neutral-800 bg-opacity-30 z-40 relative
-                dark:bg-opacity-40 grid grid-rows-1 grid-cols-3 items-center backdrop-blur-3xl border-[1px] border-neutral-200 dark:border-neutral-800
+                dark:bg-opacity-40 grid grid-rows-1 grid-cols-[60px_auto_60px] items-center backdrop-blur-3xl border-[1px] border-neutral-200 dark:border-neutral-800
             "
             >
                 <NavHashLink to="/#top" end id="logo-link" className="inline-flex w-fit z-40">
@@ -64,7 +64,8 @@ const Header = ({ width }: Props) => {
                 </NavHashLink>
                 {
                     width <= 640 ? 
-                    (<div className="justify-self-center font-bold text-xl text-black dark:text-white">
+                    (<div className="ml-3 font-bold text-xl text-black dark:text-white">
+                         { activeSection === "#landing" ? ("Edgar Teong") : ("")}
                         { activeSection === "#about" ? ("About") : ("")}
                         { activeSection === "#work" ? ("Experience") : ("")}
                         { activeSection === "#projects" ? ("Projects") : ("")}
