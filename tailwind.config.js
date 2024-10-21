@@ -7,7 +7,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        purpley: "rgb(40, 23, 83)",
         brown: "#964B00",
       },
       animation: {
