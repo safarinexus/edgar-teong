@@ -29,10 +29,9 @@ const Projects = () => {
                     <div 
                         key={index} 
                         id={"project"+index} 
-                        style={{display: "subgrid"}}
                         className={"font-medium w-full max-w-[600px] h-auto max-h-full rounded-xl p-3 bg-white\
-                    border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark dark:bg-black\
-                    gap-2 grid-cols-1 grids-rows-[50%_10%_15%_25%] my-9 justify-self-center" + skew}
+                            border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark\
+                            dark:bg-black grid gap-2 grid-cols-1 auto-rows-auto my-9 justify-self-center" + skew}
                     >
                         <img 
                             src={project.image}
