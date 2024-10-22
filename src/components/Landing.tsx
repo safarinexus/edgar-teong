@@ -27,8 +27,8 @@ const Landing = () => {
             ScrollTrigger.create({
                 animation: tl, 
                 trigger: "#im-also",
-                start: "center center", 
-                end: "+=30%", 
+                start: "clamp(top center)", 
+                end: "clamp(top 20%)", 
                 scrub: 1,
             })
 
