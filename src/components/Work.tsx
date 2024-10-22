@@ -18,8 +18,7 @@ const Work = () => {
                 gsap.from(`#work${i}`, {
                     scrollTrigger: {
                         trigger: `#work${i}`, 
-                        start: "clamp(center bottom)", 
-                        end: "clamp(+=50)",
+                        start: "clamp(center 85%)", 
                         toggleActions: "play none none reverse",
                     },
                     opacity: 0, 
