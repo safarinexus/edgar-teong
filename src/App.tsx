@@ -64,7 +64,7 @@ const App = ({ error }: Props) => {
             <ScrollProgressBar />
             <ScrollIndicator height={dimensions.height}/> 
             <div 
-              id="landing" 
+              id="lfg" 
               className="w-full max-w-[1208px] h-fit sm:h-screen sm:git min-h-fit mx-auto px-2 py-2"
             >
               <Landing />

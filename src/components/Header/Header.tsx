@@ -70,7 +70,7 @@ const Header = ({ width }: Props) => {
                 dark:bg-opacity-40 grid grid-rows-1 grid-cols-[60px_auto_60px] items-center backdrop-blur-3xl border-[1px] border-neutral-200 dark:border-neutral-800
             "
             >
-                <NavHashLink to="/#top" end id="logo-link" className="inline-flex w-fit z-40">
+                <NavHashLink to="/#lfg" end id="logo-link" className="inline-flex w-fit z-40">
                     <img 
                         src={logo} 
                         alt="logo" 
@@ -81,7 +81,7 @@ const Header = ({ width }: Props) => {
                 <div className="ml-3 font-bold text-xl text-black dark:text-white">
                 { width <= 640 ? 
                     (<h1>
-                    { activeSection === "#landing" ? ("Edgar Teong") : ("") }
+                    { activeSection === "#lfg" ? ("Edgar Teong") : ("") }
                     { activeSection === "#about" ? ("About") : ("") }
                     { activeSection === "#work" ? ("Experience") : ("") }
                     { activeSection === "#project0" ? ("Projects") : ("") }
