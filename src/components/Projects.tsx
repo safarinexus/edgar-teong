@@ -13,27 +13,22 @@ import { FaGithub } from "react-icons/fa";
 const Projects = () => {
     useGSAP(() => {
         const mm = gsap.matchMedia();
-        mm.add("(min-width: 650px)", () => {
-            gsap.set("#projects div", {position: ''})
-        })
         mm.add("(prefers-reduced-motion: no-preference)", () => {
-            for (let i = 0; i < projects.length; i++) {
-            }
         })
     });
 
     return (
         <>
-            <h1 className="font-bold text-lg self-start">My Projects</h1>
+            <h1 className="font-bold text-lg">My Projects</h1>
             {projects.map((project, index) => {
                 let skew = " -rotate-2"; 
                 if ((Number(index) + 1) % 2 === 0) {
                     skew = " rotate-2"
                 } 
                 return (
-                    <div key={index} id={"project"+index} className={"my-9 font-medium w-full max-w-[600px] rounded-xl p-3 bg-white\
+                    <div key={index} id={"project"+index} className={"font-medium w-full max-w-[600px] rounded-xl p-3 bg-white\
                     border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark dark:bg-black\
-                    grid gap-2 grid-cols-1 grids-rows-[50%_10%_15%_25%]" + skew}
+                    grid gap-2 grid-cols-1 grids-rows-[50%_10%_15%_25%] my-9" + skew}
                     >
                         <img 
                             src={project.image}
@@ -70,7 +65,7 @@ const Projects = () => {
                         </div>
                     </div>
             )})}
-            <a href="https://github.com/safarinexus?tab=repositories" className="font-bold text-lg self-start">
+            <a href="https://github.com/safarinexus?tab=repositories" className="font-bold text-lg">
                 My GitHub Repositories
                 <FiExternalLink id="link-arrow" className="inline ml-2 relative bottom-[2px]"/>
             </a>
