@@ -13,7 +13,12 @@ import { FaGithub } from "react-icons/fa";
 const Projects = () => {
     useGSAP(() => {
         const mm = gsap.matchMedia();
+        mm.add("(min-width: 650px)", () => {
+            gsap.set("#projects div", {position: ''})
+        })
         mm.add("(prefers-reduced-motion: no-preference)", () => {
+            for (let i = 0; i < projects.length; i++) {
+            }
         })
     });
 
@@ -21,23 +26,38 @@ const Projects = () => {
         <>
             <h1 className="font-bold text-lg self-start">My Projects</h1>
             {projects.map((project, index) => {
-                let skew = "-rotate-2"; 
+                let skew = " -rotate-2"; 
                 if ((Number(index) + 1) % 2 === 0) {
-                    skew = "rotate-2"
+                    skew = " rotate-2"
                 } 
                 return (
-                    <div key={index} id={"project"+index} className={"my-9 font-medium w-full max-w-[900px] rounded-xl p-3 bg-white\
+                    <div key={index} id={"project"+index} className={"my-9 font-medium w-full max-w-[600px] rounded-xl p-3 bg-white\
                     border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark dark:bg-black\
-                    grid gap-3 grid-cols-2 grid-rows-[auto_1_2_auto] aspect-square " + skew}
+                    grid gap-2 grid-cols-1 grids-rows-[50%_10%_15%_25%]" + skew}
                     >
                         <img 
                             src={project.image}
                             alt={"project"+index+" image"} 
                             className="block w-full h-full rounded-lg object-center object-cover col-span-2"
                         />
-                        <p className="text-lg font-bold tracking-tighter">{project.title}</p>
-                        <p className="col-span-2 row-start-3 font-light">{project.description}</p>
-                        <div className="col-span-2 row-start-4">
+                        <div className="w-full flex items-start">
+                            <p className="text-lg font-bold tracking-tighter">{project.title}</p>
+                            <div className="ml-auto flex justify-end items-center w-[80px]">
+                                    <a href={project.githubLink}>
+                                        <FaGithub className="size-6"/>
+                                    </a>
+                                    { project.demoLink ? 
+                                        (
+                                        <a href={project.demoLink}>
+                                            <FiExternalLink className="ml-3 size-6"/>
+                                        </a>
+                                        ) :
+                                        ("")
+                                    }
+                            </div>
+                        </div>
+                        <p className="font-light col-span-2">{project.description}</p>
+                        <div className="row-start-4 col-span-2">
                             {project.technologies.map((tech, techIndex) => (
                                     <span 
                                         key={techIndex} 
@@ -47,19 +67,6 @@ const Projects = () => {
                                         {tech}
                                     </span>
                             ))}
-                        </div>
-                        <div className="flex justify-end items-center w-[80px] justify-self-end">
-                            <a href={project.githubLink}>
-                                <FaGithub className="size-6"/>
-                            </a>
-                            { project.demoLink ? 
-                                (
-                                <a href={project.demoLink}>
-                                    <FiExternalLink className="ml-3 size-6"/>
-                                </a>
-                                ) :
-                                ("")
-                            }
                         </div>
                     </div>
             )})}

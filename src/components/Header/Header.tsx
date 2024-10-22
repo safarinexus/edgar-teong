@@ -11,7 +11,7 @@ interface Props {
     width: number
 }
 
-const sections = ['#landing', '#about', '#work', '#projects'];
+const sections = ['#landing', '#about', '#work', '#project0'];
 
 const Header = ({ width }: Props) => {
     const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -65,10 +65,10 @@ const Header = ({ width }: Props) => {
                 <div className="ml-3 font-bold text-xl text-black dark:text-white">
                 { width <= 640 ? 
                     (<h1>
-                    { activeSection == "#landing" ? ("Edgar Teong") : ("") }
-                    { activeSection == "#about" ? ("About") : ("") }
-                    { activeSection == "#work" ? ("Experience") : ("") }
-                    { activeSection == "#projects" ? ("Projects") : ("") }
+                    { activeSection === "#landing" ? ("Edgar Teong") : ("") }
+                    { activeSection === "#about" ? ("About") : ("") }
+                    { activeSection === "#work" ? ("Experience") : ("") }
+                    { activeSection === "#project0" ? ("Projects") : ("") }
                     </h1>)
                     : 
                     ("Edgar Teong")
@@ -84,7 +84,7 @@ const Header = ({ width }: Props) => {
                             <div className={`w-fit h-fit transition-shadow duration-75 z-40 ${activeSection === '#work' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
                                 <NavHashLink to="/#work" end className="md:text-lg">Work</NavHashLink>
                             </div>
-                            <div className={`w-fit h-fit transition-shadow duration-75 z-40 ${activeSection === '#projects' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
+                            <div className={`w-fit h-fit transition-shadow duration-75 z-40 ${activeSection === '#project0' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
                                 <NavHashLink to="/#projects" end className="md:text-lg">Projects</NavHashLink>
                             </div>
                             <Link to='/thoughts' className="md:text-lg z-40">Thoughts</Link>
