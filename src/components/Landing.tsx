@@ -39,6 +39,13 @@ const Landing = () => {
                 repeat: -1,  
                 yoyo: true,  
             });
+
+            gsap.from("#container-bg", {
+                duration: 1, 
+                rotate: 12, 
+                y: "10%",
+                ease: "power4.out"
+            })
         });
     });
 

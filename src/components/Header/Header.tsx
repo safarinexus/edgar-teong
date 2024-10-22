@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 import { NavHashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom"
+import { gsap } from "gsap"; 
+import { useGSAP } from '@gsap/react';
+
+gsap.registerPlugin(useGSAP);
 
 import logo from "/logo.png"
 
@@ -44,6 +48,18 @@ const Header = ({ width }: Props) => {
             });
         };
     }, []);
+
+    useGSAP(() => {
+        const mm = gsap.matchMedia();
+        mm.add("(prefers-reduced-motion: no-preference)", () => {
+            gsap.from("#header-container", {
+                y: "-100%", 
+                duration: 1,
+                rotate: -4, 
+                ease: "power4.out"
+            })
+        })
+    })
 
     return (
         <div id="header-container" className="fixed w-full min-w-[320px] flex flex-col items-center pt-4 pb-3 sm:pt-0 sm:pb-0 sm:top-4 px-4 h-min z-40">
