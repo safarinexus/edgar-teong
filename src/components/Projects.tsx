@@ -33,7 +33,7 @@ const Projects = () => {
                             border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark\
                             dark:bg-black grid gap-2 grid-cols-1 grids-rows-[50%_10%_15%_25%] my-9 justify-self-center" + skew}
                     >
-                        <div className="col-span-2">
+                        <div className="col-span-2 flex overflow-x-auto overflow-y-hidden min-w-0 min-h-0">
                             <img 
                                 src={project.image}
                                 alt={"project"+index+" image"} 
