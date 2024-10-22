@@ -6,9 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        brown: "#964B00",
-      },
       backgroundSize: {
         '300%': '300%',
       },
