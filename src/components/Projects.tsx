@@ -26,7 +26,7 @@ const Projects = () => {
                     skew = " rotate-2"
                 } 
                 return (
-                    <div key={index} id={"project"+index} className={"font-medium w-full max-w-[600px] rounded-xl p-3 bg-white\
+                    <div key={index} id={"project"+index} className={"font-medium w-full max-w-[600px] h-auto rounded-xl p-3 bg-white\
                     border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark dark:bg-black\
                     grid gap-2 grid-cols-1 grids-rows-[50%_10%_15%_25%] my-9 self-center" + skew}
                     >
