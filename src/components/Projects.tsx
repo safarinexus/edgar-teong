@@ -13,7 +13,7 @@ import { FaGithub } from "react-icons/fa";
 const Projects = () => {
     useGSAP(() => {
         const mm = gsap.matchMedia();
-        mm.add("(prefers-reduced-motion: no-preference)", () => {
+        mm.add("screen and (min-width: 650px) and (prefers-reduced-motion: no-preference)", () => {
             const tl = gsap.timeline(); 
             tl.set("#project5", { y: "200%" })
             tl.from("#project0", {
