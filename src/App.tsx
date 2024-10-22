@@ -83,7 +83,7 @@ const App = ({ error }: Props) => {
             </div>
             <div
               id="projects"
-              className="w-full max-w-[1208px] h-fit min-h-[480px] mx-auto px-5 pt-20 sm:px-24 grid grid-cols-1 justify-center"
+              className="w-full max-w-[1208px] h-fit min-h-[480px] mx-auto px-5 pt-20 sm:px-24 flex flex-col items-center"
             >
               <Projects />
             </div>
