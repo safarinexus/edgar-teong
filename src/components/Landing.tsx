@@ -28,7 +28,7 @@ const Landing = () => {
                 animation: tl, 
                 trigger: "#im-also",
                 start: "clamp(top center)", 
-                end: "clamp(top 20%)", 
+                end: "clamp(top 10%)",
                 scrub: 1,
             })
 

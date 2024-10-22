@@ -21,14 +21,14 @@ const Projects = () => {
                 scale: 1.3,
             })
             for (let i = 1; i < projects.length; i++) {
-                if (i === 5) {
+                if (i === 6 || i === 1) {
                     tl.from(`#project${i}`, {
                         y: "160%",  
                         scale: 1.3,
                     })
                 } else {
                     tl.from(`#project${i}`, {
-                        y: "140%",  
+                        y: "130%",  
                         scale: 1.3,
                     })
                 }
@@ -37,8 +37,8 @@ const Projects = () => {
             ScrollTrigger.create({
                 animation: tl, 
                 trigger: "#projects",
-                start: "top top", 
-                end: "+=400%", 
+                start: "clamp(top top)", 
+                end: "clamp(+=400%)", 
                 scrub: 1,
                 pin: true,
                 anticipatePin: 1,
@@ -62,7 +62,7 @@ const Projects = () => {
                             id={"project"+index} 
                             className={"font-medium w-full max-w-[600px] h-auto max-h-full rounded-xl p-3 bg-white\
                                 border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark\
-                                dark:bg-black flex flex-col space-y-2 my-9 sm:motion-safe:absolute" + skew }
+                                dark:bg-black flex flex-col space-y-2 my-9 sm:motion-safe:absolute sm:motion-safe:mx-auto" + skew }
                         >
                             <img 
                                 src={project.image}
