@@ -18,8 +18,8 @@ const Work = () => {
                 gsap.from(`#work${i}`, {
                     scrollTrigger: {
                         trigger: `#work${i}`, 
-                        start: "center 85%", 
-                        end: "+=100",
+                        start: "bottom bottom", 
+                        end: "+=200",
                         toggleActions: "play none none reverse",
                     },
                     opacity: 0, 
@@ -32,7 +32,7 @@ const Work = () => {
 
     return (
         <>
-            <h1 className="font-bold text-lg sm:text-3xl">My Work Experience</h1>
+            <h1 className="font-bold text-2xl sm:text-4xl">My Work Experience</h1>
             {works.map((work, index) => (
                 <div key={index} id={"work"+index} className="my-9 font-medium sm:grid sm:gap-2 grid-cols-[110px_auto]">
                     <p className="text-sm sm:text-lg sm:font-light sm:row-span-3 sm:my-[5px]">{work.dates}</p>

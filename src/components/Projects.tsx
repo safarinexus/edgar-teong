@@ -19,7 +19,7 @@ const Projects = () => {
 
     return (
         <>
-            <h1 className="font-bold text-lg sm:text-3xl">My Projects</h1>
+            <h1 className="font-bold text-2xl sm:text-4xl">My Projects</h1>
             {projects.map((project, index) => {
                 let skew = " -rotate-2"; 
                 if ((Number(index) + 1) % 2 === 0) {
@@ -31,7 +31,7 @@ const Projects = () => {
                         id={"project"+index} 
                         className={"font-medium w-full max-w-[600px] h-auto max-h-full rounded-xl p-3 bg-white\
                             border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark\
-                            dark:bg-black flex flex-col space-y-2 my-9 justify-self-center" + skew}
+                            dark:bg-black flex flex-col space-y-2 my-9 self-center" + skew}
                     >
                         <img 
                             src={project.image}
