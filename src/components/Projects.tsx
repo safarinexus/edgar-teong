@@ -15,7 +15,7 @@ const Projects = () => {
         const mm = gsap.matchMedia();
         mm.add("screen and (min-width: 650px) and (prefers-reduced-motion: no-preference)", () => {
             const tl = gsap.timeline(); 
-            tl.set("#project5", { y: "200%" })
+            tl.set("#project5", { y: "200%", scale: 1.3})
             tl.from("#project0", {
                 y: "50%", 
                 rotate: 6, 
@@ -23,9 +23,9 @@ const Projects = () => {
             })
             for (let i = 1; i < projects.length; i++) {
                 if (i === 5) { 
-                    tl.from(`#project${i}`, {
-                        y: "200%",
-                        scale: 1.3,
+                    tl.to(`#project${i}`, {
+                        y: 0,
+                        scale: 1,
                     })
                 } else { 
                     tl.from(`#project${i}`, {
