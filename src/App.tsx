@@ -1,10 +1,4 @@
 import { useState, useEffect } from "react";
-import { gsap } from "gsap"; 
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from '@gsap/react';
-
-gsap.registerPlugin(useGSAP);
-gsap.registerPlugin(ScrollTrigger);
 
 import Header from "./components/Header/Header"
 import ScrollProgressBar from "./components/ScrollProgressBar"
@@ -47,10 +41,6 @@ const App = ({ error }: Props) => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
-  useGSAP(() => {
-
-  }); 
 
   return (
     <>

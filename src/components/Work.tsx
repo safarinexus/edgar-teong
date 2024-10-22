@@ -22,15 +22,13 @@ const Work = () => {
                         end: "clamp(bottom 20px)",
                         markers: true,
                         toggleActions: "play none none reverse",
-                        anticipatePin: 1,
                     },
                     opacity: 0, 
                     scale: 0.9,
                     y: 100,
-                    duration: 1,
                 })
             }
-            ScrollTrigger.refresh();
+            gsap.delayedCall(1, () => ScrollTrigger.refresh());
         })
     });
 
