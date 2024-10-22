@@ -14,39 +14,19 @@ const Work = () => {
     useGSAP(() => {
         const mm = gsap.matchMedia();
         mm.add("(prefers-reduced-motion: no-preference)", () => {
-            gsap.from("#work1", {
-                scrollTrigger: {
-                    trigger: "#work1", 
-                    start: "center bottom", 
-                    end: "+=100",
-                    toggleActions: "play none none reverse",
-                },
-                opacity: 0, 
-                scale: 0.9,
-                y: 100,
-            })
-            gsap.from("#work2", {
-                scrollTrigger: {
-                    trigger: "#work2", 
-                    start: "center bottom", 
-                    end: "+=100",
-                    toggleActions: "play none none reverse",
-                },
-                opacity: 0, 
-                scale: 0.9,
-                y: 100,
-            })
-            gsap.from("#work3", {
-                scrollTrigger: {
-                    trigger: "#work3", 
-                    start: "center bottom", 
-                    end: "+=100",
-                    toggleActions: "play none none reverse",
-                },
-                opacity: 0, 
-                scale: 0.9,
-                y: 100,
-            })
+            for (let i = 0; i < works.length; i++) {
+                gsap.from(`#work${i}`, {
+                    scrollTrigger: {
+                        trigger: `#work${i}`, 
+                        start: "center 85%", 
+                        end: "+=100",
+                        toggleActions: "play none none reverse",
+                    },
+                    opacity: 0, 
+                    scale: 0.9,
+                    y: 100,
+                })
+            }
         })
     });
 
@@ -54,7 +34,7 @@ const Work = () => {
         <>
             <h1 className="font-bold text-lg sm:text-3xl">My Work Experience</h1>
             {works.map((work, index) => (
-                <div key={index} id={"work"+(index+1)} className="my-9 font-medium sm:grid sm:gap-2 grid-cols-[110px_auto]">
+                <div key={index} id={"work"+index} className="my-9 font-medium sm:grid sm:gap-2 grid-cols-[110px_auto]">
                     <p className="text-sm sm:text-lg sm:font-light sm:row-span-3 sm:my-[5px]">{work.dates}</p>
                     <a href={work.link} className="text-lg font-bold tracking-tighter my-1 sm:text-2xl">{work.position} • {work.company}</a>
                     <p className="mb-3 font-light lg:text-xl">{work.description}</p>
