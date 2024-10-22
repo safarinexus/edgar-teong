@@ -15,26 +15,25 @@ const Projects = () => {
         const mm = gsap.matchMedia();
         mm.add("screen and (min-width: 650px) and (prefers-reduced-motion: no-preference)", () => {
             const tl = gsap.timeline(); 
-            tl.set("#project5", { y: "200%", scale: 1.3})
             tl.from("#project0", {
                 y: "50%", 
                 rotate: 6, 
                 scale: 1.3,
             })
             for (let i = 1; i < projects.length; i++) {
-                if (i === 5) { 
-                    tl.to(`#project${i}`, {
-                        y: 0,
-                        scale: 1,
+                if (i === 5) {
+                    tl.from(`#project${i}`, {
+                        y: "160%",  
+                        scale: 1.3,
                     })
-                } else { 
+                } else {
                     tl.from(`#project${i}`, {
                         y: "140%",  
                         scale: 1.3,
                     })
                 }
             }
-
+            
             ScrollTrigger.create({
                 animation: tl, 
                 trigger: "#projects",
@@ -43,6 +42,7 @@ const Projects = () => {
                 scrub: 1,
                 pin: true,
             })
+            
         })
     });
 
