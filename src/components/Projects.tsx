@@ -31,13 +31,15 @@ const Projects = () => {
                         id={"project"+index} 
                         className={"font-medium w-full max-w-[600px] h-auto max-h-full rounded-xl p-3 bg-white\
                             border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark\
-                            dark:bg-black grid gap-2 grid-cols-1 auto-rows-auto my-9 justify-self-center" + skew}
+                            dark:bg-black grid gap-2 grid-cols-1 grids-rows-[50%_10%_15%_25%] my-9 justify-self-center" + skew}
                     >
-                        <img 
-                            src={project.image}
-                            alt={"project"+index+" image"} 
-                            className="block w-full h-full rounded-lg object-center object-cover col-span-2"
-                        />
+                        <div className="col-span-2">
+                            <img 
+                                src={project.image}
+                                alt={"project"+index+" image"} 
+                                className="w-full h-full rounded-lg object-center object-cover"
+                            />
+                        </div>
                         <div className="w-full flex items-start row-start-2 col-span-2">
                             <p className="text-lg font-bold tracking-tighter">{project.title}</p>
                             <div className="ml-auto flex justify-end items-center w-[80px]">
