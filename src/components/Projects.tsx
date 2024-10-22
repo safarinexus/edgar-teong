@@ -14,7 +14,28 @@ const Projects = () => {
     useGSAP(() => {
         const mm = gsap.matchMedia();
         mm.add("(prefers-reduced-motion: no-preference)", () => {
-
+            for (let i = 0; i < projects.length; i++) {
+                gsap.from(`#project${i}`, {
+                    scrollTrigger: {
+                        trigger: `#project${i}`, 
+                        start: "top bottom", 
+                        end: "center center",
+                        scrub: 1, 
+                    },
+                    y: 100,
+                    onComplete: () => {
+                        gsap.to(`#project${i}`, {
+                            scrollTrigger: {
+                                trigger: `#project${i}`, 
+                                start: "top 20%", 
+                                end: "+=1000%", 
+                                scrub: 1, 
+                                pin: true,
+                            },
+                        })
+                    }    
+                })
+            }
         })
     });
 
@@ -33,7 +54,7 @@ const Projects = () => {
                             id={"project"+index} 
                             className={"font-medium w-full max-w-[600px] h-auto max-h-full rounded-xl p-3 bg-white\
                                 border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark\
-                                dark:bg-black flex flex-col space-y-2 my-9 self-center" + skew }
+                                dark:bg-black flex flex-col space-y-2 my-9 self-center sm:motion-safe:absolute" + skew }
                         >
                             <img 
                                 src={project.image}

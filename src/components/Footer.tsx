@@ -3,7 +3,7 @@ import ContactBar from "./ContactBar";
 const Footer = () => {
     return (
         <div id="footer" className="mt-10 w-full">
-            <hr className="w-[80%] mx-auto"/>
+            <hr className="w-[80%] mx-auto" style={{ color: "#737373", opacity: '50%' }}/>
             <div className="space-y-3 my-4">
                 <div className="w-full flex justify-center">
                     <a 

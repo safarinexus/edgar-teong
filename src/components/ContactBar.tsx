@@ -11,7 +11,7 @@ interface Prop {
 const ContactBar = ({ main }: Prop) => {
     if (main) {
         return (
-            <div className="h-10 w-56 mt-5 mx-auto sm:m-0 flex justify-between items-center z-30"> 
+            <div className="h-10 w-56 mx-auto sm:m-0 flex justify-between items-center z-30"> 
                 <a href="mailto:edgargarteong@gmail.com" target="_blank">
                     <BiLogoGmail className="size-8 sm:size-6"/>
                 </a>
