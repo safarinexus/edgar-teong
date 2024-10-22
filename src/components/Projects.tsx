@@ -41,6 +41,7 @@ const Projects = () => {
                 end: "+=400%", 
                 scrub: 1,
                 pin: true,
+                anticipatePin: 1,
             })
             
         })
