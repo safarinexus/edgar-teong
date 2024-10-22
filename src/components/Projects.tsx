@@ -31,16 +31,14 @@ const Projects = () => {
                         id={"project"+index} 
                         className={"font-medium w-full max-w-[600px] h-auto max-h-full rounded-xl p-3 bg-white\
                             border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark\
-                            dark:bg-black grid gap-2 grid-cols-1 grids-rows-[50%_10%_15%_25%] my-9 justify-self-center" + skew}
+                            dark:bg-black flex flex-col space-y-2 my-9 justify-self-center" + skew}
                     >
-                        <div className="col-span-2 flex overflow-x-auto overflow-y-hidden min-w-0 min-h-0">
-                            <img 
-                                src={project.image}
-                                alt={"project"+index+" image"} 
-                                className="w-full h-full rounded-lg object-center object-cover"
-                            />
-                        </div>
-                        <div className="w-full flex items-start row-start-2 col-span-2">
+                        <img 
+                            src={project.image}
+                            alt={"project"+index+" image"} 
+                            className="w-full h-full rounded-lg object-center object-cover"
+                        />
+                        <div className="w-full flex items-start">
                             <p className="text-lg font-bold tracking-tighter">{project.title}</p>
                             <div className="ml-auto flex justify-end items-center w-[80px]">
                                     <a href={project.githubLink}>
@@ -56,8 +54,8 @@ const Projects = () => {
                                     }
                             </div>
                         </div>
-                        <p className="font-light col-span-2 row-start-3">{project.description}</p>
-                        <div className="col-span-2 row-start-4">
+                        <p className="font-light">{project.description}</p>
+                        <div className="">
                             {project.technologies.map((tech, techIndex) => (
                                     <span 
                                         key={techIndex} 
