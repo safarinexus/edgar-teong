@@ -10,7 +10,9 @@ const Footer = () => {
             >
                 Made by Edgar Russell Teong Kai Han
             </a>
-            <ContactBar />
+            <div className="w-full flex justify-center">
+                <ContactBar />
+            </div>
         </div>
     )
 }
