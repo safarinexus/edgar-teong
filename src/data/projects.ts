@@ -1,15 +1,16 @@
-import top from "/project-thumbnails/top-projects.webp"
-import weather from "/project-thumbnails/weather.webp"
-import calc from "/project-thumbnails/calc.webp"
-import memorycard from "/project-thumbnails/memorycard.webp"
-import blog from "/project-thumbnails/blog.webp"
-import shopping from "/project-thumbnails/shopping.webp"
-import supersecret from "/project-thumbnails/supersecret.webp"
-import tictactoe from "/project-thumbnails/tictactoe.webp"
-import fileuploader from "/project-thumbnails/fileuploader.webp"
-import msgboard from "/project-thumbnails/msgboard.webp"
-import inventory from "/project-thumbnails/inventory.webp"
-import todo from "/project-thumbnails/todo.webp"
+import top from "../assets/project-thumbnails/top-projects.webp"
+import weather from "../assets/project-thumbnails/weather.webp"
+import calc from "../assets/project-thumbnails/calc.webp"
+import memorycard from "../assets/project-thumbnails/memorycard.webp"
+import blog from "../assets/project-thumbnails/blog.webp"
+import shopping from "../assets/project-thumbnails/shopping.webp"
+import supersecret from "../assets/project-thumbnails/supersecret.webp"
+import tictactoe from "../assets/project-thumbnails/tictactoe.webp"
+import fileuploader from "../assets/project-thumbnails/fileuploader.webp"
+import msgboard from "../assets/project-thumbnails/msgboard.webp"
+import inventory from "../assets/project-thumbnails/inventory.webp"
+import todo from "../assets/project-thumbnails/todo.webp"
+
 
 
 
