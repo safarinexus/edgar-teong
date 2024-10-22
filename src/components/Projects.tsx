@@ -19,7 +19,7 @@ const Projects = () => {
 
     return (
         <>
-            <h1 className="font-bold text-lg">My Projects</h1>
+            <h1 className="font-bold text-lg sm:text-3xl">My Projects</h1>
             {projects.map((project, index) => {
                 let skew = " -rotate-2"; 
                 if ((Number(index) + 1) % 2 === 0) {
