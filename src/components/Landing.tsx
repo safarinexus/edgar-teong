@@ -88,7 +88,7 @@ const Landing = () => {
                     </span>
                 </div>
             </div>
-            <ContactBar />
+            <ContactBar main={true}/>
         </div>
     )
 }
