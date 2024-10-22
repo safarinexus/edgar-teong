@@ -10,6 +10,7 @@ import fileuploader from "../assets/project-thumbnails/fileuploader.webp"
 import msgboard from "../assets/project-thumbnails/msgboard.webp"
 import inventory from "../assets/project-thumbnails/inventory.webp"
 import todo from "../assets/project-thumbnails/todo.webp"
+import portfolio from "../assets/project-thumbnails/portfolio.webp"
 
 
 
@@ -25,9 +26,17 @@ interface project {
 
 const projects:project[] = [ 
     {
+        title: "This Website!",
+        description: "My own portfolio website! To showcase my experience, projects & personality.", 
+        technologies: ["TypeScript","React + Vite", "TailwindCSS" ,"GSAP", "Vercel"], 
+        githubLink: "https://github.com/safarinexus/edgar-teong",
+        demoLink: false,
+        image: portfolio,
+    },
+    {
         title: "Blog API",
         description: "A full REST API for a blog, including two frontends, one for viewing posts and one for editing.", 
-        technologies: ["JavaScript","React", "Node", "Express", "PostgreSQL", "Prisma", "Railway"], 
+        technologies: ["JavaScript","React", "Node", "Express", "PostgreSQL" ,"TailwindCSS" , "Prisma", "Railway"], 
         githubLink: "https://github.com/safarinexus/edgr_odin_projects/tree/main/odin-node-express-REST-blog",
         demoLink: "https://edgr-odin-blog-access.vercel.app/",
         image: blog,
