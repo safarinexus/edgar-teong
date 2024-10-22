@@ -37,7 +37,7 @@ const Work = () => {
                 <div key={index} id={"work"+index} className="my-9 font-medium sm:grid sm:gap-2 grid-cols-[110px_auto]">
                     <p className="text-sm sm:text-lg sm:font-light sm:row-span-3 sm:my-[5px]">{work.dates}</p>
                     <a href={work.link} className="text-lg font-bold tracking-tighter my-1 sm:text-2xl">{work.position} • {work.company}</a>
-                    <p className="mb-3 font-light lg:text-xl">{work.description}</p>
+                    <p className="my-3 font-light lg:text-xl">{work.description}</p>
                     <div>
                         {work.technologies.map((tech, techIndex) => (
                                 <span 
@@ -51,7 +51,7 @@ const Work = () => {
                     </div>
                 </div>
             ))}
-            <a href={resume} className="font-bold text-lg">
+            <a href={resume} className="block font-bold text-lg">
                 My Full Resume 
                 <FiExternalLink id="link-arrow" className="inline ml-2 relative bottom-[2px]"/>
             </a>
