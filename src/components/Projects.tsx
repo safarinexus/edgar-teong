@@ -35,7 +35,7 @@ const Projects = () => {
                             alt={"project"+index+" image"} 
                             className="block w-full h-full rounded-lg object-center object-cover col-span-2"
                         />
-                        <div className="w-full flex items-start">
+                        <div className="w-full flex items-start row-start-2 col-span-2">
                             <p className="text-lg font-bold tracking-tighter">{project.title}</p>
                             <div className="ml-auto flex justify-end items-center w-[80px]">
                                     <a href={project.githubLink}>
@@ -51,8 +51,8 @@ const Projects = () => {
                                     }
                             </div>
                         </div>
-                        <p className="font-light col-span-2">{project.description}</p>
-                        <div className="row-start-4 col-span-2">
+                        <p className="font-light col-span-2 row-start-3">{project.description}</p>
+                        <div className="col-span-2 row-start-4">
                             {project.technologies.map((tech, techIndex) => (
                                     <span 
                                         key={techIndex} 
