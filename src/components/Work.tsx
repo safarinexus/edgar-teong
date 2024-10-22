@@ -20,7 +20,6 @@ const Work = () => {
                         trigger: `#work${i}`, 
                         start: "clamp(top bottom)", 
                         end: "clamp(bottom 20px)",
-                        markers: true,
                         toggleActions: "play none none reverse",
                     },
                     opacity: 0, 
@@ -28,7 +27,7 @@ const Work = () => {
                     y: 100,
                 })
             }
-            gsap.delayedCall(1, () => ScrollTrigger.refresh());
+            gsap.delayedCall(0.5, () => ScrollTrigger.refresh());
         })
     });
 
