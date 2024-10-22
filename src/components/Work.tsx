@@ -14,7 +14,6 @@ const Work = () => {
     useGSAP(() => {
         const mm = gsap.matchMedia();
         mm.add("(prefers-reduced-motion: no-preference)", () => {
-            ScrollTrigger.refresh();
             for (let i = 0; i < works.length; i++) {
                 gsap.from(`#work${i}`, {
                     scrollTrigger: {
@@ -31,6 +30,7 @@ const Work = () => {
                     duration: 1,
                 })
             }
+            ScrollTrigger.refresh();
         })
     });
 
