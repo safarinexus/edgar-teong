@@ -19,7 +19,7 @@ const Work = () => {
                     scrollTrigger: {
                         trigger: `#work${i}`, 
                         start: "clamp(center bottom)", 
-                        end: "clamp(+=200)",
+                        end: "clamp(+=300)",
                         toggleActions: "play none none reverse",
                     },
                     opacity: 0, 
