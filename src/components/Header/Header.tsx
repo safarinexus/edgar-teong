@@ -18,30 +18,30 @@ const Header = ({ width }: Props) => {
 
     useEffect(() => {
         const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                setActiveSection(`#${entry.target.id}`);
-            }
-            });
-        },
-        { threshold: 0.6 }
+            (entries) => {
+                entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setActiveSection(`#${entry.target.id}`);
+                }
+                });
+            },
+            { threshold: 0.6 }
         );
 
         sections.forEach((section) => {
-        const element = document.querySelector(section);
-        if (element) {
-            observer.observe(element);
-        }
+            const element = document.querySelector(section);
+            if (element) {
+                observer.observe(element);
+            }
         });
 
         return () => {
-        sections.forEach((section) => {
-            const element = document.querySelector(section);
-            if (element) {
-            observer.unobserve(element);
-            }
-        });
+            sections.forEach((section) => {
+                const element = document.querySelector(section);
+                if (element) {
+                observer.unobserve(element);
+                }
+            });
         };
     }, []);
 
@@ -65,10 +65,10 @@ const Header = ({ width }: Props) => {
                 <div className="ml-3 font-bold text-xl text-black dark:text-white">
                 { width <= 640 ? 
                     (<h1>
-                    { activeSection === "#landing" ? ("Edgar Teong") : ("") }
-                    { activeSection === "#about" ? ("About") : ("") }
-                    { activeSection === "#work" ? ("Experience") : ("") }
-                    { activeSection === "#projects" ? ("Projects") : ("") }
+                    { activeSection == "#landing" ? ("Edgar Teong") : ("") }
+                    { activeSection == "#about" ? ("About") : ("") }
+                    { activeSection == "#work" ? ("Experience") : ("") }
+                    { activeSection == "#projects" ? ("Projects") : ("") }
                     </h1>)
                     : 
                     ("Edgar Teong")

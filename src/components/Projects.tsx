@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 import projects from "../data/projects"
 
 import { FiExternalLink } from "react-icons/fi";
+import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
     useGSAP(() => {
@@ -17,19 +18,56 @@ const Projects = () => {
     });
 
     return (
-        <div className="w-full h-fit pt-20">
-            <h1 className="font-bold text-lg">My Projects</h1>
-            {projects.map((project, index) => (
-                <div key={index} id={"project"+index} className="my-9 font-medium">
-                    {project.title}
-                </div>
-            ))}
-            <a href="https://github.com/safarinexus?tab=repositories" className="font-bold text-lg">
+        <>
+            <h1 className="font-bold text-lg self-start">My Projects</h1>
+            {projects.map((project, index) => {
+                let skew = "-rotate-2"; 
+                if ((Number(index) + 1) % 2 === 0) {
+                    skew = "rotate-2"
+                } 
+                return (
+                    <div key={index} id={"project"+index} className={"my-9 font-medium w-full max-w-[900px] rounded-xl p-3 bg-white\
+                    border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark dark:bg-black\
+                    grid gap-3 grid-cols-2 grid-rows-[auto_1_2_auto] aspect-square " + skew}
+                    >
+                        <img 
+                            src={project.image}
+                            alt={"project"+index+" image"} 
+                            className="block w-full h-full rounded-lg object-center object-cover col-span-2"
+                        />
+                        <p className="text-lg font-bold tracking-tighter">{project.title}</p>
+                        <p className="col-span-2 row-start-3 font-light">{project.description}</p>
+                        <div className="col-span-2 row-start-4">
+                            {project.technologies.map((tech, techIndex) => (
+                                    <span 
+                                        key={techIndex} 
+                                        className="inline-block px-3 py-1 mx-1 my-1 rounded-3xl bg-yellow-300 bg-opacity-80
+                                        dark:bg-yellow-400 dark:bg-opacity-50  text-sm font-semibold text-black dark:text-white"
+                                    >
+                                        {tech}
+                                    </span>
+                            ))}
+                        </div>
+                        <div className="flex justify-end items-center w-[80px] justify-self-end">
+                            <a href={project.githubLink}>
+                                <FaGithub className="size-6"/>
+                            </a>
+                            { project.demoLink ? 
+                                (
+                                <a href={project.demoLink}>
+                                    <FiExternalLink className="ml-3 size-6"/>
+                                </a>
+                                ) :
+                                ("")
+                            }
+                        </div>
+                    </div>
+            )})}
+            <a href="https://github.com/safarinexus?tab=repositories" className="font-bold text-lg self-start">
                 My GitHub Repositories
                 <FiExternalLink id="link-arrow" className="inline ml-2 relative bottom-[2px]"/>
             </a>
-        </div>
-
+        </>
     )
 }
 
