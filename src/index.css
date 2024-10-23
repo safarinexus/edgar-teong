@@ -21,6 +21,9 @@
     }
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
 
 #header:before {
     content: '';
