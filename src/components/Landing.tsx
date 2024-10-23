@@ -69,7 +69,7 @@ const Landing = () => {
             </p>
 
             <p id="im-a" className="mt-4 font-medium text-4xl lg:text-6xl lg:tracking-tight">
-                I'm a passionate & self-started software engineer, I make products that are performant and beautiful. 
+                I'm a passionate and self-started software engineer, I make products that are performant and beautiful. 
             </p>
 
             <div id="im-also" className="relative mt-4 h-fit motion-safe:h-[140px] font-medium text-4xl sm:h-[80px] lg:h-[90px] sm:motion-reduce:h-[320px] lg:motion-reduce:h-[480px] lg:text-6xl">
