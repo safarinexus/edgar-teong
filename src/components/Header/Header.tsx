@@ -71,8 +71,8 @@ const Header = ({ width, active }: Props) => {
             <div 
             id="header" 
             className="
-                w-full max-w-[1176px] h-14 p-3 rounded-[32px] bg-white dark:bg-neutral-800 bg-opacity-30 z-40 relative
-                dark:bg-opacity-40 grid grid-rows-1 grid-cols-[60px_auto_60px] items-center backdrop-blur-3xl border-[1px] border-neutral-200 dark:border-neutral-800
+                w-full max-w-[1176px] h-14 p-3 rounded-[32px] bg-white dark:bg-neutral-800 bg-opacity-30 z-40 relative backdrop-blur-3xl border-[1px]
+                dark:bg-opacity-40 grid grid-rows-1 grid-cols-[60px_auto_60px] items-center border-neutral-200 dark:border-neutral-800
             "
             >
                 <NavHashLink to="/#lfg" end id="logo-link" className="inline-flex w-fit z-40">
@@ -83,7 +83,7 @@ const Header = ({ width, active }: Props) => {
                         className="w-[60px] dark:invert select-none z-40"
                     />
                 </NavHashLink>
-                <div className="ml-3 font-bold text-xl text-black dark:text-white">
+                <div className="ml-3 font-bold text-xl text-black dark:text-white z-40">
                 { width <= 640 ? 
                     (<h1>
                     { activeSection === "#lfg" ? ("Edgar Teong") : ("") }
