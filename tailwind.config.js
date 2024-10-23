@@ -10,7 +10,7 @@ export default {
         brown: "#964B00",
       },
       animation: {
-        wave: 'wave 1s ease-in-out 1',
+        wave: '1s wave 1.5s ease-in-out 1',
       },
       keyframes: {
         wave: {
