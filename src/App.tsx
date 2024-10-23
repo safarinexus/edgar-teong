@@ -9,6 +9,7 @@ import Work from "./components/Work"
 import Projects from "./components/Projects"
 import Footer from "./components/Footer"
 import Error from "./components/Error"
+import Thoughts from "./components/Thoughts/Thoughts"
 
 interface Dimension {
   height: number; 
@@ -17,9 +18,10 @@ interface Dimension {
 
 interface Props {
   error: boolean,
+  thoughts: boolean,
 }
 
-const App = ({ error }: Props) => {
+const App = ({ error, thoughts }: Props) => {
   const [dimensions, setDimensions] = useState<Dimension>({
     height: window.innerHeight, 
     width: window.innerWidth, 
@@ -47,7 +49,9 @@ const App = ({ error }: Props) => {
       {/**/}
       <Header width={dimensions.width}/>
       {/*have sticky section headers on mobile*/}
-      { error ? 
+      { thoughts ?  
+        <Thoughts /> :
+        error ? 
         <Error /> : 
         (
           <>
