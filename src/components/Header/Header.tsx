@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavHashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { gsap } from "gsap"; 
 import { useGSAP } from '@gsap/react';
 
@@ -94,16 +94,24 @@ const Header = ({ width }: Props) => {
                     { width <= 640 ?  
                         <MobileDropdown /> :
                         <>
-                            <div className={`w-fit h-fit transition-shadow duration-75 z-40 ${activeSection === '#about' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
+                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-75 z-40 ${activeSection === '#about' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
                                 <NavHashLink to="/#about" end className="md:text-lg">About</NavHashLink>
                             </div>
-                            <div className={`w-fit h-fit transition-shadow duration-75 z-40 ${activeSection === '#work' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
+                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-75 z-40 ${activeSection === '#work' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
                                 <NavHashLink to="/#work" end className="md:text-lg">Work</NavHashLink>
                             </div>
-                            <div className={`w-fit h-fit transition-shadow duration-75 z-40 ${activeSection === '#project0' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
+                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-75 z-40 ${activeSection === '#project0' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
                                 <NavHashLink to="/#projects" end className="md:text-lg">Projects</NavHashLink>
                             </div>
-                            <Link to='/thoughts' className="md:text-lg z-40">Thoughts</Link>
+                            {/*md:text-lg z-40 motion-safe:transition-shadow motion-safe:duration-75*/}
+                            <NavLink 
+                                to='/thoughts' 
+                                className={({ isActive }) =>
+                                    isActive
+                                      ? 'md:text-lg z-40 motion-safe:transition-shadow motion-safe:duration-75 shadow-underline dark:shadow-underline-dark'
+                                      : 'md:text-lg z-40 motion-safe:transition-shadow motion-safe:duration-75'
+                                  }
+                            >Thoughts</NavLink>
                         </>
                     }
                     <DarkMode />
