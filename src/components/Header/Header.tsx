@@ -16,7 +16,7 @@ interface Props {
     active: boolean,
 }
 
-const sections = ['#landing', '#about', '#work', '#project0'];
+const sections = ['#lfg', '#about', '#work', '#project0'];
 
 const Header = ({ width, active }: Props) => {
     const [activeSection, setActiveSection] = useState<string | null>(null);
