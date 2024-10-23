@@ -46,9 +46,10 @@ const App = ({ error, thoughts }: Props) => {
 
   return (
     <>
-      {/**/}
-      <Header width={dimensions.width}/>
-      {/*have sticky section headers on mobile*/}
+      { thoughts || error ? 
+      <Header width={dimensions.width} active={false}/> :
+      <Header width={dimensions.width} active={true}/>
+      }
       { thoughts ?  
         <Thoughts /> :
         error ? 
