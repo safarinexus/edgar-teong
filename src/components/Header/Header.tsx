@@ -12,42 +12,47 @@ import DarkMode from "./DarkMode"
 import MobileDropdown from "./MobileDropdown/MobileDropdown"
 
 interface Props {
-    width: number
+    width: number,
+    active: boolean,
 }
 
 const sections = ['#landing', '#about', '#work', '#project0'];
 
-const Header = ({ width }: Props) => {
+const Header = ({ width, active }: Props) => {
     const [activeSection, setActiveSection] = useState<string | null>(null);
 
     useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    setActiveSection(`#${entry.target.id}`);
-                }
-                });
-            },
-            { threshold: 0.6 }
-        );
-
-        sections.forEach((section) => {
-            const element = document.querySelector(section);
-            if (element) {
-                observer.observe(element);
-            }
-        });
-
-        return () => {
+        if (active) { 
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(`#${entry.target.id}`);
+                    }
+                    });
+                },
+                { threshold: 0.6 }
+            );
+    
             sections.forEach((section) => {
                 const element = document.querySelector(section);
                 if (element) {
-                observer.unobserve(element);
+                    observer.observe(element);
                 }
             });
-        };
-    }, []);
+    
+            return () => {
+                sections.forEach((section) => {
+                    const element = document.querySelector(section);
+                    if (element) {
+                    observer.unobserve(element);
+                    }
+                });
+            };
+        } else { 
+            setActiveSection(null);
+        }
+    }, [active]);
 
     useGSAP(() => {
         const mm = gsap.matchMedia();
@@ -85,6 +90,7 @@ const Header = ({ width }: Props) => {
                     { activeSection === "#about" ? ("About") : ("") }
                     { activeSection === "#work" ? ("Experience") : ("") }
                     { activeSection === "#project0" ? ("Projects") : ("") }
+                    { !active ? ("Thoughts") : ("") }
                     </h1>)
                     : 
                     ("Edgar Teong")
@@ -103,7 +109,6 @@ const Header = ({ width }: Props) => {
                             <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-75 z-40 ${activeSection === '#project0' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
                                 <NavHashLink to="/#projects" end className="md:text-lg">Projects</NavHashLink>
                             </div>
-                            {/*md:text-lg z-40 motion-safe:transition-shadow motion-safe:duration-75*/}
                             <NavLink 
                                 to='/thoughts' 
                                 className={({ isActive }) =>
