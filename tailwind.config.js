@@ -13,7 +13,7 @@ export default {
         'underline': '0 2px 0 0 black;',
         'underline-dark': '0 2px 0 0 white;',
         'underline-hover': '0 2px 0 0 rgba(0, 0, 0, 0.3)',
-        'underline-hover-dark': '0 2px 0 0 rgba(255, 255, 255,  0.3)',
+        'underline-hover-dark': '0 2px 0 0 rgba(255, 255, 255, 0.3)',
         'custom': 'inset 0 -3px #0000000d, inset 0 0 0 2px #fff, inset 0 4px 2px #0000000f, inset 0 0 24px 4px #0000000a ,0 1px 3px #0000001f',
         'custom-dark': 'inset 0 -3px #ffffff1a, inset 0 0 0 2px #000, inset 0 4px 2px #ffffff2f, inset 0 0 24px 4px #ffffff1a, 0 1px 3px #ffffff3f'
       },
