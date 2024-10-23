@@ -6,7 +6,7 @@ import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(useGSAP);
 
-import logo from "/logo.png"
+import logo from "/logo.webp"
 
 import DarkMode from "./DarkMode"
 import MobileDropdown from "./MobileDropdown/MobileDropdown"
