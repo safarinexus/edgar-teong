@@ -100,22 +100,22 @@ const Header = ({ width, active }: Props) => {
                     { width <= 640 ?  
                         <MobileDropdown /> :
                         <>
-                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-75 z-40 ${activeSection === '#about' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
+                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-500 z-40 ${activeSection === '#about' ? 'shadow-underline dark:shadow-underline-dark hover:shadow-underline-hover hover:dark:shadow-underline-hover-dark' : ''}`}>
                                 <NavHashLink to="/#about" end className="md:text-lg">About</NavHashLink>
                             </div>
-                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-75 z-40 ${activeSection === '#work' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
+                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-500 z-40 ${activeSection === '#work' ? 'shadow-underline dark:shadow-underline-dark hover:shadow-underline-hover hover:dark:shadow-underline-hover-dark' : ''}`}>
                                 <NavHashLink to="/#work" end className="md:text-lg">Work</NavHashLink>
                             </div>
-                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-75 z-40 ${activeSection === '#project0' ? 'shadow-underline dark:shadow-underline-dark' : ''}`}>
+                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-500 z-40 ${activeSection === '#project0' ? 'shadow-underline dark:shadow-underline-dark hover:shadow-underline-hover hover:dark:shadow-underline-hover-dark' : ''}`}>
                                 <NavHashLink to="/#projects" end className="md:text-lg">Projects</NavHashLink>
                             </div>
                             <NavLink 
                                 to='/thoughts' 
                                 className={({ isActive }) =>
                                     isActive
-                                      ? 'md:text-lg z-40 motion-safe:transition-shadow motion-safe:duration-75 shadow-underline dark:shadow-underline-dark'
-                                      : 'md:text-lg z-40 motion-safe:transition-shadow motion-safe:duration-75'
-                                  }
+                                    ? 'md:text-lg z-40 shadow-underline dark:shadow-underline-dark'
+                                    : 'md:text-lg z-40'
+                                }
                             >Thoughts</NavLink>
                         </>
                     }
