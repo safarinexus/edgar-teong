@@ -1,11 +1,9 @@
 import top from "../assets/project-thumbnails/top-projects.webp"
 import weather from "../assets/project-thumbnails/weather.webp"
-import calc from "../assets/project-thumbnails/calc.webp"
 import memorycard from "../assets/project-thumbnails/memorycard.webp"
 import blog from "../assets/project-thumbnails/blog.webp"
 import shopping from "../assets/project-thumbnails/shopping.webp"
 import supersecret from "../assets/project-thumbnails/supersecret.webp"
-import tictactoe from "../assets/project-thumbnails/tictactoe.webp"
 import fileuploader from "../assets/project-thumbnails/fileuploader.webp"
 import msgboard from "../assets/project-thumbnails/msgboard.webp"
 import inventory from "../assets/project-thumbnails/inventory.webp"
@@ -83,7 +81,7 @@ const projects:project[] = [
     },
     {
         title: "Weather App",
-        description: "A functioning weather app, built using WeatherAPI's free API, as well as JavaScript Promises.", 
+        description: "My version of the classic weather app, built using WeatherAPI's free API, as well as JavaScript Promises.", 
         technologies: ["HTML", "CSS", "JavaScript"], 
         githubLink: "https://github.com/safarinexus/odin_projects/tree/main/odin-js-weatherapp",
         demoLink: "https://safarinexus.github.io/edgr-odinprojects/odin-js-weatherapp/index.html",
@@ -97,22 +95,6 @@ const projects:project[] = [
         demoLink: "https://safarinexus.github.io/edgr-odinprojects/odin-js-todo/dist/index.html",
         image: todo,
     },
-    {
-        title: "Calculator",
-        description: "An on-screen calculator in your browser!", 
-        technologies: ["HTML", "CSS", "JavaScript"], 
-        githubLink: "https://github.com/safarinexus/odin_projects/tree/main/odin-calculator",
-        demoLink: "https://safarinexus.github.io/edgr-odinprojects/odin-calculator/calculator.html",
-        image: calc,
-    },
-    {
-        title: "Tic-Tac-Toe",
-        description: "A simple game of Tic-Tac-Toe played from your browser! Made Using JS IIFEs and Factory Functions.", 
-        technologies: ["HTML", "CSS", "JavaScript"], 
-        githubLink: "https://github.com/safarinexus/odin_projects/tree/main/odin-js-tictactoe",
-        demoLink: "https://safarinexus.github.io/edgr-odinprojects/odin-js-tictactoe/jstictactoe.html",
-        image: tictactoe,
-    }, 
     {
         title: "Kyla's Birthday Website",
         description: "A website that I made for my partner's birthday, using plain & simple HTML, CSS & JavaScript", 
