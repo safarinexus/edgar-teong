@@ -21,16 +21,54 @@ const Projects = () => {
                 scale: 1.3,
             })
             for (let i = 1; i < projects.length; i++) {
-                if (i === 6 || i === 1) {
-                    tl.from(`#project${i}`, {
-                        y: "160%",  
-                        scale: 1.3,
-                    })
-                } else {
-                    tl.from(`#project${i}`, {
-                        y: "130%",  
-                        scale: 1.3,
-                    })
+                switch (i) { 
+                    case 1: 
+                        //blog api
+                        tl.from(`#project${i}`, {
+                            y: "145%",  
+                            scale: 1.3,
+                        })
+                        break;
+                    case 4: 
+                        //messageboard
+                        tl.from(`#project${i}`, {
+                            y: "125%",  
+                            scale: 1.3,
+                        })
+                        break;
+                    case 5: 
+                        //memory card
+                        tl.from(`#project${i}`, {
+                            y: "140%",  
+                            scale: 1.3,
+                        })
+                        break;
+                    case 6: 
+                        //shop
+                        tl.from(`#project${i}`, {
+                            y: "160%",  
+                            scale: 1.3,
+                        })
+                        break;
+                    case 7: 
+                        //weather
+                        tl.from(`#project${i}`, {
+                            y: "125%",  
+                            scale: 1.3,
+                        })
+                        break;
+                    case 8: 
+                        //todo
+                        tl.from(`#project${i}`, {
+                            y: "130%",  
+                            scale: 1.3,
+                        })
+                        break;
+                    default: 
+                        tl.from(`#project${i}`, {
+                            y: "120%",  
+                            scale: 1.3,
+                        })
                 }
             }
             
