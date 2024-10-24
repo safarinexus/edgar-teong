@@ -169,8 +169,8 @@ const About = () => {
                 </div>
             </div>
             <div id="about-text-container" className="w-full px-5 sm:px-24 font-light text-base">
-                <h1 className="font-bold text-lg">About Me</h1>
-                <p id="about-body" className="tracking-tight leading-relaxed font-light text-base xs:text-base sm:text-sm md:text-base lg:text-xl xl:text-[1.6rem]">
+                <h1 className="font-bold text-2xl sm:text-4xl">About Me</h1>
+                <p id="about-body" className="mt-9 tracking-tight leading-relaxed font-light text-base lg:text-xl">
                 In 2022, I discovered my love for programming shortly after discovering my love for mechanical keyboards. I knew that I  had always been a computer geek, so changing careers from accounting to software engineering felt like a natural click.
                 <br /><br />
                 What ensued was an arduous journey to pick up whatever I could from school mid-way through my degree, and self-learn whatever I could not.
