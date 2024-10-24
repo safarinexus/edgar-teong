@@ -52,7 +52,7 @@ const Work = () => {
                     </div>
                 </div>
             ))}
-            <a href={resume} className="block font-bold text-lg mt-9">
+            <a href={resume} target="_blank" className="block font-bold text-lg mt-9">
                 My Full Resume 
                 <FiExternalLink id="link-arrow" className="inline ml-2 relative bottom-[2px]"/>
             </a>
