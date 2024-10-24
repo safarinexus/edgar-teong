@@ -11,6 +11,14 @@ import { HashLink } from "react-router-hash-link";
 interface Props {
   height: number;
 }
+/*
+scrollTrigger: {
+  trigger: "#scroll-indicator-container", 
+  start: "clamp(90% bottom)", 
+  end: "clamp(bottom 50%)",
+  scrub: 1,
+}
+*/
 
 const ScrollIndicator = ({ height }: Props) => {
 
@@ -18,16 +26,27 @@ const ScrollIndicator = ({ height }: Props) => {
     const mm = gsap.matchMedia();
     mm.add("(prefers-reduced-motion: no-preference)", () => {
       const tl = gsap.timeline(); 
-      tl.to("#scroll-indicator-container", {
-        opacity: 0,
-        scale: 0.9, 
+      tl.to("#scroll-indicator-text", {
+        opacity: 0, 
+        scale: 0.9,
+        y: -20,
         scrollTrigger: {
-          trigger: "#scroll-indicator-container", 
+          trigger: "#scroll-indicator", 
           start: "clamp(90% bottom)", 
           end: "clamp(bottom 50%)",
           scrub: 1,
         }
-      }).from('#scroll-indicator-container', { 
+      }).to("#scroll-indicator", {
+        opacity: 0,
+        y: -11,
+        scrollTrigger: {
+          trigger: "#scroll-indicator", 
+          start: "clamp(90% bottom)", 
+          end: "clamp(bottom 50%)",
+          scrub: 1,
+        }
+      })
+      .from('#scroll-indicator, #scroll-indicator-text', { 
         duration: 0.5,
         delay: 0.5, 
         ease: "power3.out",
@@ -53,18 +72,20 @@ const ScrollIndicator = ({ height }: Props) => {
   });
 
   return (
-    <div id="scroll-indicator-container" className="fixed w-full flex z-10 flex-col items-center space-y-1 bottom-5 will-change-scroll">
-      
-      { height < 720 ? ("") : 
-        <HashLink to="/#about" id="scroll-text" className="p-1 rounded-md">
-          <p className="text-xs">Scroll to Discover</p>
+    <>
+        { height < 720 ? ("") : 
+          <div id="scroll-indicator-text" className="fixed w-fit h-4 mx-auto left-0 right-0 bottom-14 z-10 will-change-scroll">
+            <HashLink to="/#about" className="h-full w-full rounded-md">
+              <p className="text-xs">Scroll to Discover</p>
+            </HashLink>
+          </div>
+        }
+      <div id="scroll-indicator" className="fixed w-fit mx-auto left-0 right-0 bottom-5 z-10 will-change-scroll">
+        <HashLink to="/#about" className="flex items-center justify-center w-7 h-7 rounded-full bg-amber-400">
+          <FaArrowDown id="scroll-arrow"/>
         </HashLink>
-      }
-      
-      <HashLink to="/#about" id="scroll-indicator" className="relative flex items-center justify-center w-7 h-7 rounded-full bg-amber-400">
-        <FaArrowDown id="scroll-arrow"/>
-      </HashLink>
-    </div>
+      </div>
+    </>
   );
 };
 
