@@ -48,6 +48,7 @@ const ScrollIndicator = ({ height }: Props) => {
         yoyo: true,
         ease: "power1.inOut",
       })
+      gsap.delayedCall(0.5, () => ScrollTrigger.refresh());
     });
   });
 
