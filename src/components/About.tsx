@@ -176,7 +176,7 @@ const About = () => {
                 <br /><br />
                 <span className="font-bold">I then began learning computer science on my own.</span> I mainly learnt full stack web development through <a href="https://www.theodinproject.com/" className="font-bold">The Odin Project</a>. 
                 It has given me the skills to be job-ready.
-                On top of that, I'm learning whatever I missed out without a CS Degree by going through CS textbooks recommended by <a href="https://www.teachyourselfcs.com/" className="font-bold">teachyourselfcs.com</a> & taking on a <span className="font-bold">second major in Information Systems/Computer Science</span>.
+                On top of that, I'm learning whatever I missed out without a CS Degree by going through CS textbooks recommended by <a href="https://www.teachyourselfcs.com/" className="font-bold">teachyourselfcs.com</a> & taking on a <a href="https://computing.smu.edu.sg/" className="font-bold">second major in Information Systems/Computer Science for my Bachelor's</a>.
                 <br /><br />
                 When I'm not coding, you can also find me making filter/espresso coffee, hanging with friends, enjoying obscure films, reading up about psychology/mental health stuff, or dancing at my <a href="https://www.instagram.com/smuemix/" className="font-bold">school's hip-hop dance club</a>.
                 </p>
