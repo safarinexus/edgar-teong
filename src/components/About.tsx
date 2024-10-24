@@ -20,8 +20,8 @@ const About = () => {
             gsap.from("#image1-container", {
                 scrollTrigger: {
                     trigger: "#images-container",
-                    start: "top 45%",
-                    end: "+=200px",
+                    start: "clamp(top 45%)",
+                    end: "+=200",
                     toggleActions: "play none none reverse",
                     scrub: 1,
                 },
@@ -36,8 +36,8 @@ const About = () => {
             gsap.from("#image2-container", {
                 scrollTrigger: {
                     trigger: "#images-container",
-                    start: "top 45%",
-                    end: "+=200px",
+                    start: "clamp(top 45%)",
+                    end: "+=200",
                     toggleActions: "play none none reverse",
                     scrub: 1,
                 },
@@ -51,8 +51,8 @@ const About = () => {
             gsap.from("#image3-container", {
                 scrollTrigger: {
                     trigger: "#images-container",
-                    start: "top 45%",
-                    end: "+=200px",
+                    start: "clamp(top 45%)",
+                    end: "+=200",
                     toggleActions: "play none none reverse",
                     scrub: 1,
                 },
@@ -66,8 +66,8 @@ const About = () => {
             gsap.from("#image5-container", {
                 scrollTrigger: {
                     trigger: "#images-container",
-                    start: "top 45%",
-                    end: "+=200px",
+                    start: "clamp(top 45%)",
+                    end: "+=200",
                     toggleActions: "play none none reverse",
                     scrub: 1,
                 },
@@ -81,8 +81,8 @@ const About = () => {
             gsap.from("#image4-container", {
                 scrollTrigger: {
                     trigger: "#images-container",
-                    start: "top 45%",
-                    end: "+=200px",
+                    start: "clamp(top 45%)",
+                    end: "+=200",
                     toggleActions: "play none none reverse",
                     scrub: 1,
                 },
@@ -96,8 +96,8 @@ const About = () => {
             gsap.from("#image6-container", {
                 scrollTrigger: {
                     trigger: "#images-container",
-                    start: "top 45%",
-                    end: "+=200px",
+                    start: "clamp(top 45%)",
+                    end: "+=200",
                     toggleActions: "play none none reverse",
                     scrub: 1,
                 },
