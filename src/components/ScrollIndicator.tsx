@@ -20,11 +20,11 @@ const ScrollIndicator = ({ height }: Props) => {
       const tl = gsap.timeline(); 
       tl.to("#scroll-indicator-container", {
         opacity: 0,
-        scale: 0.9,
+        scale: 0.9, 
         scrollTrigger: {
           trigger: "#scroll-indicator-container", 
           start: "clamp(90% bottom)", 
-          end: "clamp(bottom 75%)",
+          end: "clamp(bottom 50%)",
           scrub: 1,
         }
       }).from('#scroll-indicator-container', { 
