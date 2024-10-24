@@ -4,7 +4,7 @@ import Header from "./components/Header/Header"
 import ScrollProgressBar from "./components/ScrollProgressBar"
 import ScrollIndicator from "./components/ScrollIndicator"
 import About from './components/About'
-import Landing from "./components/Landing"
+import Hero from "./components/Hero"
 import Work from "./components/Work"
 import Projects from "./components/Projects"
 import Footer from "./components/Footer"
@@ -59,10 +59,10 @@ const App = ({ error, thoughts }: Props) => {
             <ScrollProgressBar />
             <ScrollIndicator height={dimensions.height}/> 
             <div 
-              id="lfg" 
+              id="hero" 
               className="w-full max-w-[1208px] h-fit sm:h-screen sm:git min-h-fit mx-auto px-2 py-2"
             >
-              <Landing />
+              <Hero />
             </div>
             <div 
               id="about" 

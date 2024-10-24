@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 import ContactBar from "./ContactBar"
 
-const Landing = () => {
+const Hero = () => {
     useGSAP (() => {
 
         const mm = gsap.matchMedia();
@@ -100,7 +100,7 @@ const Landing = () => {
     )
 }
 
-export default Landing;
+export default Hero;
 
 /*
 gsap.from("#highlight-container", {

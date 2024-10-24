@@ -16,7 +16,7 @@ interface Props {
     active: boolean,
 }
 
-const sections = ['#lfg', '#about', '#work', '#project0'];
+const sections = ['#hero', '#about', '#work', '#project0'];
 
 const Header = ({ width, active }: Props) => {
     const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -75,7 +75,7 @@ const Header = ({ width, active }: Props) => {
                 dark:bg-opacity-40 grid grid-rows-1 grid-cols-[60px_auto_60px] items-center border-neutral-200 dark:border-neutral-800
             "
             >
-                <NavHashLink to="/#lfg" end id="logo-link" className="inline-flex w-fit z-40">
+                <NavHashLink to="/#hero" end id="logo-link" className="inline-flex w-fit z-40">
                     <img 
                         src={logo} 
                         alt="logo" 
@@ -86,7 +86,7 @@ const Header = ({ width, active }: Props) => {
                 <div className="ml-3 font-bold text-xl text-black dark:text-white z-40">
                 { width <= 640 ? 
                     (<h1>
-                    { activeSection === "#lfg" ? ("Edgar Teong") : ("") }
+                    { activeSection === "#hero" ? ("Edgar Teong") : ("") }
                     { activeSection === "#about" ? ("About") : ("") }
                     { activeSection === "#work" ? ("Experience") : ("") }
                     { activeSection === "#project0" ? ("Projects") : ("") }
