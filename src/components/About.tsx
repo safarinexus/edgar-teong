@@ -171,11 +171,14 @@ const About = () => {
             <div id="about-text-container" className="w-full px-5 sm:px-24 font-light text-base">
                 <h1 className="font-bold text-2xl sm:text-4xl">About Me</h1>
                 <p id="about-body" className="mt-9 tracking-tight leading-relaxed font-light text-base lg:text-xl">
-                In 2022, I discovered my love for programming shortly after discovering my love for mechanical keyboards. I knew that I  had always been a computer geek, so changing careers from accounting to software engineering felt like a natural click.
+                Back in 2022, I got into mechanical keyboards which led me to my love for coding. 
+                I was always a computer geek & knew that I wanted to make a career out of an expertise in something, so changing careers from accounting to software engineering felt like the most natural thing.
                 <br /><br />
-                What ensued was an arduous journey to pick up whatever I could from school mid-way through my degree, and self-learn whatever I could not.
+                <span className="font-bold">I then began learning computer science on my own.</span> I mainly learnt full stack web development through <a href="https://www.theodinproject.com/" className="font-bold">The Odin Project</a>. 
+                It has given me the skills to be job-ready.
+                On top of that, I'm learning whatever I missed out without a CS Degree by going through CS textbooks recommended by <a href="https://www.teachyourselfcs.com/" className="font-bold">teachyourselfcs.com</a> & taking on a <span className="font-bold">second major in Information Systems/Computer Science</span>.
                 <br /><br />
-                Besides that, you can also find me improving my espresso making skills, reading at cafes, watching obscure films, researching about psychology and mental health or dancing hip-hop at my school dance club.
+                When I'm not coding, you can also find me improving my espresso making skills, hanging with friends, enjoying obscure films, reading up about psychology or mental health stuff, or dancing at my <a href="https://www.instagram.com/smuemix/" className="font-bold">school's hip-hop dance club</a>.
                 </p>
             </div>
         </div>
