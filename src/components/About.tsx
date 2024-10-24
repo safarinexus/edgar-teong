@@ -178,7 +178,7 @@ const About = () => {
                 It has given me the skills to be job-ready.
                 On top of that, I'm learning whatever I missed out without a CS Degree by going through CS textbooks recommended by <a href="https://www.teachyourselfcs.com/" className="font-bold">teachyourselfcs.com</a> & taking on a <span className="font-bold">second major in Information Systems/Computer Science</span>.
                 <br /><br />
-                When I'm not coding, you can also find me improving my espresso making skills, hanging with friends, enjoying obscure films, reading up about psychology or mental health stuff, or dancing at my <a href="https://www.instagram.com/smuemix/" className="font-bold">school's hip-hop dance club</a>.
+                When I'm not coding, you can also find me making filter/espresso coffee, hanging with friends, enjoying obscure films, reading up about psychology/mental health stuff, or dancing at my <a href="https://www.instagram.com/smuemix/" className="font-bold">school's hip-hop dance club</a>.
                 </p>
             </div>
         </div>
