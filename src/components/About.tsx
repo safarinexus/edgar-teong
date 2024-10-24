@@ -170,7 +170,7 @@ const About = () => {
             </div>
             <div id="about-text-container" className="w-full px-5 sm:px-24 font-light text-base">
                 <h1 className="font-bold text-2xl sm:text-4xl">About Me</h1>
-                <p id="about-body" className="mt-9 tracking-tight leading-relaxed font-light text-base lg:text-xl">
+                <p id="about-body" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">
                 Back in 2022, I got into mechanical keyboards which led me to my love for coding. 
                 I was always a computer geek & knew that I wanted to make a career out of an expertise in something, so changing careers from accounting to software engineering felt like the most natural thing.
                 <br /><br />
