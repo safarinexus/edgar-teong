@@ -139,7 +139,7 @@ const Projects = () => {
                     )
                 })}
             </div>
-            <a href="https://github.com/safarinexus?tab=repositories" className="font-bold text-lg">
+            <a href="https://github.com/safarinexus?tab=repositories" target="_blank" className="font-bold text-lg">
                 My GitHub Repositories
                 <FiExternalLink id="link-arrow" className="inline ml-2 relative bottom-[2px]"/>
             </a>
