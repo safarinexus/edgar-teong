@@ -11,14 +11,6 @@ import { HashLink } from "react-router-hash-link";
 interface Props {
   height: number;
 }
-/*
-scrollTrigger: {
-  trigger: "#scroll-indicator-container", 
-  start: "clamp(90% bottom)", 
-  end: "clamp(bottom 50%)",
-  scrub: 1,
-}
-*/
 
 const ScrollIndicator = ({ height }: Props) => {
 
