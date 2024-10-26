@@ -54,7 +54,7 @@ const Hero = () => {
     return (
         <div 
             id="container-bg"
-            className="w-full h-full min-h-[400px] sm:min-h-[620px] font-light pt-[70px] sm:pt-[80px] md:pt-[140px] p-4 sm:px-16 lg:pb-16 rounded-[32px] bg-white 
+            className="w-full h-full min-h-[400px] sm:min-h-[720px] font-light pt-[70px] sm:pt-[80px] md:pt-[140px] p-4 sm:px-16 lg:pb-16 rounded-[32px] bg-white 
                 border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark dark:bg-black
                 flex flex-col sm:justify-end
             "
