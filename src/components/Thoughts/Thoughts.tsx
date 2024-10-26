@@ -5,7 +5,7 @@ const Thoughts = () => {
             border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark dark:bg-black"
             >
                 <h1 className="font-medium text-5xl">Coming Soon...</h1>
-                <p className="font-light text-base">Click my logo to head back 😉</p>
+                <p className="font-light text-base mt-2">Click my logo to head back 😉</p>
             </div>
         </div>
     )
