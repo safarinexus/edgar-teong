@@ -1,6 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaCodepen } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FaGoodreads } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { SiMonkeytype } from "react-icons/si";
@@ -24,11 +24,11 @@ const ContactBar = ({ main }: Prop) => {
                 <a href="https://github.com/safarinexus" target="_blank">
                     <FaGithub className="size-6 sm:size-6"/>
                 </a>
-                <a href="https://codepen.io/safarinexus" target="_blank">
-                    <FaCodepen className="size-6 sm:size-6"/>
-                </a>
                 <a href="https://linkedin.com/in/edgarteong" target="_blank">
                     <FaLinkedin className="size-7 sm:size-6"/>
+                </a>
+                <a href="https://www.instagram.com/edgargle/" target="_blank">
+                    <FaInstagram className="size-6 sm:size-6"/>
                 </a>
                 <a href="https://goodreads.com/user/show/80321969-edgar" target="_blank">
                     <FaGoodreads className="size-7 sm:size-6"/>
@@ -53,11 +53,11 @@ const ContactBar = ({ main }: Prop) => {
                 <a href="https://github.com/safarinexus" target="_blank">
                     <FaGithub className="size-5" style={{ color: "#737373", opacity: '50%' }}/>
                 </a>
-                <a href="https://codepen.io/safarinexus" target="_blank">
-                    <FaCodepen className="size-5" style={{ color: "#737373", opacity: '50%' }}/>
-                </a>
                 <a href="https://linkedin.com/in/edgarteong" target="_blank">
                     <FaLinkedin className="size-5" style={{ color: "#737373", opacity: '50%' }}/>
+                </a>
+                <a href="https://www.instagram.com/edgargle/" target="_blank">
+                    <FaInstagram className="size-5" style={{ color: "#737373", opacity: '50%' }}/>
                 </a>
                 <a href="https://goodreads.com/user/show/80321969-edgar" target="_blank">
                     <FaGoodreads className="size-5" style={{ color: "#737373", opacity: '50%' }}/>
