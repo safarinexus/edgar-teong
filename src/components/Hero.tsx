@@ -54,15 +54,15 @@ const Hero = () => {
     return (
         <div 
             id="container-bg"
-            className="w-full h-full min-h-[400px] sm:min-h-[720px] font-light pt-[70px] sm:pt-[80px] md:pt-[140px] p-4 sm:px-16 lg:pb-16 rounded-[32px] bg-white 
+            className="w-full h-full min-h-[400px] sm:min-h-[720px] sm:motion-reduce:min-h-[820px] motion-reduce:lg:min-h-[1000px] font-light pt-[70px] sm:pt-[80px] md:pt-[140px] p-4 sm:px-16 lg:pb-16 rounded-[32px] bg-white 
                 border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark dark:bg-black
                 flex flex-col sm:justify-end
             "
         >
-            <div id="intro" className="flex items-center gap-2">
+            <div id="intro" className="flex flex-col items-start sm:flex-row sm:items-center gap-2">
                 <Headshot />
                 <div>
-                    <h1 id="hey-there"className="text-sm xs:text-xl lg:text-3xl">
+                    <h1 id="hey-there"className="text-xl lg:text-3xl">
                         <span id="hand" className="inline-block motion-safe:animate-wave">👋</span> 
                         {" "}Hey there!{" "}I'm{" "}
                         <span id="myname" className="inline-block bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
@@ -77,11 +77,11 @@ const Hero = () => {
             </div>
             
 
-            <p id="im-a" className="mt-4 font-medium text-2xl xs:text-4xl lg:text-6xl lg:tracking-tight">
+            <p id="im-a" className="mt-4 font-medium text-2xl xs:text-4xl lg:tracking-tight">
                 I'm a passionate and self-started software engineer. I make products that are performant and beautiful. 
             </p>
 
-            <div id="im-also" className="relative mt-4 h-fit motion-safe:h-[70px] motion-safe:xs:h-[140px] motion-safe:sm:h-[100px] motion-safe:lg:h-[90px] font-medium text-2xl xs:text-4xl sm:motion-reduce:h-[320px] lg:motion-reduce:h-[480px] lg:text-6xl">
+            <div id="im-also" className="relative mt-4 motion-reduce:mb-6 h-fit motion-safe:h-[70px] motion-safe:xs:h-[140px] motion-safe:sm:h-[100px] motion-safe:lg:h-[90px] font-medium text-2xl xs:text-4xl lg:text-6xl">
                 I am also a&nbsp;
                 <div id="scroll-text" className="w-fit h-[144px] inline">
                     <span id="fullstack" className="block motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
