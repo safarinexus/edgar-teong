@@ -57,7 +57,7 @@ const App = ({ error, thoughts }: Props) => {
         (
           <>
             <ScrollProgressBar />
-            <ScrollIndicator height={dimensions.height}/> 
+            <ScrollIndicator /> 
             <div 
               id="hero" 
               className="w-full max-w-[1208px] h-fit sm:h-screen sm:git min-h-fit mx-auto px-2 py-2"

@@ -8,11 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 import { FaArrowDown } from "react-icons/fa6";
 import { HashLink } from "react-router-hash-link";
 
-interface Props {
-  height: number;
-}
-
-const ScrollIndicator = ({ height }: Props) => {
+const ScrollIndicator = () => {
 
   useGSAP (() => {
     const mm = gsap.matchMedia();
@@ -65,13 +61,11 @@ const ScrollIndicator = ({ height }: Props) => {
 
   return (
     <>
-        { height < 720 ? ("") : 
-          <div id="scroll-indicator-text" className="fixed w-fit h-4 mx-auto left-0 right-0 bottom-14 z-10 will-change-scroll">
-            <HashLink to="/#about" className="h-full w-full rounded-md">
-              <p className="text-xs">Scroll to Discover</p>
-            </HashLink>
-          </div>
-        }
+      <div id="scroll-indicator-text" className="fixed w-fit h-4 mx-auto left-0 right-0 bottom-14 z-10 will-change-scroll">
+        <HashLink to="/#about" className="h-full w-full rounded-md">
+          <p className="text-xs">Scroll to Discover</p>
+        </HashLink>
+      </div>
       <div id="scroll-indicator" className="fixed w-fit mx-auto left-0 right-0 bottom-5 z-10 will-change-scroll">
         <HashLink to="/#about" className="flex items-center justify-center w-7 h-7 rounded-full bg-amber-400">
           <FaArrowDown id="scroll-arrow"/>
