@@ -22,7 +22,7 @@ const ContactBar = ({ main }: Prop) => {
                     <BiLogoGmail className="size-7 sm:size-6"/>
                 </a>
                 <a href="https://github.com/safarinexus" target="_blank">
-                    <FaGithub className="size-6 sm:size-6"/>
+                    <FaGithub className="size-6"/>
                 </a>
                 <a href="https://linkedin.com/in/edgarteong" target="_blank">
                     <FaLinkedin className="size-7 sm:size-6"/>
@@ -31,16 +31,16 @@ const ContactBar = ({ main }: Prop) => {
                     <FaGoodreads className="size-7 sm:size-6"/>
                 </a>
                 <a href="https://boxd.it/br2et" target="_blank">
-                    <FaSquareLetterboxd className="size-7 sm:size-7"/>
+                    <FaSquareLetterboxd className="size-7 sm:size-6"/>
                 </a>
                 <a href="https://www.instagram.com/edgargle/" target="_blank">
                     <FaInstagram className="size-7 sm:size-6"/>
                 </a>
                 <a href="https://open.spotify.com/user/edgargarteong?si=85dfa396d2944046" target="_blank">
-                    <FaSpotify className="size-6 sm:size-6"/>
+                    <FaSpotify className="size-6"/>
                 </a>
                 <a href="https://monkeytype.com/profile/safarinexus" target="_blank">
-                    <SiMonkeytype className="size-7 sm:size-7"/>
+                    <SiMonkeytype className="size-7"/>
                 </a>
             </div>
         )
