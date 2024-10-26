@@ -27,17 +27,17 @@ const ContactBar = ({ main }: Prop) => {
                 <a href="https://linkedin.com/in/edgarteong" target="_blank">
                     <FaLinkedin className="size-7 sm:size-6"/>
                 </a>
-                <a href="https://www.instagram.com/edgargle/" target="_blank">
-                    <FaInstagram className="size-6 sm:size-6"/>
-                </a>
                 <a href="https://goodreads.com/user/show/80321969-edgar" target="_blank">
                     <FaGoodreads className="size-7 sm:size-6"/>
                 </a>
                 <a href="https://boxd.it/br2et" target="_blank">
                     <FaSquareLetterboxd className="size-7 sm:size-7"/>
                 </a>
+                <a href="https://www.instagram.com/edgargle/" target="_blank">
+                    <FaInstagram className="size-7 sm:size-6"/>
+                </a>
                 <a href="https://open.spotify.com/user/edgargarteong?si=85dfa396d2944046" target="_blank">
-                    <FaSpotify className="size-7 sm:size-6"/>
+                    <FaSpotify className="size-6 sm:size-6"/>
                 </a>
                 <a href="https://monkeytype.com/profile/safarinexus" target="_blank">
                     <SiMonkeytype className="size-7 sm:size-7"/>
@@ -56,14 +56,14 @@ const ContactBar = ({ main }: Prop) => {
                 <a href="https://linkedin.com/in/edgarteong" target="_blank">
                     <FaLinkedin className="size-5" style={{ color: "#737373", opacity: '50%' }}/>
                 </a>
-                <a href="https://www.instagram.com/edgargle/" target="_blank">
-                    <FaInstagram className="size-5" style={{ color: "#737373", opacity: '50%' }}/>
-                </a>
                 <a href="https://goodreads.com/user/show/80321969-edgar" target="_blank">
                     <FaGoodreads className="size-5" style={{ color: "#737373", opacity: '50%' }}/>
                 </a>
                 <a href="https://boxd.it/br2et" target="_blank">
                     <FaSquareLetterboxd className="size-5" style={{ color: "#737373", opacity: '50%' }}/>
+                </a>
+                <a href="https://www.instagram.com/edgargle/" target="_blank">
+                    <FaInstagram className="size-5" style={{ color: "#737373", opacity: '50%' }}/>
                 </a>
                 <a href="https://open.spotify.com/user/edgargarteong?si=85dfa396d2944046" target="_blank">
                     <FaSpotify className="size-5" style={{ color: "#737373", opacity: '50%' }}/>
