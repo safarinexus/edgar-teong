@@ -63,7 +63,9 @@ const Hero = () => {
                 <Headshot />
                 <div>
                     <h1 id="hey-there"className="text-xl lg:text-3xl">
-                        <span id="hand" className="inline-block motion-safe:animate-wave">👋</span> 
+                        <div id="hand-wrapper" className="inline-block hover:animate-wave">
+                            <span className="inline-block motion-safe:animate-wave">👋</span> 
+                        </div>
                         {" "}Hey there!{" "}I'm{" "}
                         <span id="myname" className="inline-block bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                             Edgar Teong

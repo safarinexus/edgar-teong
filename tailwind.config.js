@@ -32,7 +32,7 @@ export default {
         'heavy': 900,
       },
       animation: {
-        wave: '1s wave 1.5s ease-in-out 1',
+        wave: '1s wave 0.3s ease-in-out 1',
       },
       keyframes: {
         wave: {
