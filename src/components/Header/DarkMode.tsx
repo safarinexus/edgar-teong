@@ -19,7 +19,7 @@ export default function DarkMode() {
             document.body.classList.add('dark');
         } else if (darkMode === "light") {
             document.body.classList.remove('dark');
-        } else if (darkMode === "user") {
+        } else {
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
                 document.body.classList.add('dark');
             }
@@ -42,7 +42,7 @@ export default function DarkMode() {
             className="size-6 hover:opacity-40 duration-500 transition-opacity motion-reduce:transition-none text-black dark:text-white z-10"
             onClick={handleClick}
         >
-            {darkMode === "user" ? (<RiComputerLine className="size-6"/>) : darkMode === "light" ? (<MdLightMode className="size-6"/>) : (<MdDarkMode className="size-6"/>)}
+            {darkMode === "dark" ? (<MdDarkMode className="size-6"/>) : darkMode === "light" ? (<MdLightMode className="size-6"/>) : (<RiComputerLine className="size-6"/>)}
         </button>
     )
 }
