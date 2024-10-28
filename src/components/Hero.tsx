@@ -77,11 +77,11 @@ const Hero = () => {
             </div>
             
 
-            <p id="im-a" className="mt-4 font-medium text-2xl xs:text-4xl lg:tracking-tight">
+            <p id="im-a" className="mt-4 font-medium text-2xl xs:text-4xl lg:tracking-tight lg:text-6xl">
                 I'm a passionate and self-started software engineer. I make products that are performant and beautiful. 
             </p>
 
-            <div id="im-also" className="relative mt-4 motion-reduce:mb-6 h-fit motion-safe:h-[70px] motion-safe:xs:h-[140px] motion-safe:sm:h-[100px] motion-safe:lg:h-[90px] font-medium text-2xl xs:text-4xl lg:text-6xl">
+            <div id="im-also" className="relative mt-4 motion-reduce:mb-6 h-fit motion-safe:h-[70px] motion-safe:xs:h-[140px] motion-safe:sm:h-[100px] motion-safe:lg:h-[90px] font-medium  text-2xl xs:text-4xl lg:text-6xl">
                 I am also a&nbsp;
                 <div id="scroll-text" className="w-fit h-[144px] inline">
                     <span id="fullstack" className="block motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
