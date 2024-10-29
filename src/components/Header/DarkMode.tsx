@@ -39,7 +39,7 @@ export default function DarkMode() {
 
     return (
         <button
-            className="size-6 sm:hover:opacity-40 sm:duration-500 sm:motion-safe:transition-opacity text-black dark:text-white z-10"
+            className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity text-black dark:text-white z-10"
             onClick={handleClick}
         >
             {darkMode === "dark" ? (<MdDarkMode className="size-6"/>) : darkMode === "light" ? (<MdLightMode className="size-6"/>) : (<RiComputerLine className="size-6"/>)}
