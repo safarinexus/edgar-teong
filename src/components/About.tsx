@@ -158,7 +158,7 @@ const About = () => {
                         draggable="false"
                     />
                 </div>
-                <div id="image6-container" className="relative z-10 hidden sm:block w-[95%] -rotate-12 left-[10%] top-[-26%] will-change-transform pointer-events-none">
+                <div id="image6-container" className="relative hidden -z-10 sm:block w-[95%] -rotate-12 left-[10%] top-[-26%] will-change-transform pointer-events-none">
                     <img 
                         src={image6}
                         id="image6"  
