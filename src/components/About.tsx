@@ -171,14 +171,13 @@ const About = () => {
             <div id="about-text-container" className="w-full px-5 sm:px-24 font-light text-base">
                 <h1 className="font-bold text-2xl sm:text-4xl">About Me</h1>
                 <p id="about-body" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">
-                Back in 2022, I got into mechanical keyboards which led me to my love for coding. 
-                I was always a computer geek & knew that I wanted to make a career out of an expertise in something, so changing careers from accounting to software engineering felt like the most natural thing.
+                I am in the midst of getting my Bachelor's from <a href="https://www.smu.edu.sg/"><span className="font-bold">Singapore Management University</span> in <span className="font-bold">Computer Science & Accountancy</span></a>
                 <br /><br />
-                <span className="font-bold">I then began learning computer science on my own.</span> I mainly learnt full stack web development through <a href="https://www.theodinproject.com/" className="font-bold">The Odin Project</a>. 
-                It has given me the skills to be job-ready.
-                On top of that, I'm learning whatever I missed out without a CS Degree by going through CS textbooks recommended by <a href="https://www.teachyourselfcs.com/" className="font-bold">teachyourselfcs.com</a> & taking on a <a href="https://computing.smu.edu.sg/" className="font-bold">second major in Information Systems/Computer Science for my Bachelor's</a>.
+                I am deeply passionate and self-driven. I taught myself programming from scratch and fully taught myself full stack web development through <a href="https://www.theodinproject.com/about" className="font-bold">The Odin Project</a>. 
+                {" "}It is one of my goals in life to be able to use my love for computers and technology to make a real difference to society through software. 
                 <br /><br />
-                When I'm not coding, you'll find me making filter/espresso coffee, hanging with friends, enjoying obscure films, reading up about psychology/mental health stuff, or dancing at my <a href="https://www.instagram.com/smuemix/" className="font-bold">school's hip-hop dance club</a>.
+                When I'm not coding, you'll find me making filter/espresso coffee, hanging with friends, enjoying obscure films,
+                {" "}reading up about psychology/mental health stuff, or dancing at my <a href="https://www.instagram.com/smuemix/" className="font-bold">school's hip-hop dance club</a>.
                 </p>
             </div>
         </div>
