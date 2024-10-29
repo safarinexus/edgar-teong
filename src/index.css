@@ -113,7 +113,7 @@
     }
     
     a {
-        @apply text-black dark:text-gray-50 hover:opacity-30 motion-safe:duration-500 motion-safe:transition-opacity;
+        @apply text-black dark:text-gray-50 sm:hover:opacity-30 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity;
     }
 }
 
