@@ -1,11 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+export default { 
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
+      transitionProperty: {
+        'border': 'border-color, border-width, border-style',
+        'shadow': 'box-shadow',
+        'border-shadow': 'border-color, border-width, border-style, box-shadow' 
+      },
       backgroundSize: {
         '300%': '300%',
       },
@@ -34,6 +39,7 @@ export default {
       animation: {
         waveLoad: '1s wave 0.3s ease-in-out 1',
         wave:'1s wave ease-in-out 1', 
+        hoverDiagonal: 'diagonalMove 0.4s ease-in-out forwards',
       },
       keyframes: {
         wave: {
@@ -42,6 +48,10 @@ export default {
           '40%': { transform: 'rotate(25deg)' },   
           '60%': { transform: 'rotate(-15deg) translateX(-20px)' },    
           '80%': { transform: 'rotate(15deg)' }, 
+        },
+        diagonalMove: {
+          '0%': { transform: 'translateX(0px) translateY(0px)' },
+          '100%': { transform: 'translateX(5px) translateY(-5px)' },
         },
       },
     },
@@ -60,6 +70,13 @@ export default {
 
       'xl': '1280px',
       // => @media (min-width: 1280px) { ... }
+    },
+  },
+  variants: {
+    extend: {
+      borderColor: ['hover', 'focus'],
+      borderWidth: ['hover', 'focus'],
+      boxShadow: ['hover', 'focus'],
     },
   },
   plugins: [],

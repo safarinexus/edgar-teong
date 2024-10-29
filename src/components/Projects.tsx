@@ -7,6 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 import projects from "../data/projects"
 
+import { MdArrowOutward } from "react-icons/md";
 import { FiExternalLink } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 
@@ -139,9 +140,9 @@ const Projects = () => {
                     )
                 })}
             </div>
-            <a href="https://github.com/safarinexus?tab=repositories" target="_blank" className="font-bold text-lg">
+            <a href="https://github.com/safarinexus?tab=repositories" target="_blank" className="inline-block font-bold text-lg group">
                 My GitHub Repositories
-                <FiExternalLink id="link-arrow" className="inline ml-2 relative bottom-[2px]"/>
+                <MdArrowOutward id="work-link-arrow" className="inline ml-1 w-4 group-hover:animate-hoverDiagonal transition-transform"/>
             </a>
         </>
     )
