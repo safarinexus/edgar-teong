@@ -1,10 +1,6 @@
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaGoodreads } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaGoodreads, FaSpotify } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { SiMonkeytype } from "react-icons/si";
-import { FaSpotify } from "react-icons/fa";
 import { FaSquareLetterboxd } from "react-icons/fa6";
 
 

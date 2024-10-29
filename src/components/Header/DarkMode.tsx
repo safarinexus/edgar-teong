@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { MdDarkMode } from "react-icons/md";
-import { MdLightMode } from "react-icons/md";
+import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { RiComputerLine } from "react-icons/ri";
 
 

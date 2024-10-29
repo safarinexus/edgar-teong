@@ -62,8 +62,8 @@ const Hero = () => {
             <div id="intro" className="flex flex-col items-start sm:flex-row sm:items-center gap-2">
                 <Headshot />
                 <div>
-                    <h1 id="hey-there"className="text-xl lg:text-3xl">
-                        <div id="hand-wrapper" className="inline-block hover:animate-wave">
+                    <h1 id="hey-there"className="group text-xl lg:text-3xl">
+                        <div id="hand-wrapper" className="inline-block group-hover:animate-wave">
                             <img 
                                 src="https://em-content.zobj.net/source/apple/118/waving-hand-sign_1f44b.png" 
                                 alt="waving hand emoji" 
