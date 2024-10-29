@@ -66,7 +66,7 @@ const Hero = () => {
                         <div id="hand-wrapper" className="inline-block hover:animate-wave">
                             <span className="inline-block motion-safe:animate-waveLoad pointer-events-none">👋</span> 
                         </div>
-                        {" "}Hey there!{" "}I'm{" "}
+                        {" "}Hey there!{" "}I&#39;m{" "}
                         <span id="myname" className="inline-block bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                             Edgar Teong
                         </span>
@@ -80,7 +80,7 @@ const Hero = () => {
             
 
             <p id="im-a" className="mt-4 font-medium text-2xl xs:text-4xl lg:tracking-tight lg:text-6xl">
-                I'm a passionate and self-started software engineer. I make products that are performant and beautiful. 
+                I&#39;m a passionate and self-started software engineer. I make products that are performant and beautiful. 
             </p>
 
             <div id="im-also" className="relative mt-4 motion-reduce:mb-6 h-fit motion-safe:h-[70px] motion-safe:xs:h-[140px] motion-safe:sm:h-[100px] motion-safe:lg:h-[90px] font-medium  text-2xl xs:text-4xl lg:text-6xl">
