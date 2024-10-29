@@ -40,6 +40,7 @@ const Work = () => {
             <h1 className="font-bold text-2xl sm:text-4xl">My Work Experience</h1>
             {works.map((work, index) => (
                 <a 
+                    target="_blank"
                     key={index} 
                     id={"work"+index} 
                     href={work.link} 
@@ -48,9 +49,9 @@ const Work = () => {
                         sm:hover:shadow-custom sm:hover:dark:shadow-custom-dark rounded-xl sm:transition-border-shadow sm:duration-300 group"
                 >
                     <p className="text-sm sm:text-lg sm:font-light sm:row-span-3 sm:my-[5px]">{work.dates}</p>
-                    <h1 className="text-lg font-bold tracking-tighter my-1 sm:text-2xl transition-opacity duration-300 group-hover:opacity-30">
+                    <h1 className="text-lg font-bold tracking-tighter my-1 sm:text-2xl sm:transition-opacity sm:duration-300 motion-safe:sm:group-hover:opacity-30">
                         {work.position} • {work.company}{" "}
-                        <MdArrowOutward id="work-link-arrow" className="inline w-5 group-hover:animate-hoverDiagonal transition-transform"/>
+                        <MdArrowOutward id="work-link-arrow" className="inline w-5 motion-safe:group-hover:animate-hoverDiagonal transition-transform"/>
                     </h1>
                     <p className="my-3 font-light lg:text-xl">{work.description}</p>
                     <div>
@@ -68,7 +69,7 @@ const Work = () => {
             ))}
             <a href={resume} target="_blank" className="inline-block font-bold text-lg mt-9 group">
                 My Full Resume 
-                <MdArrowOutward id="work-link-arrow" className="inline ml-1 w-4 group-hover:animate-hoverDiagonal transition-transform"/>
+                <MdArrowOutward id="work-link-arrow" className="inline ml-1 w-4 motion-safe:group-hover:animate-hoverDiagonal transition-transform"/>
             </a>
         </>
     )
