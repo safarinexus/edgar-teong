@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import { gsap } from "gsap"; 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
@@ -6,7 +7,6 @@ gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 import { FaArrowDown } from "react-icons/fa6";
-import { HashLink } from "react-router-hash-link";
 
 const ScrollIndicator = () => {
 
