@@ -153,16 +153,16 @@ const About = () => {
                     <img 
                         src={image5}
                         id="image5"  
-                        alt="image 1"
+                        alt="image 5"
                         className="select-none rounded-xl brightness-90"
                         draggable="false"
                     />
                 </div>
-                <div id="image6-container" className="relative -z-10 hidden sm:block w-[95%] -rotate-12 left-[10%] top-[-26%] will-change-transform pointer-events-none">
+                <div id="image6-container" className="relative z-10 hidden sm:block w-[95%] -rotate-12 left-[10%] top-[-26%] will-change-transform pointer-events-none">
                     <img 
                         src={image6}
                         id="image6"  
-                        alt="image 1"
+                        alt="image 6"
                         className="select-none rounded-lg"
                         draggable="false"
                     />
