@@ -101,7 +101,7 @@
 
 @layer base {
     html {
-        @apply scroll-smooth font-articulat bg-black
+        @apply scroll-smooth font-articulat
     }
 
     body {
