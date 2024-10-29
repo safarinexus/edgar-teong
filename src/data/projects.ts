@@ -25,7 +25,7 @@ interface project {
 const projects:project[] = [ 
     {
         title: "This Website!",
-        description: "My own portfolio website! To showcase my experience, projects & personality.", 
+        description: "My own portfolio website made from scratch! To showcase my experience, projects & personality.", 
         technologies: ["TypeScript","React + Vite", "TailwindCSS" ,"GSAP", "Vercel"], 
         githubLink: "https://github.com/safarinexus/edgar-teong",
         demoLink: false,
@@ -33,7 +33,7 @@ const projects:project[] = [
     },
     {
         title: "Blog API",
-        description: "A full REST API for a blog, including two frontends, one for viewing posts and one for editing.", 
+        description: "My own full REST API for a blog, including two frontends, one for viewing posts and one for editing.", 
         technologies: ["JavaScript","React", "Node", "Express", "PostgreSQL" ,"TailwindCSS" , "Prisma", "Railway"], 
         githubLink: "https://github.com/safarinexus/edgr_odin_projects/tree/main/odin-node-express-REST-blog",
         demoLink: "https://edgr-odin-blog-access.vercel.app/",
@@ -41,7 +41,7 @@ const projects:project[] = [
     },
     {
         title: "File Uploader",
-        description: "A Google Drive clone, with user auth and folder system.", 
+        description: "A Google Drive clone built from scratch, with user auth and folder system.", 
         technologies: ["JavaScript", "Node", "Express", "PostgreSQL", "Prisma", "Railway", "Supabase"], 
         githubLink: "https://github.com/safarinexus/edgr_odin_projects/tree/main/odin-node-express-prisma-fileuploader",
         demoLink: "https://odin-file-uploader-production-11ed.up.railway.app/",
@@ -65,7 +65,7 @@ const projects:project[] = [
     },
     {
         title: "Memory Card",
-        description: "The game of memory cards, made with React, right in the browser.", 
+        description: "The game of memory cards, made with React, right in the browser, built by me.", 
         technologies: ["HTML", "CSS", "JavaScript", "React", "Vercel"], 
         githubLink: "https://github.com/safarinexus/odin_projects/tree/main/odin-react-memorycard",
         demoLink: "https://odin-projects-nine.vercel.app/",
