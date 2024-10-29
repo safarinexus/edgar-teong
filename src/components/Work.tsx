@@ -18,16 +18,16 @@ const Work = () => {
                 gsap.from(`#work${i}`, {
                     scrollTrigger: {
                         trigger: `#work${i}`, 
-                        start: "clamp(top bottom)", 
+                        start: "clamp(50% bottom)", 
                         end: "clamp(bottom 20px)",
                         toggleActions: "play none none reverse",
                     },
                     opacity: 0, 
-                    scale: 0.9,
                     y: 100,
                 })
             }
-            gsap.delayedCall(0.5, () => ScrollTrigger.refresh());
+            //btw this might be causing hydration issues
+            gsap.delayedCall(0.6, () => ScrollTrigger.refresh());
         })
     });
 
@@ -35,9 +35,15 @@ const Work = () => {
         <>
             <h1 className="font-bold text-2xl sm:text-4xl">My Work Experience</h1>
             {works.map((work, index) => (
-                <div key={index} id={"work"+index} className="mt-9 font-medium sm:grid sm:gap-2 grid-cols-[110px_auto]">
+                <a 
+                    key={index} 
+                    id={"work"+index} 
+                    href={work.link} 
+                    className="block mt-9 sm:p-5 font-medium sm:grid sm:gap-2 grid-cols-[110px_auto] bg-transparent
+                        border-[1px] border-transparent sm:hover:border-neutral-300 sm:hover:dark:border-neutral-800  
+                        sm:hover:shadow-custom sm:hover:dark:shadow-custom-dark rounded-xl sm:transition-shadow">
                     <p className="text-sm sm:text-lg sm:font-light sm:row-span-3 sm:my-[5px]">{work.dates}</p>
-                    <a href={work.link} className="text-lg font-bold tracking-tighter my-1 sm:text-2xl">{work.position} • {work.company}</a>
+                    <h1 className="text-lg font-bold tracking-tighter my-1 sm:text-2xl">{work.position} • {work.company}</h1>
                     <p className="my-3 font-light lg:text-xl">{work.description}</p>
                     <div>
                         {work.technologies.map((tech, techIndex) => (
@@ -50,7 +56,7 @@ const Work = () => {
                                 </span>
                         ))}
                     </div>
-                </div>
+                </a>
             ))}
             <a href={resume} target="_blank" className="block font-bold text-lg mt-9">
                 My Full Resume 
