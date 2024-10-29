@@ -171,9 +171,9 @@ const About = () => {
             <div id="about-text-container" className="w-full px-5 sm:px-24 font-light text-base">
                 <h1 className="font-bold text-2xl sm:text-4xl">About Me</h1>
                 <p id="about-body" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">
-                I am in the midst of getting my Bachelor's from <a href="https://www.smu.edu.sg/"><span className="font-bold">Singapore Management University</span> in <span className="font-bold">Computer Science & Accountancy</span></a>
+                I am in the midst of getting my Bachelor's from <a href="https://www.smu.edu.sg/"><span className="font-bold">Singapore Management University</span> in <span className="font-bold">Accountancy & Computer Science</span></a>
                 <br /><br />
-                I am deeply passionate and self-driven. I taught myself programming from scratch and fully taught myself full stack web development through <a href="https://www.theodinproject.com/about" className="font-bold">The Odin Project</a>. 
+                I am deeply passionate and self-driven. I taught myself programming from scratch and full stack web development with <a href="https://www.theodinproject.com/about" className="font-bold">The Odin Project</a>. 
                 {" "}It is one of my goals in life to be able to use my love for computers and technology to make a real difference to society through software. 
                 <br /><br />
                 When I'm not coding, you'll find me making filter/espresso coffee, hanging with friends, enjoying obscure films,
