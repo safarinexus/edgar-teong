@@ -88,7 +88,7 @@ const projects:project[] = [
     },
     {
         title: "Kyla's Birthday Website",
-        description: "A website that I made for my partner's birthday, using plain & simple HTML, CSS & JavaScript", 
+        description: "A website that I made for my partner's birthday, using pure vanilla HTML, CSS & JavaScript", 
         technologies: ["HTML", "CSS", "JavaScript"], 
         githubLink: "https://github.com/safarinexus/super-secret",
         demoLink: "https://super-secret-safarinexus-projects.vercel.app/",
