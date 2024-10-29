@@ -7,7 +7,6 @@ import supersecret from "../assets/project-thumbnails/supersecret.webp"
 import fileuploader from "../assets/project-thumbnails/fileuploader.webp"
 import msgboard from "../assets/project-thumbnails/msgboard.webp"
 import inventory from "../assets/project-thumbnails/inventory.webp"
-import todo from "../assets/project-thumbnails/todo.webp"
 import portfolio from "../assets/project-thumbnails/portfolio.webp"
 
 
@@ -73,7 +72,7 @@ const projects:project[] = [
     }, 
     {
         title: "Shopping Page",
-        description: "A frontend UI for a shopping page, built with React.", 
+        description: "A frontend UI for a shopping page, built with React, by me.", 
         technologies: ["HTML", "CSS", "JavaScript", "React", "Vercel"], 
         githubLink: "https://github.com/safarinexus/odin_projects/tree/main/odin-react-shoppingcart",
         demoLink: "https://odin-shopping-page.vercel.app/",
@@ -88,14 +87,6 @@ const projects:project[] = [
         image: weather,
     },
     {
-        title: "Todo List",
-        description: "My version of a Todo List Web App using Vanilla HTML, CSS & JavaScript", 
-        technologies: ["HTML", "CSS", "JavaScript"], 
-        githubLink: "https://github.com/safarinexus/odin_projects/tree/main/odin-js-todo",
-        demoLink: "https://safarinexus.github.io/edgr-odinprojects/odin-js-todo/dist/index.html",
-        image: todo,
-    },
-    {
         title: "Kyla's Birthday Website",
         description: "A website that I made for my partner's birthday, using plain & simple HTML, CSS & JavaScript", 
         technologies: ["HTML", "CSS", "JavaScript"], 
@@ -105,7 +96,7 @@ const projects:project[] = [
     },
     {
         title: "Projects from 'The Odin Project'", 
-        description: "A series of projects that I created while learning full-stack development under The Odin Project", 
+        description: "A series of projects that I created (from scratch) while learning full-stack development under The Odin Project", 
         technologies: ["HTML", "CSS", "JavaScript", "Jest", "Webpack", "React", "PostgreSQL", "Prisma", "Node", "Express", "Vitest", "RESTful APIs"], 
         githubLink: "https://github.com/safarinexus/edgr-odinprojects", 
         demoLink: "https://safarinexus.github.io/edgr-odinprojects/", 
