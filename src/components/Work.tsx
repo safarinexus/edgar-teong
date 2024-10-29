@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 import resume from "/edgr_resume.pdf"
 import works from "../data/works"
 
-import { FiExternalLink } from "react-icons/fi";
+import { MdArrowOutward } from "react-icons/md";
 
 const Work = () => {
     useGSAP(() => {
@@ -26,6 +26,10 @@ const Work = () => {
                     y: 100,
                 })
             }
+
+            gsap.to("#work-link-arrow", {
+
+            })
             //btw this might be causing hydration issues
             gsap.delayedCall(0.6, () => ScrollTrigger.refresh());
         })
@@ -41,9 +45,13 @@ const Work = () => {
                     href={work.link} 
                     className="block mt-9 sm:p-5 font-medium sm:grid sm:gap-2 grid-cols-[110px_auto] bg-transparent
                         border-[1px] border-transparent sm:hover:border-neutral-300 sm:hover:dark:border-neutral-800  
-                        sm:hover:shadow-custom sm:hover:dark:shadow-custom-dark rounded-xl sm:transition-shadow">
+                        sm:hover:shadow-custom sm:hover:dark:shadow-custom-dark rounded-xl sm:transition-border-shadow sm:duration-300 group"
+                >
                     <p className="text-sm sm:text-lg sm:font-light sm:row-span-3 sm:my-[5px]">{work.dates}</p>
-                    <h1 className="text-lg font-bold tracking-tighter my-1 sm:text-2xl">{work.position} • {work.company}</h1>
+                    <h1 className="text-lg font-bold tracking-tighter my-1 sm:text-2xl transition-opacity duration-300 group-hover:opacity-30">
+                        {work.position} • {work.company}{" "}
+                        <MdArrowOutward id="work-link-arrow" className="inline w-5 group-hover:animate-hoverDiagonal transition-transform"/>
+                    </h1>
                     <p className="my-3 font-light lg:text-xl">{work.description}</p>
                     <div>
                         {work.technologies.map((tech, techIndex) => (
@@ -58,9 +66,9 @@ const Work = () => {
                     </div>
                 </a>
             ))}
-            <a href={resume} target="_blank" className="block font-bold text-lg mt-9">
+            <a href={resume} target="_blank" className="inline-block font-bold text-lg mt-9 group">
                 My Full Resume 
-                <FiExternalLink id="link-arrow" className="inline ml-2 relative bottom-[2px]"/>
+                <MdArrowOutward id="work-link-arrow" className="inline ml-1 w-4 group-hover:animate-hoverDiagonal transition-transform"/>
             </a>
         </>
     )
