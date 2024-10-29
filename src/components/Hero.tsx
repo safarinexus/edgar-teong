@@ -67,7 +67,7 @@ const Hero = () => {
                             <img 
                                 src="https://em-content.zobj.net/source/apple/118/waving-hand-sign_1f44b.png" 
                                 alt="waving hand emoji" 
-                                className="inline-block motion-safe:animate-waveLoad pointer-events-none h-5 lg:h-8 lg:relative lg:-top-1"/>
+                                className="inline-block relative -top-1 motion-safe:animate-waveLoad pointer-events-none h-5 lg:h-8"/>
                         </div>
                         {" "}Hey there!{" "}I&#39;m{" "}
                         <span id="myname" className="inline-block bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
