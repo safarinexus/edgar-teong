@@ -1,2 +1,2 @@
 # [edgr.live](https://edgr.live)
-My own personal, portfolio website. Made from scratch. Built with Next.js, TypeScript, TailwindCSS & GSAP.
+My personal, portfolio website. Made from scratch. Built with Next.js, TailwindCSS & GSAP. Hosted on Vercel.
