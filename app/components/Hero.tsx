@@ -34,14 +34,6 @@ const Hero = () => {
                 end: "clamp(top 10%)",
                 scrub: 1,
             })
-
-            gsap.to("#myname, #fullstack, #coffee, #reader, #music, #film, #com", {
-                duration: 5,
-                backgroundPositionX: "100%",
-                ease: "sine.inOut",
-                repeat: -1,  
-                yoyo: true,  
-            });
             /*
             gsap.from("#container-bg", {
                 duration: 1, 
@@ -50,6 +42,13 @@ const Hero = () => {
                 ease: "power4.out"
             })
             */
+        });
+        gsap.to("#myname, #fullstack, #coffee, #reader, #music, #film, #com", {
+            duration: 5,
+            backgroundPositionX: "100%",
+            ease: "sine.inOut",
+            repeat: -1,  
+            yoyo: true,  
         });
     });
 
