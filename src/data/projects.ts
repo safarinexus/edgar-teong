@@ -12,7 +12,7 @@ import portfolio from "../assets/project-thumbnails/portfolio.webp"
 
 
 
-interface project { 
+interface Project { 
     title: string; 
     description: string; 
     technologies: string[];
@@ -21,7 +21,7 @@ interface project {
     image: string;
 }
 
-const projects:project[] = [ 
+const projects:Project[] = [ 
     {
         title: "This Website!",
         description: "My own portfolio website made from scratch! To showcase my experience, projects & personality.", 
