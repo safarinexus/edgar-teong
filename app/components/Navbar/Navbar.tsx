@@ -9,7 +9,7 @@ import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(useGSAP);
 
-//import DarkMode from "./DarkMode"
+import DarkMode from "./DarkMode"
 import MobileDropdown from "./MobileDropdown/MobileDropdown"
 
 const sections = ['#hero', '#about', '#work', '#project0'];
@@ -149,7 +149,7 @@ export default function Navbar() {
                     ("Edgar Teong")
                 }
                 </div>
-                <div id="nav-cluster" className="h-full sm:w-[300px] justify-self-end flex items-center justify-between z-40 col-start-3">
+                <div id="nav-cluster" className="h-full sm:w-[350px] justify-self-end flex items-center justify-between z-40 col-start-3">
                     { width > 640 ?  
                         <>
                             <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-500 z-40 ${activeSection === '#about' ? 'shadow-underline dark:shadow-underline-dark hover:shadow-underline-hover hover:dark:shadow-underline-hover-dark' : ''}`}>
@@ -167,7 +167,7 @@ export default function Navbar() {
                         </> :
                         <MobileDropdown />
                     }
-                    {/*<DarkMode />*/}
+                    <DarkMode />
                 </div>
             </div>
         </div>
