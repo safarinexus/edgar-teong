@@ -15,10 +15,10 @@ export default function DarkMode() {
     if (!mounted) return null;
 
     if (theme === "system") { 
-        return <RiComputerLine className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10" onClick={()=> setTheme('dark')}/>
+        return <RiComputerLine className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10 cursor-pointer" onClick={()=> setTheme('dark')}/>
     } else if (theme === "dark") { 
-        return <MdDarkMode className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10" onClick={()=> setTheme('light')}/>
+        return <MdDarkMode className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10 cursor-pointer" onClick={()=> setTheme('light')}/>
     } else {
-        return <MdLightMode className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10" onClick={()=> setTheme('system')}/>
+        return <MdLightMode className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10 cursor-pointer" onClick={()=> setTheme('system')}/>
     }
 }
