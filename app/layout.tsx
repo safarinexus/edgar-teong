@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
-import { Providers } from "./providers";
+//import { Providers } from "./providers";
 
 const articulatFont = localFont({
   src: [
@@ -135,14 +135,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body
         className={`${articulatFont.className} antialiased`}
       >
-        <Providers>
+        {/*<Providers>*/}
           <Navbar />
           {children}
-        </Providers>
+        {/*</Providers>*/}
       </body>
     </html>
   );
