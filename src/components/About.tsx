@@ -112,7 +112,7 @@ const About = () => {
 
     return (
         <div className="w-full h-full flex flex-col">
-            <div id="images-container" className="max-w-[1000px] grid grid-rows-2 grid-cols-2 sm:grid-cols-3 justify-items-center items-center mx-auto">
+            <div id="images-container" className="relative sm:-left-6 max-w-[1000px] grid grid-rows-2 grid-cols-2 sm:grid-cols-3 justify-items-center items-center mx-auto">
                 <div id="image1-container" className="relative z-20 w-[130%] -rotate-12 bottom-[-15%] left-[5%] will-change-transform pointer-events-none">
                     <img 
                         src={image1}
