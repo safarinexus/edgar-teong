@@ -17,52 +17,49 @@ export default function ScrollIndicator () {
   useEffect(() => setMounted(true), []);
 
   useGSAP (() => {
-    const mm = gsap.matchMedia();
-    mm.add("(prefers-reduced-motion: no-preference)", () => {
-      const tl = gsap.timeline(); 
-      tl.to("#scroll-indicator-text", {
-        opacity: 0, 
-        scale: 0.9,
-        y: -20,
-        scrollTrigger: {
-          trigger: "#scroll-indicator", 
-          start: "clamp(90% bottom)", 
-          end: "clamp(bottom 50%)",
-          scrub: 1,
-        }
-      }).to("#scroll-indicator", {
-        opacity: 0,
-        y: -11,
-        scrollTrigger: {
-          trigger: "#scroll-indicator", 
-          start: "clamp(90% bottom)", 
-          end: "clamp(bottom 50%)",
-          scrub: 1,
-        }
-      })
-      .from('#scroll-indicator, #scroll-indicator-text', { 
-        duration: 0.5,
-        delay: 0.5, 
-        ease: "power3.out",
-        y: "-20%", 
-        opacity: 0,
-      }).fromTo("#scroll-arrow", {
-        y: 0, 
-        duration: 0.25, 
-      }, {
-        y: 3,
-        ease: "power1.inOut"
-      }).fromTo('#scroll-arrow', { 
-        duration: 0.25,
-      }, {
-        y: -3, 
-        duration: 0.5, 
-        repeat: -1, 
-        yoyo: true,
-        ease: "power1.inOut",
-      })
-      gsap.delayedCall(0.5, () => ScrollTrigger.refresh());
-    });
+    const tl = gsap.timeline(); 
+    tl.to("#scroll-indicator-text", {
+      opacity: 0, 
+      scale: 0.9,
+      y: -20,
+      scrollTrigger: {
+        trigger: "#scroll-indicator", 
+        start: "clamp(90% bottom)", 
+        end: "clamp(bottom 50%)",
+        scrub: 1,
+      }
+    }).to("#scroll-indicator", {
+      opacity: 0,
+      y: -11,
+      scrollTrigger: {
+        trigger: "#scroll-indicator", 
+        start: "clamp(90% bottom)", 
+        end: "clamp(bottom 50%)",
+        scrub: 1,
+      }
+    })
+    .from('#scroll-indicator, #scroll-indicator-text', { 
+      duration: 0.5,
+      delay: 0.5, 
+      ease: "power3.out",
+      y: "-20%", 
+      opacity: 0,
+    }).fromTo("#scroll-arrow", {
+      y: 0, 
+      duration: 0.25, 
+    }, {
+      y: 3,
+      ease: "power1.inOut"
+    }).fromTo('#scroll-arrow', { 
+      duration: 0.25,
+    }, {
+      y: -3, 
+      duration: 0.5, 
+      repeat: -1, 
+      yoyo: true,
+      ease: "power1.inOut",
+    })
+    gsap.delayedCall(0.5, () => ScrollTrigger.refresh());
   });
 
   if (!mounted) return (
