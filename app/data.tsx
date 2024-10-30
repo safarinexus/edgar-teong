@@ -51,7 +51,7 @@ export const projects:Project[] = [
     {
         title: "This Website!",
         description: "My own portfolio website made from scratch! To showcase my experience, projects & personality.", 
-        technologies: ["TypeScript","React + Vite", "TailwindCSS" ,"GSAP", "Vercel"], 
+        technologies: ["Next.js", "TypeScript", "TailwindCSS", "GSAP", "Vercel"], 
         githubLink: "https://github.com/safarinexus/edgar-teong",
         demoLink: false,
         image: {
