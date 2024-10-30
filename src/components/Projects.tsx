@@ -89,7 +89,7 @@ const Projects = () => {
     return (
         <>
             <h1 className="font-bold text-2xl sm:text-4xl">My Projects</h1>
-            <div className="h-fit sm:h-screen sm:min-h-[800px] w-full flex flex-col items-center">
+            <div className="h-fit motion-safe:sm:h-screen sm:min-h-[800px] w-full flex flex-col items-center">
                 {projects.map((project, index) => {
                     let skew = " -rotate-2"; 
                     if ((Number(index) + 1) % 2 === 0) {
