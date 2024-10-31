@@ -64,31 +64,31 @@ export default function ScrollIndicator () {
 
   if (!mounted) return (
     <>
-      <div id="scroll-indicator-text" className="fixed w-fit h-4 mx-auto left-0 right-0 bottom-14 z-10 will-change-scroll hidden">
+      <aside id="scroll-indicator-text" className="fixed w-fit h-4 mx-auto left-0 right-0 bottom-14 z-10 will-change-scroll hidden">
         <Link href="/#about" className="h-full w-full rounded-md">
           <p className="text-xs">Scroll to Discover</p>
         </Link>
-      </div>
-      <div id="scroll-indicator" className="fixed w-fit mx-auto left-0 right-0 bottom-5 z-10 will-change-scroll hidden">
+      </aside>
+      <aside id="scroll-indicator" className="fixed w-fit mx-auto left-0 right-0 bottom-5 z-10 will-change-scroll hidden">
         <Link href="/#about" className="flex items-center justify-center w-7 h-7 rounded-full bg-amber-400">
           <FaArrowDown id="scroll-arrow"/>
         </Link>
-      </div>
+      </aside>
     </>
   )
 
   return (
     <>
-      <div id="scroll-indicator-text" className="fixed w-fit h-4 mx-auto left-0 right-0 bottom-14 z-10 will-change-scroll">
+      <aside id="scroll-indicator-text" className="fixed w-fit h-4 mx-auto left-0 right-0 bottom-14 z-10 will-change-scroll">
         <Link href="/#about" className="h-full w-full rounded-md">
           <p className="text-xs">Scroll to Discover</p>
         </Link>
-      </div>
-      <div id="scroll-indicator" className="fixed w-fit mx-auto left-0 right-0 bottom-5 z-10 will-change-scroll">
+      </aside>
+      <aside id="scroll-indicator" className="fixed w-fit mx-auto left-0 right-0 bottom-5 z-10 will-change-scroll">
         <Link href="/#about" className="flex items-center justify-center w-7 h-7 rounded-full bg-amber-400">
           <FaArrowDown id="scroll-arrow"/>
         </Link>
-      </div>
+      </aside>
     </>
   );
 };

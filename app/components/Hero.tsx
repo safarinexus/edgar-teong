@@ -53,7 +53,7 @@ const Hero = () => {
     });
 
     return (
-        <div 
+        <main
             id="container-bg"
             className="w-full h-full min-h-[400px] sm:min-h-[720px] sm:motion-reduce:min-h-[820px] motion-reduce:lg:min-h-[1000px] font-light pt-[70px] sm:pt-[80px] md:pt-[140px] p-4 sm:px-16 lg:pb-16 rounded-[32px] bg-white 
                 border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark dark:bg-black
@@ -113,7 +113,7 @@ const Hero = () => {
                 </div>
             </div>
             <ContactBar main={true}/>
-        </div>
+        </main>
     )
 }
 
