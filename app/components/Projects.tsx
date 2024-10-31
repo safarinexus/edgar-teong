@@ -117,12 +117,12 @@ const Projects = () => {
                             <div className="w-full flex items-start">
                                 <p className="text-lg font-bold tracking-tighter">{project.title}</p>
                                 <div className="ml-auto flex justify-end items-center w-[80px]">
-                                        <a href={project.githubLink}>
+                                        <a href={project.githubLink} aria-label={project.title + " github repo link"}>
                                             <FaGithub className="size-6"/>
                                         </a>
                                         { project.demoLink ? 
                                             (
-                                            <a href={project.demoLink}>
+                                            <a href={project.demoLink} aria-label={project.title + " live demo link"}>
                                                 <FiExternalLink className="ml-3 size-6"/>
                                             </a>
                                             ) :
