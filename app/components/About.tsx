@@ -118,6 +118,7 @@ const About = () => {
                         height={3024}
                         className="select-none rounded-xl brightness-90"
                         draggable="false"
+                        quality={35}
                     />
                 </div>
                 <div 
@@ -135,6 +136,7 @@ const About = () => {
                         height={4032}
                         className="select-none rounded-xl brightness-90"
                         draggable="false"
+                        quality={35}
                     />
                 </div>
                 <div 
@@ -153,6 +155,7 @@ const About = () => {
                         height={4032}
                         draggable="false"
                         className="select-none rounded-xl brightness-90"
+                        quality={35}
                     />
                 </div>
                 <div 
@@ -170,6 +173,7 @@ const About = () => {
                         height={2880}
                         className="select-none rounded-xl brightness-90"
                         draggable="false"
+                        quality={35}
                     />
                 </div>
                 <div 
@@ -187,6 +191,7 @@ const About = () => {
                         height={3024}
                         className="select-none rounded-xl brightness-90"
                         draggable="false"
+                        quality={35}
                     />
                 </div>
                 <div 
@@ -205,6 +210,7 @@ const About = () => {
                         height={4032}
                         className="select-none rounded-lg"
                         draggable="false"
+                        quality={35}
                     />
                 </div>
             </div>
