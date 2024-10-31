@@ -222,7 +222,7 @@ const About = () => {
                 I am deeply passionate and self-driven. I taught myself programming from scratch and full stack web development with <a href="https://www.theodinproject.com/about" className="font-bold">The Odin Project</a>. 
                 {" "}It is one of my goals in life to be able to use my love for computers and technology to make a real difference to society through software. 
                 <br /><br />
-                When I&#39;m not coding, you&#39;ll find me making filter/espresso coffee, hanging with friends, enjoying obscure films,
+                When I&#39;m not coding, you&#39;ll find me making filter/espresso coffee, hanging with friends, enjoying obscure films, tinkering with keyboards,
                 {" "}reading up about psychology/mental health stuff, or dancing at my <a href="https://www.instagram.com/smuemix/" className="font-bold">school&#39;s hip-hop dance club</a>.
                 </p>
             </div>
