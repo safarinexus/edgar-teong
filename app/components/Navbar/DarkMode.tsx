@@ -15,10 +15,22 @@ export default function DarkMode() {
     if (!mounted) return null;
 
     if (theme === "system") { 
-        return <RiComputerLine className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10 cursor-pointer" onClick={()=> setTheme('dark')}/>
+        return (
+        <button type="button">
+            <RiComputerLine className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10 cursor-pointer" onClick={()=> setTheme('dark')}/>
+        </button>
+        )
     } else if (theme === "dark") { 
-        return <MdDarkMode className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10 cursor-pointer" onClick={()=> setTheme('light')}/>
+        return (
+            <button type="button">
+              <MdDarkMode className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10 cursor-pointer" onClick={()=> setTheme('light')}/>
+            </button>
+        )
     } else {
-        return <MdLightMode className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10 cursor-pointer" onClick={()=> setTheme('system')}/>
+        return (
+            <button type="button">
+                <MdLightMode className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10 cursor-pointer" onClick={()=> setTheme('system')}/>
+            </button>
+        )
     }
 }

@@ -101,7 +101,7 @@ const About = () => {
     });
 
     return (
-        <div className="w-full h-full flex flex-col">
+        <>
             <div id="images-container" className="relative sm:-left-6 max-w-[1000px] grid grid-rows-2 grid-cols-2 sm:grid-cols-3 justify-items-center items-center mx-auto">
                 <div 
                     id="image1-container" 
@@ -118,7 +118,7 @@ const About = () => {
                         height={3024}
                         className="select-none rounded-xl brightness-90"
                         draggable="false"
-                        quality={35}
+                        quality={40}
                     />
                 </div>
                 <div 
@@ -136,7 +136,7 @@ const About = () => {
                         height={4032}
                         className="select-none rounded-xl brightness-90"
                         draggable="false"
-                        quality={35}
+                        quality={40}
                     />
                 </div>
                 <div 
@@ -155,7 +155,7 @@ const About = () => {
                         height={4032}
                         draggable="false"
                         className="select-none rounded-xl brightness-90"
-                        quality={35}
+                        quality={40}
                     />
                 </div>
                 <div 
@@ -173,7 +173,7 @@ const About = () => {
                         height={2880}
                         className="select-none rounded-xl brightness-90"
                         draggable="false"
-                        quality={35}
+                        quality={40}
                     />
                 </div>
                 <div 
@@ -191,7 +191,7 @@ const About = () => {
                         height={3024}
                         className="select-none rounded-xl brightness-90"
                         draggable="false"
-                        quality={35}
+                        quality={40}
                     />
                 </div>
                 <div 
@@ -210,7 +210,7 @@ const About = () => {
                         height={4032}
                         className="select-none rounded-lg"
                         draggable="false"
-                        quality={35}
+                        quality={40}
                     />
                 </div>
             </div>
@@ -226,7 +226,7 @@ const About = () => {
                 {" "}reading up about psychology/mental health stuff, or dancing at my <a href="https://www.instagram.com/smuemix/" className="font-bold">school&#39;s hip-hop dance club</a>.
                 </p>
             </div>
-        </div>
+        </>
     )
 }
 
