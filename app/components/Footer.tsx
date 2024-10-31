@@ -11,7 +11,7 @@ const Footer = () => {
                         className="font-light text-sm w-fit leading-[1.2] z-10"
                         style={{ color: "#a3a3a3" }}
                     >
-                        Made by Edgar Russell Teong Kai Han
+                        Designed &amp; Built by Edgar Russell Teong Kai Han
                     </a>
                 </div>
                 <div className="w-full flex justify-center">
