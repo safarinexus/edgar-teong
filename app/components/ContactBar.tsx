@@ -42,7 +42,7 @@ const ContactBar = ({ main }: Prop) => {
         )
     } else { 
         return (
-            <div id="contact-bar-footer" className="h-fit w-56 mx-auto sm:m-0 flex justify-between items-center"> 
+            <div id="contact-bar-footer" className="h-fit w-72 mx-auto sm:m-0 flex justify-between items-center"> 
                 <a href="mailto:edgargarteong@gmail.com" target="_blank">
                     <BiLogoGmail className="size-6" style={{ color: "#737373", opacity: '50%' }}/>
                 </a>
