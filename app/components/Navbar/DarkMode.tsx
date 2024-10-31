@@ -16,19 +16,19 @@ export default function DarkMode() {
 
     if (theme === "system") { 
         return (
-        <button type="button">
+        <button type="button" aria-label="dark mode button system" >
             <RiComputerLine className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10 cursor-pointer" onClick={()=> setTheme('dark')}/>
         </button>
         )
     } else if (theme === "dark") { 
         return (
-            <button type="button">
+            <button type="button" aria-label="dark mode button dark">
               <MdDarkMode className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10 cursor-pointer" onClick={()=> setTheme('light')}/>
             </button>
         )
     } else {
         return (
-            <button type="button">
+            <button type="button" aria-label="dark mode button light">
                 <MdLightMode className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10 cursor-pointer" onClick={()=> setTheme('system')}/>
             </button>
         )
