@@ -23,15 +23,23 @@ const DropdownMenu = ({ open, setOpen }: Props) => {
 
 
     return (
-            <div
+            <ul
             id="dropdown-menu"
             className={nameClass}
         >
-            <Link href="/#about" className="text-xl" onClick={() => setOpen(false)}>About</Link>
-            <Link href="/#work" className="text-xl" onClick={() => setOpen(false)}>Work</Link>
-            <Link href="/#projects" className="text-xl" onClick={() => setOpen(false)}>Projects</Link>
-            <Link href="/thoughts" className="text-xl"  onClick={() => setOpen(false)}>Thoughts</Link>
-        </div>
+            <li>
+                <Link href="/#about" className="text-xl" onClick={() => setOpen(false)}>About</Link>
+            </li>
+            <li>
+                <Link href="/#work" className="text-xl" onClick={() => setOpen(false)}>Work</Link>
+            </li>
+            <li>
+                <Link href="/#projects" className="text-xl" onClick={() => setOpen(false)}>Projects</Link>
+            </li>
+            <li>
+                <Link href="/thoughts" className="text-xl"  onClick={() => setOpen(false)}>Thoughts</Link>
+            </li>
+        </ul>
     )
 }
 

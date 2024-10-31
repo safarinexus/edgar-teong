@@ -11,30 +11,30 @@ export default function Home() {
     <>
       <ScrollProgressBar />
       <ScrollIndicator /> 
-      <div 
+      <section 
         id="hero" 
         className="w-full max-w-[1208px] h-fit sm:h-screen sm:git min-h-fit mx-auto px-2 py-2"
       >
         <Hero />
-      </div>
-      <div 
+      </section>
+      <section 
         id="about" 
-        className="w-full max-w-[1208px] h-fit mx-auto"
+        className="w-full max-w-[1208px] h-fit mx-auto flex flex-col"
       >
         <About />
-      </div>
-      <div
+      </section>
+      <section
         id="work"
         className="w-full max-w-[1208px] h-fit min-h-[480px] mx-auto px-5 pt-20 sm:px-24"
       >
         <Work />
-      </div>
-      <div
+      </section>
+      <section
         id="projects"
         className="w-full max-w-[1208px] h-fit min-h-[480px] mx-auto px-5 pt-20 sm:px-24 flex flex-col"
       >
         <Projects />
-      </div>
+      </section>
       <Footer />
     </>
   )
