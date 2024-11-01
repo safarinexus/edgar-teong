@@ -21,10 +21,20 @@ const config: Config = {
         'underline-dark': '0 2px 0 0 white;',
         'underline-hover': '0 2px 0 0 rgba(0, 0, 0, 0.3)',
         'underline-hover-dark': '0 2px 0 0 rgba(255, 255, 255, 0.3)',
-        'custom': 'inset 0 -3px #0000000d, inset 0 0 0 2px #fff, inset 0 4px 2px #0000000f, inset 0 0 24px 4px #0000000a ,0 1px 3px #0000001f',
-        //glassmorph effect format: 'bottom inner shadow, border, top inner shadow, inner all shadow, outer all shadow'
-        //'old-custom-dark': 'inset 0 -3px #ffffff1a, inset 0 0 0 2px #000, inset x0 3px 2px #ffffff2e, inset 0 0 24px 4px #ffffff1a, 0 1px 3px #ffffff3d',
-        'custom-dark': 'inset 0 -3px #ffffff1a, inset 0 0 0 2px #000, inset 0 3px 2px #ffffff2e, inset 0 0 24px 4px #ffffff1a, 0 1px 3px #ffffff3d',
+        'custom': 
+          'inset 0 -3px rgba(0, 0, 0, 0.05),' + //bottom inner shadow 
+          'inset 0 0 0 2px rgba(255, 255, 255, 1),' + //border
+          'inset 0 4px 2px rgba(0, 0, 0, 0.06),' +  //top inner shadow 
+          'inset 0 0 24px 4px rgba(0, 0, 0, 0.04),' +  //inner all shadow 
+          '0 1px 3px rgba(0, 0, 0, 0.12)' //outer all shadow
+          ,
+        'custom-dark': 
+          'inset 0 -3px rgba(255, 255, 255, 0.1),' + //bottom inner shadow 
+          'inset 0 0 0 2px rgba(0, 0, 0, 1),' + //border
+          'inset 0 3px 2px rgba(255, 255, 255, 0.18),' +  //top inner shadow 
+          'inset 0 0 24px 4px rgba(255, 255, 255, 0.09),' +  //inner all shadow 
+          '0 1px 3px rgba(255, 255, 255, 0.24)' //outer all shadow
+          ,
       },
       animation: {
         wave:'1s wave ease-in-out 1', 
