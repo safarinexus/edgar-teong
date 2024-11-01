@@ -104,7 +104,7 @@ const Projects = () => {
                             key={index}
                             id={"project"+index} 
                             className={"font-medium w-full max-w-[600px] h-auto max-h-full rounded-xl p-3 bg-white\
-                                border-[1px] border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark\
+                                border-[1px] border-neutral-300 dark:border-neutral-900 shadow-custom dark:shadow-custom-dark\
                                 dark:bg-black flex flex-col space-y-2 my-9 sm:motion-safe:absolute sm:motion-safe:mx-auto" + skew }
                         >
                             <Image 
