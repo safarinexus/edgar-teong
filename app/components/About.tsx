@@ -161,7 +161,7 @@ const About = () => {
                 <div 
                     id="image4-container" 
                     className="relative z-20 hidden sm:block w-[95%] left-[10%] bottom-0 will-change-transform 
-                        pointer-events-none motion-reduce:rotate-12 motion-safe:rotate-45 motion-safe:opacity-0
+                        pointer-events-none motion-reduce:rotate-12 motion-safe:rotate-[80deg] motion-safe:opacity-0
                         motion-safe:-translate-y-full motion-safe:translate-x-full 
                     "
                 >
@@ -198,7 +198,7 @@ const About = () => {
                     id="image6-container" 
                     className="relative hidden -z-10 sm:block w-[95%] left-[10%] top-[-26%] 
                         will-change-transform pointer-events-none motion-reduce:-rotate-12
-                        motion-safe:-rotate-45 motion-safe:opacity-100 motion-safe:translate-x-full 
+                        motion-safe:-rotate-[80deg] motion-safe:opacity-100 motion-safe:translate-x-full 
                         motion-safe:translate-y-full
                     "
                 >
