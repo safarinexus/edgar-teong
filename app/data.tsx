@@ -22,19 +22,23 @@ interface Project {
 
 export const works: Work[] = [
     {
-     dates: "Jan. 2023", 
-     company: "GovTech", 
-     link: "https://www.tech.gov.sg/",
-     position : "Software Engineer Intern", 
-     description: "Developed & unit-tested components for revamped Tech iOSH portal, aimed at providing a more seamless registration portal for more than 2000 safety and health professionals to enhance UX through SEO optimisation and accessibility improvements. Improved UI with 70% higher user adoption rates.", 
-     technologies: ["Figma", "React", "JavaScript"]   
+        dates: "Jan. 2023", 
+        company: "GovTech", 
+        link: "https://www.tech.gov.sg/",
+        position : "Software Engineer Intern", 
+        description: `Worked on the Tech iOSH Refresh Project, enhancing the registration portal for over 2,000 safety and health professionals.
+            By developing and standardizing UI components, I achieved a 30% reduction in code duplication and improved maintainability.
+            Additionally, I implemented user-centered design principles in Figma, resulting in a 25% increase in usability scores from user testing.`,
+        technologies: ["Figma", "React", "JavaScript"]   
     },
     {
         dates: "Aug. 2022 — Dec. 2022", 
         company: "Schneider Electric", 
         link: "https://www.se.com/sg/en/",
         position: "Data Analyst Intern", 
-        description: "In charge of data migration and adoption of Github for SQL data retrieval scripts, where I also developed the comprehensive data retrieval scripts in SQL for use by the internal Audit Team. I also engaged in a project involving developing a machine learning algorithm to automate fraud detection.", 
+        description: `Led the data migration and adoption of version control with GitHub, improving workflow tracking and data retrieval across 300 SQL scripts. 
+            I also automated complex SQL data-retrieval tasks by creating a script bank for the entire Internal Audit team, which resulted in a 30% reduction in data processing time. 
+            Additionally, I developed a machine learning algorithm to automate fraud detection for each internal audit cycle, achieving 80% effectiveness.`, 
         technologies: ["SQL", "Python", "Seaborn", "Sci-kit Learn", "Pandas"],
     }, 
     {
@@ -42,7 +46,10 @@ export const works: Work[] = [
         company: "Accenture", 
         link: "https://www.accenture.com/sg-en",
         position: "Software Development Engineer in Test Intern", 
-        description: "Developed testing tools for IHiS (now Synapxe) Billing Transform project, transforming nationwide healthcare billing solution, where I developed test scripts and templates for testing cycle using SOAP APIs and Python", 
+        description: `I developed testing tools and performed UAT testing for the iHiS Billing Transform project, 
+            which aimed at digitally transforming the nationwide healthcare billing solution. 
+            I created test scripts and templates for testing cycles using SOAP APIs and Python, where I identified and documented over 60 critical defects, 
+            improving overall software quality and reducing post-release issues by 30%.`, 
         technologies: ["Python", "SOAP APIs"],
     },
 ]
