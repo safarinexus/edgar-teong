@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
@@ -143,6 +144,7 @@ export default function RootLayout({
           <Navbar />
           {children}
         </Providers>
+        <SpeedInsights />
       </body>
     </html>
   );
