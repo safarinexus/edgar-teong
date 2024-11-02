@@ -26,7 +26,7 @@ export const works: Work[] = [
      company: "GovTech", 
      link: "https://www.tech.gov.sg/",
      position : "Software Engineer Intern", 
-     description: "Developed and unit-tested components for frontend portal components for the Tech iOSH Project aimed at providing a better UX for registration for safety and health professionals.", 
+     description: "Developed & unit-tested components for revamped Tech iOSH portal, aimed at providing a more seamless registration portal for more than 2000 safety and health professionals to enhance UX through SEO optimisation and accessibility improvements. Improved UI with 70% higher user adoption rates.", 
      technologies: ["Figma", "React", "JavaScript"]   
     },
     {
