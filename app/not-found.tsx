@@ -1,4 +1,4 @@
-const Error = () => {
+export default function NotFound() {
     return (
         <div id="error-container" className="w-full h-svh px-2 pt-2">
             <div className="w-full max-w-[1192px] h-[400px] p-10 mx-auto flex flex-col justify-end rounded-[32px] bg-white border-[1px] 
@@ -10,5 +10,3 @@ const Error = () => {
         </div>
     )
 }
-
-export default Error

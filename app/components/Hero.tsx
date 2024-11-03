@@ -55,9 +55,9 @@ const Hero = () => {
     return (
         <main
             id="container-bg"
-            className="w-full h-full min-h-[400px] sm:min-h-[720px] sm:motion-reduce:min-h-[820px] motion-reduce:lg:min-h-[1000px] font-light pt-[70px] sm:pt-[80px] md:pt-[140px] p-4 sm:px-16 lg:pb-16 rounded-[32px] bg-white 
-                border-[1px] border-neutral-300 dark:border-neutral-900 shadow-custom dark:shadow-custom-dark dark:bg-black
-                flex flex-col sm:justify-end
+            className="w-full h-full min-h-[400px] sm:min-h-[720px] sm:motion-reduce:min-h-[820px] motion-reduce:lg:min-h-[1000px] font-light  
+                border-[1px] border-neutral-300 dark:border-neutral-900 shadow-custom dark:shadow-custom-dark rounded-[32px] 
+                flex flex-col sm:justify-end bg-white dark:bg-black pt-[70px] sm:pt-[80px] md:pt-[140px] p-4 sm:px-16 lg:pb-16
             "
         >
             <div id="intro" className="flex flex-col items-start sm:flex-row sm:items-center gap-2">
@@ -66,11 +66,12 @@ const Hero = () => {
                     <h1 id="hey-there"className="group text-xl lg:text-3xl">
                         <div id="hand-wrapper" className="inline-block group-hover:animate-wave">
                             <Image
-                                src="/wave.png" 
+                                src="/emojis/wave.webp" 
                                 width={160}
                                 height={160}
                                 alt="waving hand emoji" 
-                                className="inline-block relative -top-1 pointer-events-none size-5 lg:size-7"/>
+                                className="inline-block relative -top-1 pointer-events-none size-5 lg:size-7"
+                            />
                         </div>
                         {" "}Hey there!{" "}I&#39;m{" "}
                         <span id="myname" className="inline-block bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">

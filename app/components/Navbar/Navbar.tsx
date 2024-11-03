@@ -141,7 +141,7 @@ export default function Navbar() {
                     { activeSection === "#about" ? ("About") : ("") }
                     { activeSection === "#work" ? ("Experience") : ("") }
                     { activeSection === "#project0" ? ("Projects") : ("") }
-                    { pathName === "/thoughts" ? ("Thoughts") : ("") }
+                    { (/^\/thoughts/).test(pathName) ? ("Thoughts") : ("") }
                     </h1>)
                     : 
                     ("Edgar Teong")
@@ -159,7 +159,7 @@ export default function Navbar() {
                             <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-500 z-40 ${activeSection === '#project0' ? 'shadow-underline dark:shadow-underline-dark hover:shadow-underline-hover hover:dark:shadow-underline-hover-dark' : ''}`}>
                                 <Link href="/#projects" className="md:text-lg">Projects</Link>
                             </div>
-                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-500 z-40 ${pathName === "/thoughts" ? 'shadow-underline dark:shadow-underline-dark hover:shadow-underline-hover hover:dark:shadow-underline-hover-dark' : ''}`}>
+                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-500 z-40 ${(/^\/thoughts/).test(pathName) ? 'shadow-underline dark:shadow-underline-dark hover:shadow-underline-hover hover:dark:shadow-underline-hover-dark' : ''}`}>
                                 <Link href="/thoughts" className="md:text-lg">Thoughts</Link>
                             </div>
                         </> :

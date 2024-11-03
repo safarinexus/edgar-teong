@@ -1,6 +1,11 @@
 interface Work {
     dates: string, 
     company: string, 
+    logo: {
+        url: string,
+        width: number, 
+        height: number,
+    } 
     link: string, 
     position: string, 
     description: string, 
@@ -24,6 +29,11 @@ export const works: Work[] = [
     {
         dates: "Jan. 2023", 
         company: "GovTech", 
+        logo: {
+            url: "/work-logos/govtech.webp",
+            width: 400, 
+            height: 448,
+        },
         link: "https://www.tech.gov.sg/",
         position : "Software Engineer Intern", 
         description: `Worked on the Tech iOSH Refresh Project, enhancing the registration portal for over 2,000 safety and health professionals.
@@ -33,7 +43,12 @@ export const works: Work[] = [
     },
     {
         dates: "Aug. 2022 — Dec. 2022", 
-        company: "Schneider Electric", 
+        company: " Schneider Electric", 
+        logo: {
+            url: "/work-logos/se.webp",
+            width: 225, 
+            height: 225,
+        },
         link: "https://www.se.com/sg/en/",
         position: "Data Analyst Intern", 
         description: `Led the data migration and adoption of version control with GitHub, improving workflow tracking and data retrieval across 300 SQL scripts. 
@@ -44,6 +59,11 @@ export const works: Work[] = [
     {
         dates: "Jun. 2022 — Aug. 2022", 
         company: "Accenture", 
+        logo: {
+            url: "/work-logos/accenture.webp",
+            width: 225, 
+            height: 225,
+        },
         link: "https://www.accenture.com/sg-en",
         position: "Software Development Engineer in Test Intern", 
         description: `I developed testing tools and performed UAT testing for the iHiS Billing Transform project, 
