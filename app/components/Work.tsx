@@ -53,7 +53,7 @@ const Work = () => {
                                 src={work.logo.url}
                                 height={work.logo.height}
                                 width={work.logo.width}
-                                className="xs:inline w-10" 
+                                className="inline w-6 sm:w-10" 
                                 alt={work.company + " logo"}
                         />
                         {work.company} • {work.position}
