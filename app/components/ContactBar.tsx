@@ -14,7 +14,7 @@ const ContactBar = ({ main }: Prop) => {
     if (main) {
         return (
             <div id="contact-bar-main" className="h-10 w-full xs:w-[80%] sm:w-[50%] lg:w-72 mx-auto mt-8 xs:mt-0 sm:m-0 flex justify-between items-center"> 
-                <a href="mailto:edgargarteong@gmail.com" target="_blank" className="relative z-40" aria-label="gmail link">
+                <a href="mailto:edgargarteong@gmail.com" target="_blank" aria-label="gmail link">
                     <BiLogoGmail className="size-7 sm:size-6"/>
                 </a>
                 <a href="https://github.com/safarinexus" target="_blank" aria-label="github link">
