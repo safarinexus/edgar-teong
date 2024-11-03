@@ -9,7 +9,7 @@ import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
-import { projects } from "../data"
+import { projects } from "@/lib/data"
 
 import { MdArrowOutward } from "react-icons/md";
 import { FiExternalLink } from "react-icons/fi";
