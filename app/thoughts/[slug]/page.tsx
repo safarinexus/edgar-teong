@@ -1,17 +1,17 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { getPostData, getAllPostIds } from "@/lib/posts";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import React from "react";
 import Link from "next/link";
 import { IoIosArrowBack } from "react-icons/io";
+import { tParams } from "@/lib/types"
 
 export async function generateStaticParams() {
   const paths = getAllPostIds();
   return paths;
 }
 
-async function post({ params }: { params: { slug: string } }) {
-  const { slug } = await params
+export default async function Thought(props: { params: tParams }) {
+  const { slug } = await props.params;
   const post = await getPostData(slug);
 
   return (
@@ -42,5 +42,3 @@ async function post({ params }: { params: { slug: string } }) {
     </main>
   );
 }
-
-export default post;
