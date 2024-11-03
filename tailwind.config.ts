@@ -39,6 +39,7 @@ const config: Config = {
       animation: {
         wave:'1s wave ease-in-out 1', 
         hoverDiagonal: 'diagonalMove 0.4s ease-in-out forwards',
+        hoverRight: 'moveRight 0.4s ease-out forwards',
       },
       keyframes: {
         wave: {
@@ -52,6 +53,10 @@ const config: Config = {
           '0%': { transform: 'translateX(0px) translateY(0px)' },
           '100%': { transform: 'translateX(5px) translateY(-5px)' },
         },
+        moveRight: {
+          '0%': { transform: 'translateX(0px)' },
+          '100%': { transform: 'translateX(5px)' },
+        }
       },
     },
     screens: {
@@ -78,7 +83,10 @@ const config: Config = {
       boxShadow: ['hover', 'focus'],
     },
   },
-  plugins: [],
+  plugins: [
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    require('@tailwindcss/typography'),
+  ],
   darkMode: "selector",
 };
 export default config;
