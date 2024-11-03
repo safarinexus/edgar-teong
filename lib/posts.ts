@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { Metadata, Post, ListingPost } from "@/lib/types"
+import { notFound } from 'next/navigation';
 
 const postsDirectory = path.join(process.cwd(), "thoughtposts");
 
@@ -43,7 +44,16 @@ export function getAllPostIds() {
 
 export function getPostData(slug: string):Post {
     const fullPath = path.join(postsDirectory, `${slug}.mdx`);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
+    let fileContents = null;
+    try {
+      fileContents = fs.readFileSync(fullPath, "utf8");
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+        notFound();
+      }
+      throw new Error(`Error reading file: ${fullPath}`);
+    }
+    
     const { data, content } = matter(fileContents) as unknown as {
         data: Metadata;
         content: string;
