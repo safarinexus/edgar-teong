@@ -111,7 +111,7 @@ const About = () => {
                     "
                 >
                     <Image 
-                        src="/image1.webp"
+                        src="/about-images/image1.webp"
                         id="image1"  
                         alt="image 1"
                         width={4032}
@@ -129,7 +129,7 @@ const About = () => {
                     " 
                 >
                     <Image 
-                        src="/image2.webp"
+                        src="/about-images/image2.webp"
                         id="image2"  
                         alt="image 2"
                         width={3024}
@@ -148,7 +148,7 @@ const About = () => {
                     "
                 >
                     <Image 
-                        src="/image3.webp"
+                        src="/about-images/image3.webp"
                         id="image3"  
                         alt="image 3"
                         width={3024}
@@ -166,7 +166,7 @@ const About = () => {
                     "
                 >
                     <Image 
-                        src="/image4.webp"
+                        src="/about-images/image4.webp"
                         id="image4"  
                         alt="image 4"
                         width={2160}
@@ -184,7 +184,7 @@ const About = () => {
                     "
                 >
                     <Image 
-                        src="/image5.webp"
+                        src="/about-images/image5.webp"
                         id="image5"  
                         alt="image 5"
                         width={4032}
@@ -203,7 +203,7 @@ const About = () => {
                     "
                 >
                     <Image 
-                        src="/image6.webp"
+                        src="/about-images/image6.webp"
                         id="image6"  
                         alt="image 6"
                         width={3024}
