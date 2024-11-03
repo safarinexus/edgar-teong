@@ -2,8 +2,14 @@ import { getSortedPostListing } from "@/lib/posts";
 
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from 'next';
 
 import { FaArrowRight } from "react-icons/fa6";
+
+export const metadata: Metadata = {
+    title: 'Edgar Teong | Thoughts',
+};
+  
 
 export default function Thoughts() {
 
