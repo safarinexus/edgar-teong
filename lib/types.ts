@@ -10,3 +10,5 @@ export interface Post {
 }
 
 export type ListingPost =  Omit<Post, 'content'>;
+
+export type tParams = Promise<{ slug: string }>;
