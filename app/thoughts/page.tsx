@@ -20,7 +20,7 @@ export default function Thoughts() {
             <header className="w-full max-w-[1192px] h-fit p-10 pt-32 mx-auto flex flex-col justify-end rounded-[32px] bg-white border 
             border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark dark:bg-black space-y-2"
             >
-                <h1 className="font-medium text-3xl sm:text-6xl lg:text-8xl group">
+                <h1 className="font-medium text-4xl sm:text-6xl lg:text-8xl group">
                     My Thoughts{" "}
                     <Image
                         src="/emojis/thoughts.webp" 
