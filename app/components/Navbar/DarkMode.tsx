@@ -16,20 +16,23 @@ export default function DarkMode() {
 
     if (theme === "system") { 
         return (
-        <button type="button" aria-label="dark mode button system" >
-            <RiComputerLine className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10 cursor-pointer" onClick={()=> setTheme('dark')}/>
+        <button type="button" aria-label="dark mode button system" className="relative group hover:opacity-100">
+            <div className="absolute -top-[10px] -left-[10.5px] bg-neutral-700 rounded-full w-11 h-11 opacity-0 sm:group-hover:opacity-65 sm:transition-opacity sm:duration-500"></div>
+            <RiComputerLine className="relative size-6 z-10 cursor-pointer" onClick={()=> setTheme('dark')}/>
         </button>
         )
     } else if (theme === "dark") { 
         return (
-            <button type="button" aria-label="dark mode button dark">
-              <MdDarkMode className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10 cursor-pointer" onClick={()=> setTheme('light')}/>
+            <button type="button" aria-label="dark mode button dark" className="relative group hover:opacity-100">
+                <div className="absolute -top-[10px] -left-[10.5px] bg-slate-800 rounded-full w-11 h-11 opacity-0 sm:group-hover:opacity-65 sm:transition-opacity sm:duration-500"></div>
+                <MdDarkMode className="relative size-6 z-10 cursor-pointer" onClick={()=> setTheme('light')}/>
             </button>
         )
     } else {
         return (
-            <button type="button" aria-label="dark mode button light">
-                <MdLightMode className="size-6 sm:hover:opacity-40 sm:motion-safe:duration-500 sm:motion-safe:transition-opacity z-10 cursor-pointer" onClick={()=> setTheme('system')}/>
+            <button type="button" aria-label="dark mode button light" className="relative group hover:opacity-100">
+                <div className="absolute -top-[10px] -left-[10.5px] bg-yellow-500 rounded-full w-11 h-11 opacity-0 sm:group-hover:opacity-65 sm:transition-opacity sm:duration-500"></div>
+                <MdLightMode className="relative size-6 z-10 cursor-pointer" onClick={()=> setTheme('system')}/>
             </button>
         )
     }
