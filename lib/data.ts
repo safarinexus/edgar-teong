@@ -104,7 +104,7 @@ export const projects:Project[] = [
         description: "A Google Drive clone built from scratch, with user auth and folder system.", 
         technologies: ["JavaScript", "Node", "Express", "PostgreSQL", "Prisma", "Railway", "Supabase"], 
         githubLink: "https://github.com/safarinexus/edgr_odin_projects/tree/main/odin-node-express-prisma-fileuploader",
-        demoLink: "https://odin-file-uploader-production-11ed.up.railway.app/",
+        demoLink: "https://odin-fileuploader-production.up.railway.app",
         image: {
             url: "/project-thumbnails/fileuploader.webp",
             width: 1516, 
