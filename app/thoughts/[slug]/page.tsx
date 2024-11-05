@@ -32,7 +32,7 @@ export default async function Thought(props: { params: tParams }) {
       </header>
       <article 
         id="post-content" 
-        className="w-full max-w-[800px] h-fit mx-auto mt-5 px-2 sm:px-10 text-lg sm:text-xl
+        className="w-full max-w-[820px] h-fit mx-auto mt-5 px-2 sm:px-10 text-lg sm:text-xl
           prose dark:prose-invert prose-headings:m-0 prose-headings:font-medium prose-headings:tracking-tighter
           prose-p:m-0 prose-p:mt-2 prose-p:mb-10 prose-p:leading-normal
         "
