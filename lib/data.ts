@@ -160,18 +160,6 @@ export const projects:Project[] = [
         }
     },
     {
-        title: "Weather App",
-        description: "My version of the classic weather app, built using WeatherAPI's free API, as well as JavaScript Promises.", 
-        technologies: ["HTML", "CSS", "JavaScript"], 
-        githubLink: "https://github.com/safarinexus/odin_projects/tree/main/odin-js-weatherapp",
-        demoLink: "https://safarinexus.github.io/edgr-odinprojects/odin-js-weatherapp/index.html",
-        image: {
-            url: "/project-thumbnails/weather.webp",
-            width: 2320, 
-            height: 1762,
-        }
-    },
-    {
         title: "Kyla's Birthday Website",
         description: "A website that I made for my partner's birthday, using pure vanilla HTML, CSS & JavaScript", 
         technologies: ["HTML", "CSS", "JavaScript"], 
