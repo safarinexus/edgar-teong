@@ -22,7 +22,7 @@
   }
   
   a {
-      @apply text-black dark:text-gray-50 sm:hover:opacity-30 sm:duration-500 sm:transition-opacity;
+      @apply text-black dark:text-gray-50 sm:hover:opacity-30 sm:duration-300 sm:transition-opacity;
   }
 }
 
