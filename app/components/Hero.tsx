@@ -60,7 +60,7 @@ const Hero = () => {
                 flex flex-col sm:justify-end bg-white dark:bg-black pt-[70px] sm:pt-[80px] md:pt-[140px] p-4 sm:px-16 lg:pb-16
             "
         >
-            <div id="intro" className="flex flex-col items-start sm:flex-row sm:items-center gap-2">
+            <div id="intro" className="flex flex-col items-start sm:flex-row sm:items-center gap-2 text-neutral-400 tracking-tighter">
                 <Headshot />
                 <div>
                     <h1 id="hey-there"className="group text-xl lg:text-3xl">
@@ -90,7 +90,7 @@ const Hero = () => {
                 I&#39;m a passionate and self-started software engineer. I make products that are performant and beautiful. 
             </p>
 
-            <div id="im-also" className="relative mt-4 motion-reduce:mb-6 h-fit motion-safe:h-[70px] motion-safe:xs:h-[140px] motion-safe:sm:h-[100px] motion-safe:lg:h-[90px] font-extralight text-2xl xs:text-4xl lg:text-6xl">
+            <div id="im-also" className="relative mt-4 motion-reduce:mb-6 h-fit motion-safe:h-[70px] motion-safe:xs:h-[140px] motion-safe:sm:h-[100px] motion-safe:lg:h-[90px] font-extralight text-neutral-400 text-2xl xs:text-4xl lg:text-6xl">
                 I am also a{" "}
                 <div id="scroll-text" className="ml-3 w-fit h-[144px] inline font-medium">
                     <span id="fullstack" className="block motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
