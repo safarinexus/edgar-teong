@@ -59,7 +59,7 @@ const Work = () => {
                         {work.company} • {work.position}
                         <MdArrowOutward id="work-link-arrow" className="inline w-5 ml-1 group-hover:animate-hoverDiagonal transition-transform"/>
                     </h1>
-                    <p className="my-3 font-light lg:text-xl text-justify">{work.description}</p>
+                    <p className="my-3 font-light lg:text-xl">{work.description}</p>
                     <div>
                         {work.technologies.map((tech, techIndex) => (
                                 <span 
