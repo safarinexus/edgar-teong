@@ -12,7 +12,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <base target="_blank"></base>
-        <link rel="icon" href="/favicon.ico" />
       </head>
       <body
         className='antialiased'
