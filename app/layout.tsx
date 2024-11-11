@@ -115,20 +115,6 @@ const articulatFont = localFont({
 export const metadata: Metadata = {
   title: "Edgar Teong",
   description: "Edgar's personal website, created with Nextjs \& GSAP.",
-  icons: {
-    icon: [
-      {
-        media: '(prefers-color-scheme: light)',
-        url: '/favicon-black.webp',
-        href: '/favicon-black.webp',
-      },
-      {
-        media: '(prefers-color-scheme: dark)',
-        url: '/favicon-white.webp',
-        href: '/favicon-white.webp',
-      },
-    ],
-  },
 };
 
 export default function RootLayout({
@@ -140,6 +126,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <base target="_blank"></base>
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body
         className={`${articulatFont.className} antialiased`}
