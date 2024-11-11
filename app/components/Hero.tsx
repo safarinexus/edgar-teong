@@ -63,7 +63,7 @@ const Hero = () => {
             <div id="intro" className="flex flex-col items-start sm:flex-row sm:items-center gap-2 tracking-tighter">
                 <Headshot />
                 <div>
-                    <h1 id="hey-there"className="group text-xl lg:text-3xl">
+                    <h1 id="hey-there"className="group text-xl sm:text-2xl lg:text-3xl">
                         <div id="hand-wrapper" className="inline-block group-hover:animate-wave">
                             <Image
                                 src="/emojis/wave.webp" 
@@ -74,7 +74,7 @@ const Hero = () => {
                             />
                         </div>
                         {" "}Hey there!{" "}I&#39;m{" "}
-                        <span id="myname" className="inline-block font-medium bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                        <span id="myname" className="inline-block bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                             Edgar Teong
                         </span>
                         .
