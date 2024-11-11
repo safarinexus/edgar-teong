@@ -6,94 +6,111 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer"
 import { Providers } from "./providers";
 
-export const helveticaNeue = localFont({
-  variable: '--font-helvetica-neue',
-  display: 'swap',
-  preload: true,
-  fallback: ['system-ui', 'arial'],
+const articulatFont = localFont({
   src: [
     {
-      path: './fonts/HelveticaNeue-Black.woff2',
-      weight: '900',
-      style: 'normal',
-    },
-    {
-      path: './fonts/HelveticaNeue-BlackItalic.woff2',
-      weight: '900',
-      style: 'italic',
-    },
-    {
-      path: './fonts/HelveticaNeue-Heavy.woff2',
-      weight: '900',
-      style: 'normal',
-    },
-    {
-      path: './fonts/HelveticaNeue-HeavyItalic.woff2',
-      weight: '900',
-      style: 'italic',
-    },
-    {
-      path: './fonts/HelveticaNeue-Bold.woff2',
-      weight: '700',
-      style: 'normal',
-    },
-    {
-      path: './fonts/HelveticaNeue-BoldItalic.woff2',
-      weight: '700',
-      style: 'italic',
-    },
-    {
-      path: './fonts/HelveticaNeue-Medium.woff2',
-      weight: '500',
-      style: 'normal',
-    },
-    {
-      path: './fonts/HelveticaNeue-MediumItalic.woff2',
-      weight: '500',
-      style: 'italic',
-    },
-    {
-      path: './fonts/HelveticaNeue-Roman.woff2',
+      path: '/fonts/ArticulatCF-Regular.woff2',
       weight: '400',
       style: 'normal',
     },
     {
-      path: './fonts/HelveticaNeue-Italic.woff2',
+      path: '/fonts/ArticulatCF-Regular.woff',
       weight: '400',
-      style: 'italic',
-    },
-    {
-      path: './fonts/HelveticaNeue-Light.woff2',
-      weight: '300',
       style: 'normal',
     },
     {
-      path: './fonts/HelveticaNeue-LightItalic.woff2',
-      weight: '300',
-      style: 'italic',
-    },
-    {
-      path: './fonts/HelveticaNeue-UltraLight.woff2',
-      weight: '200',
+      path: '/fonts/ArticulatCF-Normal.woff2',
+      weight: '400',
       style: 'normal',
     },
     {
-      path: './fonts/HelveticaNeue-UltraLightItalic.woff2',
-      weight: '200',
-      style: 'italic',
+      path: '/fonts/ArticulatCF-Normal.woff',
+      weight: '400',
+      style: 'normal',
     },
     {
-      path: './fonts/HelveticaNeue-Thin.woff2',
+      path: '/fonts/ArticulatCF-Medium.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '/fonts/ArticulatCF-Medium.woff',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '/fonts/ArticulatCF-Thin.woff2',
       weight: '100',
       style: 'normal',
     },
     {
-      path: './fonts/HelveticaNeue-ThinItalic.woff2',
+      path: '/fonts/ArticulatCF-Thin.woff',
       weight: '100',
-      style: 'italic',
+      style: 'normal',
+    },
+    {
+      path: '/fonts/ArticulatCF-DemiBold.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '/fonts/ArticulatCF-DemiBold.woff',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '/fonts/ArticulatCF-ExtraBold.woff2',
+      weight: 'bold',
+      style: 'normal',
+    },
+    {
+      path: '/fonts/ArticulatCF-ExtraBold.woff',
+      weight: 'bold',
+      style: 'normal',
+    },
+    {
+      path: '/fonts/ArticulatCF-Heavy.woff2',
+      weight: '900',
+      style: 'normal',
+    },
+    {
+      path: '/fonts/ArticulatCF-Heavy.woff',
+      weight: '900',
+      style: 'normal',
+    },
+    {
+      path: '/fonts/ArticulatCF-Light.woff2',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '/fonts/ArticulatCF-Light.woff',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '/fonts/ArticulatCF-ExtraLight.woff2',
+      weight: '200',
+      style: 'normal',
+    },
+    {
+      path: '/fonts/ArticulatCF-ExtraLight.woff',
+      weight: '200',
+      style: 'normal',
+    },
+    {
+      path: '/fonts/ArticulatCF-Bold.woff2',
+      weight: 'bold',
+      style: 'normal',
+    },
+    {
+      path: '/fonts/ArticulatCF-Bold.woff',
+      weight: 'bold',
+      style: 'normal',
     },
   ],
-})
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "Edgar Teong",
@@ -125,7 +142,7 @@ export default function RootLayout({
         <base target="_blank"></base>
       </head>
       <body
-        className={`${helveticaNeue.className} antialiased`}
+        className={`${articulatFont.className} antialiased`}
       >
         <Providers>
           <Navbar />
