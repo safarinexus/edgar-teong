@@ -59,9 +59,10 @@ const Work = () => {
                         {work.company} • {work.position}
                         <MdArrowOutward id="work-link-arrow" className="inline w-5 ml-1 group-hover:animate-hoverDiagonal transition-transform"/>
                     </h1>
-                    <p className="my-3 font-light lg:text-xl">{work.description}</p>
-                    <div>
-                        {work.technologies.map((tech, techIndex) => (
+                    { work.description !== undefined ? (<p className="my-3 font-light lg:text-xl">{work.description}</p>) : null }
+                    { work.technologies !== undefined ?
+                        ( <div>
+                            { work.technologies.map((tech, techIndex) => (
                                 <span 
                                     key={techIndex} 
                                     className="inline-block px-3 py-1 mx-1 my-1 rounded-3xl bg-yellow-300 bg-opacity-80
@@ -69,8 +70,11 @@ const Work = () => {
                                 >
                                     {tech}
                                 </span>
-                        ))}
-                    </div>
+                            
+                            ))}
+                        </div> ) :
+                        null
+                    }
                 </a>
             ))}
             <a href="/edgr_resume.pdf" target="_blank" className="inline-block font-bold text-lg mt-9 group">
