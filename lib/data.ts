@@ -8,8 +8,8 @@ interface Work {
     } 
     link: string, 
     position: string, 
-    description: string, 
-    technologies: string[],
+    description?: string, 
+    technologies?: string[],
 }
 
 interface Project { 
@@ -71,6 +71,17 @@ export const works: Work[] = [
             I created test scripts and templates for testing cycles using SOAP APIs and Python, where I identified and documented over 60 critical defects, 
             improving overall software quality and reducing post-release issues by 30%.`, 
         technologies: ["Python", "SOAP APIs"],
+    },
+    {
+        dates: "Dec. 2021 — Feb. 2022", 
+        company: " EY", 
+        logo: {
+            url: "/work-logos/ey.jpeg",
+            width: 100, 
+            height: 100,
+        },
+        link: "https://www.ey.com/en_sg",
+        position: "Audit & Assurance Intern"
     },
 ]
 
