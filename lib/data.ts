@@ -72,17 +72,17 @@ export const works: Work[] = [
             improving overall software quality and reducing post-release issues by 30%.`, 
         technologies: ["Python", "SOAP APIs"],
     },
-    {
-        dates: "Dec. 2021 — Feb. 2022", 
-        company: " EY", 
-        logo: {
-            url: "/work-logos/ey.jpeg",
-            width: 100, 
-            height: 100,
-        },
-        link: "https://www.ey.com/en_sg",
-        position: "Audit & Assurance Intern"
-    },
+    //{
+    //   dates: "Dec. 2021 — Feb. 2022", 
+    //    company: " EY", 
+    //    logo: {
+    //        url: "/work-logos/ey.jpeg",
+    //        width: 100, 
+    //        height: 100,
+    //    },
+    //    link: "https://www.ey.com/en_sg",
+    //    position: "Audit & Assurance Intern"
+    //},
 ]
 
 export const projects:Project[] = [ 
