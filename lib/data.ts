@@ -36,9 +36,7 @@ export const works: Work[] = [
         },
         link: "https://www.tech.gov.sg/",
         position : "Software Engineer Intern", 
-        description: `Worked on the Tech iOSH Refresh Project, enhancing the registration portal for over 2,000 safety and health professionals.
-            By developing and standardizing UI components, I achieved a 30% reduction in code duplication and improved maintainability.
-            Additionally, I implemented user-centered design principles in Figma, resulting in a 25% increase in usability scores from user testing.`,
+        description: `Worked on the Tech iOSH Refresh Project, developing and standardizing UI components.`,
         technologies: ["Figma", "React", "JavaScript"]   
     },
     {
