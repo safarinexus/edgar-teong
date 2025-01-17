@@ -8,7 +8,7 @@ interface Work {
     } 
     link: string, 
     position: string, 
-    description?: string, 
+    description: string, 
     technologies?: string[],
 }
 
@@ -26,6 +26,22 @@ interface Project {
 }
 
 export const works: Work[] = [
+    {
+        dates: "Jan. 2025 - Present", 
+        company: "Central Provident Fund Board",
+        logo: {
+            url: "/work-logos/cpf.webp",
+            width: 1122,
+            height: 1205,
+        },
+        link: "https://www.cpf.gov.sg/member",
+        position: "Software Engineer Intern", 
+        description: `As part of the Business Incubator & Accelerator team, I worked on dev tools and internal solutions for the Singapore Government, 
+                    including docCentral—a management portal and Microsoft Word Add-In that helps automating document generation across agencies, for which I helped to increased monthly usage from 60k to 80k. 
+                    I debugged critical product issues, refactored code for maintainability, and implemented comprehensive tests, doubling test coverage. 
+                    Additionally, I created a serverless API to integrate FormSG webhooks with Notion and Telegram, boosting team and product manager productivity by 20%.`, 
+        technologies: ["Next.js", "Express/Node", "Python/Django", "AWS"]
+    }, 
     {
         dates: "Jan. 2023", 
         company: "GovTech", 
@@ -70,17 +86,18 @@ export const works: Work[] = [
             improving overall software quality and reducing post-release issues by 30%.`, 
         technologies: ["Python", "SOAP APIs"],
     },
-    //{
-    //   dates: "Dec. 2021 — Feb. 2022", 
-    //    company: " EY", 
-    //    logo: {
-    //        url: "/work-logos/ey.jpeg",
-    //        width: 100, 
-    //        height: 100,
-    //    },
-    //    link: "https://www.ey.com/en_sg",
-    //    position: "Audit & Assurance Intern"
-    //},
+    {
+       dates: "Dec. 2021 — Feb. 2022", 
+        company: " EY", 
+        logo: {
+            url: "/work-logos/ey.jpeg",
+            width: 100, 
+            height: 100,
+        },
+        link: "https:www.ey.com/en_sg",
+        position: "Audit & Assurance Intern",
+        description: "Did auditing. Didn't like it."
+    },
 ]
 
 export const projects:Project[] = [ 
