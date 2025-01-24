@@ -36,11 +36,10 @@ export const works: Work[] = [
         },
         link: "https://www.cpf.gov.sg/member",
         position: "Software Engineer Intern", 
-        description: `As part of the Business Incubator & Accelerator team, I worked on dev tools and internal solutions for the Singapore Government, 
-                    including docCentral—a management portal and Microsoft Word Add-In that helps automating document generation across agencies, for which I helped to increased monthly usage from 60k to 80k. 
-                    I debugged critical product issues, refactored code for maintainability, and implemented comprehensive tests, doubling test coverage. 
-                    Additionally, I created a serverless API to integrate FormSG webhooks with Notion and Telegram, boosting team and product manager productivity by 20%.`, 
-        technologies: ["Next.js", "Express/Node", "Python/Django", "AWS"]
+        description: `Was on the Business Incubator & Accelerator team, where I worked on docCentral, a tool that automates filling in of extensive government documents and contracts from inputs from various sources, for use across the whole of government. 
+            I improved product stability and reliability through Jest unit testing with 100% code coverage, debugging critical issues, and refactoring code for maintainability. 
+            I boosted team productivity by developing automation tools, including a serverless API to automate task creation via FormSG webhooks and a Health Monitoring Express webhook to track microservice health, compile reports, and integrate with Telegram and MongoDB.`, 
+        technologies: ["Next.js", "Express/Node", "Python/Django", "AWS", "MongoDB", "Jest" ]
     }, 
     {
         dates: "Jan. 2023", 
