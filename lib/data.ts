@@ -36,8 +36,8 @@ export const works: Work[] = [
         }, 
         link: "https://www.climateimpactx.com/", 
         position: "Software Engineer",
-        description: `I contributed to the development of CIX, a global carbon credit exchange platform, as part of a joint venture by DBS, SGX, Standard Chartered, and Temasek. 
-        My role involved building Java microservices for the global marketplace, writing JUnit tests to boost code coverage to 65%, and debugging and resolving critical platform issues to ensure smooth functionality.
+        description: `I am on the engineering team at CIX, a global carbon credit exchange platform, as part of a joint venture by DBS, SGX, Standard Chartered, and Temasek. 
+        My role involves building Java microservices for the global marketplace, writing JUnit tests to boost code coverage, and debugging and resolving critical platform issues to ensure smooth functionality.
         `,
         technologies: ["Java", "Spring Boot", "JUnit", "PostgreSQL"]
     },
