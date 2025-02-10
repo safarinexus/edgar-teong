@@ -77,10 +77,18 @@ const Hero = () => {
                         <span id="myname" className="inline-block bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                             Edgar Teong
                         </span>
-                        .
                     </h1>
-                    <p id="job-status"className="ml-4 xs:ml-6 lg:ml-9 text-xs xs:text-sm lg:text-xl hidden">
-                    Software Engineer at 
+                    <p id="job-status"className="ml-4 xs:ml-6 lg:ml-9 text-sm lg:text-xl">
+                        Software Engineer at <a href="https://www.climateimpactx.com/">
+                            <Image
+                                src="/work-logos/cix.webp"
+                                width={200}
+                                height={200}
+                                alt="cix logo"
+                                className="size-6 inline mx-1"
+                            />
+                            Climate Impact X
+                        </a>
                     </p>
                 </div>
             </div>

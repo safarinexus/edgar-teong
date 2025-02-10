@@ -27,7 +27,22 @@ interface Project {
 
 export const works: Work[] = [
     {
-        dates: "Jan. 2025 - Present", 
+        dates: "Feb. 2025 - Present", 
+        company: " Climate Impact X", 
+        logo: {
+            url: "/work-logos/cix.webp",
+            width: 200, 
+            height: 200
+        }, 
+        link: "https://www.climateimpactx.com/", 
+        position: "Software Engineer",
+        description: `I contributed to the development of CIX, a global carbon credit exchange platform, as part of a joint venture by DBS, SGX, Standard Chartered, and Temasek. 
+        My role involved building Java microservices for the global marketplace, writing JUnit tests to boost code coverage to 65%, and debugging and resolving critical platform issues to ensure smooth functionality.
+        `,
+        technologies: ["Java", "Spring Boot", "JUnit", "PostgreSQL"]
+    },
+    {
+        dates: "Jan. 2025 - Feb. 2025", 
         company: "Central Provident Fund Board",
         logo: {
             url: "/work-logos/cpf.webp",
