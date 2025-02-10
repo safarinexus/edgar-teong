@@ -217,7 +217,7 @@ const About = () => {
             <div id="about-text-container" className="w-full px-5 sm:px-24 font-light text-base">
                 <h1 className="font-bold text-2xl sm:text-4xl">About Me</h1>
                 <p id="about-body" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">
-                I&#39;m currently a Full-stack Software Engineer at <a href="https://climateimpactx.com/"><span className="font-bold">Climate Impact X</span></a>. I graduated from  <a href="https://www.smu.edu.sg/"><span className="font-bold">Singapore Management University</span> with a Bachelor's in <span className="font-bold">Accountancy &amp; Information Systems</span></a>.
+                I&#39;m currently a Full-stack Software Engineer at <a href="https://climateimpactx.com/"><span className="font-bold">Climate Impact X</span></a>. I graduated from  <a href="https://www.smu.edu.sg/"><span className="font-bold">Singapore Management University</span> with a Bachelor&#39;s in <span className="font-bold">Accountancy &amp; Information Systems</span></a>.
                 <br /><br />
                 I am deeply passionate and self-driven. I taught myself programming from scratch and full stack web development with <a href="https://www.theodinproject.com/about" className="font-bold">The Odin Project</a>. 
                 {" "}It is one of my goals in life to be able to use my love for computers and technology to make a real difference to society through software. 
