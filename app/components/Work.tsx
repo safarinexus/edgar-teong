@@ -48,7 +48,7 @@ const Work = () => {
                         sm:hover:shadow-custom sm:hover:dark:shadow-custom-dark rounded-xl sm:transition-border-shadow sm:duration-300 group"
                 >
                     <p className="text-sm sm:text-lg sm:font-light sm:row-span-3 sm:my-[5px]">{work.dates}</p>
-                    <h1 className="text-lg font-bold tracking-tighter my-1 sm:text-2xl sm:transition-opacity sm:duration-300 sm:group-hover:opacity-30">
+                    <h1 className="text-lg font-bold tracking-tighter my-1 sm:text-xl sm:transition-opacity sm:duration-300 sm:group-hover:opacity-30">
                         <Image
                                 src={work.logo.url}
                                 height={work.logo.height}
