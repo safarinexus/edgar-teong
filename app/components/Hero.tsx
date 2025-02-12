@@ -78,14 +78,14 @@ const Hero = () => {
                             Edgar Teong
                         </span>
                     </h1>
-                    <p id="job-status"className="ml-4 xs:ml-6 lg:ml-9 text-sm lg:text-xl">
+                    <p id="job-status" className="text-sm sm:text-base lg:text-xl text-center font-extralight opacity-80">
                         Software Engineer at <a href="https://www.climateimpactx.com/">
                             <Image
                                 src="/work-logos/cix.webp"
                                 width={200}
                                 height={200}
                                 alt="cix logo"
-                                className="size-6 inline mx-1"
+                                className="size-4 sm:size-5 inline mx-1"
                             />
                             Climate Impact X
                         </a>
@@ -94,8 +94,8 @@ const Hero = () => {
             </div>
             
 
-            <p id="im-a" className="mt-4 font-medium text-2xl xs:text-4xl lg:tracking-tight lg:text-6xl">
-                I&#39;m a passionate and self-started software engineer. I make products that are performant and beautiful. 
+            <p id="im-a" className="mt-4 text-2xl xs:text-4xl lg:tracking-tight lg:text-6xl">
+                I&#39;m a passionate &#38; self-started software engineer. I make products that are performant &#38; beautiful. 
             </p>
 
             <div id="im-also" className="relative mt-4 motion-reduce:mb-6 h-fit motion-safe:h-[70px] motion-safe:xs:h-[140px] motion-safe:sm:h-[100px] motion-safe:lg:h-[90px] text-2xl xs:text-4xl lg:text-6xl">
