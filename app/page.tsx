@@ -18,7 +18,7 @@ export default function Home() {
       </section>
       <section 
         id="about" 
-        className="w-full max-w-[1208px] h-fit mx-auto flex flex-col overflow-x-clip"
+        className="w-full max-w-[1208px] h-fit mx-auto flex flex-col overflow-x-clip sm:overflow-x-visible"
       >
         <About />
       </section>
