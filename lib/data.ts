@@ -36,8 +36,9 @@ export const works: Work[] = [
         }, 
         link: "https://www.climateimpactx.com/", 
         position: "Software Engineer",
-        description: `I am on the engineering team at CIX, a global carbon credit exchange platform, jointly held by DBS, SGX, Mizuho, Standard Chartered, and Temasek. 
-        My role involves building for and maintaining CIX's main platform using React and Java with Spring Boot. I also debug and resolve critical platform issues to ensure smooth functionality.
+        description: `I am on the engineering team at CIX, global carbon market solutions provider jointly held by DBS, SGX, Mizuho, Standard Chartered, and Temasek. 
+            My role involves building for and maintaining CIX's main platform using React and Java with Spring Boot. 
+            I also debug and resolve critical platform issues to ensure smooth functionality.
         `,
         technologies: ["React/Vite", "Java/Spring Boot", "JUnit", "PostgreSQL"]
     },
@@ -51,9 +52,11 @@ export const works: Work[] = [
         },
         link: "https://www.cpf.gov.sg/member",
         position: "Software Engineer Intern", 
-        description: `Was on the Business Incubator & Accelerator team, where I worked on docCentral, a tool that automates filling in of extensive government documents and contracts from inputs from various sources, for use across the whole of government. 
-            I improved product stability and reliability through Jest unit testing with 100% code coverage, debugging critical issues, and refactoring code for maintainability. 
-            I boosted team productivity by developing automation tools, including a serverless API to automate task creation via FormSG webhooks and a Health Monitoring Express webhook to track microservice health, compile reports, and integrate with Telegram and MongoDB.`, 
+        description: `I was on the Frontier Products Team in the Business Incubator & Accelerator Department, where I worked on docCentral, 
+            a tool that automates filling in of extensive government documents and contracts from inputs from various sources, for use across the whole of government. 
+            I developed tools to boost team productivity, including a serverless API that auto-populates team Notion dashboard & Telegram channel from product contact form. 
+            I also developed new features for the product, such as an admin page with a built-in dashboard, and an express microservice health monitoring function. 
+            I also aided in debugging and adopting Jest unit testing for the codebase, boosting product reliability and stability.`, 
         technologies: ["Next.js", "Express/Node", "Python/Django", "AWS", "MongoDB", "Jest" ]
     }, 
     {
@@ -66,7 +69,7 @@ export const works: Work[] = [
         },
         link: "https://www.tech.gov.sg/",
         position : "Software Engineer Intern", 
-        description: `Worked on the Tech iOSH Refresh Project, developing and standardizing UI components.`,
+        description: `I joined the Tech iOSH Refresh Project, where I worked on developing and standardizing frontend UI components.`,
         technologies: ["Figma", "React", "JavaScript"]   
     },
     {
@@ -79,9 +82,9 @@ export const works: Work[] = [
         },
         link: "https://www.se.com/sg/en/",
         position: "Data Analyst Intern", 
-        description: `Led the data migration and adoption of version control with GitHub, improving workflow tracking and data retrieval across 300 SQL scripts. 
-            I also automated complex SQL data-retrieval tasks by creating a script bank for the entire Internal Audit team, which resulted in a 30% reduction in data processing time. 
-            Additionally, I developed a machine learning algorithm to automate fraud detection for each internal audit cycle, achieving 80% effectiveness.`, 
+        description: `I was part of the Internal Audit team, where I led the data migration and adoption of version control with GitHub. 
+            I also automated complex SQL data-retrieval tasks by developing a script bank. 
+            Additionally, I developed a complex machine learning algorithm to automate fraud detection for each internal audit cycle.`, 
         technologies: ["SQL", "Python", "Seaborn", "Sci-kit Learn", "Pandas"],
     }, 
     {
@@ -94,10 +97,10 @@ export const works: Work[] = [
         },
         link: "https://www.accenture.com/sg-en",
         position: "Software Development Engineer in Test Intern", 
-        description: `I developed testing tools and performed UAT testing for the iHiS Billing Transform project, 
+        description: `I developed testing tools and performed UAT testing as part of the iHiS Billing Transform project, 
             which aimed at digitally transforming the nationwide healthcare billing solution. 
-            I created test scripts and templates for testing cycles using SOAP APIs and Python, where I identified and documented over 60 critical defects, 
-            improving overall software quality and reducing post-release issues by 30%.`, 
+            I created test scripts and templates for testing cycles using SOAP APIs and Python, where I 
+            improved overall software quality and reduced post-release issues.`, 
         technologies: ["Python", "SOAP APIs"],
     },
     {
