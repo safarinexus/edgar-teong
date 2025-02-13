@@ -74,7 +74,7 @@ const Hero = () => {
                             />
                         </div>
                         {" "}Hey there!{" "}I&#39;m{" "}
-                        <span id="myname" className="inline-block bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                        <span id="myname" className="inline-block bg-linear-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                             Edgar Teong
                         </span>
                     </h1>
@@ -101,22 +101,22 @@ const Hero = () => {
             <div id="im-also" className="relative mt-4 motion-reduce:mb-6 h-fit motion-safe:h-[70px] motion-safe:xs:h-[140px] motion-safe:sm:h-[100px] motion-safe:lg:h-[90px] text-2xl xs:text-4xl lg:text-6xl">
                 I am also a{" "}
                 <div id="scroll-text" className="ml-3 w-fit h-[144px] inline font-medium">
-                    <span id="fullstack" className="block motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                    <span id="fullstack" className="block motion-safe:absolute motion-safe:sm:inline bg-linear-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         {" "}Full Stack Developer
                     </span>
-                    <span id="coffee" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                    <span id="coffee" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-linear-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         {" "}Coffee Lover
                     </span>
-                    <span id="reader" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                    <span id="reader" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-linear-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         {" "}Avid Reader
                     </span>
-                    <span id="music" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline leading-[1.2]  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                    <span id="music" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline leading-[1.2]  bg-linear-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         {" "}Mechanical Keyboard Hobbyist
                     </span>
-                    <span id="film" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                    <span id="film" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-linear-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         {" "}Film Nerd
                     </span>
-                    <span id="com" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  leading-[1.2] bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                    <span id="com" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  leading-[1.2] bg-linear-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         {" "}Psychology Enthusiast
                     </span>
                 </div>
