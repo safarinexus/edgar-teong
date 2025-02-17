@@ -95,7 +95,7 @@ const Hero = () => {
             
 
             <p id="im-a" className="mt-4 text-2xl xs:text-4xl lg:tracking-tight lg:text-6xl">
-                I&#39;m a passionate &#38; self-started software engineer. I make products that are performant &#38; beautiful. 
+                I&#39;m a passionate and self-started software engineer. I make products that are performant, scalable and beautiful. 
             </p>
 
             <div id="im-also" className="relative mt-4 motion-reduce:mb-6 h-fit motion-safe:h-[70px] motion-safe:xs:h-[140px] motion-safe:sm:h-[100px] motion-safe:lg:h-[90px] text-2xl xs:text-4xl lg:text-6xl">
