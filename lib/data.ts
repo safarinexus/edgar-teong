@@ -96,7 +96,7 @@ export const works: Work[] = [
             height: 225,
         },
         link: "https://www.accenture.com/sg-en",
-        position: "Software Development Engineer in Test Intern", 
+        position: "Summer Analyst (Technology)", 
         description: `I developed testing tools and performed UAT testing as part of the iHiS Billing Transform project, 
             which aimed at digitally transforming the nationwide healthcare billing solution. 
             I created test scripts and templates for testing cycles using SOAP APIs and Python, where I 
