@@ -10,6 +10,7 @@ interface Work {
     position: string, 
     description: string, 
     technologies?: string[],
+    tailwindBgColor?: string,
 }
 
 interface Project { 
@@ -40,7 +41,8 @@ export const works: Work[] = [
             My role involves building for and maintaining CIX's main platform using React and Java with Spring Boot. I colloborate with teams across the whole organisation to develop solutions
             and debug to resolve critical platform issues to ensure smooth functionality.
         `,
-        technologies: ["React/Vite/TypeScript", "Java/Spring Boot", "JUnit", "PostgreSQL", "MongoDB", "Azure"]
+        technologies: ["React/Vite/TypeScript", "Java/Spring Boot", "JUnit", "PostgreSQL", "MongoDB", "Azure"],
+        tailwindBgColor: "lime-500",
     },
     {
         dates: "Jan. 2025 - Feb. 2025", 
