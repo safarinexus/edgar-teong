@@ -44,8 +44,8 @@ const Work = () => {
                     href={work.link} 
                     aria-label={work.company + " website"}
                     className="block mt-9 sm:p-5 font-medium sm:grid sm:gap-2 grid-cols-[110px_auto] bg-transparent
-                        border border-transparent sm:hover:border-neutral-300 sm:hover:dark:border-neutral-900
-                        sm:hover:shadow-custom sm:hover:dark:shadow-custom-dark rounded-xl sm:transition-border-shadow sm:duration-300 group"
+                        border border-transparent sm:hover:border-neutral-300 sm:dark:hover:border-neutral-900
+                        sm:hover:shadow-custom sm:dark:hover:shadow-custom-dark rounded-xl sm:transition-border-shadow sm:duration-300 group"
                 >
                     <p className="text-sm sm:text-lg sm:font-light sm:row-span-3 sm:my-[5px]">{work.dates}</p>
                     <h1 className="text-lg font-bold tracking-tighter my-1 sm:text-xl sm:transition-opacity sm:duration-300 sm:group-hover:opacity-30">

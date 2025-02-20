@@ -150,16 +150,16 @@ export default function Navbar() {
                 <div id="nav-cluster" className="h-full sm:w-[350px] justify-self-end flex items-center justify-between z-40 col-start-3">
                     { width > 640 ?  
                         <>
-                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-500 z-40 ${activeSection === '#about' ? 'shadow-underline dark:shadow-underline-dark hover:shadow-underline-hover hover:dark:shadow-underline-hover-dark' : ''}`}>
+                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-500 z-40 ${activeSection === '#about' ? 'shadow-underline dark:shadow-underline-dark hover:shadow-underline-hover dark:hover:shadow-underline-hover-dark' : ''}`}>
                                 <Link href="/#about" className="md:text-lg">About</Link>
                             </div>
-                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-500 z-40 ${activeSection === '#work' ? 'shadow-underline dark:shadow-underline-dark hover:shadow-underline-hover hover:dark:shadow-underline-hover-dark' : ''}`}>
+                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-500 z-40 ${activeSection === '#work' ? 'shadow-underline dark:shadow-underline-dark hover:shadow-underline-hover dark:hover:shadow-underline-hover-dark' : ''}`}>
                                 <Link href="/#work" className="md:text-lg">Work</Link>
                             </div>
-                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-500 z-40 ${activeSection === '#project0' ? 'shadow-underline dark:shadow-underline-dark hover:shadow-underline-hover hover:dark:shadow-underline-hover-dark' : ''}`}>
+                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-500 z-40 ${activeSection === '#project0' ? 'shadow-underline dark:shadow-underline-dark hover:shadow-underline-hover dark:hover:shadow-underline-hover-dark' : ''}`}>
                                 <Link href="/#projects" className="md:text-lg">Projects</Link>
                             </div>
-                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-500 z-40 ${(/^\/thoughts/).test(pathName) ? 'shadow-underline dark:shadow-underline-dark hover:shadow-underline-hover hover:dark:shadow-underline-hover-dark' : ''}`}>
+                            <div className={`w-fit h-fit motion-safe:transition-shadow motion-safe:duration-500 z-40 ${(/^\/thoughts/).test(pathName) ? 'shadow-underline dark:shadow-underline-dark hover:shadow-underline-hover dark:hover:shadow-underline-hover-dark' : ''}`}>
                                 <Link href="/thoughts" className="md:text-lg">Thoughts</Link>
                             </div>
                         </> :
