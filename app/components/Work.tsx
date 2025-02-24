@@ -25,8 +25,8 @@ const Work = () => {
                         end: "clamp(bottom 20px)",
                         toggleActions: "play none none none",
                     },
-                    opacity: 0, 
-                    y: 50,
+                    y: 100,
+                    opacity: 25, 
                 })
             }
             gsap.delayedCall(0.6, () => ScrollTrigger.refresh());
@@ -51,7 +51,7 @@ const Work = () => {
                     rounded-3xl text-black`}
             >
                 <p className="text-sm sm:text-lg sm:font-light sm:row-span-3 sm:my-[5px]">{works[0].dates}</p>
-                <h1 className="text-lg font-bold tracking-tighter my-1 sm:text-xl sm:transition-opacity sm:duration-300 sm:group-hover:opacity-30">
+                <h1 className="text-lg font-bold tracking-tighter my-1 sm:text-xl">
                     <Image
                             src={works[0].logo.url}
                             height={works[0].logo.height}
@@ -95,7 +95,7 @@ const Work = () => {
                     rounded-3xl text-black`}
                 >
                     <p className="text-sm sm:text-lg sm:font-light sm:row-span-3 sm:my-[5px]">{work.dates}</p>
-                    <h1 className="text-lg font-bold tracking-tighter my-1 sm:text-xl sm:transition-opacity sm:duration-300 sm:group-hover:opacity-30">
+                    <h1 className="text-lg font-bold tracking-tighter my-1 sm:text-xl">
                         <Image
                                 src={work.logo.url}
                                 height={work.logo.height}
