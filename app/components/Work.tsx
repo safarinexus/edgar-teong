@@ -14,6 +14,7 @@ import { works }from "@/lib/data";
 import { MdArrowOutward } from "react-icons/md";
 
 const Work = () => {
+    /*
     useGSAP(() => {
         const mm = gsap.matchMedia();
         mm.add("(prefers-reduced-motion: no-preference)", () => {
@@ -26,12 +27,13 @@ const Work = () => {
                         toggleActions: "play none none none",
                     },
                     y: 100,
-                    opacity: 25, 
+                    opacity: 0, 
                 })
             }
             gsap.delayedCall(0.6, () => ScrollTrigger.refresh());
         })
     });
+    */
 
     const smallWorks = works.slice(1);
 
@@ -41,17 +43,19 @@ const Work = () => {
             {
             //element for curr job (big card on desktop)
             }
-            <a 
-                target="_blank"
+            <div
                 key={0} 
                 id={'work'+0} 
-                href={works[0].link} 
                 aria-label={works[0].company + " website"}
                 className={`block group mt-9 sm:p-5 font-medium sm:grid sm:gap-2 grid-cols-[110px_auto] bg-${works[0].tailwindBgColor}
-                    rounded-3xl text-black`}
+                    rounded-3xl text-black opacity-100 transition-opacity duration-75`}
             >
                 <p className="text-sm sm:text-lg sm:font-light sm:row-span-3 sm:my-[5px]">{works[0].dates}</p>
-                <h1 className="text-lg font-bold tracking-tighter my-1 sm:text-xl">
+                <a 
+                    className="text-lg font-bold tracking-tighter my-1 text-black sm:text-xl group"
+                    target="_blank"
+                    href={works[0].link} 
+                >
                     <Image
                             src={works[0].logo.url}
                             height={works[0].logo.height}
@@ -61,7 +65,7 @@ const Work = () => {
                     />
                     {works[0].company} • {works[0].position}
                     <MdArrowOutward id="work-link-arrow" className="inline w-5 ml-1 group-hover:animate-hoverDiagonal transition-transform"/>
-                </h1>
+                </a>
                 { works[0].description !== undefined ? (<p className="my-3 font-light lg:text-xl">{works[0].description}</p>) : null }
                 { works[0].technologies !== undefined ?
                     ( <div>
@@ -78,7 +82,7 @@ const Work = () => {
                     </div> ) :
                     null
                 }
-            </a>
+            </div>
             {
             //mapping elements for prev exp/internships (small cards on desktop)
             }
@@ -92,7 +96,7 @@ const Work = () => {
                     href={work.link} 
                     aria-label={work.company + " website"}
                     className={`block group mt-9 sm:p-5 font-medium sm:grid sm:gap-2 grid-cols-[110px_auto] bg-${work.tailwindBgColor ? work.tailwindBgColor : "white"}
-                    rounded-3xl text-black`}
+                    rounded-3xl text-black transition-opacity duration-75`}
                 >
                     <p className="text-sm sm:text-lg sm:font-light sm:row-span-3 sm:my-[5px]">{work.dates}</p>
                     <h1 className="text-lg font-bold tracking-tighter my-1 sm:text-xl">
