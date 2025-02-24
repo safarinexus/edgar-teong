@@ -23,10 +23,10 @@ const Work = () => {
                         trigger: `#work${i}`, 
                         start: "clamp(50% bottom)", 
                         end: "clamp(bottom 20px)",
-                        toggleActions: "play none none reverse",
+                        toggleActions: "play none none none",
                     },
                     opacity: 0, 
-                    y: 100,
+                    y: 50,
                 })
             }
             gsap.delayedCall(0.6, () => ScrollTrigger.refresh());
@@ -59,6 +59,7 @@ const Work = () => {
                         {work.company} • {work.position}
                         <MdArrowOutward id="work-link-arrow" className="inline w-5 ml-1 group-hover:animate-hoverDiagonal transition-transform"/>
                     </h1>
+                    <hr className='mt-2 mx-auto opacity-50 sm:hidden' />  
                     { work.description !== undefined ? (<p className="my-3 font-light lg:text-xl">{work.description}</p>) : null }
                     { work.technologies !== undefined ?
                         ( <div>
