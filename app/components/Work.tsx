@@ -117,6 +117,7 @@ const Work = () => {
                         <hr className='mt-2 mx-auto opacity-40 border-black' />  
                         <h2 className='font-bold'>{work.position}</h2>
                         { work.description !== undefined ? (<p className="my-3 font-light">{work.description}</p>) : null }
+                        <br />
                         { work.technologies !== undefined ?
                             ( <div className="flex flex-wrap space-x-3 absolute bottom-5 mt-5 w-full">
                                 { work.technologies.map((tech, techIndex) => (
