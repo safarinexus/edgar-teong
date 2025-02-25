@@ -84,8 +84,53 @@ const Work = () => {
                         </div> ) :
                         null
                     }
-                </a>
-            ))}
+                </div>
+                {
+                //mapping elements for prev exp/internships (small cards on desktop)
+                }
+                {smallWorks.map((work, index) => {
+                    const adjIndex = index + 1;
+                    return (
+                    <div
+                        key={adjIndex} 
+                        id={"work"+adjIndex} 
+                        aria-label={work.company + " website"}
+                        className={`block p-5 pb-16 font-medium bg-zinc-100
+                        rounded-[36px] text-black transition-opacity duration-75 relative`}
+                    >
+                        <a 
+                            className="font-bold tracking-tighter my-1  text-black group text-lg sm:text-xl"
+                            target="_blank" 
+                            href={work.link}
+                        >
+                            <Image
+                                    src={work.logo.url}
+                                    height={work.logo.height}
+                                    width={work.logo.width}
+                                    className="inline w-6 sm:w-10" 
+                                    alt={work.company + " logo"}
+                            />
+                            {work.company}
+                            <MdArrowOutward id="work-link-arrow" className="inline w-5 ml-1 group-hover:animate-hoverDiagonal transition-transform"/>
+                        </a>
+                        <p className="text-sm sm:font-light sm:my-[5px]">{work.dates}</p>
+                        <hr className='mt-2 mx-auto opacity-40 border-black' />  
+                        <h2 className='font-bold'>{work.position}</h2>
+                        { work.description !== undefined ? (<p className="my-3 font-light">{work.description}</p>) : null }
+                        <br />
+                        { work.technologies !== undefined ?
+                            ( <div className="flex flex-wrap space-x-3 absolute bottom-5 mt-5 w-full">
+                                { work.technologies.map((tech, techIndex) => (
+                                    <span key={techIndex}>
+                                        < TechIcon size={"size-5 lg:size-7"} technology={tech} />
+                                    </span>
+                                ))}
+                            </div> ) :
+                            null
+                        }
+                    </div>
+                )})}
+            </div>
             <a href="/edgr-resume.pdf" target="_blank" className="inline-block font-bold text-lg mt-9 group">
                 My Full Resume 
                 <MdArrowOutward id="work-link-arrow" className="inline ml-1 w-4 motion-safe:group-hover:animate-hoverDiagonal transition-transform"/>
