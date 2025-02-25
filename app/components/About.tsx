@@ -228,7 +228,7 @@ const About = () => {
             <div id="about-text-container" className="w-full px-5 sm:px-24 font-light text-base">
                 <p id="about-body" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">
                 Having graduated from Singapore Management Unversity, I&#39;m now currently a Full Stack Developer at <a href="https://climateimpactx.com/"><span className="font-bold">Climate Impact X</span></a>. 
-                I am deeply passionate and fiercely self-driven. I love technology and building solutions for problems and it is one of my goals in life to be able to use that love to make a real difference to society through software. 
+                I am deeply passionate and fiercely self-driven. I love all things technology and building solutions for problems. It is one of my goals in life to be able to use that love to make a real difference to society through software. 
                 <br /><br />
                 When I&#39;m not coding, you&#39;ll find me making filter/espresso coffee ☕️, hanging with friends 🎉, enjoying obscure films 🍿, tinkering with mechanical keyboards ⌨️, 
                 reading up about psychology/mental health stuff 📚, or dancing at my <a href="https://www.instagram.com/smuemix/" className="font-bold">school&#39;s hip-hop dance club 🕺🏻</a>.
