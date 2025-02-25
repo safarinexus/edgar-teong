@@ -19,15 +19,15 @@ export default async function Thought(props: { params: tParams }) {
       <header
         id="post-header"
         className="w-full max-w-[1192px] h-fit p-10 pt-20 mx-auto flex flex-col rounded-[32px] bg-white border
-        border-neutral-300 dark:border-neutral-800 shadow-custom dark:shadow-custom-dark dark:bg-black space-y-2"
+        border-neutral-300 shadow-custom space-y-2"
       >
         <Link href="/thoughts" className="relative inline w-fit group hover:opacity-100" aria-label="back to thoughts">
           <div className="absolute -left-[6px] -top-1 bg-neutral-300 rounded-full w-10 h-10 opacity-0 sm:group-hover:opacity-55 sm:transition-opacity sm:duration-400"></div>
           <IoIosArrowBack className="size-8 relative -left-1"/>
         </Link>
         <div id="thoughts-headertext-wrapper">
-          <h1 className="font-semibold text-5xl">{post.data.title}</h1>
-          <h2 className="font-light text-base mt-2 opacity-60">{post.data.description} • {post.data.date}</h2>
+          <h1 className="font-semibold text-5xl text-black">{post.data.title}</h1>
+          <h2 className="font-light text-base mt-2 opacity-60 text-black">{post.data.description} • {post.data.date}</h2>
         </div>
       </header>
       <article 
