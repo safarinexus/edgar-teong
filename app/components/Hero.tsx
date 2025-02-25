@@ -56,8 +56,8 @@ const Hero = () => {
         <main
             id="container-bg"
             className="w-full h-full min-h-[400px] sm:min-h-[720px] sm:motion-reduce:min-h-[820px] motion-reduce:lg:min-h-[1000px] font-light  
-                border-[1px] border-neutral-300 dark:border-neutral-900 shadow-custom dark:shadow-custom-dark rounded-[32px] 
-                flex flex-col sm:justify-end bg-white dark:bg-black pt-[70px] sm:pt-[80px] md:pt-[140px] p-4 sm:px-16 lg:pb-16
+                border-[1px] border-neutral-300 shadow-custom rounded-[32px] 
+                flex flex-col sm:justify-end bg-white pt-[70px] sm:pt-[80px] md:pt-[140px] p-4 sm:px-16 lg:pb-16 text-black
             "
         >
             <div id="intro" className="flex flex-col items-start sm:flex-row sm:items-center gap-2 tracking-tighter">
@@ -78,8 +78,8 @@ const Hero = () => {
                             Edgar Teong
                         </span>
                     </h1>
-                    <p id="job-status" className="text-sm sm:text-base lg:text-xl text-center font-extralight opacity-80">
-                        Software Engineer at <a href="https://www.climateimpactx.com/">
+                    <p id="job-status" className="text-sm sm:text-base lg:text-xl text-center font-extralight opacity-60">
+                        Software Engineer at <a href="https://www.climateimpactx.com/" className="text-black">
                             <Image
                                 src="/work-logos/cix.webp"
                                 width={200}

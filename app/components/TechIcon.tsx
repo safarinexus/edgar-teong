@@ -24,7 +24,7 @@ const TechIcon = ({ technology, size }: TechIconProps) => {
         "Express.js": (size) => <SiExpress className={size} />,
         "Vitest": (size) => <SiVitest className={size} />, 
         "Jest": (size) => <SiJest className={size} />,
-        "GSAP": (size) => <SiGreensock className={size} />, 
+        "GSAP Animation Library": (size) => <SiGreensock className={size} />, 
         "Python": (size) => <SiPython className={size} />, 
         "Django": (size) => <SiDjango className={size} />,
         "Java": (size) => <FaJava className={size} />, 
@@ -58,7 +58,7 @@ const TechIcon = ({ technology, size }: TechIconProps) => {
             </div>
             
             {isVisible && (
-            <div className={`absolute bottom-full mb-2  bg-neutral-800 text-white text-sm py-1 px-2 rounded whitespace-nowrap z-10`}>
+            <div className={`absolute bottom-full mb-2 bg-neutral-800 text-white text-sm py-1 px-2 rounded whitespace-nowrap z-10`}>
                 {technology}
                 <div className={`absolute w-2 h-2 bg-neutral-800 text-white transform rotate-45 top-full -mt-1 left-1/2 -translate-x-1/2`} />
             </div>
