@@ -123,8 +123,8 @@ export const works: Work[] = [
 export const projects:Project[] = [ 
     {
         title: "This Website!",
-        description: "My own portfolio website made from scratch! To showcase my experience, projects & personality.", 
-        technologies: ["Next.js", "TypeScript", "TailwindCSS", "GSAP", "Vercel"], 
+        description: "My very own portfolio website designed and built by me!", 
+        technologies: ["Next.js", "TypeScript", "TailwindCSS", "GSAP Animation Library", "Vercel"], 
         githubLink: "https://github.com/safarinexus/edgar-teong",
         demoLink: false,
         image: {
