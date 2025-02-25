@@ -16,7 +16,6 @@ import TechIcon from "./TechIcon";
 import { MdArrowOutward } from "react-icons/md";
 
 const Work = () => {
-    /*
     useGSAP(() => {
         const mm = gsap.matchMedia();
         mm.add("(prefers-reduced-motion: no-preference)", () => {
@@ -24,18 +23,17 @@ const Work = () => {
                 gsap.from(`#work${i}`, {
                     scrollTrigger: {
                         trigger: `#work${i}`, 
-                        start: "clamp(50% bottom)", 
-                        end: "clamp(bottom 20px)",
+                        start: "clamp(top bottom)", 
+                        end: "clamp(bottom 80%)",
                         toggleActions: "play none none none",
+                        scrub: 1,
                     },
                     y: 100,
-                    opacity: 0, 
                 })
             }
             gsap.delayedCall(0.6, () => ScrollTrigger.refresh());
         })
     });
-    */
 
     const currJob = works[0]
     const smallWorks = works.slice(1);
