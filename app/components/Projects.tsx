@@ -11,6 +11,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 import { projects } from "@/lib/data"
 
+import TechIcon from "./TechIcon";
+
 import { MdArrowOutward } from "react-icons/md";
 import { FiExternalLink } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
@@ -131,14 +133,19 @@ const Projects = () => {
                                 </div>
                             </div>
                             <p className="font-light">{project.description}</p>
-                            <div className="">
+                            <div className="flex space-x-3 pt-1 pb-3">
                                 {project.technologies.map((tech, techIndex) => (
+                                        /*
                                         <span 
                                             key={techIndex} 
                                             className="inline-block px-3 py-1 mx-1 my-1 rounded-3xl bg-yellow-300 bg-opacity-80
                                             dark:bg-yellow-400 dark:bg-opacity-50  text-sm font-semibold text-black dark:text-white"
                                         >
                                             {tech}
+                                        </span>
+                                        */
+                                        <span key={techIndex}>
+                                            < TechIcon size={"size-6"} technology={tech} />
                                         </span>
                                 ))}
                             </div>
