@@ -46,7 +46,7 @@ export const works: Work[] = [
     },
     {
         dates: "Jan. 2025 - Feb. 2025", 
-        company: "Central Provident Fund Board (CPFB)",
+        company: "Central Provident Fund Board",
         logo: {
             url: "/work-logos/cpf.webp",
             width: 1122,
@@ -124,7 +124,7 @@ export const projects:Project[] = [
     {
         title: "This Website!",
         description: "My own portfolio website made from scratch!", 
-        technologies: ["Next.js", "TypeScript", "TailwindCSS", "GSAP", "Vercel"], 
+        technologies: ["Next.js", "TypeScript", "TailwindCSS", "GSAP Animation Library", "Vercel"], 
         githubLink: "https://github.com/safarinexus/edgar-teong",
         demoLink: false,
         image: {

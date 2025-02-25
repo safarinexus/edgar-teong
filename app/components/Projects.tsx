@@ -106,8 +106,8 @@ const Projects = () => {
                             key={index}
                             id={"project"+index} 
                             className={"font-medium w-full max-w-[600px] h-auto max-h-full rounded-xl p-3 bg-white\
-                                border-[1px] border-neutral-300 dark:border-neutral-900 shadow-custom dark:shadow-custom-dark\
-                                dark:bg-black flex flex-col space-y-2 my-9 sm:motion-safe:absolute sm:motion-safe:mx-auto" + skew }
+                                border-[1px] border-neutral-300 shadow-custom text-black\
+                                flex flex-col space-y-2 my-9 sm:motion-safe:absolute sm:motion-safe:mx-auto" + skew }
                         >
                             <Image 
                                 src={project.image.url}
@@ -120,12 +120,12 @@ const Projects = () => {
                                 <p className="text-lg font-bold tracking-tighter">{project.title}</p>
                                 <div className="ml-auto flex justify-end items-center w-[80px]">
                                         <a href={project.githubLink} aria-label={project.title + " github repo link"}>
-                                            <FaGithub className="size-6"/>
+                                            <FaGithub className="size-6 text-black"/>
                                         </a>
                                         { project.demoLink ? 
                                             (
                                             <a href={project.demoLink} aria-label={project.title + " live demo link"}>
-                                                <FiExternalLink className="ml-3 size-6"/>
+                                                <FiExternalLink className="ml-3 size-6 text-black"/>
                                             </a>
                                             ) :
                                             ("")

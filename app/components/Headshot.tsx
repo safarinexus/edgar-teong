@@ -4,7 +4,7 @@ const Headshot = () => {
 
   return (
       <div id="headshot-container" className="relative flex justify-center items-center">
-        <div id="headshot" className="relative max-w-20 lg:max-w-28 border-black dark:border-white border-[1px] bg-white rounded-full overflow-hidden saturate-150 hover:animate-spin hover:saturate-200">
+        <div id="headshot" className="relative max-w-20 lg:max-w-28 border-black border-[1px] bg-white rounded-full overflow-hidden saturate-150 hover:animate-spin hover:saturate-200">
           <Image
             src="/headshot.webp"
             width={1244}
