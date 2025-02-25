@@ -14,7 +14,6 @@ import { works }from "@/lib/data";
 import { MdArrowOutward } from "react-icons/md";
 
 const Work = () => {
-    /*
     useGSAP(() => {
         const mm = gsap.matchMedia();
         mm.add("(prefers-reduced-motion: no-preference)", () => {
@@ -24,7 +23,7 @@ const Work = () => {
                         trigger: `#work${i}`, 
                         start: "clamp(50% bottom)", 
                         end: "clamp(bottom 20px)",
-                        toggleActions: "play none none none",
+                        toggleActions: "play none none reverse",
                     },
                     y: 100,
                     opacity: 0, 
@@ -33,70 +32,20 @@ const Work = () => {
             gsap.delayedCall(0.6, () => ScrollTrigger.refresh());
         })
     });
-    */
-
-    const smallWorks = works.slice(1);
 
     return (
         <>
             <h1 className="font-bold text-2xl sm:text-4xl">My Work Experience</h1>
-            {
-            //element for curr job (big card on desktop)
-            }
-            <div
-                key={0} 
-                id={'work'+0} 
-                aria-label={works[0].company + " website"}
-                className={`block group mt-9 sm:p-5 font-medium sm:grid sm:gap-2 grid-cols-[110px_auto] bg-${works[0].tailwindBgColor}
-                    rounded-3xl text-black opacity-100 transition-opacity duration-75`}
-            >
-                <p className="text-sm sm:text-lg sm:font-light sm:row-span-3 sm:my-[5px]">{works[0].dates}</p>
-                <a 
-                    className="text-lg font-bold tracking-tighter my-1 text-black sm:text-xl group"
-                    target="_blank"
-                    href={works[0].link} 
-                >
-                    <Image
-                            src={works[0].logo.url}
-                            height={works[0].logo.height}
-                            width={works[0].logo.width}
-                            className="inline w-6 sm:w-10" 
-                            alt={works[0].company + " logo"}
-                    />
-                    {works[0].company} • {works[0].position}
-                    <MdArrowOutward id="work-link-arrow" className="inline w-5 ml-1 group-hover:animate-hoverDiagonal transition-transform"/>
-                </a>
-                { works[0].description !== undefined ? (<p className="my-3 font-light lg:text-xl">{works[0].description}</p>) : null }
-                { works[0].technologies !== undefined ?
-                    ( <div>
-                        { works[0].technologies.map((tech, techIndex) => (
-                            <span 
-                                key={techIndex} 
-                                className="inline-block px-3 py-1 mx-1 my-1 rounded-3xl bg-yellow-300 bg-opacity-80
-                                dark:bg-yellow-400 dark:bg-opacity-50 text-sm font-semibold text-black dark:text-white"
-                            >
-                                {tech}
-                            </span>
-                        
-                        ))}
-                    </div> ) :
-                    null
-                }
-            </div>
-            {
-            //mapping elements for prev exp/internships (small cards on desktop)
-            }
-            {smallWorks.map((work, index) => {
-                const adjIndex = index + 1;
-                return (
+            {works.map((work, index) => (
                 <a 
                     target="_blank"
-                    key={adjIndex} 
-                    id={"work"+adjIndex} 
+                    key={index} 
+                    id={"work"+index} 
                     href={work.link} 
                     aria-label={work.company + " website"}
-                    className={`block group mt-9 sm:p-5 font-medium sm:grid sm:gap-2 grid-cols-[110px_auto] bg-${work.tailwindBgColor ? work.tailwindBgColor : "white"}
-                    rounded-3xl text-black transition-opacity duration-75`}
+                    className="block mt-9 sm:p-5 font-medium sm:grid sm:gap-2 grid-cols-[110px_auto] bg-transparent
+                        border border-transparent sm:hover:border-neutral-300 sm:hover:dark:border-neutral-900
+                        sm:hover:shadow-custom sm:hover:dark:shadow-custom-dark rounded-xl sm:transition-border-shadow sm:duration-300 group"
                 >
                     <p className="text-sm sm:text-lg sm:font-light sm:row-span-3 sm:my-[5px]">{work.dates}</p>
                     <h1 className="text-lg font-bold tracking-tighter my-1 sm:text-xl">
@@ -128,7 +77,7 @@ const Work = () => {
                         null
                     }
                 </a>
-            )})}
+            ))}
             <a href="/edgr-resume.pdf" target="_blank" className="inline-block font-bold text-lg mt-9 group">
                 My Full Resume 
                 <MdArrowOutward id="work-link-arrow" className="inline ml-1 w-4 motion-safe:group-hover:animate-hoverDiagonal transition-transform"/>
@@ -137,4 +86,4 @@ const Work = () => {
     )
 }
 
-export default Work
+export default Work;
