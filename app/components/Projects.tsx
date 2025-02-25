@@ -133,17 +133,8 @@ const Projects = () => {
                                 </div>
                             </div>
                             <p className="font-light">{project.description}</p>
-                            <div className="flex space-x-3 pt-1 pb-3">
+                            <div className="flex flex-wrap space-x-3 pt-1 pb-3 w-full">
                                 {project.technologies.map((tech, techIndex) => (
-                                        /*
-                                        <span 
-                                            key={techIndex} 
-                                            className="inline-block px-3 py-1 mx-1 my-1 rounded-3xl bg-yellow-300 bg-opacity-80
-                                            dark:bg-yellow-400 dark:bg-opacity-50  text-sm font-semibold text-black dark:text-white"
-                                        >
-                                            {tech}
-                                        </span>
-                                        */
                                         <span key={techIndex}>
                                             < TechIcon size={"size-6"} technology={tech} />
                                         </span>
