@@ -22,7 +22,6 @@ const Work = () => {
             for (let i = 0; i < works.length; i++) {
                 gsap.from(`#work${i}`, {
                     scrollTrigger: {
-                        markers: true,
                         trigger: `#work${i}`, 
                         start: "clamp(top bottom)", 
                         end: "clamp(20px 85%)",
