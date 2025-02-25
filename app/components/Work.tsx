@@ -46,13 +46,13 @@ const Work = () => {
             {
             //curr job (big card on desktop)
             }
-            <div className="mt-9 gap-9 grid lg:grid-cols-2">
+            <div className="mt-9 gap-9 grid md:grid-cols-2">
                 <div
                     key={0} 
                     id={'work'+0} 
                     aria-label={currJob.company + " website"}
-                    className={`block p-5 pb-16 font-medium bg-${currJob.tailwindBgColor ? currJob.tailwindBgColor : "zinc-100"}
-                        rounded-[36px] text-black opacity-100 transition-opacity duration-75 lg:col-span-2 relative`}
+                    className={`block p-5 pb-16 font-medium bg-zinc-100
+                        rounded-[36px] text-black opacity-100 transition-opacity duration-75 md:col-span-2 relative`}
                 >
                     <a 
                         className="text-lg font-bold tracking-tighter my-1 text-black sm:text-xl group"
@@ -66,24 +66,16 @@ const Work = () => {
                                 className="inline w-6 sm:w-10" 
                                 alt={currJob.company + " logo"}
                         />
-                        {currJob.company} • {currJob.position}
+                        {currJob.company}
                         <MdArrowOutward id="work-link-arrow" className="inline w-5 ml-1 group-hover:animate-hoverDiagonal transition-transform"/>
                     </a>
-                    <p className="text-sm sm:text-lg sm:font-light sm:my-[5px]">{currJob.dates}</p>
+                    <p className="text-sm sm:font-light sm:my-[5px]">{currJob.dates}</p>
                     <hr className='mt-2 mx-auto opacity-40 border-black' />  
+                    <h2 className='font-bold'>{currJob.position}</h2>
                     { currJob.description !== undefined ? (<p className="my-3 font-light">{currJob.description}</p>) : null }
                     { currJob.technologies !== undefined ?
-                        ( <div className="flex space-x-3 absolute bottom-5 mt-5">
+                        ( <div className="flex space-x-3 absolute bottom-5 mt-5 w-full">
                             { currJob.technologies.map((tech, techIndex) => (
-                                /*
-                                <span 
-                                    key={techIndex} 
-                                    className="inline-block px-3 py-1 mx-1 my-1 rounded-3xl bg-yellow-300 bg-opacity-80
-                                    dark:bg-yellow-400 dark:bg-opacity-50 text-sm font-semibold text-black dark:text-white"
-                                >
-                                    {tech}
-                                </span>
-                                */
                             <span key={techIndex}>
                                     < TechIcon size={"size-5 lg:size-7"} technology={tech} />
                             </span>
@@ -102,11 +94,11 @@ const Work = () => {
                         key={adjIndex} 
                         id={"work"+adjIndex} 
                         aria-label={work.company + " website"}
-                        className={`block p-5 pb-16 font-medium bg-${work.tailwindBgColor ? work.tailwindBgColor : "zinc-100"}
+                        className={`block p-5 pb-16 font-medium bg-zinc-100
                         rounded-[36px] text-black transition-opacity duration-75 relative`}
                     >
                         <a 
-                            className={`font-bold tracking-tighter my-1  text-black group ${ work.company === "Central Provident Fund Board (CPFB)" ? ("text-base lg:text-xs") : ("text-lg sm:text-xl") }`} 
+                            className="font-bold tracking-tighter my-1  text-black group text-lg sm:text-xl"
                             target="_blank" 
                             href={work.link}
                         >
@@ -117,24 +109,16 @@ const Work = () => {
                                     className="inline w-6 sm:w-10" 
                                     alt={work.company + " logo"}
                             />
-                            {work.company} • {work.position}
+                            {work.company}
                             <MdArrowOutward id="work-link-arrow" className="inline w-5 ml-1 group-hover:animate-hoverDiagonal transition-transform"/>
                         </a>
-                        <p className="text-sm sm:text-lg sm:font-light sm:my-[5px]">{work.dates}</p>
+                        <p className="text-sm sm:font-light sm:my-[5px]">{work.dates}</p>
                         <hr className='mt-2 mx-auto opacity-40 border-black' />  
+                        <h2 className='font-bold'>{work.position}</h2>
                         { work.description !== undefined ? (<p className="my-3 font-light">{work.description}</p>) : null }
                         { work.technologies !== undefined ?
-                            ( <div className="flex space-x-3 absolute bottom-5 mt-5">
+                            ( <div className="flex flex-wrap space-x-3 absolute bottom-5 mt-5 w-full">
                                 { work.technologies.map((tech, techIndex) => (
-                                    /*
-                                    <span 
-                                        key={techIndex} 
-                                        className="inline-block px-3 py-1 mx-1 my-1 rounded-3xl bg-yellow-300 bg-opacity-80
-                                        dark:bg-yellow-400 dark:bg-opacity-50 text-sm font-semibold text-black dark:text-white"
-                                    >
-                                        {tech}
-                                    </span>
-                                    */
                                     <span key={techIndex}>
                                         < TechIcon size={"size-5 lg:size-7"} technology={tech} />
                                     </span>
