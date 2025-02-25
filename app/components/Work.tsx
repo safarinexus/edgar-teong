@@ -51,8 +51,8 @@ const Work = () => {
                     key={0} 
                     id={'work'+0} 
                     aria-label={currJob.company + " website"}
-                    className={`block p-5 pb-16 font-medium bg-zinc-100
-                        rounded-[36px] text-black opacity-100 transition-opacity duration-75 md:col-span-2 relative`}
+                    className="block p-5 pb-16 font-medium bg-zinc-100
+                        rounded-[36px] text-black opacity-100 transition-opacity duration-75 lg:col-span-2 relative"
                 >
                     <a 
                         className="text-lg font-bold tracking-tighter my-1 text-black sm:text-xl group"
@@ -94,8 +94,8 @@ const Work = () => {
                         key={adjIndex} 
                         id={"work"+adjIndex} 
                         aria-label={work.company + " website"}
-                        className={`block p-5 pb-16 font-medium bg-zinc-100
-                        rounded-[36px] text-black transition-opacity duration-75 relative`}
+                        className="block p-5 pb-16 font-medium bg-zinc-100
+                        rounded-[36px] text-black transition-opacity duration-75 relative"
                     >
                         <a 
                             className="font-bold tracking-tighter my-1  text-black group text-lg sm:text-xl"
