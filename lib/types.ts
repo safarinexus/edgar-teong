@@ -3,20 +3,10 @@ export interface Metadata {
     date: string; 
     description: string;
 }
-
 export interface Post { 
     slug: string; 
     data: Metadata; 
     content: string;
-}
-
-export interface TechIconProps {
-    technology: string;
-    size: string;
-}
-
-export interface TechMap { 
-    [key: string]: (size?: string) => JSX.Element;
 }
 
 export type ListingPost =  Omit<Post, 'content'>;
