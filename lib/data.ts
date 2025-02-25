@@ -10,6 +10,7 @@ interface Work {
     position: string, 
     description: string, 
     technologies?: string[],
+    tailwindBgColor?: string,
 }
 
 interface Project { 
@@ -40,7 +41,8 @@ export const works: Work[] = [
             My role involves building for and maintaining CIX's main platform using React and Java with Spring Boot. I colloborate with teams across the whole organisation to develop solutions
             and debug to resolve critical platform issues to ensure smooth functionality.
         `,
-        technologies: ["React/Vite/TypeScript", "Java/Spring Boot", "JUnit", "PostgreSQL", "MongoDB", "Azure"]
+        technologies: ["React", "TypeScript", "Java", "Spring Boot", "Vite", "JUnit", "PostgreSQL", "MongoDB", "Azure"],
+        tailwindBgColor: "green-300",
     },
     {
         dates: "Jan. 2025 - Feb. 2025", 
@@ -57,7 +59,8 @@ export const works: Work[] = [
             I developed tools to boost team productivity, including a serverless API that auto-populates team Notion dashboard & Telegram channel from product contact form. 
             I also developed new features for the product, such as an admin page with a built-in dashboard, and an express product health monitoring microservice. 
             I also aided in debugging and adopting Jest unit testing for the codebase, boosting product reliability and stability.`, 
-        technologies: ["Next.js", "Express/Node", "Python/Django", "AWS", "MongoDB", "Jest" ]
+        technologies: ["Next.js", "Node.js", "Express.js", "Python", "Django", "AWS", "MongoDB", "Jest" ], 
+        tailwindBgColor: "emerald-200"
     }, 
     {
         dates: "Jan. 2023", 
@@ -85,7 +88,7 @@ export const works: Work[] = [
         description: `I was part of the Internal Audit team, where I led the data migration and adoption of version control with GitHub. 
             I also automated complex SQL data-retrieval tasks by developing a script bank. 
             Additionally, I developed a complex machine learning algorithm to automate fraud detection for each internal audit cycle.`, 
-        technologies: ["SQL", "Python", "Seaborn", "Sci-kit Learn", "Pandas"],
+        technologies: ["Python", "SQL", "Seaborn", "Sci-kit Learn", "Pandas"],
     }, 
     {
         dates: "Jun. 2022 — Aug. 2022", 
@@ -133,7 +136,7 @@ export const projects:Project[] = [
     {
         title: "Blog API",
         description: "My own full REST API for a blog, including two frontends, one for viewing posts and one for editing.", 
-        technologies: ["JavaScript","React", "Node", "Express", "PostgreSQL" ,"TailwindCSS" , "Prisma", "Railway"], 
+        technologies: ["JavaScript", "React", "Node.js", "Express.js", "PostgreSQL" ,"TailwindCSS" , "Prisma", "Railway"], 
         githubLink: "https://github.com/safarinexus/edgr_odin_projects/tree/main/odin-node-express-REST-blog",
         demoLink: "https://edgr-odin-blog-access.vercel.app/",
         image: {
@@ -145,7 +148,7 @@ export const projects:Project[] = [
     {
         title: "File Uploader",
         description: "A Google Drive clone built from scratch, with user auth and folder system.", 
-        technologies: ["JavaScript", "Node", "Express", "PostgreSQL", "Prisma", "Railway", "Supabase"], 
+        technologies: ["JavaScript", "Node.js", "Express.js", "PostgreSQL", "Prisma", "Railway", "Supabase"], 
         githubLink: "https://github.com/safarinexus/edgr_odin_projects/tree/main/odin-node-express-prisma-fileuploader",
         demoLink: "https://odin-fileuploader-production.up.railway.app",
         image: {
@@ -157,7 +160,7 @@ export const projects:Project[] = [
     {
         title: "Games Inventory App",
         description: "An inventory application using Node.js and PostgreSQL, for video games.", 
-        technologies: ["JavaScript", "Node", "Express", "PostgreSQL", "Koyeb"], 
+        technologies: ["JavaScript", "Node.js", "Express.js", "PostgreSQL", "Koyeb"], 
         githubLink: "https://github.com/safarinexus/edgr_odin_projects/tree/main/odin-node-express-postgres-inventory",
         demoLink: "https://edgrodinprojects-production.up.railway.app/",
         image: {
@@ -169,7 +172,7 @@ export const projects:Project[] = [
     {
         title: "Mini Message Board",
         description: "A simple mini message board website with a backend using MVC Pattern and Express", 
-        technologies: ["JavaScript", "Node", "Express", "PostgreSQL"], 
+        technologies: ["JavaScript", "Node.js", "Express.js", "PostgreSQL"], 
         githubLink: "https://github.com/safarinexus/odin_projects/tree/main/odin-node-express-messageboard",
         demoLink: "https://overseas-phoebe-safarinexus-e4f74908.koyeb.app/",
         image: {
@@ -217,7 +220,7 @@ export const projects:Project[] = [
     {
         title: "Projects from 'The Odin Project'", 
         description: "A series of projects that I created (from scratch) while learning full-stack development under The Odin Project", 
-        technologies: ["HTML", "CSS", "JavaScript", "Jest", "Webpack", "React", "PostgreSQL", "Prisma", "Node", "Express", "Vitest", "RESTful APIs"], 
+        technologies: ["HTML", "CSS", "JavaScript", "Jest", "Webpack", "React", "PostgreSQL", "Prisma", "Node.js", "Express.js", "Vitest"], 
         githubLink: "https://github.com/safarinexus/edgr-odinprojects", 
         demoLink: "https://safarinexus.github.io/edgr-odinprojects/", 
         image: {

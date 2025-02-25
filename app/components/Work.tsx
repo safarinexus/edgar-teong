@@ -11,9 +11,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 import { works }from "@/lib/data";
 
+import TechIcon from "./TechIcon";
+
 import { MdArrowOutward } from "react-icons/md";
 
 const Work = () => {
+    /*
     useGSAP(() => {
         const mm = gsap.matchMedia();
         mm.add("(prefers-reduced-motion: no-preference)", () => {
@@ -23,7 +26,7 @@ const Work = () => {
                         trigger: `#work${i}`, 
                         start: "clamp(50% bottom)", 
                         end: "clamp(bottom 20px)",
-                        toggleActions: "play none none reverse",
+                        toggleActions: "play none none none",
                     },
                     y: 100,
                     opacity: 0, 
@@ -32,6 +35,10 @@ const Work = () => {
             gsap.delayedCall(0.6, () => ScrollTrigger.refresh());
         })
     });
+    */
+
+    const currJob = works[0]
+    const smallWorks = works.slice(1);
 
     return (
         <>
@@ -47,8 +54,11 @@ const Work = () => {
                         border border-transparent sm:hover:border-neutral-300 sm:hover:dark:border-neutral-900
                         sm:hover:shadow-custom sm:hover:dark:shadow-custom-dark rounded-xl sm:transition-border-shadow sm:duration-300 group"
                 >
-                    <p className="text-sm sm:text-lg sm:font-light sm:row-span-3 sm:my-[5px]">{work.dates}</p>
-                    <h1 className="text-lg font-bold tracking-tighter my-1 sm:text-xl">
+                    <a 
+                        className="text-lg font-bold tracking-tighter my-1 text-black sm:text-xl group"
+                        target="_blank"
+                        href={currJob.link} 
+                    >
                         <Image
                                 src={work.logo.url}
                                 height={work.logo.height}
@@ -130,4 +140,4 @@ const Work = () => {
     )
 }
 
-export default Work;
+export default Work
