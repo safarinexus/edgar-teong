@@ -66,12 +66,12 @@ export default function ScrollIndicator () {
     <>
       <aside id="scroll-indicator-text" className="fixed w-fit h-4 mx-auto left-0 right-0 bottom-14 z-10 will-change-scroll hidden">
         <Link href="/#about" className="h-full w-full rounded-md" aria-label="scroll to next section">
-          <p className="text-xs">Scroll to Discover</p>
+          <p className="text-xs text-neutral-500">Scroll to Discover</p>
         </Link>
       </aside>
       <aside id="scroll-indicator" className="fixed w-fit mx-auto left-0 right-0 bottom-5 z-10 will-change-scroll hidden">
-        <Link href="/#about" className="flex items-center justify-center w-7 h-7 rounded-full bg-amber-400" aria-label="scroll to next section">
-          <FaArrowDown id="scroll-arrow"/>
+        <Link href="/#about" className="flex items-center justify-center w-7 h-7 rounded-full bg-yellow-500" aria-label="scroll to next section">
+          <FaArrowDown id="scroll-arrow" className="text-neutral-600"/>
         </Link>
       </aside>
     </>
@@ -81,12 +81,12 @@ export default function ScrollIndicator () {
     <>
       <aside id="scroll-indicator-text" className="fixed w-fit h-4 mx-auto left-0 right-0 bottom-14 z-10 will-change-scroll">
         <Link href="/#about" className="h-full w-full rounded-md" aria-label="scroll to next section">
-          <p className="text-xs">Scroll to Discover</p>
+          <p className="text-xs text-neutral-500">Scroll to Discover</p>
         </Link>
       </aside>
       <aside id="scroll-indicator" className="fixed w-fit mx-auto left-0 right-0 bottom-5 z-10 will-change-scroll">
-        <Link href="/#about" className="flex items-center justify-center w-7 h-7 rounded-full bg-amber-400" aria-label="scroll to next section">
-          <FaArrowDown id="scroll-arrow"/>
+        <Link href="/#about" className="flex items-center justify-center w-7 h-7 rounded-full bg-yellow-500" aria-label="scroll to next section">
+          <FaArrowDown id="scroll-arrow" className="text-neutral-600"/>
         </Link>
       </aside>
     </>

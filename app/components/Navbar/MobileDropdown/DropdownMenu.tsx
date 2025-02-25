@@ -8,14 +8,12 @@ interface Props {
 const DropdownMenu = ({ open, setOpen }: Props) => {
     let nameClass = ""; 
     if (open) { 
-        nameClass = "bg-gradient-to-br from-neutral-300 to-white\
-                dark:bg-gradient-to-br dark:from-neutral-800 dark:to-black\
+        nameClass = "bg-gradient-to-br from-neutral-400 to-white\
                 flex flex-col transition-transform right-0\
                 rounded-3xl w-44 h-64 pr-7 pl-7 pt-4 pb-4\
                 justify-around scale-100 absolute -bottom-[260px] origin-top"
     } else {
         nameClass = "bg-gradient-to-br from-neutral-400 to-white\
-                dark:bg-gradient-to-br dark:from-neutral-800 dark:to-black\
                 flex flex-col transition-transform right-0\
                 rounded-3xl w-44 h-64 pr-7 pl-7 pt-4 pb-4\
                 justify-around scale-0 absolute -bottom-[260px] origin-top"
@@ -27,10 +25,10 @@ const DropdownMenu = ({ open, setOpen }: Props) => {
         id="dropdown-menu"
         className={nameClass}
         >
-            <Link href="/#about" className="text-xl" onClick={() => setOpen(false)}>About</Link>
-            <Link href="/#work" className="text-xl" onClick={() => setOpen(false)}>Work</Link>
-            <Link href="/#projects" className="text-xl" onClick={() => setOpen(false)}>Projects</Link>
-            <Link href="/thoughts" className="text-xl"  onClick={() => setOpen(false)}>Thoughts</Link>
+            <Link href="/#about" className="text-xl text-black" onClick={() => setOpen(false)}>About</Link>
+            <Link href="/#work" className="text-xl text-black" onClick={() => setOpen(false)}>Work</Link>
+            <Link href="/#projects" className="text-xl text-black" onClick={() => setOpen(false)}>Projects</Link>
+            <Link href="/thoughts" className="text-xl text-black"  onClick={() => setOpen(false)}>Thoughts</Link>
         </div>
     )
 }
