@@ -22,13 +22,14 @@ const Work = () => {
             for (let i = 0; i < works.length; i++) {
                 gsap.from(`#work${i}`, {
                     scrollTrigger: {
+                        markers: true,
                         trigger: `#work${i}`, 
                         start: "clamp(top bottom)", 
-                        end: "clamp(bottom 80%)",
+                        end: "clamp(20px 85%)",
                         toggleActions: "play none none none",
                         scrub: 1,
                     },
-                    y: 100,
+                    y: 125,
                 })
             }
             gsap.delayedCall(0.6, () => ScrollTrigger.refresh());
