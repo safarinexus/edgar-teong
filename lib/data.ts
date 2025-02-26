@@ -10,7 +10,6 @@ interface Work {
     position: string, 
     description: string, 
     technologies?: string[],
-    tailwindBgColor?: string,
 }
 
 interface Project { 
@@ -42,7 +41,6 @@ export const works: Work[] = [
             and debug to resolve critical platform issues to ensure smooth functionality.
         `,
         technologies: ["React", "TypeScript", "Java", "Spring Boot", "Vite", "JUnit", "PostgreSQL", "MongoDB", "Azure"],
-        tailwindBgColor: "green-300",
     },
     {
         dates: "Jan. 2025 - Feb. 2025", 
@@ -60,7 +58,6 @@ export const works: Work[] = [
             I also developed new features for the product, such as an admin page with a built-in dashboard, and an express product health monitoring microservice. 
             I also aided in debugging and adopting Jest unit testing for the codebase, boosting product reliability and stability.`, 
         technologies: ["Next.js", "Node.js", "Express.js", "Python", "Django", "AWS", "MongoDB", "Jest" ], 
-        tailwindBgColor: "emerald-200"
     }, 
     {
         dates: "Jan. 2023", 

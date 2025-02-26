@@ -20,6 +20,50 @@ import { FaGithub } from "react-icons/fa";
 const Projects = () => {
     useGSAP(() => {
         const mm = gsap.matchMedia();
+
+        mm.add("(prefers-reduced-motion: no-preference)", () => {
+            gsap.from('#project-title', {
+                scrollTrigger: {
+                    trigger: `#project-title`, 
+                    start: "clamp(top bottom)", 
+                    end: "clamp(20px 85%)",
+                    toggleActions: "play none none none",
+                    scrub: 1,
+                },
+                y: 80,
+            });
+        });
+
+        mm.add("screen and (max-width:650px) and (prefers-reduced-motion: no-preference)", () => {
+            for (let i = 0; i < projects.length; i++) {
+                if ( i % 2 === 0) {
+                    gsap.from(`#project${i}`, {
+                        scrollTrigger: {
+                            trigger: `#project${i}`, 
+                            start: "clamp(top bottom)", 
+                            end: "clamp(20px 85%)",
+                            toggleActions: "play none none none",
+                            scrub: 1,
+                        },
+                        y: 160,
+                        rotateY: 90,    
+                    })
+                } else {
+                    gsap.from(`#project${i}`, {
+                        scrollTrigger: {
+                            trigger: `#project${i}`, 
+                            start: "clamp(top bottom)", 
+                            end: "clamp(20px 85%)",
+                            toggleActions: "play none none none",
+                            scrub: 1,
+                        },
+                        y: 80,
+                        rotateY: -90,
+                    })
+                }
+            } 
+        });
+
         mm.add("screen and (min-width: 650px) and (prefers-reduced-motion: no-preference)", () => {
             const tl = gsap.timeline(); 
             tl.from("#project0", {
@@ -94,7 +138,7 @@ const Projects = () => {
 
     return (
         <>
-            <h1 className="font-bold text-2xl sm:text-4xl">My Projects</h1>
+            <h1 id="project-title" className="font-bold text-2xl sm:text-4xl">My Projects</h1>
             <div className="h-fit motion-safe:sm:h-screen sm:min-h-[800px] sm:h-fit w-full flex flex-col items-center">
                 {projects.map((project, index) => {
                     let skew = " -rotate-2"; 

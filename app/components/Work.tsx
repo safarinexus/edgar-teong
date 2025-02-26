@@ -20,17 +20,42 @@ const Work = () => {
         const mm = gsap.matchMedia();
         mm.add("(prefers-reduced-motion: no-preference)", () => {
             for (let i = 0; i < works.length; i++) {
-                gsap.from(`#work${i}`, {
-                    scrollTrigger: {
-                        trigger: `#work${i}`, 
-                        start: "clamp(top bottom)", 
-                        end: "clamp(20px 85%)",
-                        toggleActions: "play none none none",
-                        scrub: 1,
-                    },
-                    y: 125,
-                })
-            }
+                if ( i % 2 === 0) {
+                    gsap.from(`#work${i}`, {
+                        scrollTrigger: {
+                            trigger: `#work${i}`, 
+                            start: "clamp(top bottom)", 
+                            end: "clamp(20px 85%)",
+                            toggleActions: "play none none none",
+                            scrub: 1,
+                        },
+                        y: 160,
+                    })
+                } else {
+                    gsap.from(`#work${i}`, {
+                        scrollTrigger: {
+                            trigger: `#work${i}`, 
+                            start: "clamp(top bottom)", 
+                            end: "clamp(20px 85%)",
+                            toggleActions: "play none none none",
+                            scrub: 1,
+                        },
+                        y: 80,
+                    })
+                }
+                
+            } 
+
+            gsap.from('#work-title', {
+                scrollTrigger: {
+                    trigger: `#work-title`, 
+                    start: "clamp(top bottom)", 
+                    end: "clamp(20px 85%)",
+                    toggleActions: "play none none none",
+                    scrub: 1,
+                },
+                y: 80,
+            })
             gsap.delayedCall(0.6, () => ScrollTrigger.refresh());
         })
     });
@@ -40,17 +65,17 @@ const Work = () => {
 
     return (
         <>
-            <h1 className="font-bold text-2xl sm:text-4xl">My Work Experience</h1>
-            {works.map((work, index) => (
-                <a 
-                    target="_blank"
-                    key={index} 
-                    id={"work"+index} 
-                    href={work.link} 
-                    aria-label={work.company + " website"}
-                    className="block mt-9 sm:p-5 font-medium sm:grid sm:gap-2 grid-cols-[110px_auto] bg-transparent
-                        border border-transparent sm:hover:border-neutral-300 sm:hover:dark:border-neutral-900
-                        sm:hover:shadow-custom sm:hover:dark:shadow-custom-dark rounded-xl sm:transition-border-shadow sm:duration-300 group"
+            <h1 id="work-title" className="font-bold text-2xl sm:text-4xl">My Work Experience</h1>
+            {
+            //curr job (big card on desktop)
+            }
+            <div className="mt-9 gap-9 grid md:grid-cols-2">
+                <div
+                    key={0} 
+                    id={'work'+0} 
+                    aria-label={currJob.company + " website"}
+                    className="block p-5 pb-16 font-medium bg-green-300
+                        rounded-[36px] text-black opacity-100 transition-opacity duration-75 md:col-span-2 relative"
                 >
                     <a 
                         className="text-lg font-bold tracking-tighter my-1 text-black sm:text-xl group"
@@ -95,8 +120,8 @@ const Work = () => {
                         key={adjIndex} 
                         id={"work"+adjIndex} 
                         aria-label={work.company + " website"}
-                        className="block p-5 pb-16 font-medium bg-zinc-100
-                        rounded-[36px] text-black transition-opacity duration-75 relative"
+                        className={`block p-5 pb-16 font-medium
+                        rounded-[36px] text-black transition-opacity duration-75 relative ${ adjIndex === 1 ? ("bg-emerald-300") : ("bg-zinc-100") }`}
                     >
                         <a 
                             className="font-bold tracking-tighter my-1  text-black group text-lg sm:text-xl"
