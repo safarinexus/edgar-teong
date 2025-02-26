@@ -55,6 +55,7 @@ const Work = () => {
                     scrub: 1,
                 },
                 y: 80,
+                opacity: 0,
             })
             gsap.delayedCall(0.6, () => ScrollTrigger.refresh());
         })

@@ -30,7 +30,8 @@ const Projects = () => {
                     toggleActions: "play none none none",
                     scrub: 1,
                 },
-                y: 80,
+                y: 80, 
+                opacity: 0,
             });
         });
 
