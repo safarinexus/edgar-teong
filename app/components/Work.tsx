@@ -92,20 +92,17 @@ const Work = () => {
                         />
                         {work.company} • {work.position}
                         <MdArrowOutward id="work-link-arrow" className="inline w-5 ml-1 group-hover:animate-hoverDiagonal transition-transform"/>
-                    </h1>
-                    <hr className='mt-2 mx-auto opacity-50 sm:hidden' />  
-                    { work.description !== undefined ? (<p className="my-3 font-light lg:text-xl">{work.description}</p>) : null }
-                    { work.technologies !== undefined ?
-                        ( <div>
-                            { work.technologies.map((tech, techIndex) => (
-                                <span 
-                                    key={techIndex} 
-                                    className="inline-block px-3 py-1 mx-1 my-1 rounded-3xl bg-yellow-300 bg-opacity-80
-                                    dark:bg-yellow-400 dark:bg-opacity-50 text-sm font-semibold text-black dark:text-white"
-                                >
-                                    {tech}
-                                </span>
-                            
+                    </a>
+                    <p className="text-sm sm:font-light sm:my-[5px]">{currJob.dates}</p>
+                    <hr className='mt-2 mx-auto opacity-40 border-black' />  
+                    <h2 className='font-bold'>{currJob.position}</h2>
+                    { currJob.description !== undefined ? (<p className="my-3 font-light">{currJob.description}</p>) : null }
+                    { currJob.technologies !== undefined ?
+                        ( <div className="flex space-x-3 absolute bottom-5 mt-5 w-10/12">
+                            { currJob.technologies.map((tech, techIndex) => (
+                            <span key={techIndex}>
+                                    < TechIcon size={"size-5 lg:size-7"} technology={tech} />
+                            </span>
                             ))}
                         </div> ) :
                         null
@@ -145,7 +142,7 @@ const Work = () => {
                         { work.description !== undefined ? (<p className="my-3 font-light">{work.description}</p>) : null }
                         <br />
                         { work.technologies !== undefined ?
-                            ( <div className="flex flex-wrap space-x-3 absolute bottom-5 mt-5 w-full">
+                            ( <div className="flex flex-wrap space-x-3 absolute bottom-5 mt-5 w-10/12">
                                 { work.technologies.map((tech, techIndex) => (
                                     <span key={techIndex}>
                                         < TechIcon size={"size-5 lg:size-7"} technology={tech} />
