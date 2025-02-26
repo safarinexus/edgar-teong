@@ -98,7 +98,7 @@ const Work = () => {
                     <h2 className='font-bold'>{currJob.position}</h2>
                     { currJob.description !== undefined ? (<p className="my-3 font-light">{currJob.description}</p>) : null }
                     { currJob.technologies !== undefined ?
-                        ( <div className="flex space-x-3 absolute bottom-5 mt-5 w-full">
+                        ( <div className="flex space-x-3 absolute bottom-5 mt-5 w-10/12">
                             { currJob.technologies.map((tech, techIndex) => (
                             <span key={techIndex}>
                                     < TechIcon size={"size-5 lg:size-7"} technology={tech} />
@@ -142,7 +142,7 @@ const Work = () => {
                         { work.description !== undefined ? (<p className="my-3 font-light">{work.description}</p>) : null }
                         <br />
                         { work.technologies !== undefined ?
-                            ( <div className="flex flex-wrap space-x-3 absolute bottom-5 mt-5 w-full">
+                            ( <div className="flex flex-wrap space-x-3 absolute bottom-5 mt-5 w-10/12">
                                 { work.technologies.map((tech, techIndex) => (
                                     <span key={techIndex}>
                                         < TechIcon size={"size-5 lg:size-7"} technology={tech} />
