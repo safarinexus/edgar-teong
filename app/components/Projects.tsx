@@ -181,7 +181,7 @@ const Projects = () => {
                             <div className="flex flex-wrap space-x-3 pt-1 pb-3 w-10/12">
                                 {project.technologies.map((tech, techIndex) => (
                                         <span key={techIndex}>
-                                            < TechIcon size={"size-6"} technology={tech} />
+                                            < TechIcon customTWprop={"size-6"} technology={tech} />
                                         </span>
                                 ))}
                             </div>
