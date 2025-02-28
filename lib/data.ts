@@ -217,7 +217,7 @@ export const projects:Project[] = [
     {
         title: "Projects from 'The Odin Project'", 
         description: "A series of projects that I created (from scratch) while learning full-stack development under The Odin Project", 
-        technologies: ["HTML", "CSS", "JavaScript", "Jest", "Webpack", "React", "PostgreSQL", "Prisma", "Node.js", "Express.js", "Vitest"], 
+        technologies: ["HTML", "CSS", "JavaScript", "Jest", "Webpack", "React", "PostgreSQL", "Prisma", "Node.js", "Express.js", "Vitest", "REST API"], 
         githubLink: "https://github.com/safarinexus/edgr-odinprojects", 
         demoLink: "https://safarinexus.github.io/edgr-odinprojects/", 
         image: {
