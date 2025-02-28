@@ -242,9 +242,9 @@ const About = () => {
                 {" "}+{" "}
                 <span className="text-spring text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="Spring Boot" /> <a href="https://spring.io/" target="_blank" className="font-medium">Spring Boot</a></span> 
                 {" "}or{" "}
-                <span className="text-nodejs text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="Node.js" /> <a href="https://nodejs.org/en" target="_blank" className="font-medium">Node.js</a></span>
+                <span className="text-nodejs text-nowrap p-"><TechIcon customTWprop="size-5 sm:size-6" technology="Node.js" /> <a href="https://nodejs.org/en" target="_blank" className="font-medium">Node.js</a></span>
                 {" "}+{" "}
-                <span className="text-nowrap"><TechIcon customTWprop="size-4 sm:size-5" technology="Express.js"/> <a href="https://expressjs.com/" target="_blank" className="font-medium">Express.js</a></span> 
+                <span className="text-nowrap"><TechIcon customTWprop="p-[3px] sm:p-1 size-5 sm:size-6 bg-neutral-600 text-white rounded-full" technology="Express.js"/> <a href="https://expressjs.com/" target="_blank" className="font-medium">Express.js</a></span> 
                 {" "}, and{" "}
                 <span className="text-postgresql text-nowrap"><TechIcon customTWprop="size-6 sm:size-7" technology="PostgreSQL" /> <a href="https://www.postgresql.org/" target="_blank" className="font-medium">PostgreSQL</a></span>
                 {/*
