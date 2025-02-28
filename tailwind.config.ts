@@ -49,13 +49,14 @@ const config: Config = {
           '100%': { transform: 'translateX(5px)' },
         }
       },
-      backgroundSize: {
-        '300%': '300%',
+      colors: {
+        'react': '#4bc8dd', 
+        'typescript': '#3277c6',
+        'nodejs': '#52a14d',
+        'spring': '#6cb336',
+        'postgresql': '#376690',
+        'mongodb': '#00ee65',
       },
-      boxShadow: {
-        'underline': '0 2px 0 0 black;',
-        'underline-dark': '0 2px 0 0 white;',
-      }
     },
     screens: {
       'xs': '450px',
