@@ -49,6 +49,14 @@ const config: Config = {
           '100%': { transform: 'translateX(5px)' },
         }
       },
+      colors: {
+        'react': '#4bc8dd', 
+        'typescript': '#3277c6',
+        'nodejs': '#52a14d',
+        'spring': '#6cb336',
+        'postgresql': '#376690',
+        'mongodb': '#00ee65',
+      },
     },
     screens: {
       'xs': '450px',

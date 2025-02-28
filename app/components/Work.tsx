@@ -101,7 +101,7 @@ const Work = () => {
                         ( <div className="flex space-x-3 absolute bottom-5 mt-5 w-10/12">
                             { currJob.technologies.map((tech, techIndex) => (
                             <span key={techIndex}>
-                                    < TechIcon size={"size-5 lg:size-7"} technology={tech} />
+                                    < TechIcon customTWprop={"size-5 lg:size-7"} technology={tech} />
                             </span>
                             ))}
                         </div> ) :
@@ -145,7 +145,7 @@ const Work = () => {
                             ( <div className="flex flex-wrap space-x-3 absolute bottom-5 mt-5 w-10/12">
                                 { work.technologies.map((tech, techIndex) => (
                                     <span key={techIndex}>
-                                        < TechIcon size={"size-5 lg:size-7"} technology={tech} />
+                                        < TechIcon customTWprop={"size-5 lg:size-7"} technology={tech} />
                                     </span>
                                 ))}
                             </div> ) :

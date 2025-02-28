@@ -11,8 +11,9 @@ export interface Post {
 }
 
 export interface TechIconProps {
+    overridePath?: string;
     technology: string;
-    size: string;
+    customTWprop?: string;
 }
 
 export interface TechMap { 
