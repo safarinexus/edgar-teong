@@ -229,7 +229,7 @@ const About = () => {
             </div>
             <div id="about-text-container" className="w-full px-5 sm:px-24 font-light text-base">
                 <p id="about-body" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">
-                Having graduated from Singapore Management Unversity, I&#39;m now currently a Full Stack Developer at <a href="https://climateimpactx.com/"><span className="font-bold">Climate Impact X</span></a>. 
+                Having graduated from Singapore Management Unversity, I&#39;m currently a Full Stack Developer at <a href="https://climateimpactx.com/"><span className="font-bold">Climate Impact X</span></a>. 
                 I am deeply passionate and fiercely self-driven. I love all things technology and building solutions for problems. It is one of my goals in life to be able to use that love to make a real difference to society through software. 
                 <br /><br />
 
