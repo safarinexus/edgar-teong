@@ -15,25 +15,19 @@ const Hero = () => {
     useGSAP (() => {
         const mm = gsap.matchMedia();
         mm.add("(prefers-reduced-motion: no-preference)", () => {
-            const tl = gsap.timeline();
-            tl.to("#fullstack", { opacity: 0, duration: 0.25})
-                .to("#coffee", { opacity: 1 })
-                .to("#coffee", { opacity: 0 })          
-                .to("#reader", { opacity: 1 })
-                .to("#reader", { opacity: 0 })     
-                .to("#music", { opacity: 1 })
-                .to("#music", { opacity: 0 })   
-                .to("#film", { opacity: 1 })  
-                .to("#film", { opacity: 0 })       
-                .to("#com", { opacity: 1 })             
-                
-            ScrollTrigger.create({
-                animation: tl, 
-                trigger: "#im-also",
-                start: "clamp(top 70%)", 
-                end: "clamp(top 10%)",
-                scrub: 1,
-            })
+            const tl = gsap.timeline({ delay: 0.5, repeat: -1 });
+            tl.from("#fullstack", { opacity: 1, duration: 1 })
+                .to("#fullstack", { opacity: 0, duration: 1 })
+                .to("#coffee", { opacity: 1, duration: 1 })
+                .to("#coffee", { opacity: 0, duration: 1 })          
+                .to("#reader", { opacity: 1, duration: 1 })
+                .to("#reader", { opacity: 0, duration: 1 })     
+                .to("#music", { opacity: 1, duration: 1 })
+                .to("#music", { opacity: 0, duration: 1 })   
+                .to("#film", { opacity: 1, duration: 1 })  
+                .to("#film", { opacity: 0, duration: 1 })       
+                .to("#psych", { opacity: 1, duration: 1 })        
+                .to("#psych", { opacity: 0, duration: 1 })     
             /*
             gsap.from("#container-bg", {
                 duration: 1, 
@@ -43,7 +37,7 @@ const Hero = () => {
             })
             */
         });
-        gsap.to("#myname, #fullstack, #coffee, #reader, #music, #film, #com", {
+        gsap.to("#myname, #fullstack, #coffee, #reader, #music, #film, #psych", {
             duration: 5,
             backgroundPositionX: "100%",
             ease: "sine.inOut",
@@ -100,24 +94,24 @@ const Hero = () => {
 
             <div id="im-also" className="relative mt-4 motion-reduce:mb-6 h-fit motion-safe:h-[70px] motion-safe:xs:h-[140px] motion-safe:sm:h-[100px] motion-safe:lg:h-[90px] text-2xl xs:text-4xl lg:text-6xl">
                 I am also a{" "}
-                <div id="scroll-text" className="ml-3 w-fit h-[144px] inline font-medium">
-                    <span id="fullstack" className="block motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                <div id="scroll-text" className="ml-3 w-fit h-[160px] inline font-medium">
+                    <span id="fullstack" className="xs:h-12 lg:h-40 block motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         {" "}Full Stack Developer
                     </span>
-                    <span id="coffee" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
-                        {" "}Coffee Lover
+                    <span id="coffee" className="xs:h-12 lg:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                        {" "}Coffee Nerd
                     </span>
-                    <span id="reader" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
-                        {" "}Avid Reader
-                    </span>
-                    <span id="music" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline leading-[1.2]  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                    <span id="reader" className="xs:h-12 lg:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         {" "}Mechanical Keyboard Hobbyist
                     </span>
-                    <span id="film" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
-                        {" "}Film Nerd
+                    <span id="music" className="xs:h-12 lg:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                        {" "}Psychology Lover
                     </span>
-                    <span id="com" className="block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline  leading-[1.2] bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
-                        {" "}Psychology Enthusiast
+                    <span id="film" className="xs:h-12 lg:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                        {" "}Film Buff
+                    </span>
+                    <span id="psych" className="xs:h-12 lg:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                        {" "}Avid Reader
                     </span>
                 </div>
             </div>
