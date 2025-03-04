@@ -255,7 +255,7 @@ const About = () => {
                 <span className="text-mongodb text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="MongoDB" /><a href="https://www.mongodb.com/" target="_blank" className="font-medium">MongoDB</a></span>
                 {" "}for the database.
                 <br /><br />
-                When I&#39;m not coding, you&#39;ll find me making filter/espresso coffee ☕️, hanging with friends 🎉, enjoying obscure films 🍿, tinkering with mechanical keyboards ⌨️, 
+                When I&#39;m not coding, you&#39;ll find me making filter/espresso coffee ☕️, hanging with friends 🎉, enjoying obscure films 🍿, tinkering with my split ergonomic keyboards 👐🏻, 
                 reading up about psychology/mental health stuff 📚, or dancing at my <a href="https://www.instagram.com/smuemix/" className="font-medium">school&#39;s hip-hop dance club 🕺🏻</a>.
                 </p>
             </div>
