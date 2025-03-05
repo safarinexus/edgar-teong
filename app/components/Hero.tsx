@@ -143,22 +143,22 @@ const Hero = () => {
             <div id="im-also" className="relative mt-4 motion-reduce:mb-6 h-fit motion-safe:h-[70px] motion-safe:xs:h-[140px] motion-safe:sm:h-[100px] motion-safe:lg:h-[90px] text-2xl xs:text-4xl lg:text-6xl">
                 I am also a{" "}
                 <div id="scroll-text" className="ml-3 w-fit h-[160px] inline font-medium">
-                    <span id="fullstack" className="xs:h-12 lg:h-40 block motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                    <span id="fullstack" className="xs:h-12 sm:h-40 block motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         {" "}Full Stack Developer
                     </span>
-                    <span id="coffee" className="xs:h-12 lg:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                    <span id="coffee" className="xs:h-12 sm:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         {" "}Coffee Nerd
                     </span>
-                    <span id="reader" className="xs:h-12 lg:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
-                        {" "}Split Keyboard Enjoyer
+                    <span id="reader" className="xs:h-12 sm:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                        {" "}Mechanical Keyboard Hobbyist
                     </span>
-                    <span id="music" className="xs:h-12 lg:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
-                        {" "}Psychology Lover
+                    <span id="music" className="xs:h-12 sm:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                        {" "}Psychology Enthusiast
                     </span>
-                    <span id="film" className="xs:h-12 lg:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
-                        {" "}Film Buff
+                    <span id="film" className="xs:h-12 sm:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                        {" "}Film Lover
                     </span>
-                    <span id="psych" className="xs:h-12 lg:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
+                    <span id="psych" className="xs:h-12 sm:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         {" "}Avid Reader
                     </span>
                 </div>
