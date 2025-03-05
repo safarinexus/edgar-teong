@@ -3,9 +3,6 @@ import { BiLogoGmail } from "react-icons/bi";
 import { SiMonkeytype } from "react-icons/si";
 import { FaSquareLetterboxd } from "react-icons/fa6";
 
-
-
-
 interface Prop {
     main: boolean;
 }
