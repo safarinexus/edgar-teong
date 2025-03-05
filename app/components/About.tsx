@@ -100,15 +100,32 @@ const About = () => {
                 y: 0,
             });
 
-            gsap.from("#about-text-container", {
-                scrollTrigger: {
-                    trigger: `#about-text-container`, 
-                    start: "clamp(100% bottom)",
-                    end: "clamp(bottom 20px)",
-                    toggleActions: "play none none none",
-                },
-                opacity: 0, 
-                y: 50,
+            const paragraphSelectors = [
+                "#about-para-1",
+                "#about-para-2",
+                "#about-para-3"
+            ];
+    
+            paragraphSelectors.forEach((selector) => {
+                gsap.fromTo(
+                    selector,
+                    {
+                        opacity: 0,
+                        y: 50,
+                    },
+                    {
+                        scrollTrigger: {
+                            trigger: selector, 
+                            start: "clamp(100% bottom)",
+                            end: "clamp(bottom 20px)",
+                            toggleActions: "play none none none",
+                        },
+                        opacity: 1,
+                        y: 0,
+                        duration: 0.6,
+                        ease: "power2.out"
+                    }
+                );
             });
         });
     });
@@ -228,36 +245,37 @@ const About = () => {
                 </div>
             </div>
             <div id="about-text-container" className="w-full pb-40 px-5 sm:px-24 font-light text-base">
-                <p id="about-body" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">
-                Having graduated from Singapore Management Unversity, I&#39;m currently a Full Stack Developer at <a href="https://climateimpactx.com/"><span className="font-bold">Climate Impact X</span></a>. 
-                I am deeply passionate and fiercely self-driven. I love all things technology and building solutions for problems. It is one of my goals in life to be able to use that love to make a real difference to society through software. 
-                <br /><br />
+                <div id="about-body" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">
+                    <div id="about-para-1" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">Having graduated from Singapore Management Unversity, I&#39;m currently a Full Stack Developer at <a href="https://climateimpactx.com/"><span className="font-bold">Climate Impact X</span></a>. 
+                    I am deeply passionate and fiercely self-driven. I love all things technology and building solutions for problems. It is one of my goals in life to be able to use that love to make a real difference to society through software.</div>
 
-                I thoroughly enjoy building beautiful, responsive and effective frontends using{" "}
-                <span className="text-react text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="React" /> <a href="https://react.dev/" target="_blank" className="font-medium">React</a></span>
-                {" "}+{" "}
-                <span className="text-typescript text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="TypeScript" /> <a href="https://www.typescriptlang.org/" target="_blank" className="font-medium">TypeScript</a></span>
-                , as well as building scalable, performant and resilient backends using{" "}
-                <span><TechIcon overridePath="/dev-logos/java.svg" technology="Java"/> <a href="https://www.java.com/en/" target="_blank" className="font-medium">Java</a></span> 
-                {" "}+{" "}
-                <span className="text-spring text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="Spring Boot" /> <a href="https://spring.io/" target="_blank" className="font-medium">Spring Boot</a></span> 
-                {" "}or{" "}
-                <span className="text-nodejs text-nowrap p-"><TechIcon customTWprop="size-5 sm:size-6" technology="Node.js" /> <a href="https://nodejs.org/en" target="_blank" className="font-medium">Node.js</a></span>
-                {" "}+{" "}
-                <span className="text-nowrap"><TechIcon customTWprop="p-[3px] sm:p-1 size-5 sm:size-6 bg-neutral-600 text-white rounded-full" technology="Express.js"/> <a href="https://expressjs.com/" target="_blank" className="font-medium">Express.js</a></span> 
-                {" "}, and{" "}
-                <span className="text-postgresql text-nowrap"><TechIcon customTWprop="size-6 sm:size-7" technology="PostgreSQL" /> <a href="https://www.postgresql.org/" target="_blank" className="font-medium">PostgreSQL</a></span>
-                {/*
-                {" "}+{" "}
-                <span className="text-nowrap"><TechIcon customTWprop="size-6" technology="Prisma" /> <a href="https://www.prisma.io/" target="_blank" className="font-medium">Prisma</a></span>
-                */}
-                {" "}or
-                <span className="text-mongodb text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="MongoDB" /><a href="https://www.mongodb.com/" target="_blank" className="font-medium">MongoDB</a></span>
-                {" "}for the database.
-                <br /><br />
-                When I&#39;m not coding, you&#39;ll find me making filter/espresso coffee ☕️, hanging with friends 🎉, enjoying obscure films 🍿, tinkering with my split ergonomic keyboards 👐🏻, 
-                reading up about psychology/mental health stuff 📚, or dancing at my <a href="https://www.instagram.com/smuemix/" className="font-medium">school&#39;s hip-hop dance club 🕺🏻</a>.
-                </p>
+                    <div id="about-para-2" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">
+                    I thoroughly enjoy building beautiful, responsive and effective frontends using{" "}
+                    <span className="text-react text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="React" /> <a href="https://react.dev/" target="_blank" className="font-medium">React</a></span>
+                    {" "}+{" "}
+                    <span className="text-typescript text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="TypeScript" /> <a href="https://www.typescriptlang.org/" target="_blank" className="font-medium">TypeScript</a></span>
+                    , as well as building scalable, performant and resilient backends using{" "}
+                    <span><TechIcon overridePath="/dev-logos/java.svg" technology="Java"/> <a href="https://www.java.com/en/" target="_blank" className="font-medium">Java</a></span> 
+                    {" "}+{" "}
+                    <span className="text-spring text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="Spring Boot" /> <a href="https://spring.io/" target="_blank" className="font-medium">Spring Boot</a></span> 
+                    {" "}or{" "}
+                    <span className="text-nodejs text-nowrap p-"><TechIcon customTWprop="size-5 sm:size-6" technology="Node.js" /> <a href="https://nodejs.org/en" target="_blank" className="font-medium">Node.js</a></span>
+                    {" "}+{" "}
+                    <span className="text-nowrap"><TechIcon customTWprop="p-[3px] sm:p-1 size-5 sm:size-6 bg-neutral-600 text-white rounded-full" technology="Express.js"/> <a href="https://expressjs.com/" target="_blank" className="font-medium">Express.js</a></span> 
+                    {" "}, and{" "}
+                    <span className="text-postgresql text-nowrap"><TechIcon customTWprop="size-6 sm:size-7" technology="PostgreSQL" /> <a href="https://www.postgresql.org/" target="_blank" className="font-medium">PostgreSQL</a></span>
+                    {/*
+                    {" "}+{" "}
+                    <span className="text-nowrap"><TechIcon customTWprop="size-6" technology="Prisma" /> <a href="https://www.prisma.io/" target="_blank" className="font-medium">Prisma</a></span>
+                    */}
+                    {" "}or
+                    <span className="text-mongodb text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="MongoDB" /><a href="https://www.mongodb.com/" target="_blank" className="font-medium">MongoDB</a></span>
+                    {" "}for the database.
+                    </div>
+
+                    <div id="about-para-3" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">When I&#39;m not coding, you&#39;ll find me making filter/espresso coffee ☕️, hanging with friends 🎉, enjoying obscure films 🍿, tinkering with my split ergonomic keyboards 👐🏻, 
+                    reading up about psychology/mental health stuff 📚, or dancing at my <a href="https://www.instagram.com/smuemix/" className="font-medium">school&#39;s hip-hop dance club 🕺🏻</a>.</div>
+                </div>
             </div>
         </>
     )
