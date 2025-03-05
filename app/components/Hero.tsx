@@ -55,7 +55,7 @@ const Hero = () => {
             ];
 
             // Create a seamless cycling animation
-            textElements.forEach((selector, index) => {
+            textElements.forEach((selector) => {
                 // Fade in
                 tl.fromTo(
                     selector, 
