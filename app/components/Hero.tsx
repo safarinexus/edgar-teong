@@ -15,8 +15,10 @@ const Hero = () => {
     useGSAP (() => {
         const mm = gsap.matchMedia();
         mm.add("(prefers-reduced-motion: no-preference)", () => {
-            const tl = gsap.timeline({ delay: 0.5, repeat: -1 });
-            tl.from("#fullstack", { opacity: 1, duration: 1 })
+            /*
+            const tl = gsap.timeline({ delay: 1, repeat: -1 });
+            tl.from("fullstack", { opacity: 0, duration: 0.5, ease: "" })
+                .to("#fullstack", { opacity: 1, duration: 0.5 })
                 .to("#fullstack", { opacity: 0, duration: 1 })
                 .to("#coffee", { opacity: 1, duration: 1 })
                 .to("#coffee", { opacity: 0, duration: 1 })          
@@ -36,7 +38,52 @@ const Hero = () => {
                 ease: "power4.out"
             })
             */
+            const tl = gsap.timeline({ 
+                repeat: -1,  // Infinite repeat
+                repeatDelay: 0,  // No delay between repeats
+                smoothChildTiming: true  // Helps with smoother transitions
+            });
+
+            // Select all the text elements to cycle through
+            const textElements = [
+                "#fullstack", 
+                "#coffee", 
+                "#reader", 
+                "#music", 
+                "#film", 
+                "#psych"
+            ];
+
+            // Create a seamless cycling animation
+            textElements.forEach((selector, index) => {
+                // Fade in
+                tl.fromTo(
+                    selector, 
+                    { opacity: 0 }, 
+                    { 
+                        opacity: 1, 
+                        duration: 0.5, 
+                        ease: "power1.inOut" 
+                    }
+                )
+                // Stay visible briefly
+                .to(selector, { 
+                    opacity: 1, 
+                    duration: 1 
+                })
+                // Fade out
+                .to(selector, { 
+                    opacity: 0, 
+                    duration: 0.5, 
+                    ease: "power1.inOut"
+                });
+            });
+
+            // Optional: Adjust timing to control loop speed
+            tl.timeScale(1.2);
         });
+
+        // Colour text animation
         gsap.to("#myname, #fullstack, #coffee, #reader, #music, #film, #psych", {
             duration: 5,
             backgroundPositionX: "100%",
@@ -44,6 +91,7 @@ const Hero = () => {
             repeat: -1,  
             yoyo: true,  
         });
+
     });
 
     return (
