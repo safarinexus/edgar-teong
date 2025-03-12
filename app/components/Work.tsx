@@ -118,7 +118,7 @@ const Work = () => {
                         key={adjIndex} 
                         id={"work"+adjIndex} 
                         aria-label={work.company + " website"}
-                        className={`block p-5 pb-16 font-medium
+                        className={`block p-5 font-medium ${ work.technologies === undefined ? ('') : ('pb-16') }
                         rounded-[36px] text-black transition-opacity duration-75 relative ${ adjIndex === 1 ? ("bg-emerald-300") : ("bg-zinc-100") }`}
                     >
                         <a 
@@ -140,13 +140,15 @@ const Work = () => {
                         <hr className='mt-2 mx-auto opacity-40 border-black' />  
                         <h2 className='font-bold'>{work.position}</h2>
                         { work.description !== undefined ? (<p className="my-3 font-light">{work.description}</p>) : null }
-                        <br />
                         { work.technologies !== undefined ?
                             ( <div className="flex flex-wrap space-x-3 absolute bottom-5 mt-5 w-10/12">
                                 { work.technologies.map((tech, techIndex) => (
-                                    <span key={techIndex}>
-                                        < TechIcon customTWprop={"size-5 lg:size-7"} technology={tech} />
-                                    </span>
+                                    <>
+                                        <br/>
+                                        <span key={techIndex}>
+                                            < TechIcon customTWprop={"size-5 lg:size-7"} technology={tech} />
+                                        </span>
+                                    </>
                                 ))}
                             </div> ) :
                             null
