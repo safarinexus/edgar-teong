@@ -142,13 +142,11 @@ const Work = () => {
                         { work.description !== undefined ? (<p className="my-3 font-light">{work.description}</p>) : null }
                         { work.technologies !== undefined ?
                             ( <div className="flex flex-wrap space-x-3 absolute bottom-5 mt-5 w-10/12">
+                                <br/>
                                 { work.technologies.map((tech, techIndex) => (
-                                    <>
-                                        <br/>
-                                        <span key={techIndex}>
-                                            < TechIcon customTWprop={"size-5 lg:size-7"} technology={tech} />
-                                        </span>
-                                    </>
+                                    <span key={techIndex}>
+                                        < TechIcon customTWprop={"size-5 lg:size-7"} technology={tech} />
+                                    </span>
                                 ))}
                             </div> ) :
                             null
