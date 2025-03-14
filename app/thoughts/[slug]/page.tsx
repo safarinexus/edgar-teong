@@ -23,7 +23,7 @@ export default async function Thought(props: { params: tParams }) {
       >
         <Link href="/thoughts" className="relative inline w-fit group hover:opacity-100" aria-label="back to thoughts">
           <div className="absolute -left-[6px] -top-1 bg-neutral-300 rounded-full w-10 h-10 opacity-0 sm:group-hover:opacity-55 sm:transition-opacity sm:duration-400"></div>
-          <IoIosArrowBack className="size-8 relative -left-1"/>
+          <IoIosArrowBack className="size-8 relative -left-1 text-black"/>
         </Link>
         <div id="thoughts-headertext-wrapper">
           <h1 className="font-semibold text-5xl text-black">{post.data.title}</h1>

@@ -41,7 +41,7 @@ export default function Thoughts() {
                         transition-transform rounded-3xl border border-neutral-300 shadow-custom bg-white"
                     >
                         <h2 className="text-black leading-none font-medium text-lg mb-3 sm:transition-opacity sm:duration-500 sm:group-hover:opacity-40">{data.title}<FaArrowRight className=" text-black ml-2 inline group-hover:animate-hoverRight"/></h2>
-                        <p className="w-fit uppercase font-light text-xs text-amber-600 border-amber-600 dark:text-amber-400 dark:border-amber-400 border py-1 px-2 rounded-sm">{data.date}</p>
+                        <p className="w-fit uppercase font-light text-xs text-amber-400 border-amber-400 border py-1 px-2 rounded-sm">{data.date}</p>
                         <p className="text-black font-light italic text-sm opacity-60 line-clamp-2">{data.description}</p>
                     </Link>
                 ))}
