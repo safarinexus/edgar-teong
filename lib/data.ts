@@ -54,8 +54,7 @@ export const works: Work[] = [
         position: "Software Engineer Intern", 
         description: `I was on the Frontier Products Team in the Business Incubator & Accelerator Department, where I worked on docCentral, 
             a tool that automates filling in of extensive government documents and contracts from inputs from various sources, for use across the whole of government. 
-            I developed tools to boost team productivity, including a serverless API that auto-populates team Notion dashboard & Telegram channel from product contact form. 
-            I also developed new features for the product, such as an admin page with a built-in dashboard, and an express product health monitoring microservice. 
+            I developed tools to boost team productivity and new features and microservices to improve the user experience of the product.  
             I also aided in debugging and adopting Jest unit testing for the codebase, boosting product reliability and stability.`, 
         technologies: ["Next.js", "Node.js", "Express.js", "Python", "Django", "AWS", "MongoDB", "Jest" ], 
     }, 
