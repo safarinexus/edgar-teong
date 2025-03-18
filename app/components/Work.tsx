@@ -16,11 +16,13 @@ import TechIcon from "./TechIcon";
 import { MdArrowOutward } from "react-icons/md";
 
 const Work = () => {
+    const slowScroll = [0, 2, 3];
+
     useGSAP(() => {
         const mm = gsap.matchMedia();
         mm.add("(prefers-reduced-motion: no-preference)", () => {
             for (let i = 0; i < works.length; i++) {
-                if ( i % 2 === 0) {
+                if (slowScroll.includes(i)) {
                     gsap.from(`#work${i}`, {
                         scrollTrigger: {
                             trigger: `#work${i}`, 
