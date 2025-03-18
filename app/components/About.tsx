@@ -118,7 +118,7 @@ const About = () => {
                             trigger: selector, 
                             start: "clamp(100% bottom)",
                             end: "clamp(bottom 20px)",
-                            toggleActions: "play none none none",
+                            toggleActions: "play none none reverse",
                         },
                         opacity: 1,
                         y: 0,
