@@ -190,7 +190,7 @@ const Projects = () => {
                 })}
             </div>
             <a href="https://github.com/safarinexus?tab=repositories" target="_blank" className="inline-block w-fit font-bold text-lg group">
-                My GitHub Repositories
+                Check out my GitHub repositories!
                 <MdArrowOutward id="work-link-arrow" className="inline ml-1 w-4 group-hover:animate-hoverDiagonal transition-transform"/>
             </a>
         </>
