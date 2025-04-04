@@ -156,8 +156,8 @@ const Work = () => {
                     </div>
                 )})}
             </div>
-            <a href="/edgr-resume.pdf" target="_blank" className="inline-block font-bold text-lg mt-9 group">
-                My Full Resume 
+            <a href="https://linkedin.com/in/edgarteong" target="_blank" className="inline-block font-bold text-lg mt-9 group">
+                Check out my Linkedin!
                 <MdArrowOutward id="work-link-arrow" className="inline ml-1 w-4 motion-safe:group-hover:animate-hoverDiagonal transition-transform"/>
             </a>
         </>
