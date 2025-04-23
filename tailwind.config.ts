@@ -56,6 +56,7 @@ const config: Config = {
         'spring': '#6cb336',
         'postgresql': '#376690',
         'mongodb': '#00ee65',
+        'tailwindcss': '#00b9ff',
       },
     },
     screens: {
