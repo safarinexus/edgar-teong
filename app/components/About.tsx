@@ -254,6 +254,8 @@ const About = () => {
                     <span className="text-react text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="React" /> <a href="https://react.dev/" target="_blank" className="font-medium">React</a></span>
                     {" "}+{" "}
                     <span className="text-typescript text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="TypeScript" /> <a href="https://www.typescriptlang.org/" target="_blank" className="font-medium">TypeScript</a></span>
+                    {" "}+{" "}
+                    <span className="text-tailwindcss text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="TailwindCSS" /> <a href="https://tailwindcss.com/" target="_blank" className="font-medium">TailwindCSS</a></span>
                     , as well as building scalable, performant and resilient backends using{" "}
                     <span><TechIcon overridePath="/dev-logos/java.svg" technology="Java"/> <a href="https://www.java.com/en/" target="_blank" className="font-medium">Java</a></span> 
                     {" "}+{" "}
