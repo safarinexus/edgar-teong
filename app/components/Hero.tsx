@@ -144,7 +144,7 @@ const Hero = () => {
                 I am also a{" "}
                 <div id="scroll-text" className="ml-3 w-fit h-[160px] inline font-medium">
                     <span id="fullstack" className="xs:motion-safe:h-12 sm:motion-safe:h-40 block motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
-                        {" "}Full Stack Engineer
+                        {" "}Full Stack Developer
                     </span>
                     <span id="coffee" className="xs:motion-safe:h-12 sm:motion-safe:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         {" "}Coffee Nerd
