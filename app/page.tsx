@@ -25,7 +25,7 @@ export default function Home() {
       </section>
       <section
         id="work"
-        className="w-full max-w-[1208px] h-fit min-h-[480px] mx-auto px-5 pt-20 sm:px-24"
+        className="w-full max-w-[1208px] mx-auto px-5 pt-20 sm:px-24"
       >
         <Work />
       </section>
