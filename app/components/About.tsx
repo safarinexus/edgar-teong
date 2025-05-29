@@ -132,7 +132,7 @@ const About = () => {
 
     return (
         <>
-            <div id="images-container" className="mb-32 sm:mb-0 relative box-border sm:-left-6 max-w-[1000px] max-h-[450px] sm:max-h-[800px] grid grid-rows-2 grid-cols-2 sm:grid-cols-3 justify-items-center items-center mx-auto">
+            <div id="images-container" className="mb-32 sm:mb-0 relative box-border sm:-left-6 max-w-[1000px] max-h-[400px] sm:max-h-[800px] grid grid-rows-2 grid-cols-2 sm:grid-cols-3 justify-items-center items-center mx-auto">
                 <div 
                     id="image1-container" 
                     className="relative z-20 w-[130%] will-change-transform pointer-events-none bottom-[-15%] left-[5%] 
