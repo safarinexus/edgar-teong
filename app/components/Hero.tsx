@@ -84,7 +84,7 @@ const Hero = () => {
         });
 
         // Colour text animation
-        gsap.to("#myname, #fullstack, #coffee, #reader, #music, #film, #psych", {
+        gsap.to("#myname, #fullstack, #coffee, #reader, #music, #film, #psych, #swe", {
             duration: 5,
             backgroundPositionX: "100%",
             ease: "sine.inOut",
@@ -137,29 +137,29 @@ const Hero = () => {
             
 
             <p id="im-a" className="mt-4 text-2xl xs:text-4xl lg:tracking-tight lg:text-6xl">
-                I&#39;m a passionate and self-started software engineer. I make products that are performant, scalable and beautiful. 
+                I&#39;m a passionate and self-started <span id="swe" className="bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">software engineer</span>. I make products that are performant, scalable and beautiful. 
             </p>
 
             <div id="im-also" className="relative mt-4 motion-reduce:mb-6 h-fit motion-safe:h-[70px] motion-safe:xs:h-[140px] motion-safe:sm:h-[100px] motion-safe:lg:h-[90px] text-2xl xs:text-4xl lg:text-6xl">
                 I am also a{" "}
                 <div id="scroll-text" className="ml-3 w-fit h-[160px] inline font-medium">
                     <span id="fullstack" className="xs:motion-safe:h-12 sm:motion-safe:h-40 block motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
-                        {" "}Full Stack Developer
+                        {" "}Coffee Nerd
                     </span>
                     <span id="coffee" className="xs:motion-safe:h-12 sm:motion-safe:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
-                        {" "}Coffee Nerd
+                        {" "}Running Enthusiast
                     </span>
                     <span id="reader" className="xs:motion-safe:h-12 sm:motion-safe:h-40 lg:motion-reduce:h-[66px] block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         {" "}Mechanical Keyboard Hobbyist
                     </span>
                     <span id="music" className="xs:motion-safe:h-12 sm:motion-safe:h-40 lg:motion-reduce:h-[66px] block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
-                        {" "}Psychology Enthusiast
+                        {" "}Psychology Enjoyer
                     </span>
                     <span id="film" className="xs:motion-safe:h-12 sm:motion-safe:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         {" "}Film Lover
                     </span>
                     <span id="psych" className="xs:motion-safe:h-12 sm:motion-safe:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
-                        {" "}Avid Reader
+                        {" "}Book Worm
                     </span>
                 </div>
             </div>
