@@ -141,7 +141,7 @@ const Work = () => {
                         <p className="text-sm sm:font-light sm:my-[5px]">{work.dates}</p>
                         <hr className='mt-2 mx-auto opacity-40 border-black' />  
                         <h2 className='font-bold'>{work.position}</h2>
-                        { work.description !== undefined ? (<p className="my-3 font-light">{work.description}</p>) : null }
+                        { work.description !== undefined ? (<p className="my-3 font-light pb-5">{work.description}</p>) : null }
                         { work.technologies !== undefined ?
                             ( <div className="flex flex-wrap space-x-3 absolute bottom-5 mt-5 w-10/12">
                                 <br/>
