@@ -258,6 +258,8 @@ const About = () => {
                     <span className="text-tailwindcss text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="TailwindCSS" /> <a href="https://tailwindcss.com/" target="_blank" className="font-medium">TailwindCSS</a></span>
                     , backends using{" "}
                     <span className="text-nodejs text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="Node.js" /> <a href="https://nodejs.org/en" target="_blank" className="font-medium">Node.js</a></span>
+                    {"  "},{" "}
+                     <span><TechIcon overridePath="/dev-logos/java.svg" technology="Java" /> <a href="https://www.java.com/en/" target="_blank" className="font-medium">Java</a></span>
                     {"  "}or{" "}
                     <span><TechIcon overridePath="/dev-logos/python.svg" technology="Python" /> <a href="https://www.python.org/" target="_blank" className="font-medium">Python</a></span>
                     {" "}, and databases using{" "}
@@ -271,7 +273,7 @@ const About = () => {
                     .
                     </div>
 
-                    <div id="about-para-3" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">When I&#39;m not coding, you&#39;ll find me making filter/espresso coffee ☕️, hanging with friends 🎉, enjoying obscure films 🍿, tinkering with my split ergonomic keyboards 👐🏻, 
+                    <div id="about-para-3" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">When I&#39;m not coding, you&#39;ll find me you&#39;ll find me going for a nice run 🏃‍➡️, making filter/espresso coffee ☕️, hanging with friends 🎉, enjoying obscure films 🍿, tinkering with my split ergonomic keyboards 👐🏻, 
                     reading up about psychology/mental health stuff 📚, or dancing at my <a href="https://www.instagram.com/smuemix/" className="font-medium">school&#39;s hip-hop dance club 🕺🏻</a>.</div>
                 </div>
             </div>
