@@ -147,13 +147,13 @@ const Hero = () => {
                         {" "}Coffee Nerd
                     </span>
                     <span id="coffee" className="xs:motion-safe:h-12 sm:motion-safe:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
-                        {" "}Running Enthusiast
+                        {" "}Non-Elite Runner
                     </span>
                     <span id="reader" className="xs:motion-safe:h-12 sm:motion-safe:h-40 lg:motion-reduce:h-[66px] block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         {" "}Mechanical Keyboard Hobbyist
                     </span>
                     <span id="music" className="xs:motion-safe:h-12 sm:motion-safe:h-40 lg:motion-reduce:h-[66px] block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
-                        {" "}Psychology Enjoyer
+                        {" "}Psychology Enthusiast
                     </span>
                     <span id="film" className="xs:motion-safe:h-12 sm:motion-safe:h-40 block motion-safe:opacity-0 motion-safe:absolute motion-safe:sm:inline bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text bg-300%">
                         {" "}Film Lover
