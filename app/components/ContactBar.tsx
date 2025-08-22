@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaInstagram, FaGoodreads, FaSpotify } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaGoodreads, FaSpotify, FaStrava } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { SiMonkeytype } from "react-icons/si";
 import { FaSquareLetterboxd } from "react-icons/fa6";
@@ -10,7 +10,7 @@ interface Prop {
 const ContactBar = ({ main }: Prop) => {
     if (main) {
         return (
-            <div id="contact-bar-main" className="h-10 w-full xs:w-[80%] sm:w-[50%] lg:w-[270px] mx-auto mt-8 xs:mt-0 sm:m-0 flex justify-between items-center"> 
+            <div id="contact-bar-main" className="h-10 w-full xs:w-[80%] sm:w-[50%] lg:w-[270px] mx-auto mt-8 xs:mt-0 sm:m-0 flex justify-between items-center z-50"> 
                 <a href="mailto:edgargarteong@gmail.com" target="_blank" aria-label="gmail link">
                     <BiLogoGmail className="text-black size-7 sm:size-6"/>
                 </a>
@@ -34,6 +34,9 @@ const ContactBar = ({ main }: Prop) => {
                 </a>
                 <a href="https://monkeytype.com/profile/safarinexus" target="_blank" aria-label="monkeytype link">
                     <SiMonkeytype className="text-black size-7"/>
+                </a>
+                <a href="https://www.strava.com/athletes/101162934?share_sig=BA830E9D1755888555" target="_blank" aria-label="strava link">
+                    <FaStrava className="text-black size-6"/>
                 </a>
             </div>
         )
@@ -63,6 +66,9 @@ const ContactBar = ({ main }: Prop) => {
                 </a>
                 <a href="https://monkeytype.com/profile/safarinexus" target="_blank" aria-label="monkeytype link">
                     <SiMonkeytype className="size-5" style={{ color: "#737373", opacity: '50%' }}/>
+                </a>
+                <a href="https://www.strava.com/athletes/101162934?share_sig=BA830E9D1755888555" target="_blank" aria-label="strava link">
+                    <FaStrava className="size-5" style={{ color: "#737373", opacity: '50%' }}/>
                 </a>
             </div>
         ) 
