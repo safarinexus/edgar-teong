@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer"
 import { Providers } from "./providers";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 
 export const metadata: Metadata = {
