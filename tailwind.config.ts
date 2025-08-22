@@ -81,7 +81,7 @@ const config: Config = {
       borderColor: ['hover', 'focus'],
       borderWidth: ['hover', 'focus'],
       boxShadow: ['hover', 'focus'],
-    },
+    }
   },
   plugins: [
     // eslint-disable-next-line @typescript-eslint/no-require-imports

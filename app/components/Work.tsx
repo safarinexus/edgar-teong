@@ -86,13 +86,13 @@ const Work = () => {
                         href={currJob.link} 
                     >
                         <Image
-                                src={work.logo.url}
-                                height={work.logo.height}
-                                width={work.logo.width}
+                                src={currJob.logo.url}
+                                height={currJob.logo.height}
+                                width={currJob.logo.width}
                                 className="inline w-6 sm:w-10" 
-                                alt={work.company + " logo"}
+                                alt={currJob.company + " logo"}
                         />
-                        {work.company} • {work.position}
+                        {currJob.company} • {currJob.position}
                         <MdArrowOutward id="work-link-arrow" className="inline w-5 ml-1 group-hover:animate-hoverDiagonal transition-transform"/>
                     </a>
                     <p className="text-sm sm:font-light sm:my-[5px]">{currJob.dates}</p>
