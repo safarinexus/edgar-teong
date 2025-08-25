@@ -92,7 +92,7 @@ const Work = () => {
                                 className="inline w-6 sm:w-10" 
                                 alt={currJob.company + " logo"}
                         />
-                        {currJob.company} • {currJob.position}
+                        {currJob.company}
                         <MdArrowOutward id="work-link-arrow" className="inline w-5 ml-1 group-hover:animate-hoverDiagonal transition-transform"/>
                     </a>
                     <p className="text-sm sm:font-light sm:my-[5px]">{currJob.dates}</p>
