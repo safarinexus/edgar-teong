@@ -258,11 +258,17 @@ const About = () => {
                     <span className="text-tailwindcss text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="TailwindCSS" /> <a href="https://tailwindcss.com/" target="_blank" className="font-medium">TailwindCSS</a></span>
                     , backends using{" "}
                     <span className="text-nodejs text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="Node.js" /> <a href="https://nodejs.org/en" target="_blank" className="font-medium">Node.js</a></span>
+                    {"  "}+{" "}
+                    <span className="text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="Express.js" /> <a href="https://expressjs.com/" target="_blank" className="font-medium">express</a></span>
                     {"  "},{" "}
-                     <span><TechIcon overridePath="/dev-logos/java.svg" technology="Java" /> <a href="https://www.java.com/en/" target="_blank" className="font-medium">Java</a></span>
+                    <span><TechIcon overridePath="/dev-logos/java.svg" technology="Java" /> <a href="https://www.java.com/en/" target="_blank" className="font-medium">Java</a></span>
+                    {"  "}+{" "}
+                    <span className="text-spring text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="Spring Boot" /> <a href="https://spring.io/" target="_blank" className="font-medium">Spring Boot</a></span>
                     {"  "}or{" "}
                     <span><TechIcon overridePath="/dev-logos/python.svg" technology="Python" /> <a href="https://www.python.org/" target="_blank" className="font-medium">Python</a></span>
-                    {" "}, and databases using{" "}
+                    {"  "}+{" "}
+                    <span className="text-django text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="Django" /> <a href="https://www.djangoproject.com/" target="_blank" className="font-medium">Django</a></span>
+                    , and databases using{" "}
                     <span className="text-postgresql text-nowrap"><TechIcon customTWprop="size-6 sm:size-7" technology="PostgreSQL" /> <a href="https://www.postgresql.org/" target="_blank" className="font-medium">PostgreSQL</a></span>
                     {/*
                     {" "}+{" "}

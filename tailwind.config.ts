@@ -57,6 +57,7 @@ const config: Config = {
         'postgresql': '#376690',
         'mongodb': '#00ee65',
         'tailwindcss': '#00b9ff',
+        'django': '#094b32'
       },
     },
     screens: {
