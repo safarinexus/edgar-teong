@@ -10,7 +10,7 @@ interface Prop {
 const ContactBar = ({ main }: Prop) => {
     if (main) {
         return (
-            <div id="contact-bar-main" className="h-10 w-full xs:w-[80%] sm:w-[50%] lg:w-[270px] mx-auto mt-8 xs:mt-0 sm:m-0 flex justify-between items-center z-50"> 
+            <div id="contact-bar-main" className="h-10 w-full xs:w-[80%] sm:w-[50%] lg:w-[270px] mx-auto mt-8 xs:mt-0 sm:m-0 flex justify-between items-center z-40"> 
                 <a href="mailto:edgargarteong@gmail.com" target="_blank" aria-label="gmail link">
                     <BiLogoGmail className="text-black size-7 sm:size-6"/>
                 </a>

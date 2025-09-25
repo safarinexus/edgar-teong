@@ -90,7 +90,7 @@ export default function Navbar() {
 
     if (!mounted) {
         return (
-            <div id="navbar-container" className="fixed w-full min-w-[320px] flex flex-col items-center pt-4 pb-3 sm:pt-0 sm:pb-0 sm:top-4 px-4 h-min z-40">
+            <div id="navbar-container" className="fixed w-full min-w-[320px] flex flex-col items-center pt-4 pb-3 sm:pt-0 sm:pb-0 sm:top-4 px-4 h-min z-50">
                 <nav 
                 className="
                     w-full max-w-[1176px] h-14 p-3 rounded-[32px] bg-white bg-opacity-30 z-40 relative backdrop-blur-3xl border-[1px]
@@ -117,7 +117,7 @@ export default function Navbar() {
     }
 
     return (
-        <div id="navbar-container" className="fixed w-full min-w-[320px] flex flex-col items-center pt-4 pb-3 sm:pt-0 sm:pb-0 sm:top-4 px-4 h-min z-40">
+        <div id="navbar-container" className="fixed w-full min-w-[320px] flex flex-col items-center pt-4 pb-3 sm:pt-0 sm:pb-0 sm:top-4 px-4 h-min z-50">
             <nav  
             className="
                 w-full max-w-[1176px] h-14 p-3 rounded-[32px] bg-white bg-opacity-30 z-40 relative backdrop-blur-3xl border-[1px]
