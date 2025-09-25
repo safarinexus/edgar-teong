@@ -3,11 +3,11 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer"
 import { Providers } from "./providers";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Inter } from 'next/font/google';
+import { Inter_Tight } from 'next/font/google';
 
-const inter = Inter({
+const inter = Inter_Tight({
   subsets: ['latin'],
-  display: 'swap', // 'swap' is recommended for performance
+  display: 'swap',
 });
 
 export default function RootLayout({
