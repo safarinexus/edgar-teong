@@ -279,7 +279,7 @@ const About = () => {
                     .
                     </div>
 
-                    <div id="about-para-3" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">When I&#39;m not coding, you&#39;ll find me you&#39;ll find me going for a nice run 🏃‍➡️, making filter/espresso coffee ☕️, hanging with friends 🎉, enjoying obscure films 🍿, tinkering with my split ergonomic keyboards 👐🏻, 
+                    <div id="about-para-3" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">When I&#39;m not coding, you&#39;ll find me you&#39;ll find me going for a nice run 🏃‍➡️, making filter/espresso coffee ☕️, hanging with friends 🎉, enjoying some films 🍿, tinkering with my split ergonomic keyboards 👐🏻, 
                     reading up about psychology/mental health stuff 📚, or dancing at my <a href="https://www.instagram.com/smuemix/" className="font-medium">school&#39;s hip-hop dance club 🕺🏻</a>.</div>
                 </div>
             </div>
