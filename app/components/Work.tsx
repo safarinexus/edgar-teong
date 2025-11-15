@@ -77,7 +77,7 @@ const Work = () => {
                     key={0} 
                     id={'work'+0} 
                     aria-label={currJob.company + " website"}
-                    className="block p-5 pb-16 font-medium bg-green-300
+                    className="block p-5 pb-16 font-medium bg-rose-400
                         rounded-[36px] text-black opacity-100 transition-opacity duration-75 md:col-span-2 relative"
                 >
                     <a 
@@ -89,7 +89,7 @@ const Work = () => {
                                 src={currJob.logo.url}
                                 height={currJob.logo.height}
                                 width={currJob.logo.width}
-                                className="inline w-6 sm:w-10" 
+                                className="inline w-6 sm:w-10 rounded-md mr-1" 
                                 alt={currJob.company + " logo"}
                         />
                         {currJob.company}
@@ -121,7 +121,7 @@ const Work = () => {
                         id={"work"+adjIndex} 
                         aria-label={work.company + " website"}
                         className={`block p-5 font-medium ${ work.technologies === undefined ? ('') : ('pb-16') }
-                        rounded-[36px] text-black transition-opacity duration-75 relative ${ adjIndex === 1 ? ("bg-emerald-300") : ("bg-zinc-100") }`}
+                        rounded-[36px] text-black transition-opacity duration-75 relative ${ adjIndex === 1 ? ("bg-green-300") : ("bg-zinc-100") }`}
                     >
                         <a 
                             className="font-bold tracking-tighter my-1  text-black group text-lg sm:text-xl"

@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
 
-import TechIcon from "./TechIcon";
+//import TechIcon from "./TechIcon";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -246,10 +246,27 @@ const About = () => {
             </div>
             <div id="about-text-container" className="w-full pb-40 px-5 sm:px-24 font-light text-base">
                 <div id="about-body" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">
-                    <div id="about-para-1" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">Having graduated from Singapore Management Unversity, I&#39;m currently a Full Stack Engineer at <a href="https://climateimpactx.com/"><span className="font-bold">Climate Impact X</span></a>. 
+                    <div id="about-para-1" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">Having graduated from Singapore Management Unversity, I&#39;m currently a Backend Engineer at <a href="https://www.foodpanda.com/about-foodpanda/"><span className="font-bold">foodpanda</span></a>. 
                     I am deeply passionate and fiercely self-driven. I love all things technology and building solutions for problems. It is one of my goals in life to be able to use that love to make a real difference to society through software.</div>
 
+                    {/*
                     <div id="about-para-2" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">
+                    I mainly develop with{" "}
+                    <a href="https://go.dev/" target="_blank" className='text-go hover:opacity-100'><TechIcon customTWprop="size-7 sm:size-9 relative top-2" technology="Go" /></a>
+                    {"  "}and{" "}
+                    <span className="text-postgresql text-nowrap"><TechIcon customTWprop="size-6 sm:size-7" technology="PostgreSQL" /> <a href="https://www.postgresql.org/" target="_blank" className="font-medium">PostgreSQL</a></span>
+                    {" "}or
+                    <span className="text-mongodb text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="MongoDB" /><a href="https://www.mongodb.com/" target="_blank" className="font-medium">MongoDB</a></span>
+                    {" "}but I am also familiar with{" "}
+                    <span className="text-react text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="React" /> <a href="https://react.dev/" target="_blank" className="font-medium">React</a></span>
+                    {"  "}+{" "}
+                    <span className="text-typescript text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="TypeScript" /> <a href="https://www.typescriptlang.org/" target="_blank" className="font-medium">TypeScript</a></span>
+                    {" "},{" "}
+                    <span className="text-nodejs text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="Node.js" /> <a href="https://nodejs.org/en" target="_blank" className="font-medium">Node.js</a></span>
+                    {"  "}and{" "}
+                    <span><TechIcon overridePath="/dev-logos/python.svg" technology="Python" /> <a href="https://www.python.org/" target="_blank" className="font-medium">Python</a></span>
+                    */}
+                    {/*
                     I work on the entire stack. Especially &#40;but not limited to&#41; frontends using{" "}
                     <span className="text-react text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="React" /> <a href="https://react.dev/" target="_blank" className="font-medium">React</a></span>
                     {" "}+{" "}
@@ -270,15 +287,14 @@ const About = () => {
                     <span className="text-django text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="Django" /> <a href="https://www.djangoproject.com/" target="_blank" className="font-medium">Django</a></span>
                     , and databases using{" "}
                     <span className="text-postgresql text-nowrap"><TechIcon customTWprop="size-6 sm:size-7" technology="PostgreSQL" /> <a href="https://www.postgresql.org/" target="_blank" className="font-medium">PostgreSQL</a></span>
-                    {/*
                     {" "}+{" "}
                     <span className="text-nowrap"><TechIcon customTWprop="size-6" technology="Prisma" /> <a href="https://www.prisma.io/" target="_blank" className="font-medium">Prisma</a></span>
-                    */}
                     {" "}or
                     <span className="text-mongodb text-nowrap"><TechIcon customTWprop="size-5 sm:size-6" technology="MongoDB" /><a href="https://www.mongodb.com/" target="_blank" className="font-medium">MongoDB</a></span>
                     .
-                    </div>
-
+                    */}
+                    {//</div>
+                    }
                     <div id="about-para-3" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">When I&#39;m not coding, you&#39;ll find me you&#39;ll find me going for a nice run 🏃‍➡️, making filter/espresso coffee ☕️, hanging with friends 🎉, enjoying some films 🍿, tinkering with my split ergonomic keyboards 👐🏻, 
                     reading up about psychology/mental health stuff 📚, or dancing at my <a href="https://www.instagram.com/smuemix/" className="font-medium">school&#39;s hip-hop dance club 🕺🏻</a>.</div>
                 </div>

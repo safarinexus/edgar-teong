@@ -4,6 +4,7 @@ import Image from "next/image"
 import { TechIconProps, TechMap  } from "@/lib/types";
 
 import { FaReact, FaJava, FaAws } from "react-icons/fa";
+import { FaGolang } from "react-icons/fa6";
 import { SiVite, SiTypescript, SiGreensock, SiPython, SiJavascript, SiSpring, SiDjango, SiJunit5, SiMongodb, SiNodedotjs, SiExpress, SiNextdotjs, SiVitest, SiJest, SiFigma, SiVercel, SiTailwindcss, SiPrisma, SiRailway, SiSupabase, SiKoyeb, SiWebpack, SiHtml5, SiCss3 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { VscAzure } from "react-icons/vsc";
@@ -44,6 +45,7 @@ const TechIcon = ({ overridePath, technology, customTWprop }: TechIconProps) => 
         "HTML": (customTWprop) => <SiHtml5 className={customTWprop} />, 
         "CSS": (customTWprop) => <SiCss3 className={customTWprop} />,
         "SQL": (customTWprop) => <BsFiletypeSql className={customTWprop} />,
+        "Go": (customTWprop) => <FaGolang className={customTWprop} />
     }
 
     if (Object.hasOwn(techMap, technology) || overridePath) return (

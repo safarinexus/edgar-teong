@@ -27,7 +27,20 @@ interface Project {
 
 export const works: Work[] = [
     {
-        dates: "Feb. 2025 - Present", 
+        dates: "Nov. 2025 - Present", 
+        company: "foodpanda",
+        logo: {
+            url: "/work-logos/foodpanda.webp", 
+            width: 200, 
+            height: 200, 
+        }, 
+        link: "https://www.foodpanda.com/about-foodpanda/", 
+        position: "Software Engineer", 
+        description: `I am part of the Growth Tribe within foodpanda, developing on the backend to help out with the regional growth of the product.`,
+        technologies: ["Go"]
+    }, 
+    {
+        dates: "Feb. 2025 - Nov. 2025", 
         company: " Climate Impact X", 
         logo: {
             url: "/work-logos/cix.webp",

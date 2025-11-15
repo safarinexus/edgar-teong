@@ -121,15 +121,15 @@ const Hero = () => {
                         </span>
                     </h1>
                     <p id="job-status" className="text-sm sm:text-base lg:text-xl text-center font-extralight opacity-60">
-                        Software Engineer at <a href="https://www.climateimpactx.com/" className="text-black">
+                        Software Engineer at<a href="https://www.foodpanda.sg/city/singapore" className="text-black">
                             <Image
-                                src="/work-logos/cix.webp"
+                                src="/work-logos/foodpanda.webp"
                                 width={200}
                                 height={200}
-                                alt="cix logo"
-                                className="size-4 sm:size-5 inline mx-1"
+                                alt="foodpanda logo"
+                                className="size-6 inline mx-1 ml-[6px] mb-1 rounded-md"
                             />
-                            Climate Impact X
+                            foodpanda
                         </a>
                     </p>
                 </div>
