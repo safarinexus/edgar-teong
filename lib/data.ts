@@ -36,7 +36,7 @@ export const works: Work[] = [
         }, 
         link: "https://www.foodpanda.com/about-foodpanda/", 
         position: "Software Engineer", 
-        description: `I am part of the Growth Tribe within foodpanda, developing on the backend to help out with the regional growth of the product.`,
+        description: `I am a backend software engineer on the incentives core team, working on vouchers and deals for the foodpanda app.`,
         technologies: ["Go"]
     }, 
     {
