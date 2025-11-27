@@ -36,8 +36,8 @@ export const works: Work[] = [
         }, 
         link: "https://www.foodpanda.com/about-foodpanda/", 
         position: "Software Engineer", 
-        description: `I am a backend software engineer on the incentives core team, working on vouchers and deals for the foodpanda app.`,
-        technologies: ["Go"]
+        description: `I am a backend software engineer on the incentives core team in the growth tribe, working on end-to-end vouchers and deals management for the foodpanda app.`,
+        technologies: ["Go", "AWS"]
     }, 
     {
         dates: "Feb. 2025 - Nov. 2025", 
@@ -49,9 +49,8 @@ export const works: Work[] = [
         }, 
         link: "https://www.climateimpactx.com/", 
         position: "Software Engineer",
-        description: `I am on the engineering team at CIX, global carbon market solutions provider jointly held by DBS, SGX, Mizuho, Standard Chartered, and Temasek. 
-            My role involves building for and maintaining CIX's main platform using React and Java with Spring Boot. I colloborate with teams across the whole organisation to develop solutions
-            and debug to resolve critical platform issues to ensure smooth functionality.
+        description: `Helped to implement payment methods and adopt currencies on main trading platform. Assisted with smooth platform migration and 
+        built mulitple data pipelines and workflows.
         `,
         technologies: ["React", "TypeScript", "Java", "Spring Boot", "Vite", "JUnit", "PostgreSQL", "MongoDB", "Azure"],
     },
@@ -65,10 +64,8 @@ export const works: Work[] = [
         },
         link: "https://www.cpf.gov.sg/member",
         position: "Software Engineer Intern", 
-        description: `I was on the Frontier Products Team in the Business Incubator & Accelerator Department, where I worked on docCentral, 
-            a tool that automates filling in of extensive government documents and contracts from inputs from various sources, for use across the whole of government. 
-            I developed tools to boost team productivity and new features and microservices to improve the user experience of the product.  
-            I also aided in debugging and adopting Jest unit testing for the codebase, boosting product reliability and stability.`, 
+        description: `Worked on docCentral as part of the Frontier Products Team in the Business Incubator & Accelerator Department. Built a health-monitoring microservice, 
+            automated ticket workflow for the team. Aided in debugging and adopting Jest unit testing for the codebase, boosting product reliability and stability.`, 
         technologies: ["Next.js", "Node.js", "Express.js", "Python", "Django", "AWS", "MongoDB", "Jest" ], 
     }, 
     {
@@ -81,7 +78,7 @@ export const works: Work[] = [
         },
         link: "https://www.tech.gov.sg/",
         position : "Software Engineer Intern", 
-        description: `I joined the Tech iOSH Refresh Project, where I worked on developing and standardizing frontend UI components.`,
+        description: `Developed and standardized frontend UI components for the Tech iOSH Refresh Project.`,
         technologies: ["Figma", "React", "JavaScript"]   
     },
     {
@@ -94,8 +91,7 @@ export const works: Work[] = [
         },
         link: "https://www.se.com/sg/en/",
         position: "Data Analyst Intern", 
-        description: `I was part of the Internal Audit team, where I led the data migration and adoption of version control with GitHub. 
-            I also automated complex SQL data-retrieval tasks by developing a script bank. 
+        description: `Led the data migration and adoption of version control with GitHub. Automated complex SQL data-retrieval tasks by developing a script bank. 
             Additionally, I developed a complex machine learning algorithm to automate fraud detection for each internal audit cycle.`, 
         technologies: ["Python", "SQL", "Seaborn", "Sci-kit Learn", "Pandas"],
     }, 
@@ -109,10 +105,8 @@ export const works: Work[] = [
         },
         link: "https://www.accenture.com/sg-en",
         position: "Technology Summer Analyst", 
-        description: `I developed testing tools and performed UAT testing as part of the iHiS Billing Transform project, 
-            which aimed at digitally transforming the nationwide healthcare billing solution. 
-            I created test scripts and templates for testing cycles using SOAP APIs and Python, where I 
-            improved overall software quality and reduced post-release issues.`, 
+        description: `Developed Python testing tools and performed UAT testing as part of the iHiS Billing Transform project, 
+            which aimed at digitally transforming the nationwide healthcare billing solution.`, 
         technologies: ["Python", "SOAP APIs"],
     },
     {
@@ -154,66 +148,66 @@ export const projects:Project[] = [
             height: 1262,
         }
     },
-    {
-        title: "File Uploader",
-        description: "A Google Drive clone built from scratch, with user auth and folder system.", 
-        technologies: ["JavaScript", "Node.js", "Express.js", "PostgreSQL", "Prisma", "Railway", "Supabase"], 
-        githubLink: "https://github.com/safarinexus/edgr_odin_projects/tree/main/odin-node-express-prisma-fileuploader",
-        demoLink: "https://odin-fileuploader-production.up.railway.app",
-        image: {
-            url: "/project-thumbnails/fileuploader.webp",
-            width: 1516, 
-            height: 1168, 
-        }
-    },
-    {
-        title: "Games Inventory App",
-        description: "An inventory application using Node.js and PostgreSQL, for video games.", 
-        technologies: ["JavaScript", "Node.js", "Express.js", "PostgreSQL", "Koyeb"], 
-        githubLink: "https://github.com/safarinexus/edgr_odin_projects/tree/main/odin-node-express-postgres-inventory",
-        demoLink: "https://edgrodinprojects-production.up.railway.app/",
-        image: {
-            url: "/project-thumbnails/inventory.webp",
-            width: 1418, 
-            height: 1170,
-        }
-    },
-    {
-        title: "Mini Message Board",
-        description: "A simple mini message board website with a backend using MVC Pattern and Express", 
-        technologies: ["JavaScript", "Node.js", "Express.js", "PostgreSQL"], 
-        githubLink: "https://github.com/safarinexus/odin_projects/tree/main/odin-node-express-messageboard",
-        demoLink: "https://overseas-phoebe-safarinexus-e4f74908.koyeb.app/",
-        image: {
-            url: "/project-thumbnails/msgboard.webp",
-            width: 1422, 
-            height: 1064,
-        }
-    },
-    {
-        title: "Memory Card",
-        description: "The game of memory cards, made with React, right in the browser, built by me.", 
-        technologies: ["HTML", "CSS", "JavaScript", "React", "Vercel"], 
-        githubLink: "https://github.com/safarinexus/odin_projects/tree/main/odin-react-memorycard",
-        demoLink: "https://odin-projects-nine.vercel.app/",
-        image: {
-            url: "/project-thumbnails/memorycard.webp",
-            width: 2088, 
-            height: 1640, 
-        }
-    }, 
-    {
-        title: "Shopping Page",
-        description: "A frontend UI for a shopping page, built with React, by me.", 
-        technologies: ["HTML", "CSS", "JavaScript", "React", "Vercel"], 
-        githubLink: "https://github.com/safarinexus/odin_projects/tree/main/odin-react-shoppingcart",
-        demoLink: "https://odin-shopping-page.vercel.app/",
-        image: {
-            url: "/project-thumbnails/shopping.webp",
-            width: 2308, 
-            height: 1368,
-        }
-    },
+    // {
+    //     title: "File Uploader",
+    //     description: "A Google Drive clone built from scratch, with user auth and folder system.", 
+    //     technologies: ["JavaScript", "Node.js", "Express.js", "PostgreSQL", "Prisma", "Railway", "Supabase"], 
+    //     githubLink: "https://github.com/safarinexus/edgr_odin_projects/tree/main/odin-node-express-prisma-fileuploader",
+    //     demoLink: "https://odin-fileuploader-production.up.railway.app",
+    //     image: {
+    //         url: "/project-thumbnails/fileuploader.webp",
+    //         width: 1516, 
+    //         height: 1168, 
+    //     }
+    // },
+    // {
+    //     title: "Games Inventory App",
+    //     description: "An inventory application using Node.js and PostgreSQL, for video games.", 
+    //     technologies: ["JavaScript", "Node.js", "Express.js", "PostgreSQL", "Koyeb"], 
+    //     githubLink: "https://github.com/safarinexus/edgr_odin_projects/tree/main/odin-node-express-postgres-inventory",
+    //     demoLink: "https://edgrodinprojects-production.up.railway.app/",
+    //     image: {
+    //         url: "/project-thumbnails/inventory.webp",
+    //         width: 1418, 
+    //         height: 1170,
+    //     }
+    // },
+    // {
+    //     title: "Mini Message Board",
+    //     description: "A simple mini message board website with a backend using MVC Pattern and Express", 
+    //     technologies: ["JavaScript", "Node.js", "Express.js", "PostgreSQL"], 
+    //     githubLink: "https://github.com/safarinexus/odin_projects/tree/main/odin-node-express-messageboard",
+    //     demoLink: "https://overseas-phoebe-safarinexus-e4f74908.koyeb.app/",
+    //     image: {
+    //         url: "/project-thumbnails/msgboard.webp",
+    //         width: 1422, 
+    //         height: 1064,
+    //     }
+    // },
+    // {
+    //     title: "Memory Card",
+    //     description: "The game of memory cards, made with React, right in the browser, built by me.", 
+    //     technologies: ["HTML", "CSS", "JavaScript", "React", "Vercel"], 
+    //     githubLink: "https://github.com/safarinexus/odin_projects/tree/main/odin-react-memorycard",
+    //     demoLink: "https://odin-projects-nine.vercel.app/",
+    //     image: {
+    //         url: "/project-thumbnails/memorycard.webp",
+    //         width: 2088, 
+    //         height: 1640, 
+    //     }
+    // }, 
+    // {
+    //     title: "Shopping Page",
+    //     description: "A frontend UI for a shopping page, built with React, by me.", 
+    //     technologies: ["HTML", "CSS", "JavaScript", "React", "Vercel"], 
+    //     githubLink: "https://github.com/safarinexus/odin_projects/tree/main/odin-react-shoppingcart",
+    //     demoLink: "https://odin-shopping-page.vercel.app/",
+    //     image: {
+    //         url: "/project-thumbnails/shopping.webp",
+    //         width: 2308, 
+    //         height: 1368,
+    //     }
+    // },
     {
         title: "Kyla's Birthday Website",
         description: "A website that I made for my partner's birthday, using pure vanilla HTML, CSS & JavaScript", 
