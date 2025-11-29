@@ -28,13 +28,13 @@ interface Project {
 export const works: Work[] = [
     {
         dates: "Nov. 2025 - Present", 
-        company: "foodpanda",
+        company: "foodpanda (Delivery Hero)",
         logo: {
             url: "/work-logos/foodpanda.webp", 
             width: 200, 
             height: 200, 
         }, 
-        link: "https://www.foodpanda.com/about-foodpanda/", 
+        link: "https://www.deliveryhero.com/brands/foodpanda/", 
         position: "Software Engineer", 
         description: `I am a backend software engineer on the incentives core team in the growth tribe, working on end-to-end vouchers and deals management for the foodpanda app.`,
         technologies: ["Go", "AWS"]
