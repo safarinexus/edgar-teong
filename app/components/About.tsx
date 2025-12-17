@@ -247,7 +247,7 @@ const About = () => {
             <div id="about-text-container" className="w-full pb-40 px-5 sm:px-24 font-light text-base">
                 <div id="about-body" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">
                     <div id="about-para-1" className="mt-7 tracking-tight leading-relaxed font-light text-base lg:text-xl">
-                        Having graduated from Singapore Management Unversity, I&#39;m currently a Backend Engineer at{" "}
+                        Having graduated from Singapore Management Unversity, I&#39;m currently a Backend Software Engineer at{" "}
                         <a href="https://www.foodpanda.com/about-foodpanda/"><span className="font-bold">foodpanda</span></a>{" "}
                         (<a href="https://www.deliveryhero.com"><span className="font-bold">Delivery Hero</span></a>).
                         I&#39;ve worked in a variety of companies, using a wide range of technologies to build innovative, performant and scalable solutions for complex technical problems on large-scale distributed systems.

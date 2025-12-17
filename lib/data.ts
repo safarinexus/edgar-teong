@@ -35,7 +35,7 @@ export const works: Work[] = [
             height: 200, 
         }, 
         link: "https://www.deliveryhero.com/brands/foodpanda/", 
-        position: "Software Engineer", 
+        position: "Backend Software Engineer", 
         description: `I am a backend software engineer on the incentives core team in the growth tribe, working on end-to-end vouchers and deals management for the foodpanda app.`,
         technologies: ["Go", "AWS"]
     }, 
