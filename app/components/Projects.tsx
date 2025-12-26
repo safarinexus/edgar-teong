@@ -189,7 +189,7 @@ const Projects = () => {
                     )
                 })}
             </div>
-            <a href="https://github.com/safarinexus?tab=repositories" target="_blank" className="inline-block w-fit font-bold text-lg group">
+            <a href="https://github.com/edgargle?tab=repositories" target="_blank" className="inline-block w-fit font-bold text-lg group">
                 Check out my GitHub repositories!
                 <MdArrowOutward id="work-link-arrow" className="inline ml-1 w-4 group-hover:animate-hoverDiagonal transition-transform"/>
             </a>

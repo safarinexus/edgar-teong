@@ -9,6 +9,8 @@ import { SiVite, SiTypescript, SiGreensock, SiPython, SiJavascript, SiSpring, Si
 import { BiLogoPostgresql } from "react-icons/bi";
 import { VscAzure } from "react-icons/vsc";
 import { BsFiletypeSql } from "react-icons/bs";
+import { DiMysql } from "react-icons/di";
+
 
 
 const TechIcon = ({ overridePath, technology, customTWprop }: TechIconProps) => {
@@ -45,7 +47,8 @@ const TechIcon = ({ overridePath, technology, customTWprop }: TechIconProps) => 
         "HTML": (customTWprop) => <SiHtml5 className={customTWprop} />, 
         "CSS": (customTWprop) => <SiCss3 className={customTWprop} />,
         "SQL": (customTWprop) => <BsFiletypeSql className={customTWprop} />,
-        "Go": (customTWprop) => <FaGolang className={customTWprop} />
+        "Go": (customTWprop) => <FaGolang className={customTWprop} />,
+        "MySQL": (customTWprop) => <DiMysql className={customTWprop} />,
     }
 
     if (Object.hasOwn(techMap, technology) || overridePath) return (

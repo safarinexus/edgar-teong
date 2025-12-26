@@ -37,7 +37,7 @@ export const works: Work[] = [
         link: "https://www.deliveryhero.com/brands/foodpanda/", 
         position: "Backend Software Engineer", 
         description: `I am a backend software engineer on the incentives core team in the growth tribe, working on end-to-end vouchers and deals management for the foodpanda app.`,
-        technologies: ["Go", "AWS"]
+        technologies: ["Go", "AWS", "MySQL"]
     }, 
     {
         dates: "Feb. 2025 - Nov. 2025", 
@@ -128,7 +128,7 @@ export const projects:Project[] = [
         title: "This Website!",
         description: "My very own portfolio website designed and built by me!", 
         technologies: ["Next.js", "TypeScript", "TailwindCSS", "GSAP Animation Library", "Vercel"], 
-        githubLink: "https://github.com/safarinexus/edgar-teong",
+        githubLink: "https://github.com/edgargle/edgar-teong",
         demoLink: false,
         image: {
             url: "/project-thumbnails/portfolio.webp",
@@ -137,22 +137,34 @@ export const projects:Project[] = [
         }
     },
     {
-        title: "Blog API",
-        description: "My own full REST API for a blog, including two frontends, one for viewing posts and one for editing.", 
-        technologies: ["JavaScript", "React", "Node.js", "Express.js", "PostgreSQL" ,"TailwindCSS" , "Prisma", "Railway"], 
-        githubLink: "https://github.com/safarinexus/edgr_odin_projects/tree/main/odin-node-express-REST-blog",
-        demoLink: "https://edgr-odin-blog-access.vercel.app/",
+        title: "thainsbook", 
+        description: "Headless API for Journaling, written in Go.", 
+        technologies: ["Go", "MySQL"],
+        githubLink: "https://github.com/edgargle/thainsbook",
+        demoLink: "https://thainsbook.onrender.com",
         image: {
-            url: "/project-thumbnails/blog.webp",
-            width: 2356, 
-            height: 1262,
+            url: "/project-thumbnails/thainsbook.webp",
+            width: 796,
+            height: 412,
         }
     },
+    // {
+    //     title: "Blog API",
+    //     description: "My own full REST API for a blog, including two frontends, one for viewing posts and one for editing.", 
+    //     technologies: ["JavaScript", "React", "Node.js", "Express.js", "PostgreSQL" ,"TailwindCSS" , "Prisma", "Railway"], 
+    //     githubLink: "https://github.com/edgargle/edgr_odin_projects/tree/main/odin-node-express-REST-blog",
+    //     demoLink: "https://edgr-odin-blog-access.vercel.app/",
+    //     image: {
+    //         url: "/project-thumbnails/blog.webp",
+    //         width: 2356, 
+    //         height: 1262,
+    //     }
+    // },
     // {
     //     title: "File Uploader",
     //     description: "A Google Drive clone built from scratch, with user auth and folder system.", 
     //     technologies: ["JavaScript", "Node.js", "Express.js", "PostgreSQL", "Prisma", "Railway", "Supabase"], 
-    //     githubLink: "https://github.com/safarinexus/edgr_odin_projects/tree/main/odin-node-express-prisma-fileuploader",
+    //     githubLink: "https://github.com/edgargle/edgr_odin_projects/tree/main/odin-node-express-prisma-fileuploader",
     //     demoLink: "https://odin-fileuploader-production.up.railway.app",
     //     image: {
     //         url: "/project-thumbnails/fileuploader.webp",
@@ -164,7 +176,7 @@ export const projects:Project[] = [
     //     title: "Games Inventory App",
     //     description: "An inventory application using Node.js and PostgreSQL, for video games.", 
     //     technologies: ["JavaScript", "Node.js", "Express.js", "PostgreSQL", "Koyeb"], 
-    //     githubLink: "https://github.com/safarinexus/edgr_odin_projects/tree/main/odin-node-express-postgres-inventory",
+    //     githubLink: "https://github.com/edgargle/edgr_odin_projects/tree/main/odin-node-express-postgres-inventory",
     //     demoLink: "https://edgrodinprojects-production.up.railway.app/",
     //     image: {
     //         url: "/project-thumbnails/inventory.webp",
@@ -176,8 +188,8 @@ export const projects:Project[] = [
     //     title: "Mini Message Board",
     //     description: "A simple mini message board website with a backend using MVC Pattern and Express", 
     //     technologies: ["JavaScript", "Node.js", "Express.js", "PostgreSQL"], 
-    //     githubLink: "https://github.com/safarinexus/odin_projects/tree/main/odin-node-express-messageboard",
-    //     demoLink: "https://overseas-phoebe-safarinexus-e4f74908.koyeb.app/",
+    //     githubLink: "https://github.com/edgargle/odin_projects/tree/main/odin-node-express-messageboard",
+    //     demoLink: "https://overseas-phoebe-edgargle-e4f74908.koyeb.app/",
     //     image: {
     //         url: "/project-thumbnails/msgboard.webp",
     //         width: 1422, 
@@ -188,7 +200,7 @@ export const projects:Project[] = [
     //     title: "Memory Card",
     //     description: "The game of memory cards, made with React, right in the browser, built by me.", 
     //     technologies: ["HTML", "CSS", "JavaScript", "React", "Vercel"], 
-    //     githubLink: "https://github.com/safarinexus/odin_projects/tree/main/odin-react-memorycard",
+    //     githubLink: "https://github.com/edgargle/odin_projects/tree/main/odin-react-memorycard",
     //     demoLink: "https://odin-projects-nine.vercel.app/",
     //     image: {
     //         url: "/project-thumbnails/memorycard.webp",
@@ -200,7 +212,7 @@ export const projects:Project[] = [
     //     title: "Shopping Page",
     //     description: "A frontend UI for a shopping page, built with React, by me.", 
     //     technologies: ["HTML", "CSS", "JavaScript", "React", "Vercel"], 
-    //     githubLink: "https://github.com/safarinexus/odin_projects/tree/main/odin-react-shoppingcart",
+    //     githubLink: "https://github.com/edgargle/odin_projects/tree/main/odin-react-shoppingcart",
     //     demoLink: "https://odin-shopping-page.vercel.app/",
     //     image: {
     //         url: "/project-thumbnails/shopping.webp",
@@ -212,8 +224,8 @@ export const projects:Project[] = [
         title: "Kyla's Birthday Website",
         description: "A website that I made for my partner's birthday, using pure vanilla HTML, CSS & JavaScript", 
         technologies: ["HTML", "CSS", "JavaScript"], 
-        githubLink: "https://github.com/safarinexus/super-secret",
-        demoLink: "https://super-secret-safarinexus-projects.vercel.app/",
+        githubLink: "https://github.com/edgargle/super-secret",
+        demoLink: false,
         image: {
             url: "/project-thumbnails/supersecret.webp",
             width: 2126, 
@@ -224,8 +236,8 @@ export const projects:Project[] = [
         title: "Projects from 'The Odin Project'", 
         description: "A series of projects that I created (from scratch) while learning full-stack development under The Odin Project", 
         technologies: ["HTML", "CSS", "JavaScript", "Jest", "Webpack", "React", "PostgreSQL", "Prisma", "Node.js", "Express.js", "Vitest", "REST API"], 
-        githubLink: "https://github.com/safarinexus/edgr-odinprojects", 
-        demoLink: "https://safarinexus.github.io/edgr-odinprojects/", 
+        githubLink: "https://github.com/edgargle/edgr-odinprojects", 
+        demoLink: "https://edgargle.github.io/edgr-odinprojects/", 
         image: {
             url: "/project-thumbnails/top-projects.webp",
             width: 1900, 
