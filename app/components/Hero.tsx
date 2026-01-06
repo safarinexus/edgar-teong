@@ -131,6 +131,19 @@ const Hero = () => {
                             />
                             foodpanda
                         </a>
+                        {" "}
+                        &#40;
+                            <a href="https://www.deliveryhero.com/" className="text-black">
+                            <Image
+                                src="/work-logos/dh-white.webp"
+                                width={2000}
+                                height={2000}
+                                alt="delivery hero logo"
+                                className="size-6 inline mb-1 rounded-md"
+                            />
+                            Delivery Hero
+                        </a>
+                        &#41;
                     </p>
                 </div>
             </div>
